@@ -1,0 +1,785 @@
+<html><head><title>JUnitHtmlReport</title><head>
+     <style type='text/css'>
+
+    body { background-color:white; }
+
+    p,td,div,span                      {font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: black; text-decoration: none;}
+
+    p.title                   { font-size: 14pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: black; text-decoration: none;}
+    p.header,div.header       { font-size: 14pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: black; text-decoration: none;}
+    td.nav                    { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: black; text-decoration: none;}
+
+    
+      a:link                         { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: #000080; text-decoration: underline;}
+      a:link:hover                   { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+      a:link:active                  { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: #800000; text-decoration: underline;}
+      a:link:visited                 { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: #800080; text-decoration: underline;}
+      a:link:visited:hover           { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+    
+    
+
+    
+      a.nav:link                     { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #000080; text-decoration: none;}
+      a.nav:link:hover               { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+      a.nav:link:active              { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #800000; text-decoration: none;}
+      a.nav:link:visited             { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #000080; text-decoration: none;}
+      a.nav:link:visited:hover       { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+    
+    
+
+    td.navActive              { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: none;}
+
+    
+      a.navActive:link          { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: none;}
+      a.navActive:link:hover         { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+      a.navActive:link:active        { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #800000; text-decoration: none;}
+      a.navActive:link:visited       { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: none;}
+      a.navActive:link:visited:hover { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+    
+    
+
+
+   </style>
+
+<body>
+<p><center><h1>JUnitHtmlReport</h1></center></p>
+<p><h2>Summary</h2>
+<table border="1">
+<tr><td valign="top"><b>Test Suite</b></td><td valign="top"><b>Tests</b></td><td valign="top"><b>Failures</b></td><td valign="top"><b>Errors</b></td><td valign="top"><b>Time (sec)</b></td></tr>
+<tr>
+<td valign="top"><b>1. <a href="#1">unit tests</b></a></td>
+<td valign="top">28</td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">303</td>
+</tr>
+<tr>
+<td valign="top">1.1. <a href="#1.1">edu.duke.cabig.c3pr.dao.ArmDaoTest</a></td>
+<td valign="top">2</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">4.422</td>
+</tr>
+<tr>
+<td valign="top">1.2. <a href="#1.2">edu.duke.cabig.c3pr.dao.EpochDaoTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">76.422</td>
+</tr>
+<tr>
+<td valign="top">1.3. <a href="#1.3">edu.duke.cabig.c3pr.dao.ParticipantDaoTest</a></td>
+<td valign="top">6</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">124.735</td>
+</tr>
+<tr>
+<td valign="top">1.4. <a href="#1.4">edu.duke.cabig.c3pr.dao.StudyDaoTest</a></td>
+<td valign="top">9</td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">87.031</td>
+</tr>
+<tr>
+<td valign="top">1.5. <a href="#1.5">edu.duke.cabig.c3pr.dao.StudySiteDaoTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">5.032</td>
+</tr>
+<tr>
+<td valign="top">1.6. <a href="#1.6">edu.duke.cabig.c3pr.domain.AbstractDomainObjectTest</a></td>
+<td valign="top">6</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.032</td>
+</tr>
+<tr>
+<td valign="top">1.7. <a href="#1.7">edu.duke.cabig.c3pr.utils.ApplicationContextInitializationTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">7.031</td>
+</tr>
+<tr>
+<td valign="top"><b>2. <a href="#2">integration tests</b></a></td>
+<td valign="top">2</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">112</td>
+</tr>
+<tr>
+<td valign="top">2.1. <a href="#2.1">edu.duke.cabig.c3pr.test.system.CTMISystemTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">112.132</td>
+</tr>
+<tr>
+<td valign="top">2.2. <a href="#2.2">edu.duke.cabig.c3pr.test.system.WebTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.635</td>
+</tr>
+<tr>
+<td valign="top"><b>3. <a href="#3">miscellaneous tests</b></a></td>
+<td valign="top">13</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">7</td>
+</tr>
+<tr>
+<td valign="top">3.1. <a href="#3.1">edu.duke.cabig.c3pr.utils.web.ContextRetainingFilterAdapterTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.312</td>
+</tr>
+<tr>
+<td valign="top">3.2. <a href="#3.2">edu.duke.cabig.c3pr.utils.web.GridProxyUtilsTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.672</td>
+</tr>
+<tr>
+<td valign="top">3.3. <a href="#3.3">edu.duke.cabig.c3pr.web.CreateParticipantControllerTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">4.782</td>
+</tr>
+<tr>
+<td valign="top">3.4. <a href="#3.4">edu.duke.cabig.c3pr.web.CreateStudyControllerTest</a></td>
+<td valign="top">2</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.687</td>
+</tr>
+<tr>
+<td valign="top">3.5. <a href="#3.5">edu.duke.cabig.c3pr.web.EditParticipantControllerTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">3.407</td>
+</tr>
+<tr>
+<td valign="top">3.6. <a href="#3.6">edu.duke.cabig.c3pr.web.OpenSessionInViewInterceptorFilterTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.672</td>
+</tr>
+<tr><td valign="top"><b>Total:</b></td><td valign="top">43</td><td valign="top">1</td><td valign="top">0</td><td valign="top">422 (sec)</td></tr>
+</table>
+</p>
+<p><a name="1"><h2>1. unit tests</h2></a></p>
+<p><a name="1.1"><h3>1.1. edu.duke.cabig.c3pr.dao.ArmDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>JUnit Tests for ArmDao</td>
+<tr><td valign="top"><b>Tests:</b></td><td>2</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>4.422</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.1.1"><h4>1.1.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for loading an Arm by Id</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.953</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.1.2"><h4>1.1.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for loading all Arms</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.438</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.2"><h3>1.2. edu.duke.cabig.c3pr.dao.EpochDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>JUnit Tests for EpochDao</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>76.422</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.2.1"><h4>1.2.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for loading an Epoch by Id</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>48.36</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.2.2"><h4>1.2.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for loading all Epochs</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>13.203</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.2.3"><h4>1.2.3. testGetArms</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for loading all the Arms associated with this Epoch</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>14.828</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.3"><h3>1.3. edu.duke.cabig.c3pr.dao.ParticipantDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>JUnit Tests for ParticipantDao</td>
+<tr><td valign="top"><b>Tests:</b></td><td>6</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>124.735</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.3.1"><h4>1.3.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for loading a Participant by Id</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>35.281</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.3.2"><h4>1.3.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for loading all Participants</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>20.594</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.3.3"><h4>1.3.3. testSaveNewParticipantWithAllAssociations</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test Saving of a Participant with all associations present</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>12.219</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.3.4"><h4>1.3.4. testGetStudyParticipantAssignments</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for retrieving all Participant Assignments associated with this Participant</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>19.797</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.3.5"><h4>1.3.5. testSearchParticipantSimple</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for searching Participants without a wildcard</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>16.843</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.3.6"><h4>1.3.6. testSearchParticipantSimpleByWildCards</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for searching Participants using wildcards</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>19.985</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.4"><h3>1.4. edu.duke.cabig.c3pr.dao.StudyDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>JUnit Tests for StudyDao</td>
+<tr><td valign="top"><b>Tests:</b></td><td>9</td>
+<tr><td valign="top"><b>Failures:</b></td><td>1</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>87.031</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.4.1"><h4>1.4.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for loading a Study by Id</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>11.047</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.4.2"><h4>1.4.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for loading all Studies</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>12.14</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.4.3"><h4>1.4.3. testSaveNewStudy</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test Saving of a Study with all associations present</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>7.516</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.4.4"><h4>1.4.4. testSaveNewStudyWithAssociations</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test Saving of a Study with all associations present</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>9.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.4.5"><h4>1.4.5. testGetEpochs</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for retrieving all Epochs associated with this Study</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>10.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.4.6"><h4>1.4.6. testGetArms</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for retrieving all Arms associated with this Studies' epochs</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>15.484</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.4.7"><h4>1.4.7. testGetStudyParticipantAssignmentsForStudy</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>8.016</td>
+<tr><td valign="top"><b>Status:</b></td><td>FAILURE
+<br/>junit.framework.AssertionFailedError
+<pre>junit.framework.AssertionFailedError: expected:<2> but was:<0>
+	at edu.duke.cabig.c3pr.dao.StudyDaoTest.testGetStudyParticipantAssignmentsForStudy(StudyDaoTest.java:154)
+	at edu.duke.cabig.c3pr.utils.DaoTestCase.runBare(DaoTestCase.java:55)
+</pre>
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.4.8"><h4>1.4.8. testSearchStudySimple</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for searching Studies without wildcards</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>6.766</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.4.9"><h4>1.4.9. testSearchStudyByWildCards</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for searching Studies using wildcards</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>7.062</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.5"><h3>1.5. edu.duke.cabig.c3pr.dao.StudySiteDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>JUnit Tests for StudySiteDao</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>5.032</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.5.1"><h4>1.5.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for loading a Study by Id</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>5.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.6"><h3>1.6. edu.duke.cabig.c3pr.domain.AbstractDomainObjectTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>JUnit Tests for AbstractDomainObject</td>
+<tr><td valign="top"><b>Tests:</b></td><td>6</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.032</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.6.1"><h4>1.6.1. testEqualByIdWithTwoNulls</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test if domain object is equal by Id with two nulls</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.6.2"><h4>1.6.2. testEqualByIdWithFirstNull</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test if domain object is equal by Id with first null</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.6.3"><h4>1.6.3. testEqualByIdWithSecondNull</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test if domain object is equal by Id with second null</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.6.4"><h4>1.6.4. testEqualByIdWhenSame</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test if domain object is equal by Id when they are identically same</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.6.5"><h4>1.6.5. testEqualByIdWhenEqual</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test if domain object is equal by Id when they have same equal references</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.6.6"><h4>1.6.6. testEqualByIdWhenNotEqual</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test if domain object is equal by Id when they arent equal</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.7"><h3>1.7. edu.duke.cabig.c3pr.utils.ApplicationContextInitializationTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>These tests are intended to verify that the various application contexts will
+ all load when the application is deployed.</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>7.031</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.7.1"><h4>1.7.1. testApplicationContextItself</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Test for checking  Application Context file configurations</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>7.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2"><h2>2. integration tests</h2></a></p>
+<p><a name="2.1"><h3>2.1. edu.duke.cabig.c3pr.test.system.CTMISystemTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Integration tests does the following
+ 1. Deploy the ESB
+ 2. Deploy Service Assembly for CTMSI into the ESB container
+ 3. Deploy Globus
+ 4. Start ESB and Globus
+ 5. Send a test message to the ESB</td>
+<tr><td valign="top"><b>Steps:</b></td><td>6</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>112.132</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.1.2"><h4>2.1.2. ESBCreateStep</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Created by IntelliJ IDEA.
+ User: kherm
+ Date: Feb 15, 2007
+ Time: 7:46:15 PM
+ To change this template use File | Settings | File Templates.</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.1.3"><h4>2.1.3. ESBStartStep</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Created by IntelliJ IDEA.
+ User: kherm
+ Date: Feb 15, 2007
+ Time: 7:46:15 PM
+ To change this template use File | Settings | File Templates.</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.1.4"><h4>2.1.4. RegistrationGridServiceConfigStep</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Created by IntelliJ IDEA.
+ User: kherm
+ Date: Feb 15, 2007
+ Time: 5:34:03 PM
+ To change this template use File | Settings | File Templates.</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.1.5"><h4>2.1.5. ESBSendMessageStep</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Sends a message to the ESB
+
+ Created by IntelliJ IDEA.
+ User: kherm
+ Date: Feb 15, 2007
+ Time: 11:47:17 PM
+ To change this template use File | Settings | File Templates.</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.1.6"><h4>2.1.6. ESBStopStep</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Created by IntelliJ IDEA.
+ User: kherm
+ Date: Feb 15, 2007
+ Time: 8:33:05 PM
+ To change this template use File | Settings | File Templates.</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.1.7"><h4>2.1.7. ESBCleanupStep</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>Created by IntelliJ IDEA.
+ User: kherm
+ Date: Feb 15, 2007
+ Time: 11:19:29 PM
+ To change this template use File | Settings | File Templates.</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2"><h3>2.2. edu.duke.cabig.c3pr.test.system.WebTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>This class validates the functionality of the Web Dummy class.</td>
+<tr><td valign="top"><b>Steps:</b></td><td>2</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.635</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2.2"><h4>2.2.2. WebCreateStep</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>This step creates a new Dummy object.</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2.3"><h4>2.2.3. WebCheckStep</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>This step checks that the Dummy object is performing correctly</td>
+</table>
+</dt></dl></dl>
+<p><a name="3"><h2>3. miscellaneous tests</h2></a></p>
+<p><a name="3.1"><h3>3.1. edu.duke.cabig.c3pr.utils.web.ContextRetainingFilterAdapterTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.312</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.1.1"><h4>3.1.1. testServletContextRetained</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.078</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.1.2"><h4>3.1.2. testGetApplicationContext</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.031</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.1.3"><h4>3.1.3. testGetApplicationContextFailsWhenMissing</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.2"><h3>3.2. edu.duke.cabig.c3pr.utils.web.GridProxyUtilsTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.672</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.2.1"><h4>3.2.1. testGetUsername</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.469</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.3"><h3>3.3. edu.duke.cabig.c3pr.web.CreateParticipantControllerTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>4.782</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.3.1"><h4>3.3.1. testReferenceData</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.125</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.3.2"><h4>3.3.2. testViewOnGet</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.781</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.3.3"><h4>3.3.3. testViewOnGoodSubmit</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.672</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.4"><h3>3.4. edu.duke.cabig.c3pr.web.CreateStudyControllerTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>2</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.687</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.4.1"><h4>3.4.1. testViewOnGet</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.375</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.4.2"><h4>3.4.2. testViewOnGoodSubmit</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.109</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.5"><h3>3.5. edu.duke.cabig.c3pr.web.EditParticipantControllerTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.407</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.5.1"><h4>3.5.1. testReferenceData</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.203</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.6"><h3>3.6. edu.duke.cabig.c3pr.web.OpenSessionInViewInterceptorFilterTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.672</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.6.1"><h4>3.6.1. testBasicBehavior</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.359</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.6.2"><h4>3.6.2. testExceptionInFilterChainBehavior</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.063</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="3.6.3"><h4>3.6.3. testExceptionInPostHandleBehavior</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.047</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+</body></html>
