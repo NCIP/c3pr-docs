@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--servicemix toolkit-->
+
+<project name="servicemix-toolkit" default="all" basedir=".">
+
+    <property name="install.dir" value="${basedir}/install"/>
+
+    <property name="data.dir" value="${basedir}/data"/>
+    <property name="deploy.dir" value="${basedir}/deploy"/>
+    <property name="install.dir" value="${basedir}/install"/>
+    <property name="components.dir" value="${basedir}/components"/>
+
+    <property name="bin.dir" value="${basedir}/bin"/>
+    <property name="bin.data.dir" value="${bin.dir}/data"/>
+    <property name="bin.deploy.dir" value="${bin.dir}/deploy"/>
+    <property name="bin.install.dir" value="${bin.dir}/install"/>
+
+    <property name="lib.dir" value="${basedir}/lib"/>
+    <property name="components.lib.dir" value="${components.dir}/lib"/>
+
+    <property name="src.dir" value="${basedir}/src"/>
+    <property name="build.dir" value="${basedir}/build"/>
+    <property name="build.classes.dir" value="${build.dir}/classes"/>
+    <property name="build.jar.dir" value="${build.dir}/jars"/>
+
+    <property name="ext.dir" value="${basedir}/ext"/>
+    <property name="ext.lib.dir" value="${ext.dir}/lib"/>
+    <property name="jar.file.name" value="esb-registry.jar"/>
+
+
+    <path id="build.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar"/>
+        </fileset>
+        <fileset dir="${components.lib.dir}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="init">
+        <mkdir dir="${install.dir}"/>
+        <mkdir dir="${deploy.dir}"/>
+
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${build.jar.dir}"/>
+        <!--todo remove these as this will be added by the parent build-->
+        <mkdir dir="${ext.dir}"/>
+        <mkdir dir="${ext.lib.dir}"/>
+        <!--other directories are created by the toolkit-->
+    </target>
+
+    <!--Clean all directories created by the servicemix toolkit-->
+    <target name="clean" description="Cleans the project">
+        <delete dir="${data.dir}"/>
+        <delete dir="${deploy.dir}"/>
+        <delete dir="${install.dir}"/>
+
+        <delete dir="${bin.data.dir}"/>
+        <delete dir="${bin.deploy.dir}"/>
+        <delete dir="${bin.install.dir}"/>
+
+        <delete dir="${build.dir}"/>
+        <delete dir="${ext.dir}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac classpathref="build.classpath"
+               destdir="${build.classes.dir}" srcdir="${src.dir}"/>
+
+    </target>
+
+    <target name="jar" depends="compile">
+        <jar basedir="${build.classes.dir}"
+             jarfile="${build.jar.dir}/${jar.file.name}"/>
+    </target>
+
+    <target name="deploy" depends="jar">
+        <copy todir="${ext.lib.dir}">
+            <fileset dir="${build.jar.dir}">
+                <include  name="*.jar"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="all" depends="deploy" description="Sets up the project before starting the toolkit"/>
+
+</project>

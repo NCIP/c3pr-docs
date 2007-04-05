@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+
+<project name="grid" default="all" basedir=".">
+
+    <property name="c3pr.dir" value="../../"/>
+    <property name="c3pr.antfiles.dir" value="${c3pr.dir}/antfiles"/>
+    <property name="projects.dir" value="${basedir}"/>
+    <property name="antfiles.dir" value="${basedir}/antfiles"/>
+    <property name="ext.dir" value="${basedir}/ext"/>
+    <property name="ext.lib.dir" value="${ext.dir}/lib"/>
+    <property name="ext.test.dir" value="${ext.dir}/test"/>
+    <property name="ext.test.lib.dir" value="${ext.test.dir}/lib"/>
+
+    <property name="test.dir" value="${basedir}/test"/>
+    <property name="test.logs.dir" value="${test.dir}/logs"/>
+
+    <property name="project.name" value="RegistrationConsumer_Grid_Service"/>
+    <property name="build.dir" value="${basedir}/build"/>
+    <property name="zip.filename" value="${project.name}.zip"/>
+
+     <import file="${antfiles.dir}/build-test.xml" />
+     <import file="${antfiles.dir}/artifacts.xml" />
+
+
+    <!-- projects-->
+    <property name="projects.list" value="RegistrationConsumer, RegistrationConsumerImpl"/>
+
+    <property name="testable.projects.list" value="RegistrationConsumerImpl"/>
+
+    <!--tomcat dirs-->
+    <property name="tomcat.home" value="${env.CATALINA_HOME}"/>
+    <property name="tomcat.webapps.home" value="${tomcat.home}/webapps"/>
+    <property name="tomcat.wsrf.home" value="${tomcat.webapps.home}/wsrf"/>
+
+    <fileset dir="${ext.lib.dir}" id="ext.lib.jars">
+        <include name="*.jar"/>
+        <exclude name="ant-contrib.jar"/>
+    </fileset>
+
+    <fileset dir="${ext.test.lib.dir}" id="ext.test.lib.jars">
+        <include name="*.jar"/>
+    </fileset>
+
+
+    <!-- =============================================================== -->
+    <!-- Bootstrap the build by setting up the structure and building    -->
+    <!-- our custom ant tasks.                                           -->
+    <!-- =============================================================== -->
+    <target name="prepare">
+        <mkdir dir="${build.dir}"/>
+
+        <typedef name="artifact" classname="gov.nih.nci.cagrid.ant.Artifact" loaderref="artifact">
+            <classpath>
+                <pathelement location="${c3pr.antfiles.dir}/management/build" />
+            </classpath>
+        </typedef>
+        <taskdef name="resolveDependencies" classname="gov.nih.nci.cagrid.ant.ResolveDependencies" loaderref="artifact">
+            <classpath>
+                <pathelement location="${c3pr.antfiles.dir}/management/build" />
+            </classpath>
+        </taskdef>
+
+        <taskdef resource="net/sf/antcontrib/antlib.xml">
+            <classpath>
+                <pathelement location="${ext.lib.dir}/ant-contrib.jar"/>
+            </classpath>
+        </taskdef>
+
+    </target>
+
+    <target name="build-RegistrationConsumer" depends="prepare">
+        <ant dir="${projects.dir}/RegistrationConsumer" inheritall="false"
+             antfile="build.xml" target="all"/>
+    </target>
+
+    <target name="build-RegistrationConsumerImpl" depends="prepare">
+        <resolveDependencies extdir="${projects.dir}/RegistrationConsumerImpl/ext">
+            <artifact refid="registration.consumer.grid.service"/>
+        </resolveDependencies>
+
+        <ant dir="${projects.dir}/RegistrationConsumerImpl" inheritall="false"
+             antfile="build.xml" target="all"/>
+    </target>
+
+    <target name="clean" depends="prepare" description="Clean the project">
+        <delete dir="${build.dir}"/>
+        <delete dir="${test.dir}"/>
+
+        <for list="${projects.list}" parallel="true" param="project.name" trim="true">
+            <sequential>
+                <echo message="Cleaning project @{project.name}."/>
+                <delete dir="${basedir}/@{project.name}/ext"/>
+                <ant dir="${basedir}/@{project.name}" inheritAll="false" antfile="build.xml" target="clean"/>
+            </sequential>
+        </for>
+    </target>
+
+    <target name="all" depends="prepare" description="Default target to build all sub projects within JBI">
+        <for list="${projects.list}" parallel="false" param="project.name" trim="true">
+            <sequential>
+                <echo message="Building sub-project @{project.name}."/>
+                <!--copy ext lib dependencies-->
+                <copy todir="${projects.dir}/@{project.name}/ext/lib" overwrite="true">
+                    <fileset refid="ext.lib.jars"/>
+                </copy>
+                <!--copy ext test dependencies-->
+                <copy todir="${projects.dir}/@{project.name}/ext/test/lib" overwrite="true">
+                    <fileset refid="ext.test.lib.jars"/>
+                </copy>
+                <runtarget target="build-@{project.name}" />
+                <echo message="Built project @{project.name}." />
+            </sequential>
+        </for>
+    </target>
+
+
+    <!-- Will build and deploy the RegistrationConsumer Skeleton
+         grid service. Skeleton service is implemented by individual
+         ctmsi applications.
+    -->
+    <target name="deploySkeletonRegistrationGridService" depends="all"
+            description="Deploys the Registration Consumer Grid service Skeleton">
+
+        <!--override tomcat env variable to write out to temp location-->
+        <ant antfile="${projects.dir}/RegistrationConsumer/build.xml"
+             inheritall="false" target="deployTomcat"/>
+
+        <echo message="======================================"/>
+        <echo message="======Skeleton grid service deployed to ${tomcat.home}" />
+        <echo message="======================================"/>
+    </target>
+
+    <!--will deploy the RegistrationConsumer grid service
+        for c3prv2 application
+     -->
+    <target name="deployTomcat" depends="deploySkeletonRegistrationGridService"
+            description="Deploys the c3pr Registration consumer grid service Implementation">
+
+        <ant antfile="${projects.dir}/RegistrationConsumerImpl/build.xml" inheritall="false" target="deployTomcat"/>
+        <!--copy the ext folder-->
+        <copy todir="${tomcat.wsrf.home}/WEB-INF/lib">
+            <fileset refid="ext.jars"/>
+        </copy>
+
+        <echo message="============================================================================="/>
+        <echo message="======Registration Consumer Grid service deployed to ${tomcat.home}" />
+        <echo message="============================================================================="/>
+
+    </target>
+
+</project>
+
+
