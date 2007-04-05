@@ -9,11 +9,10 @@ National Cancer Institute Center for Bioinformatics
                             Contents
 ================================================================
 
-    1.0         C3PR Introduction
+    1.0         Introduction
         1.1     Description
         1.2     History
-    2.0         Features
-    	2.1     New Features for this release
+    2.0         New Features for this release
     3.0         Known Issues
     4.0         Bug fixes since last release
     5.0         Bug Reports and Support
@@ -21,7 +20,7 @@ National Cancer Institute Center for Bioinformatics
     7.0         NCICB Web Pages
 
 ================================================================
-                c3PR Introduction and History
+               Introduction 
 ================================================================
 
 This document contains the release notes for the C3PRv2 Construction
@@ -39,7 +38,7 @@ For information, refer to:
 http://gforge.nci.nih.gov/projects/c3prv2/
 
 Wiki:
-http://sbdev1000.semanticbits.com/mediawiki/index.php/C3PRV2
+http://gforge.nci.nih.gov/plugins/wiki/index.php?id=214&type=g
 
 ----------------------------------------------------------------
                 1.2 History
@@ -50,19 +49,28 @@ C3PRv2 has completed 1 iterations in the construction phase
 
 
 
-================================================================
-                2.0 Features
-================================================================
-1) The following Use Cases has been completed as of this release
-
 
 ================================================================
                 2.0 New Features for this Release
 ================================================================
-Use Cases
+
+2.1 Registrations to Multi site Study 
+    Registrations to multi site studies are propagated through
+    the ESB to the coordinating center. For more information 
+    refer the design document.
+
+2.2 View Registration Details
+    Registration details like study summary, identifiers,
+    eligibility criteria,stratification factors, randomization
+    arm, registration status can be viewed.
+
+2.3 Associating Study Investigator to study.
+
+2.4 Associating Study Personnel to study.
 
 
-Tehcnical Accomplishments
+
+ 
 
 
 
@@ -85,8 +93,9 @@ http://java.sun.com/javase/downloads/index_jdk5.jsp
 ================================================================
                 4.0 Bug fixes
 ================================================================
+Please refer the Gforge Bug Tracker for bug fixes
 
-
+http://gforge.nci.nih.gov/tracker/index.php?group_id=214&atid=995
 
 
 ================================================================
@@ -106,6 +115,10 @@ To download the c3PR Technical Architecture/Specification, refer
 http://gforge.nci.nih.gov/plugins/scmcvs/cvsweb.php/c3prv2
 /documentation/design/?cvsroot=c3prv2
 
+To download the C3PRv2 Installation guide, refer
+http://gforge.nci.nih.gov/plugins/scmcvs/cvsweb.php/c3prv2/
+documentation/installation/C3PRv2%20Installation%20Guide.doc?
+cvsroot=c3prv2
 
 ================================================================
                     7.0 NCICB Web Pages
