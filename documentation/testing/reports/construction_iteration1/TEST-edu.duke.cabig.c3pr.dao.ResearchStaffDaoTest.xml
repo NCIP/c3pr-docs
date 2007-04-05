@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" name="edu.duke.cabig.c3pr.dao.ResearchStaffDaoTest" tests="4" time="4.469">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc."></property>
+    <property name="lib.dir" value="C:\devtools\eclipse\workspace\projects\core/lib"></property>
+    <property name="antfiles.dir" value="C:\devtools\eclipse\workspace\projects\core/antfiles"></property>
+    <property name="eclipse.pdebuild.templates" value="/C:/devtools/eclipse/plugins/org.eclipse.pde.build_3.2.1.r321_v20060823/templates/"></property>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"></property>
+    <property name="test.project.jar" value="C:\devtools\eclipse\workspace\projects\core\build\jars\c3pr-2.0-core-tests-1.0.jar"></property>
+    <property name="env.PROMPT" value="$P$G"></property>
+    <property name="os.name" value="Windows XP"></property>
+    <property name="env.FP_NO_HOST_CHECK" value="NO"></property>
+    <property name="cobertura.home" value="C:\devtools\eclipse\workspace\share\cobertura-1.8"></property>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.5.0_09\jre\lib\rt.jar;C:\Program Files\Java\jdk1.5.0_09\jre\lib\i18n.jar;C:\Program Files\Java\jdk1.5.0_09\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.5.0_09\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.5.0_09\jre\lib\jce.jar;C:\Program Files\Java\jdk1.5.0_09\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.5.0_09\jre\classes"></property>
+    <property name="env.COMPUTERNAME" value="PRIYASEMANTIC"></property>
+    <property name="ant.file.c3pr-2.0-core" value="C:\devtools\eclipse\workspace\projects\core\build.xml"></property>
+    <property name="env.ALLUSERSPROFILE" value="C:\Documents and Settings\All Users"></property>
+    <property name="sun.desktop" value="windows"></property>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="net.sourceforge.cobertura.datafile" value="C:\devtools\eclipse\workspace\projects\core\test\logs\queryengine.ser"></property>
+    <property name="ant.home" value="C:\devtools\eclipse\plugins\org.apache.ant_1.6.5"></property>
+    <property name="jar.dir" value="C:\devtools\eclipse\workspace\projects\core/build/jars"></property>
+    <property name="java.runtime.version" value="1.5.0_09-b03"></property>
+    <property name="env.HOMEPATH" value="\Documents and Settings\priyatam"></property>
+    <property name="env.JSERV" value="C:\oracle\ora92/Apache/Jserv/conf"></property>
+    <property name="user.name" value="priyatam"></property>
+    <property name="test.classes.dir" value="C:\devtools\eclipse\workspace\projects\core\build\classes-test"></property>
+    <property name="debug" value="on"></property>
+    <property name="core.properties.file" value="C:\devtools\eclipse\workspace\projects\core/conf/core.properties"></property>
+    <property name="env.QTJAVA" value="C:\Program Files\Java\jre1.5.0_10\lib\ext\QTJava.zip"></property>
+    <property name="build.dir" value="C:\devtools\eclipse\workspace\projects\core/build"></property>
+    <property name="ext.lib.dir" value="C:\devtools\eclipse\workspace\projects\core/ext/lib"></property>
+    <property name="user.language" value="en"></property>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.5.0_09\jre\bin"></property>
+    <property name="ant.project.name" value="c3pr-2.0-core"></property>
+    <property name="java.version" value="1.5.0_09"></property>
+    <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 14 Stepping 8, GenuineIntel"></property>
+    <property name="user.timezone" value=""></property>
+    <property name="ext.test.lib.dir" value="C:\devtools\eclipse\workspace\projects\core\ext\test\lib"></property>
+    <property name="resources.dir" value="C:\devtools\eclipse\workspace\projects\core/resources"></property>
+    <property name="env.CLIENTNAME" value="Console"></property>
+    <property name="env.TEMP" value="C:\DOCUME~1\priyatam\LOCALS~1\Temp"></property>
+    <property name="sun.arch.data.model" value="32"></property>
+    <property name="test.src.dir" value="C:\devtools\eclipse\workspace\projects\core\test\src"></property>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.5.0_09\jre\lib\endorsed"></property>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"></property>
+    <property name="env.HOMEDRIVE" value="C:"></property>
+    <property name="sun.jnu.encoding" value="Cp1252"></property>
+    <property name="file.encoding.pkg" value="sun.io"></property>
+    <property name="file.separator" value="\"></property>
+    <property name="java.specification.name" value="Java Platform API Specification"></property>
+    <property name="test.lib.dir" value="C:\devtools\eclipse\workspace\projects\core\test\lib"></property>
+    <property name="classes.dir" value="C:\devtools\eclipse\workspace\projects\core/build/classes"></property>
+    <property name="java.class.version" value="49.0"></property>
+    <property name="project.jarfile" value="C:\devtools\eclipse\workspace\projects\core/build/jars/c3pr-2.0-core-1.0.jar"></property>
+    <property name="user.country" value="US"></property>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.5.0_09\jre"></property>
+    <property name="env.APPDATA" value="C:\Documents and Settings\priyatam\Application Data"></property>
+    <property name="java.vm.info" value="mixed mode"></property>
+    <property name="env.CATALINA_HOME" value="C:\devtools\apache-tomcat-5.5.20"></property>
+    <property name="env.ComSpec" value="C:\WINDOWS\system32\cmd.exe"></property>
+    <property name="env.OS" value="Windows_NT"></property>
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files"></property>
+    <property name="ant.file" value="C:\devtools\eclipse\workspace\projects\core\build.xml"></property>
+    <property name="os.version" value="5.1"></property>
+    <property name="path.separator" value=";"></property>
+    <property name="java.vm.version" value="1.5.0_09-b03"></property>
+    <property name="user.variant" value=""></property>
+    <property name="env.USERPROFILE" value="C:\Documents and Settings\priyatam"></property>
+    <property name="ant.library.dir" value="C:\devtools\eclipse\plugins\org.apache.ant_1.6.5\lib"></property>
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.5.0_09"></property>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"></property>
+    <property name="env.TMP" value="C:\DOCUME~1\priyatam\LOCALS~1\Temp"></property>
+    <property name="env.ASLOGDIR" value="C:\Program Files\Intuit\QuickBooks 2006\"></property>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"></property>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"></property>
+    <property name="ant.file.c3pr-2.0-core-test" value="C:\devtools\eclipse\workspace\projects\core\antfiles\build-test.xml"></property>
+    <property name="env.WV_GATEWAY_CFG" value="C:\oracle\ora92\Apache\modplsql\cfg\wdbsvr.app"></property>
+    <property name="eclipse.pdebuild.scripts" value="/C:/devtools/eclipse/plugins/org.eclipse.pde.build_3.2.1.r321_v20060823/scripts/"></property>
+    <property name="user.home" value="C:\Documents and Settings\priyatam"></property>
+    <property name="env.SESSIONNAME" value="Console"></property>
+    <property name="env.CLASSPATH" value=".;C:\Program Files\Java\jdk1.5.0_09\lib;C:\devtools\apache-ant-1.6.5\lib"></property>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="test.dir" value="C:\devtools\eclipse\workspace\projects\core\test"></property>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.5.0_09\jre\bin;.;C:\WINDOWS\system32;C:\WINDOWS;C:\oracle\ora92\bin;C:\Program Files\Java\jdk1.5.0_09\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\QuickTime\QTSystem\;%ANT_HOME%\bin;C:\oracle\ora92\bin;C:\Program Files\Java\jdk1.5.0_09\bin;C:\devtools\apache-ant-1.6.5\bin;C:\Program Files\cvs;"></property>
+    <property name="env.NUMBER_OF_PROCESSORS" value="2"></property>
+    <property name="ext.resources.dir" value="C:\devtools\eclipse\workspace\projects\core\ext\resources"></property>
+    <property name="java.vendor.url" value="http://java.sun.com/"></property>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."></property>
+    <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition"></property>
+    <property name="ant.version" value="Apache Ant version 1.6.5 compiled on June 2 2005"></property>
+    <property name="java.class.path" value="C:\devtools\eclipse\workspace\projects\core\build\jars\c3pr-2.0-core-1.0.jar;C:\devtools\eclipse\workspace\projects\core\build\jars\c3pr-2.0-core-tests-1.0.jar;C:\Program Files\Java\jdk1.5.0_09\lib\tools.jar;C:\devtools\eclipse\workspace\projects\core\lib\activation-1.0.2.jar;C:\devtools\eclipse\workspace\projects\core\lib\activemq-core-4.0.2.jar;C:\devtools\eclipse\workspace\projects\core\lib\asm-attrs.jar;C:\devtools\eclipse\workspace\projects\core\lib\asm.jar;C:\devtools\eclipse\workspace\projects\core\lib\avalon-framework-cvs-20020806.jar;C:\devtools\eclipse\workspace\projects\core\lib\castor-0.9.9.jar;C:\devtools\eclipse\workspace\projects\core\lib\cglib-2.1.3.jar;C:\devtools\eclipse\workspace\projects\core\lib\commons-beanutils-1.7.0.jar;C:\devtools\eclipse\workspace\projects\core\lib\commons-collections-3.2.jar;C:\devtools\eclipse\workspace\projects\core\lib\commons-dbcp-1.2.1.jar;C:\devtools\eclipse\workspace\projects\core\lib\commons-lang-2.1.jar;C:\devtools\eclipse\workspace\projects\core\lib\commons-pool-1.2.jar;C:\devtools\eclipse\workspace\projects\core\lib\ehcache-1.2.jar;C:\devtools\eclipse\workspace\projects\core\lib\ejb3-persistence.jar;C:\devtools\eclipse\workspace\projects\core\lib\fop.jar;C:\devtools\eclipse\workspace\projects\core\lib\jstl.jar;C:\devtools\eclipse\workspace\projects\core\lib\jta.jar;C:\devtools\eclipse\workspace\projects\core\lib\mail-1.3.2.jar;C:\devtools\eclipse\workspace\projects\core\lib\northwestern-core-commons.jar;C:\devtools\eclipse\workspace\projects\core\lib\ojdbc14.jar;C:\devtools\eclipse\workspace\projects\core\lib\postgresql-8.1-407.jdbc3.jar;C:\devtools\eclipse\workspace\projects\core\lib\standard.jar;C:\devtools\eclipse\workspace\projects\core\lib\xbean-spring-2.7.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\activeio-core-3.0-beta4.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\activemq-core-4.0.2.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\ant-contrib.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\antlr-2.7.6.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\backport-util-concurrent-2.1.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\c3pr-2.0-esb-client-1.0.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\castor-0.9.9.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\client.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\commons-collections-3.1.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\commons-logging.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\commons-pool-1.2.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\dom4j-1.6.1.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\handle.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\handlerservice.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\hibernate-annotations.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\hibernate3.2.1.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\jboss-j2ee-4.0.5.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\jboss-jsr77.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\jdom.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\log4j-1.2.13.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\spring2.0.2.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\xerces-2.6.2.jar;C:\devtools\eclipse\workspace\projects\core\ext\lib\xercesImpl-2.2.1.jar;C:\devtools\eclipse\workspace\projects\core\test\lib\catrip-test-report-1.0.jar;C:\devtools\eclipse\workspace\projects\core\test\lib\core-commons-testing.jar;C:\devtools\eclipse\workspace\projects\core\test\lib\dbunit-2.1.jar;C:\devtools\eclipse\workspace\projects\core\test\lib\easymock.jar;C:\devtools\eclipse\workspace\projects\core\test\lib\easymockclassextension.jar;C:\devtools\eclipse\workspace\projects\core\test\lib\hsqldb.jar;C:\devtools\eclipse\workspace\projects\core\test\lib\servlet-api.jar;C:\devtools\eclipse\workspace\projects\core\ext\test\lib\junit-3.8.1.jar;C:\devtools\eclipse\workspace\projects\core\ext\test\lib\spring-mock.jar;C:\devtools\apache-tomcat-5.5.20\common\lib\commons-el.jar;C:\devtools\apache-tomcat-5.5.20\common\lib\jasper-compiler-jdt.jar;C:\devtools\apache-tomcat-5.5.20\common\lib\jasper-compiler.jar;C:\devtools\apache-tomcat-5.5.20\common\lib\jasper-runtime.jar;C:\devtools\apache-tomcat-5.5.20\common\lib\javax.servlet.jar;C:\devtools\apache-tomcat-5.5.20\common\lib\javax.servlet.jsp.jar;C:\devtools\apache-tomcat-5.5.20\common\lib\jsp-api.jar;C:\devtools\apache-tomcat-5.5.20\common\lib\naming-factory-dbcp.jar;C:\devtools\apache-tomcat-5.5.20\common\lib\naming-factory.jar;C:\devtools\apache-tomcat-5.5.20\common\lib\naming-resources.jar;C:\devtools\apache-tomcat-5.5.20\common\lib\servlet-api.jar;C:\devtools\eclipse\workspace\share\cobertura-1.8\cobertura.jar;C:\devtools\eclipse\workspace\share\cobertura-1.8\lib\asm-2.2.1.jar;C:\devtools\eclipse\workspace\share\cobertura-1.8\lib\jakarta-oro-2.0.8.jar;C:\devtools\eclipse\workspace\share\cobertura-1.8\lib\log4j-1.2.9.jar;C:\devtools\eclipse\workspace\projects\core;C:\Program Files\Java\jdk1.5.0_09\lib;C:\devtools\apache-ant-1.6.5\lib;C:\devtools\eclipse\workspace\share\junit-3.8.1\junit-3.8.1.jar;C:\devtools\eclipse\plugins\org.apache.ant_1.6.5\lib\ant-launcher.jar;C:\devtools\eclipse\plugins\org.apache.ant_1.6.5\lib\ant.jar;C:\devtools\eclipse\plugins\org.apache.ant_1.6.5\lib\ant-junit.jar"></property>
+    <property name="project.version" value="1.0"></property>
+    <property name="project.name" value="core"></property>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"></property>
+    <property name="env.LOGONSERVER" value="\\PRIYASEMANTIC"></property>
+    <property name="env.windir" value="C:\WINDOWS"></property>
+    <property name="java.vm.specification.version" value="1.0"></property>
+    <property name="env.PROCESSOR_ARCHITECTURE" value="x86"></property>
+    <property name="sun.cpu.endian" value="little"></property>
+    <property name="sun.os.patch.level" value="Service Pack 2"></property>
+    <property name="env.ProgramFiles" value="C:\Program Files"></property>
+    <property name="env.ANT_HOME" value="C:\devtools\eclipse\plugins\org.apache.ant_1.6.5"></property>
+    <property name="env.PROCESSOR_REVISION" value="0e08"></property>
+    <property name="eclipse.pdebuild.home" value="/C:/devtools/eclipse/plugins/org.eclipse.pde.build_3.2.1.r321_v20060823/./"></property>
+    <property name="java.io.tmpdir" value="C:\DOCUME~1\priyatam\LOCALS~1\Temp\"></property>
+    <property name="env.WF_RESOURCES" value="C:\oracle\ora92\WF\RES\WFus.RES"></property>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"></property>
+    <property name="env.SystemRoot" value="C:\WINDOWS"></property>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"></property>
+    <property name="os.arch" value="x86"></property>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.5.0_09\jre\lib\ext"></property>
+    <property name="user.dir" value="C:\devtools\eclipse\workspace\projects\core"></property>
+    <property name="env.MAVEN_HOME" value="C:\devtools\maven-2.0.4"></property>
+    <property name="testcoverage.datafile" value="C:\devtools\eclipse\workspace\projects\core\test\logs\queryengine.ser"></property>
+    <property name="line.separator" value="
+"></property>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"></property>
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH"></property>
+    <property name="env.Path" value="C:\oracle\ora92\bin;C:\Program Files\Java\jdk1.5.0_09\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\QuickTime\QTSystem\;%ANT_HOME%\bin;C:\oracle\ora92\bin;C:\Program Files\Java\jdk1.5.0_09\bin;C:\devtools\apache-ant-1.6.5\bin;C:\Program Files\cvs;"></property>
+    <property name="env.PGLOCALEDIR" value="C:\Program Files\PostgreSQL\8.2\share\locale"></property>
+    <property name="test.logs.dir" value="C:\devtools\eclipse\workspace\projects\core\test\logs"></property>
+    <property name="basedir" value="C:\devtools\eclipse\workspace\projects\core"></property>
+    <property name="ant.java.version" value="1.5"></property>
+    <property name="env.USERNAME" value="priyatam"></property>
+    <property name="env.SystemDrive" value="C:"></property>
+    <property name="file.encoding" value="Cp1252"></property>
+    <property name="env.USERDOMAIN" value="PRIYASEMANTIC"></property>
+    <property name="env.SonicCentral" value="C:\Program Files\Common Files\Sonic Shared\Sonic Central\"></property>
+    <property name="java.specification.version" value="1.5"></property>
+    <property name="src.dir" value="C:\devtools\eclipse\workspace\projects\core/src"></property>
+    <property name="junit.results.dir" value="C:\devtools\eclipse\workspace\projects\core\test\logs/junit"></property>
+    <property name="env.PROCESSOR_LEVEL" value="6"></property>
+  </properties>
+  <testcase classname="edu.duke.cabig.c3pr.dao.ResearchStaffDaoTest" name="testGetById" time="3.75"></testcase>
+  <testcase classname="edu.duke.cabig.c3pr.dao.ResearchStaffDaoTest" name="testGetAll" time="0.282"></testcase>
+  <testcase classname="edu.duke.cabig.c3pr.dao.ResearchStaffDaoTest" name="testGetBySubnameMatchesShortTitle" time="0.125"></testcase>
+  <testcase classname="edu.duke.cabig.c3pr.dao.ResearchStaffDaoTest" name="testGetBySubnameMatchesIntersectionOfSubnames" time="0.125"></testcase>
+  <system-out><![CDATA[AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@1cbfa42)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+Hibernate: select researchst0_.id as id11_0_, researchst0_.version as version11_0_, researchst0_.first_name as first3_11_0_, researchst0_.last_name as last4_11_0_ from research_staffs researchst0_ where researchst0_.id=?
+Hibernate: select researchst0_.id as id11_, researchst0_.version as version11_, researchst0_.first_name as first3_11_, researchst0_.last_name as last4_11_ from research_staffs researchst0_
+Hibernate: select researchst0_.id as id11_, researchst0_.version as version11_, researchst0_.first_name as first3_11_, researchst0_.last_name as last4_11_ from research_staffs researchst0_ where lower(researchst0_.first_name) like ? or lower(researchst0_.last_name) like ?
+Hibernate: select researchst0_.id as id11_, researchst0_.version as version11_, researchst0_.first_name as first3_11_, researchst0_.last_name as last4_11_ from research_staffs researchst0_ where (lower(researchst0_.first_name) like ? or lower(researchst0_.last_name) like ?) and (lower(researchst0_.first_name) like ? or lower(researchst0_.last_name) like ?)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
