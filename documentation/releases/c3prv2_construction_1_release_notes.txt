@@ -65,8 +65,12 @@ C3PRv2 has completed 1 iterations in the construction phase
     arm, registration status can be viewed.
 
 2.3 Associating Study Investigator to study.
+    A Study can have multiple sites associated with it. Each site can have one or more investigators associated. This use case deals with associating such investigators, along with the association information per each site. Study investigators are primarily involved with recruiting/selecting patients to go on trial.  
 
 2.4 Associating Study Personnel to study.
+
+A study can have multiple sites associated with it. Each site can have one or more personnel(Research Staff) involved in conducting the study. This use case deals with associating such staff. study coordinator, during the creation of a study definition, will be able to select one or many of the study personnel for the study.
+
 
 
 
