@@ -1,0 +1,129 @@
+
+
+              C3PRv2 Construction Phase Iteration 2
+                  Release Notes
+
+National Cancer Institute Center for Bioinformatics
+
+================================================================
+                            Contents
+================================================================
+
+    1.0         Introduction
+        1.1     Description
+        1.2     History
+    2.0         New Features for this release
+    3.0         Known Issues
+    4.0         Bug fixes since last release
+    5.0         Bug Reports and Support
+    6.0         Documentation
+    7.0         NCICB Web Pages
+
+================================================================
+               Introduction
+================================================================
+
+This document contains the release notes for the C3PRv2 Construction
+ Phase Iteration 2 release.
+This is an iteration release that implements new use cases,
+fixes some minor issues also has feature enhancement to existing
+Use Cases
+
+
+----------------------------------------------------------------
+                1.1 Description
+----------------------------------------------------------------
+
+For information, refer to:
+http://gforge.nci.nih.gov/projects/c3prv2/
+
+Wiki:
+http://gforge.nci.nih.gov/plugins/wiki/index.php?id=214&type=g
+
+----------------------------------------------------------------
+                1.2 History
+----------------------------------------------------------------
+
+C3PRv2 has completed 3 iterations in the elaborations phase
+C3PRv2 has completed 2 iterations in the construction phase
+
+
+
+================================================================
+                2.0 New Features for this Release
+================================================================
+
+2.1 Local Authentication and Authorization
+    Security for C3PRV2 is implemented using caCORE CSM
+    A basic authorization schema is also implemented in this
+    iteration. For more information refer the C3PRV2 design
+    document (See section 6).
+
+2.2 GUI Installer
+    A graphical installer has been added to help users install
+    c3prv2. The installer will be available through the gforge
+    website (See section 1.1) or can be built from from
+    the source code.
+
+
+
+
+
+
+
+
+
+================================================================
+                3.0 Known Issues
+================================================================
+
+
+
+----------------------------------------------------------------
+		3.1 C3PR Recommended JDK Version:
+----------------------------------------------------------------
+
+It is recommended to use Java 5.0 update 9 or later. For more
+information, visit Sun's website
+
+http://java.sun.com/javase/downloads/index_jdk5.jsp
+
+
+================================================================
+                4.0 Bug fixes
+================================================================
+Please refer the Gforge Bug Tracker for bug fixes
+
+http://gforge.nci.nih.gov/tracker/index.php?group_id=214&atid=995
+
+
+================================================================
+                5.0 Bug Reports and Support
+================================================================
+
+Send email to c3prv2-support@gforge.nci.nih.gov  to request support
+or report a bug.
+
+
+================================================================
+                6.0 Documentation
+================================================================
+
+To download the c3PR Technical Architecture/Specification, refer
+
+http://gforge.nci.nih.gov/plugins/scmcvs/cvsweb.php/c3prv2
+/documentation/design/?cvsroot=c3prv2
+
+To download the C3PRv2 Installation guide, refer
+http://gforge.nci.nih.gov/plugins/scmcvs/cvsweb.php/c3prv2/
+documentation/installation/C3PRv2%20Installation%20Guide.doc?
+cvsroot=c3prv2
+
+================================================================
+                    7.0 NCICB Web Pages
+================================================================
+
+For information, refer to C3PRv2 homepage on GForge:
+
+https://gforge.nci.nih.gov/projects/c3prv2/
+
