@@ -97,20 +97,23 @@ C3PRv2 has completed 2 iterations in the construction phase
 	2.5.2 Create Research Staff
 		Implemented create Research Staff from the administration tab.
 
-	
-
-
-		
-	
-
+2.6 Create Study
+   2.6.1 Study Diseases - Added a Tab for adding study disease terms
+   2.6.2 Stratifications - Added a Tab for adding Strata Factors and Permissible Answers
+   
+2.7 UI Refactoring.
+    UI has been refactored throughout with consistent css, added several javascript validations.
+    Ajax Search for Registration has been incorporated and also several nifty look n feel features
+    for registration workflow
+    	
 
 
 
 ================================================================
                 3.0 Known Issues
 ================================================================
-
-
+1. Study Diseases, when user adds a Disease and "All" again, there is
+an error in saving the Study. This is a bug and will be fixed.
 
 ----------------------------------------------------------------
 		3.1 C3PR Recommended JDK Version:
@@ -125,7 +128,10 @@ http://java.sun.com/javase/downloads/index_jdk5.jsp
 ================================================================
                 4.0 Bug fixes
 ================================================================
-Please refer the Gforge Bug Tracker for bug fixes
+Several Bugs have been fixed for this release, most notably are UI level
+validations. For a complete list of fixed, open bugs,
+
+Please refer the Gforge Bug Tracker
 
 http://gforge.nci.nih.gov/tracker/index.php?group_id=214&atid=995
 
