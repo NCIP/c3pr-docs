@@ -67,16 +67,42 @@ C3PRv2 has completed 2 iterations in the construction phase
 
 2.3 Registration Workflow
 	2.3.1  Eligibility Check
-		  Eligibility checklist is implement. The list presented
+		  Eligibility checklist is implemented. The list presented
 		  while registration is the same list provided at the
 		  study creatiin time.
 	2.3.2  Stratification
-		  Stratification is implement and now a user can choose a
+		  Stratification is implemented and now a user can choose a
 		  startification answer
 	2.3.3  Multi-Site Study
 		  Users can not only select a study to register the participant
 		  but can also select the site at which they want the participant
 		  to be registered. This is a common case for multi-site study.
+2.4 Search Registration
+	2.4.1 Search By Subject
+		User friendly search functionality using Autocompleter/Ajax is implemented
+		to first search for a subject based on the subject's (a) LastName & (b) Identifier.
+		The registrations for the selected subject can then be searched.
+	2.4.2 Search By Study
+		User friendly search functionality using Autocompleter/Ajax is implemented
+		to first search for a study based on the study's (a) Identifier (b) ShortTitleText
+	      (c) LontTitleText & (d) Status. Registrations on the selected study can then be searched.
+	2.4.2 Search By Registration Identifier
+		User friendly search functionality using Autocompleter/Ajax is implemented
+		to first search for a registration identifier. Registrations which have the selected 
+		identifier can then be searched.
+2.5 Administration Tab
+	2.5.1 Create Investigator
+		Implemented create Investigators from the administration tab. The Investigators can be 
+		associated with Healthcare sites.
+	2.5.2 Create Research Staff
+		Implemented create Research Staff from the administration tab.
+
+	
+
+
+		
+	
+
 
 
 
