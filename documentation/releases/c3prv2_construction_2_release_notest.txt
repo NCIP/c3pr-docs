@@ -65,11 +65,18 @@ C3PRv2 has completed 2 iterations in the construction phase
     website (See section 1.1) or can be built from from
     the source code.
 
-
-
-
-
-
+2.3 Registration Workflow
+	2.3.1  Eligibility Check
+		  Eligibility checklist is implement. The list presented
+		  while registration is the same list provided at the
+		  study creatiin time.
+	2.3.2  Stratification
+		  Stratification is implement and now a user can choose a
+		  startification answer
+	2.3.3  Multi-Site Study
+		  Users can not only select a study to register the participant
+		  but can also select the site at which they want the participant
+		  to be registered. This is a common case for multi-site study.
 
 
 
