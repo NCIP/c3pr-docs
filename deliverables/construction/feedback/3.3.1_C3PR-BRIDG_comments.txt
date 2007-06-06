@@ -1,0 +1,1 @@
+It’s good that no new constructs have been found yet to differ from C3PR but it raises some concern that none have been found.  The Eligibility Criterion object needs a home (not clear where it comes from).

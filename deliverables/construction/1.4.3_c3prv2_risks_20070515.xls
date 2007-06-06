@@ -1,0 +1,508 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<link rel=File-List href="c3prv2_risks_20070515_files/filelist.xml">
+<link rel=Edit-Time-Data href="c3prv2_risks_20070515_files/editdata.mso">
+<link rel=OLE-Object-Data href="c3prv2_risks_20070515_files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:LastAuthor> </o:LastAuthor>
+  <o:LastSaved>2007-06-06T18:15:50Z</o:LastSaved>
+  <o:Version>11.8122</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	border:.5pt solid black;
+	white-space:normal;}
+.xl25
+	{mso-style-parent:style0;
+	mso-number-format:"General Date";
+	border:.5pt solid black;
+	white-space:normal;}
+.xl26
+	{mso-style-parent:style0;
+	mso-number-format:"Short Date";
+	border:.5pt solid black;
+	white-space:normal;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>c3prv2_risks_20070515</x:Name>
+    <x:WorksheetOptions>
+     <x:Selected/>
+     <x:DoNotDisplayGridlines/>
+     <x:TopRowVisible>6</x:TopRowVisible>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>11</x:ActiveRow>
+       <x:RangeSelection>$11:$12</x:RangeSelection>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>12525</x:WindowHeight>
+  <x:WindowWidth>19995</x:WindowWidth>
+  <x:WindowTopX>480</x:WindowTopX>
+  <x:WindowTopY>90</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link=blue vlink=purple>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=2410 style='border-collapse:
+ collapse;table-layout:fixed;width:1810pt'>
+ <col width=49 style='mso-width-source:userset;mso-width-alt:1792;width:37pt'>
+ <col width=256 style='mso-width-source:userset;mso-width-alt:9362;width:192pt'>
+ <col width=139 style='mso-width-source:userset;mso-width-alt:5083;width:104pt'>
+ <col width=256 span=2 style='mso-width-source:userset;mso-width-alt:9362;
+ width:192pt'>
+ <col width=96 style='mso-width-source:userset;mso-width-alt:3510;width:72pt'>
+ <col width=173 style='mso-width-source:userset;mso-width-alt:6326;width:130pt'>
+ <col width=256 style='mso-width-source:userset;mso-width-alt:9362;width:192pt'>
+ <col width=97 style='mso-width-source:userset;mso-width-alt:3547;width:73pt'>
+ <col width=74 style='mso-width-source:userset;mso-width-alt:2706;width:56pt'>
+ <col width=101 style='mso-width-source:userset;mso-width-alt:3693;width:76pt'>
+ <col width=89 style='mso-width-source:userset;mso-width-alt:3254;width:67pt'>
+ <col width=64 style='width:48pt'>
+ <col width=100 style='mso-width-source:userset;mso-width-alt:3657;width:75pt'>
+ <col width=70 style='mso-width-source:userset;mso-width-alt:2560;width:53pt'>
+ <col width=256 style='mso-width-source:userset;mso-width-alt:9362;width:192pt'>
+ <col width=78 style='mso-width-source:userset;mso-width-alt:2852;width:59pt'>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 width=49 style='height:12.75pt;width:37pt'>Risk ID</td>
+  <td class=xl24 width=256 style='border-left:none;width:192pt'>Project/Task
+  Order Name</td>
+  <td class=xl24 width=139 style='border-left:none;width:104pt'>Type</td>
+  <td class=xl24 width=256 style='border-left:none;width:192pt'>Risk</td>
+  <td class=xl24 width=256 style='border-left:none;width:192pt'>Likelihood</td>
+  <td class=xl24 width=96 style='border-left:none;width:72pt'>Impact</td>
+  <td class=xl24 width=173 style='border-left:none;width:130pt'>Status</td>
+  <td class=xl24 width=256 style='border-left:none;width:192pt'>Mitigation Plan</td>
+  <td class=xl24 width=97 style='border-left:none;width:73pt'>Estimated LOE</td>
+  <td class=xl24 width=74 style='border-left:none;width:56pt'>Actual LOE</td>
+  <td class=xl24 width=101 style='border-left:none;width:76pt'>Date Logged</td>
+  <td class=xl24 width=89 style='border-left:none;width:67pt'>Date Identified</td>
+  <td class=xl24 width=64 style='border-left:none;width:48pt'>End Date</td>
+  <td class=xl24 width=100 style='border-left:none;width:75pt'>Resolution Date</td>
+  <td class=xl24 width=70 style='border-left:none;width:53pt'>Comments</td>
+  <td class=xl24 width=256 style='border-left:none;width:192pt'>Contingency
+  Plan</td>
+  <td class=xl24 width=78 style='border-left:none;width:59pt'>Risk Source</td>
+ </tr>
+ <tr height=85 style='height:63.75pt'>
+  <td height=85 class=xl24 align=right width=49 style='height:63.75pt;
+  border-top:none;width:37pt' x:num>667</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>C3PR
+  Release 2.0 Construction &amp; Transition Phase - [Task Order Part 2 of 2 for
+  a single Subcontract]</td>
+  <td class=xl24 width=139 style='border-top:none;border-left:none;width:104pt'>Technical</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>caBIG
+  lacks a module for creating and managing a study definition. If studies are
+  not kept synchronized between multi-site C3PRs, then functionality may not
+  work properly.</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>5
+  = 100% (risk as occurred)</td>
+  <td class=xl24 width=96 style='border-top:none;border-left:none;width:72pt'>(M)
+  Moderate</td>
+  <td class=xl24 width=173 style='border-top:none;border-left:none;width:130pt'>(R-MIT)
+  Resolved - Mitigated</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>Raise
+  the issue to BAH. Determine whether there needs to be any extra functionality
+  built into C3PR to handle this.</td>
+  <td class=xl24 align=right width=97 style='border-top:none;border-left:none;
+  width:73pt' x:num>8</td>
+  <td class=xl24 width=74 style='border-top:none;border-left:none;width:56pt'>&nbsp;</td>
+  <td class=xl25 align=right width=101 style='border-top:none;border-left:none;
+  width:76pt' x:num="39155.559467592589">3/14/2007 13:25</td>
+  <td class=xl26 align=right width=89 style='border-top:none;border-left:none;
+  width:67pt' x:num="39155">3/14/2007</td>
+  <td class=xl24 width=64 style='border-top:none;border-left:none;width:48pt'>&nbsp;</td>
+  <td class=xl24 width=100 style='border-top:none;border-left:none;width:75pt'>&nbsp;</td>
+  <td class=xl24 width=70 style='border-top:none;border-left:none;width:53pt'>Closed</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>&nbsp;</td>
+  <td class=xl24 width=78 style='border-top:none;border-left:none;width:59pt'>External</td>
+ </tr>
+ <tr height=102 style='height:76.5pt'>
+  <td height=102 class=xl24 align=right width=49 style='height:76.5pt;
+  border-top:none;width:37pt' x:num>675</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>C3PR
+  Release 2.0 Construction &amp; Transition Phase - [Task Order Part 2 of 2 for
+  a single Subcontract]</td>
+  <td class=xl24 width=139 style='border-top:none;border-left:none;width:104pt'>Technical</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>There
+  may be IRB issues associated with data sharing using the caGrid
+  infrastructure between sites cooperating on a clinical study protocol.</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>1
+  = approximately 25% (possible but not likely that Risk will occur in next 30
+  days)</td>
+  <td class=xl24 width=96 style='border-top:none;border-left:none;width:72pt'>(O)
+  Operational</td>
+  <td class=xl24 width=173 style='border-top:none;border-left:none;width:130pt'>(R-MIT)
+  Resolved - Mitigated</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>The
+  lead elaborators will investigate independently with their local IRBs. The
+  caTRIP IRB application will be used as a model to infer this. Appropriate
+  changes in the project plan and development will be implemented depending on
+  the results.</td>
+  <td class=xl24 align=right width=97 style='border-top:none;border-left:none;
+  width:73pt' x:num>12</td>
+  <td class=xl24 width=74 style='border-top:none;border-left:none;width:56pt'>&nbsp;</td>
+  <td class=xl25 align=right width=101 style='border-top:none;border-left:none;
+  width:76pt' x:num="39174.703877314816">4/2/2007 16:53</td>
+  <td class=xl26 align=right width=89 style='border-top:none;border-left:none;
+  width:67pt' x:num="39037">11/16/2006</td>
+  <td class=xl24 width=64 style='border-top:none;border-left:none;width:48pt'>&nbsp;</td>
+  <td class=xl24 width=100 style='border-top:none;border-left:none;width:75pt'>&nbsp;</td>
+  <td class=xl24 width=70 style='border-top:none;border-left:none;width:53pt'>Closed</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>The
+  issue will be raised to BAH and NCI as a risk to the overall approach of
+  caBIG. Appropriate workarounds for C3PR will be determined (potentially using
+  more traditional technologies such as web services).</td>
+  <td class=xl24 width=78 style='border-top:none;border-left:none;width:59pt'>Internal</td>
+ </tr>
+ <tr height=102 style='height:76.5pt'>
+  <td height=102 class=xl24 align=right width=49 style='height:76.5pt;
+  border-top:none;width:37pt' x:num>676</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>C3PR
+  Release 2.0 Construction &amp; Transition Phase - [Task Order Part 2 of 2 for
+  a single Subcontract]</td>
+  <td class=xl24 width=139 style='border-top:none;border-left:none;width:104pt'>Resource</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>All
+  year three task elements must be delivered and invoiced for by the end of the
+  caBIG year (March 1). If all the C3PR deliverables are not complete,
+  delivered, approved, and invoiced during this period, then funds for those
+  items are lost.</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>1
+  = approximately 25% (possible but not likely that Risk will occur in next 30
+  days)</td>
+  <td class=xl24 width=96 style='border-top:none;border-left:none;width:72pt'>(P)
+  Profound</td>
+  <td class=xl24 width=173 style='border-top:none;border-left:none;width:130pt'>(R-MIT)
+  Resolved - Mitigated</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>The
+  Lead Architect will monitor the completion and delivery of all year three
+  deliverables. The Project Manager will monitor approval and invoicing of
+  these deliverables.</td>
+  <td class=xl24 align=right width=97 style='border-top:none;border-left:none;
+  width:73pt' x:num>8</td>
+  <td class=xl24 width=74 style='border-top:none;border-left:none;width:56pt'>&nbsp;</td>
+  <td class=xl25 align=right width=101 style='border-top:none;border-left:none;
+  width:76pt' x:num="39174.704675925925">4/2/2007 16:54</td>
+  <td class=xl26 align=right width=89 style='border-top:none;border-left:none;
+  width:67pt' x:num="39133">2/20/2007</td>
+  <td class=xl24 width=64 style='border-top:none;border-left:none;width:48pt'>&nbsp;</td>
+  <td class=xl24 width=100 style='border-top:none;border-left:none;width:75pt'>&nbsp;</td>
+  <td class=xl24 width=70 style='border-top:none;border-left:none;width:53pt'>Closed</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>If
+  the risk occurs and is not mitigated, the issue will be raised to caBIG
+  management for potential mitigation.</td>
+  <td class=xl24 width=78 style='border-top:none;border-left:none;width:59pt'>External</td>
+ </tr>
+ <tr height=102 style='height:76.5pt'>
+  <td height=102 class=xl24 align=right width=49 style='height:76.5pt;
+  border-top:none;width:37pt' x:num>677</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>C3PR
+  Release 2.0 Construction &amp; Transition Phase - [Task Order Part 2 of 2 for
+  a single Subcontract]</td>
+  <td class=xl24 width=139 style='border-top:none;border-left:none;width:104pt'>Technical</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>The
+  CTMSi project has an overlapping schedule with C3PR. It is possible that
+  scheduled demonstrations and deliverables will conflict with or cause a delay
+  in the C3PR project plan.</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>3
+  = approximately 75% (a good or better than average chance risk will occur in
+  next 30 days)</td>
+  <td class=xl24 width=96 style='border-top:none;border-left:none;width:72pt'>(O)
+  Operational</td>
+  <td class=xl24 width=173 style='border-top:none;border-left:none;width:130pt'>(R-MIT)
+  Resolved - Mitigated</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>The
+  C3PR lead architect will work with the CTMSi project manager to determine the
+  best course of action. It will be suggested that CTMSi adopt a monthly
+  iteration schedule that overlaps well with the schedule of C3PR.</td>
+  <td class=xl24 align=right width=97 style='border-top:none;border-left:none;
+  width:73pt' x:num>4</td>
+  <td class=xl24 width=74 style='border-top:none;border-left:none;width:56pt'>&nbsp;</td>
+  <td class=xl25 align=right width=101 style='border-top:none;border-left:none;
+  width:76pt' x:num="39174.705324074072">4/2/2007 16:55</td>
+  <td class=xl26 align=right width=89 style='border-top:none;border-left:none;
+  width:67pt' x:num="39139">2/26/2007</td>
+  <td class=xl24 width=64 style='border-top:none;border-left:none;width:48pt'>&nbsp;</td>
+  <td class=xl24 width=100 style='border-top:none;border-left:none;width:75pt'>&nbsp;</td>
+  <td class=xl24 width=70 style='border-top:none;border-left:none;width:53pt'>Closed</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>The
+  issue will be raised to BAH. Resources for each project may have to be
+  divided more distinctly.</td>
+  <td class=xl24 width=78 style='border-top:none;border-left:none;width:59pt'>External</td>
+ </tr>
+ <tr height=68 style='height:51.0pt'>
+  <td height=68 class=xl24 align=right width=49 style='height:51.0pt;
+  border-top:none;width:37pt' x:num>678</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>C3PR
+  Release 2.0 Construction &amp; Transition Phase - [Task Order Part 2 of 2 for
+  a single Subcontract]</td>
+  <td class=xl24 width=139 style='border-top:none;border-left:none;width:104pt'>Technical</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>C3PR
+  release 1 has a hackish SSO model with C3D. This may not play well with the
+  CTMSi SSO model.</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>4
+  = approximately &gt;75% but<100% (risk will almost certainly occur within next 30 days unless immediate mitigated steps are taken)></td>
+  <td class=xl24 width=96 style='border-top:none;border-left:none;width:72pt'>(M)
+  Moderate</td>
+  <td class=xl24 width=173 style='border-top:none;border-left:none;width:130pt'>(PND)
+  Pending</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>The
+  lead developer will investigate this and the feasability of moving to the
+  caGrid SSO. If that is not possible, then this will effect CTMSi more than
+  C3PR.</td>
+  <td class=xl24 align=right width=97 style='border-top:none;border-left:none;
+  width:73pt' x:num>8</td>
+  <td class=xl24 width=74 style='border-top:none;border-left:none;width:56pt'>&nbsp;</td>
+  <td class=xl25 align=right width=101 style='border-top:none;border-left:none;
+  width:76pt' x:num="39174.707916666666">4/2/2007 16:59</td>
+  <td class=xl26 align=right width=89 style='border-top:none;border-left:none;
+  width:67pt' x:num="39174">4/2/2007</td>
+  <td class=xl24 width=64 style='border-top:none;border-left:none;width:48pt'>&nbsp;</td>
+  <td class=xl24 width=100 style='border-top:none;border-left:none;width:75pt'>&nbsp;</td>
+  <td class=xl24 width=70 style='border-top:none;border-left:none;width:53pt'>Open</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>&nbsp;</td>
+  <td class=xl24 width=78 style='border-top:none;border-left:none;width:59pt'>External</td>
+ </tr>
+ <tr height=85 style='height:63.75pt'>
+  <td height=85 class=xl24 align=right width=49 style='height:63.75pt;
+  border-top:none;width:37pt' x:num>679</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>C3PR
+  Release 2.0 Construction &amp; Transition Phase - [Task Order Part 2 of 2 for
+  a single Subcontract]</td>
+  <td class=xl24 width=139 style='border-top:none;border-left:none;width:104pt'>Resource</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>There
+  are no funds in the C3PR budget for travel to the CTMS WS F2F. If funds are
+  not secured, we may have limited representation from the C3PR team.</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>5
+  = 100% (risk as occurred)</td>
+  <td class=xl24 width=96 style='border-top:none;border-left:none;width:72pt'>(M)
+  Moderate</td>
+  <td class=xl24 width=173 style='border-top:none;border-left:none;width:130pt'>(R-MIT)
+  Resolved - Mitigated</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>Bob
+  will work with Julie and the NCI CCB to determine if funds can be secured.
+  Otherwise, residual C3PR travel funds may be used. Patrick will budget travel
+  funds for CTMSi.</td>
+  <td class=xl24 align=right width=97 style='border-top:none;border-left:none;
+  width:73pt' x:num>4</td>
+  <td class=xl24 width=74 style='border-top:none;border-left:none;width:56pt'>&nbsp;</td>
+  <td class=xl25 align=right width=101 style='border-top:none;border-left:none;
+  width:76pt' x:num="39174.710011574076">4/2/2007 17:02</td>
+  <td class=xl26 align=right width=89 style='border-top:none;border-left:none;
+  width:67pt' x:num="39174">4/2/2007</td>
+  <td class=xl24 width=64 style='border-top:none;border-left:none;width:48pt'>&nbsp;</td>
+  <td class=xl24 width=100 style='border-top:none;border-left:none;width:75pt'>&nbsp;</td>
+  <td class=xl24 width=70 style='border-top:none;border-left:none;width:53pt'>Closed</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>&nbsp;</td>
+  <td class=xl24 width=78 style='border-top:none;border-left:none;width:59pt'>External</td>
+ </tr>
+ <tr height=68 style='height:51.0pt'>
+  <td height=68 class=xl24 align=right width=49 style='height:51.0pt;
+  border-top:none;width:37pt' x:num>680</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>C3PR
+  Release 2.0 Construction &amp; Transition Phase - [Task Order Part 2 of 2 for
+  a single Subcontract]</td>
+  <td class=xl24 width=139 style='border-top:none;border-left:none;width:104pt'>Resource</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>If
+  BAH/NCI does not review deliverables in a timely fashion, then suggested
+  changes will not be made in an iterative fashion with development iterations.</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>5
+  = 100% (risk as occurred)</td>
+  <td class=xl24 width=96 style='border-top:none;border-left:none;width:72pt'>(M)
+  Moderate</td>
+  <td class=xl24 width=173 style='border-top:none;border-left:none;width:130pt'>(R-MIT)
+  Resolved - Mitigated</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>This
+  risk will be rasied to BAH.</td>
+  <td class=xl24 align=right width=97 style='border-top:none;border-left:none;
+  width:73pt' x:num>1</td>
+  <td class=xl24 width=74 style='border-top:none;border-left:none;width:56pt'>&nbsp;</td>
+  <td class=xl25 align=right width=101 style='border-top:none;border-left:none;
+  width:76pt' x:num="39206.381215277775">5/4/2007 9:08</td>
+  <td class=xl26 align=right width=89 style='border-top:none;border-left:none;
+  width:67pt' x:num="39206">5/4/2007</td>
+  <td class=xl26 align=right width=64 style='border-top:none;border-left:none;
+  width:48pt' x:num="39223">5/21/2007</td>
+  <td class=xl24 width=100 style='border-top:none;border-left:none;width:75pt'>&nbsp;</td>
+  <td class=xl24 width=70 style='border-top:none;border-left:none;width:53pt'>Closed</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>&nbsp;</td>
+  <td class=xl24 width=78 style='border-top:none;border-left:none;width:59pt'>External</td>
+ </tr>
+ <tr height=136 style='height:102.0pt'>
+  <td height=136 class=xl24 align=right width=49 style='height:102.0pt;
+  border-top:none;width:37pt' x:num>681</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>C3PR
+  Release 2.0 Construction &amp; Transition Phase - [Task Order Part 2 of 2 for
+  a single Subcontract]</td>
+  <td class=xl24 width=139 style='border-top:none;border-left:none;width:104pt'>Social/political/cultural</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>caGrid
+  security is still not fully accepted by the cancer community, especially when
+  it is securing PHI. The C3PR security infrastructure is based upong the
+  caGrid infrastructure. If IRBs do not accept the caGrid security
+  infrastructure, then cancer centers may be unwilling or unable to adopt C3PR.</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>1
+  = approximately 25% (possible but not likely that Risk will occur in next 30
+  days)</td>
+  <td class=xl24 width=96 style='border-top:none;border-left:none;width:72pt'>(M)
+  Moderate</td>
+  <td class=xl24 width=173 style='border-top:none;border-left:none;width:130pt'>(PND)
+  Pending</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>Patrick
+  will bring this issue to DSIC for mitigation by the caBIG program as a whole.</td>
+  <td class=xl24 align=right width=97 style='border-top:none;border-left:none;
+  width:73pt' x:num>4</td>
+  <td class=xl24 width=74 style='border-top:none;border-left:none;width:56pt'>&nbsp;</td>
+  <td class=xl25 align=right width=101 style='border-top:none;border-left:none;
+  width:76pt' x:num="39209.689803240741">5/7/2007 16:33</td>
+  <td class=xl26 align=right width=89 style='border-top:none;border-left:none;
+  width:67pt' x:num="39211">5/9/2007</td>
+  <td class=xl24 width=64 style='border-top:none;border-left:none;width:48pt'>&nbsp;</td>
+  <td class=xl24 width=100 style='border-top:none;border-left:none;width:75pt'>&nbsp;</td>
+  <td class=xl24 width=70 style='border-top:none;border-left:none;width:53pt'>Open</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>Multi-site
+  interoperability will be disabled, and straight CSM will be enabled.</td>
+  <td class=xl24 width=78 style='border-top:none;border-left:none;width:59pt'>External</td>
+ </tr>
+ <tr height=187 style='height:140.25pt'>
+  <td height=187 class=xl24 align=right width=49 style='height:140.25pt;
+  border-top:none;width:37pt' x:num>682</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>C3PR
+  Release 2.0 Construction &amp; Transition Phase - [Task Order Part 2 of 2 for
+  a single Subcontract]</td>
+  <td class=xl24 width=139 style='border-top:none;border-left:none;width:104pt'>Resource</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>Testing
+  of C3PR installation will be performed in a less regular fashion because it
+  has turned out to be difficult for adopters to perform every iteration. Less
+  testing puts the installer at risk of not be acceptable to end users.</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>5
+  = 100% (risk as occurred)</td>
+  <td class=xl24 width=96 style='border-top:none;border-left:none;width:72pt'>(M)
+  Moderate</td>
+  <td class=xl24 width=173 style='border-top:none;border-left:none;width:130pt'>(R-MIT)
+  Resolved - Mitigated</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>Iterations
+  3 and 4 will be used as Elaboration iterations for the installer. It will be
+  developed and demonstrated to the elaborators. At least 3 out of the 4
+  iterations for iterations 5-8 will be used for testing the installer.
+  Iteration 6 may not involve testing the installer if there are too many
+  show-stoppers. Adopters will be performing functional testing every
+  iteration, which will be a hosted version for the non-deploying iterations.</td>
+  <td class=xl24 align=right width=97 style='border-top:none;border-left:none;
+  width:73pt' x:num>4</td>
+  <td class=xl24 width=74 style='border-top:none;border-left:none;width:56pt'>&nbsp;</td>
+  <td class=xl25 align=right width=101 style='border-top:none;border-left:none;
+  width:76pt' x:num="39209.692986111113">5/7/2007 16:37</td>
+  <td class=xl26 align=right width=89 style='border-top:none;border-left:none;
+  width:67pt' x:num="39211">5/9/2007</td>
+  <td class=xl26 align=right width=64 style='border-top:none;border-left:none;
+  width:48pt' x:num="39211">5/9/2007</td>
+  <td class=xl24 width=100 style='border-top:none;border-left:none;width:75pt'>&nbsp;</td>
+  <td class=xl24 width=70 style='border-top:none;border-left:none;width:53pt'>Close</td>
+  <td class=xl24 width=256 style='border-top:none;border-left:none;width:192pt'>&nbsp;</td>
+  <td class=xl24 width=78 style='border-top:none;border-left:none;width:59pt'>Internal</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=49 style='width:37pt'></td>
+  <td width=256 style='width:192pt'></td>
+  <td width=139 style='width:104pt'></td>
+  <td width=256 style='width:192pt'></td>
+  <td width=256 style='width:192pt'></td>
+  <td width=96 style='width:72pt'></td>
+  <td width=173 style='width:130pt'></td>
+  <td width=256 style='width:192pt'></td>
+  <td width=97 style='width:73pt'></td>
+  <td width=74 style='width:56pt'></td>
+  <td width=101 style='width:76pt'></td>
+  <td width=89 style='width:67pt'></td>
+  <td width=64 style='width:48pt'></td>
+  <td width=100 style='width:75pt'></td>
+  <td width=70 style='width:53pt'></td>
+  <td width=256 style='width:192pt'></td>
+  <td width=78 style='width:59pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
