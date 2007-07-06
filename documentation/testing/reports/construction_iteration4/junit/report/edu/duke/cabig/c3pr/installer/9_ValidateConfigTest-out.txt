@@ -1,0 +1,37 @@
+Checking installer: C3PRV2 Installer
+Checking page: intro
+Checking page: License
+Checking page: DeployDir
+Checking page: installTomcat
+Checking page: selectTomcatInstallDir
+Checking page: selectExistingTomcat
+Repeated property name:tomcat.home
+Loading defaults from file will probably not work:tomcat.home
+Checking page: selectLogFilename
+Checking page: selectComponents
+Checking page: configureCSM
+Checking page: selectAuthorizationSwitch
+Checking page: selectDatabase
+Checking page: createDatabaseChoice
+Checking page: oracleProperties
+Checking page: postgresProperties
+Repeated property name:datasource.url
+Loading defaults from file will probably not work:datasource.url
+Repeated property name:datasource.username
+Loading defaults from file will probably not work:datasource.username
+Repeated property name:datasource.password
+Loading defaults from file will probably not work:datasource.password
+Repeated property name:datasource.driver
+Loading defaults from file will probably not work:datasource.driver
+Repeated property name:datasource.dialect
+Loading defaults from file will probably not work:datasource.dialect
+Checking page: hotlinks
+Checking page: ESB
+Checking page: null
+Checking page: Grid
+Checking page: progress
+Finished checking config inputs
+Found target input type
+ifTarget=deploy-webapp
+ifTarget will never test true, no prior target in page:selectLogFilename
+Finished checking config
