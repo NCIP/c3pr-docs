@@ -71,8 +71,13 @@ This lets users search for Patient registrations based on multiple
 search criteria.
 
 	2.1.5 Create Organization flow has been added under the Administration
-tab. This lets the user add a new organization with its details.
+		tab. This lets the user add a new organization with its details.
 
+
+	
+	3.1.1 The Study design has been enhanced in this release to accommodate for treatment and nontreatment epochs.
+		Now arms, stratification factors, eligibility criteria can be added to each treatment epoch of the Study.
+	3.1.2 Nontreatment epoch is added for capturing screening and follow-up epochs.
 
 
 
