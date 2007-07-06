@@ -70,6 +70,9 @@ with what the user is trying to achieve with the web application.
 This lets users search for Patient registrations based on multiple
 search criteria.
 
+	2.1.5 Create Organization flow has been added under the Administration
+tab. This lets the user add a new organization with its details.
+
 
 
 
@@ -78,6 +81,9 @@ search criteria.
 ================================================================
 1. Calendar popup does not work as expected when adding new Study Sites
 during the Create/Edit Study workflow
+
+2. The Filter and Export as Excel buttons on Advanced Search page 
+do not function as expected.
 
 
 ----------------------------------------------------------------
