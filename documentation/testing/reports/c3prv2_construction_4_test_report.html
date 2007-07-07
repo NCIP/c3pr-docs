@@ -1,0 +1,2146 @@
+<html><head><title>JUnitHtmlReport</title><head>
+     <style type='text/css'>
+
+    body { background-color:white; }
+
+    p,td,div,span                      {font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: black; text-decoration: none;}
+
+    p.title                   { font-size: 14pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: black; text-decoration: none;}
+    p.header,div.header       { font-size: 14pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: black; text-decoration: none;}
+    td.nav                    { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: black; text-decoration: none;}
+
+    
+      a:link                         { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: #000080; text-decoration: underline;}
+      a:link:hover                   { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+      a:link:active                  { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: #800000; text-decoration: underline;}
+      a:link:visited                 { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: #800080; text-decoration: underline;}
+      a:link:visited:hover           { font-size: 10pt; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+    
+    
+
+    
+      a.nav:link                     { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #000080; text-decoration: none;}
+      a.nav:link:hover               { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+      a.nav:link:active              { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #800000; text-decoration: none;}
+      a.nav:link:visited             { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #000080; text-decoration: none;}
+      a.nav:link:visited:hover       { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+    
+    
+
+    td.navActive              { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: none;}
+
+    
+      a.navActive:link          { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: none;}
+      a.navActive:link:hover         { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+      a.navActive:link:active        { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #800000; text-decoration: none;}
+      a.navActive:link:visited       { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: none;}
+      a.navActive:link:visited:hover { font-size: 10pt; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif; color: #008000; text-decoration: underline;}
+    
+    
+
+
+   </style>
+
+<body>
+<p><center><h1>JUnitHtmlReport</h1></center></p>
+<p><h2>Summary</h2>
+<table border="1">
+<tr><td valign="top"><b>Test Suite</b></td><td valign="top"><b>Tests</b></td><td valign="top"><b>Failures</b></td><td valign="top"><b>Errors</b></td><td valign="top"><b>Time (sec)</b></td></tr>
+<tr>
+<td valign="top"><b>1. <a href="#1">unit tests</b></a></td>
+<td valign="top">7</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">1</td>
+</tr>
+<tr>
+<td valign="top">1.1. <a href="#1.1">edu.duke.cabig.c3pr.utils.web.ContextRetainingFilterAdapterTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.569</td>
+</tr>
+<tr>
+<td valign="top">1.2. <a href="#1.2">edu.duke.cabig.c3pr.utils.web.GridProxyUtilsTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">1.024</td>
+</tr>
+<tr>
+<td valign="top">1.3. <a href="#1.3">edu.duke.cabig.c3pr.web.OpenSessionInViewInterceptorFilterTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.808</td>
+</tr>
+<tr>
+<td valign="top"><b>2. <a href="#2">miscellaneous tests</b></a></td>
+<td valign="top">137</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">63</td>
+</tr>
+<tr>
+<td valign="top">2.1. <a href="#2.1">edu.duke.cabig.c3pr.dao.ArmDaoTest</a></td>
+<td valign="top">2</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">5.061</td>
+</tr>
+<tr>
+<td valign="top">2.2. <a href="#2.2">edu.duke.cabig.c3pr.dao.EpochDaoTest</a></td>
+<td valign="top">9</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">1.836</td>
+</tr>
+<tr>
+<td valign="top">2.3. <a href="#2.3">edu.duke.cabig.c3pr.dao.HealthcareSiteInvestigatorDaoTest</a></td>
+<td valign="top">4</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.944</td>
+</tr>
+<tr>
+<td valign="top">2.4. <a href="#2.4">edu.duke.cabig.c3pr.dao.InvestigatorDaoTest</a></td>
+<td valign="top">2</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">3.742</td>
+</tr>
+<tr>
+<td valign="top">2.5. <a href="#2.5">edu.duke.cabig.c3pr.dao.ParticipantDaoTest</a></td>
+<td valign="top">6</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">1.439</td>
+</tr>
+<tr>
+<td valign="top">2.6. <a href="#2.6">edu.duke.cabig.c3pr.dao.ResearchStaffDaoTest</a></td>
+<td valign="top">4</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">3.878</td>
+</tr>
+<tr>
+<td valign="top">2.7. <a href="#2.7">edu.duke.cabig.c3pr.dao.StudyDaoTest</a></td>
+<td valign="top">13</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">4.304</td>
+</tr>
+<tr>
+<td valign="top">2.8. <a href="#2.8">edu.duke.cabig.c3pr.dao.StudySiteDaoTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.401</td>
+</tr>
+<tr>
+<td valign="top">2.9. <a href="#2.9">edu.duke.cabig.c3pr.domain.AbstractDomainObjectTest</a></td>
+<td valign="top">6</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.155</td>
+</tr>
+<tr>
+<td valign="top">2.10. <a href="#2.10">edu.duke.cabig.c3pr.installer.ValidateConfigTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.966</td>
+</tr>
+<tr>
+<td valign="top">2.11. <a href="#2.11">edu.duke.cabig.c3pr.utils.ApplicationContextInitializationTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">3.27</td>
+</tr>
+<tr>
+<td valign="top">2.12. <a href="#2.12">edu.duke.cabig.c3pr.utils.CSMEncrypterTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.504</td>
+</tr>
+<tr>
+<td valign="top">2.13. <a href="#2.13">edu.duke.cabig.c3pr.utils.web.ContextRetainingFilterAdapterTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.569</td>
+</tr>
+<tr>
+<td valign="top">2.14. <a href="#2.14">edu.duke.cabig.c3pr.utils.web.GridProxyUtilsTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">1.024</td>
+</tr>
+<tr>
+<td valign="top">2.15. <a href="#2.15">edu.duke.cabig.c3pr.web.CreateParticipantControllerTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">5.956</td>
+</tr>
+<tr>
+<td valign="top">2.16. <a href="#2.16">edu.duke.cabig.c3pr.web.CreateStudyControllerTest</a></td>
+<td valign="top">2</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.755</td>
+</tr>
+<tr>
+<td valign="top">2.17. <a href="#2.17">edu.duke.cabig.c3pr.web.EditParticipantControllerTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">4.391</td>
+</tr>
+<tr>
+<td valign="top">2.18. <a href="#2.18">edu.duke.cabig.c3pr.web.OpenSessionInViewInterceptorFilterTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.808</td>
+</tr>
+<tr>
+<td valign="top">2.19. <a href="#2.19">edu.duke.cabig.c3pr.xml.RegistrationMarshallingTestCase</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.782</td>
+</tr>
+<tr>
+<td valign="top">2.20. <a href="#2.20">edu.duke.cabig.c3pr.xml.StudyHibernateObjectMarshallingTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">1.243</td>
+</tr>
+<tr>
+<td valign="top">2.21. <a href="#2.21">edu.duke.cabig.c3pr.xml.StudyMarshallingTestCase</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.911</td>
+</tr>
+<tr>
+<td valign="top">2.22. <a href="#2.22">edu.duke.cabig.c3pr.xml.StudyXMLImporterTestCase</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.559</td>
+</tr>
+<tr>
+<td valign="top">2.23. <a href="#2.23">gov.nih.nci.cabig.c3pr.grid.test.C3PRV2RegistrationConsumerTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">1.586</td>
+</tr>
+<tr>
+<td valign="top">2.24. <a href="#2.24">edu.duke.cabig.c3pr.dao.ArmDaoTest</a></td>
+<td valign="top">2</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">5.061</td>
+</tr>
+<tr>
+<td valign="top">2.25. <a href="#2.25">edu.duke.cabig.c3pr.dao.EpochDaoTest</a></td>
+<td valign="top">9</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">1.836</td>
+</tr>
+<tr>
+<td valign="top">2.26. <a href="#2.26">edu.duke.cabig.c3pr.dao.HealthcareSiteInvestigatorDaoTest</a></td>
+<td valign="top">4</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.944</td>
+</tr>
+<tr>
+<td valign="top">2.27. <a href="#2.27">edu.duke.cabig.c3pr.dao.InvestigatorDaoTest</a></td>
+<td valign="top">2</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">3.742</td>
+</tr>
+<tr>
+<td valign="top">2.28. <a href="#2.28">edu.duke.cabig.c3pr.dao.ParticipantDaoTest</a></td>
+<td valign="top">6</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">1.439</td>
+</tr>
+<tr>
+<td valign="top">2.29. <a href="#2.29">edu.duke.cabig.c3pr.dao.ResearchStaffDaoTest</a></td>
+<td valign="top">4</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">3.878</td>
+</tr>
+<tr>
+<td valign="top">2.30. <a href="#2.30">edu.duke.cabig.c3pr.dao.StudyDaoTest</a></td>
+<td valign="top">13</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">4.304</td>
+</tr>
+<tr>
+<td valign="top">2.31. <a href="#2.31">edu.duke.cabig.c3pr.dao.StudySiteDaoTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.401</td>
+</tr>
+<tr>
+<td valign="top">2.32. <a href="#2.32">edu.duke.cabig.c3pr.domain.AbstractDomainObjectTest</a></td>
+<td valign="top">6</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.155</td>
+</tr>
+<tr>
+<td valign="top">2.33. <a href="#2.33">edu.duke.cabig.c3pr.installer.ValidateConfigTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.966</td>
+</tr>
+<tr>
+<td valign="top">2.34. <a href="#2.34">edu.duke.cabig.c3pr.utils.ApplicationContextInitializationTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">3.27</td>
+</tr>
+<tr>
+<td valign="top">2.35. <a href="#2.35">edu.duke.cabig.c3pr.utils.CSMEncrypterTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.504</td>
+</tr>
+<tr>
+<td valign="top">2.36. <a href="#2.36">edu.duke.cabig.c3pr.web.CreateParticipantControllerTest</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">5.956</td>
+</tr>
+<tr>
+<td valign="top">2.37. <a href="#2.37">edu.duke.cabig.c3pr.web.CreateStudyControllerTest</a></td>
+<td valign="top">2</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.755</td>
+</tr>
+<tr>
+<td valign="top">2.38. <a href="#2.38">edu.duke.cabig.c3pr.web.EditParticipantControllerTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">4.391</td>
+</tr>
+<tr>
+<td valign="top">2.39. <a href="#2.39">edu.duke.cabig.c3pr.xml.RegistrationMarshallingTestCase</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.782</td>
+</tr>
+<tr>
+<td valign="top">2.40. <a href="#2.40">edu.duke.cabig.c3pr.xml.StudyHibernateObjectMarshallingTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">1.243</td>
+</tr>
+<tr>
+<td valign="top">2.41. <a href="#2.41">edu.duke.cabig.c3pr.xml.StudyMarshallingTestCase</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.911</td>
+</tr>
+<tr>
+<td valign="top">2.42. <a href="#2.42">edu.duke.cabig.c3pr.xml.StudyXMLImporterTestCase</a></td>
+<td valign="top">3</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">0.559</td>
+</tr>
+<tr>
+<td valign="top">2.43. <a href="#2.43">gov.nih.nci.cabig.c3pr.grid.test.C3PRV2RegistrationConsumerTest</a></td>
+<td valign="top">1</td>
+<td valign="top">0</td>
+<td valign="top">0</td>
+<td valign="top">1.586</td>
+</tr>
+<tr><td valign="top"><b>Total:</b></td><td valign="top">144</td><td valign="top">0</td><td valign="top">0</td><td valign="top">64 (sec)</td></tr>
+</table>
+</p>
+<p><a name="1"><h2>1. unit tests</h2></a></p>
+<p><a name="1.1"><h3>1.1. edu.duke.cabig.c3pr.utils.web.ContextRetainingFilterAdapterTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>This unit test validates teh ContextRetainingFilterAdapter.</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.569</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.1.1"><h4>1.1.1. testServletContextRetained</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.106</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.1.2"><h4>1.1.2. testGetApplicationContext</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.036</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.1.3"><h4>1.1.3. testGetApplicationContextFailsWhenMissing</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0010</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.2"><h3>1.2. edu.duke.cabig.c3pr.utils.web.GridProxyUtilsTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>This unit test validates the GridProxyUtils class by pulling a user name from a grid proxy.</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.024</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.2.1"><h4>1.2.1. testGetUsername</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.656</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.3"><h3>1.3. edu.duke.cabig.c3pr.web.OpenSessionInViewInterceptorFilterTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>This unit test validates the OpenSessionInViewInterceptorFilter</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.808</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.3.1"><h4>1.3.1. testBasicBehavior</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.415</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.3.2"><h4>1.3.2. testExceptionInFilterChainBehavior</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.051</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="1.3.3"><h4>1.3.3. testExceptionInPostHandleBehavior</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.044</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2"><h2>2. miscellaneous tests</h2></a></p>
+<p><a name="2.1"><h3>2.1. edu.duke.cabig.c3pr.dao.ArmDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>2</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>5.061</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.1.1"><h4>2.1.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>4.376</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.1.2"><h4>2.1.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.281</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2"><h3>2.2. edu.duke.cabig.c3pr.dao.EpochDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>9</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.836</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2.1"><h4>2.2.1. testGetByIdForTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.367</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2.2"><h4>2.2.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.313</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2.3"><h4>2.2.3. testGetArmsForTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.155</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2.4"><h4>2.2.4. testGetEligibilityCriteriaForTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.15</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2.5"><h4>2.2.5. testGetInclusionEligibilityCriteriaForTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.151</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2.6"><h4>2.2.6. testGetExclusionEligibilityCriteriaForTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.117</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2.7"><h4>2.2.7. testSaveTreatmentEpochWithEligibilityCriteria</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.297</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2.8"><h4>2.2.8. testSaveTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.126</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.2.9"><h4>2.2.9. testSaveTreatmentEpochWithStratificationCriteria</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.149</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.3"><h3>2.3. edu.duke.cabig.c3pr.dao.HealthcareSiteInvestigatorDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>4</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.944</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.3.1"><h4>2.3.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.352</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.3.2"><h4>2.3.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.313</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.3.3"><h4>2.3.3. testGetBySubnameMatchesShortTitle</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.138</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.3.4"><h4>2.3.4. testGetBySubnameMatchesIntersectionOfSubnames</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.132</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.4"><h3>2.4. edu.duke.cabig.c3pr.dao.InvestigatorDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>2</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.742</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.4.1"><h4>2.4.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.317</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.4.2"><h4>2.4.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.252</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.5"><h3>2.5. edu.duke.cabig.c3pr.dao.ParticipantDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>6</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.439</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.5.1"><h4>2.5.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.412</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.5.2"><h4>2.5.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.313</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.5.3"><h4>2.5.3. testSaveNewParticipantWithAllAssociations</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.238</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.5.4"><h4>2.5.4. testGetStudyParticipantAssignments</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.15</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.5.5"><h4>2.5.5. testSearchParticipantSimple</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.175</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.5.6"><h4>2.5.6. testSearchParticipantSimpleByWildCards</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.144</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.6"><h3>2.6. edu.duke.cabig.c3pr.dao.ResearchStaffDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>4</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.878</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.6.1"><h4>2.6.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.293</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.6.2"><h4>2.6.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.241</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.6.3"><h4>2.6.3. testGetBySubnameMatchesShortTitle</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.094</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.6.4"><h4>2.6.4. testGetBySubnameMatchesIntersectionOfSubnames</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.094</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7"><h3>2.7. edu.duke.cabig.c3pr.dao.StudyDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>13</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>4.304</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.1"><h4>2.7.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.552</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.2"><h4>2.7.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.504</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.3"><h4>2.7.3. testSaveNewStudy</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.311</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.4"><h4>2.7.4. testSaveNewStudyWithAssociations</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.335</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.5"><h4>2.7.5. testHibernateBug</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.299</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.6"><h4>2.7.6. testGetEpochs</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.261</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.7"><h4>2.7.7. testGetStudyParticipantAssignmentsForStudy</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.309</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.8"><h4>2.7.8. testSearchStudySimple</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.295</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.9"><h4>2.7.9. testSaveNewStudyWithTreatmentEpochs</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.312</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.10"><h4>2.7.10. testSaveNewStudyWithNonTreatmentEpochs</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.269</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.11"><h4>2.7.11. testSaveNewStudyWithTreatmentEpochsAndArms</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.291</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.12"><h4>2.7.12. testSearchStudyByWildCards</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.278</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.7.13"><h4>2.7.13. testSaveStudyWithInclusionEligibilityCriteria</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.277</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.8"><h3>2.8. edu.duke.cabig.c3pr.dao.StudySiteDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.401</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.8.1"><h4>2.8.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.392</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.9"><h3>2.9. edu.duke.cabig.c3pr.domain.AbstractDomainObjectTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>6</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.155</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.9.1"><h4>2.9.1. testEqualByIdWithTwoNulls</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0020</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.9.2"><h4>2.9.2. testEqualByIdWithFirstNull</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.9.3"><h4>2.9.3. testEqualByIdWithSecondNull</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.9.4"><h4>2.9.4. testEqualByIdWhenSame</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.9.5"><h4>2.9.5. testEqualByIdWhenEqual</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0010</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.9.6"><h4>2.9.6. testEqualByIdWhenNotEqual</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.10"><h3>2.10. edu.duke.cabig.c3pr.installer.ValidateConfigTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.966</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.10.1"><h4>2.10.1. testConfigFileExists</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0010</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.10.2"><h4>2.10.2. testConfigFileValid</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.358</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.10.3"><h4>2.10.3. testBuildFileValid</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.038</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.11"><h3>2.11. edu.duke.cabig.c3pr.utils.ApplicationContextInitializationTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.27</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.11.1"><h4>2.11.1. testApplicationContextItself</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.109</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.12"><h3>2.12. edu.duke.cabig.c3pr.utils.CSMEncrypterTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.504</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.12.1"><h4>2.12.1. testEncryption</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.333</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.13"><h3>2.13. edu.duke.cabig.c3pr.utils.web.ContextRetainingFilterAdapterTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.569</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.13.1"><h4>2.13.1. testServletContextRetained</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.106</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.13.2"><h4>2.13.2. testGetApplicationContext</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.036</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.13.3"><h4>2.13.3. testGetApplicationContextFailsWhenMissing</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0010</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.14"><h3>2.14. edu.duke.cabig.c3pr.utils.web.GridProxyUtilsTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.024</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.14.1"><h4>2.14.1. testGetUsername</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.656</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.15"><h3>2.15. edu.duke.cabig.c3pr.web.CreateParticipantControllerTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>5.956</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.15.1"><h4>2.15.1. testReferenceData</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.997</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.15.2"><h4>2.15.2. testViewOnGet</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.979</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.15.3"><h4>2.15.3. testViewOnGoodSubmit</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.79</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.16"><h3>2.16. edu.duke.cabig.c3pr.web.CreateStudyControllerTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>2</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.755</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.16.1"><h4>2.16.1. testViewOnGet</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.458</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.16.2"><h4>2.16.2. testViewOnGoodSubmit</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.098</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.17"><h3>2.17. edu.duke.cabig.c3pr.web.EditParticipantControllerTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>4.391</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.17.1"><h4>2.17.1. testReferenceData</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>4.157</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.18"><h3>2.18. edu.duke.cabig.c3pr.web.OpenSessionInViewInterceptorFilterTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.808</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.18.1"><h4>2.18.1. testBasicBehavior</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.415</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.18.2"><h4>2.18.2. testExceptionInFilterChainBehavior</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.051</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.18.3"><h4>2.18.3. testExceptionInPostHandleBehavior</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.044</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.19"><h3>2.19. edu.duke.cabig.c3pr.xml.RegistrationMarshallingTestCase</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.782</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.19.1"><h4>2.19.1. testSerializationDeserializationTest</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.617</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.20"><h3>2.20. edu.duke.cabig.c3pr.xml.StudyHibernateObjectMarshallingTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.243</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.20.1"><h4>2.20.1. testMarshallStudy</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.234</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.21"><h3>2.21. edu.duke.cabig.c3pr.xml.StudyMarshallingTestCase</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.911</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.21.1"><h4>2.21.1. testSerializationDeserializationTest</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.757</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.22"><h3>2.22. edu.duke.cabig.c3pr.xml.StudyXMLImporterTestCase</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.559</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.22.1"><h4>2.22.1. testStudyValidation</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.066</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.22.2"><h4>2.22.2. testStudyImport</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.026</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.22.3"><h4>2.22.3. testSerializationDeserializationTest</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.461</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.23"><h3>2.23. gov.nih.nci.cabig.c3pr.grid.test.C3PRV2RegistrationConsumerTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.586</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.23.1"><h4>2.23.1. testRegister</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.248</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.24"><h3>2.24. edu.duke.cabig.c3pr.dao.ArmDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>2</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>5.061</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.24.1"><h4>2.24.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>4.376</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.24.2"><h4>2.24.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.281</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.25"><h3>2.25. edu.duke.cabig.c3pr.dao.EpochDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>9</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.836</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.25.1"><h4>2.25.1. testGetByIdForTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.367</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.25.2"><h4>2.25.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.313</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.25.3"><h4>2.25.3. testGetArmsForTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.155</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.25.4"><h4>2.25.4. testGetEligibilityCriteriaForTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.15</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.25.5"><h4>2.25.5. testGetInclusionEligibilityCriteriaForTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.151</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.25.6"><h4>2.25.6. testGetExclusionEligibilityCriteriaForTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.117</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.25.7"><h4>2.25.7. testSaveTreatmentEpochWithEligibilityCriteria</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.297</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.25.8"><h4>2.25.8. testSaveTreatmentEpoch</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.126</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.25.9"><h4>2.25.9. testSaveTreatmentEpochWithStratificationCriteria</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.149</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.26"><h3>2.26. edu.duke.cabig.c3pr.dao.HealthcareSiteInvestigatorDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>4</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.944</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.26.1"><h4>2.26.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.352</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.26.2"><h4>2.26.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.313</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.26.3"><h4>2.26.3. testGetBySubnameMatchesShortTitle</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.138</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.26.4"><h4>2.26.4. testGetBySubnameMatchesIntersectionOfSubnames</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.132</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.27"><h3>2.27. edu.duke.cabig.c3pr.dao.InvestigatorDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>2</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.742</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.27.1"><h4>2.27.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.317</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.27.2"><h4>2.27.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.252</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.28"><h3>2.28. edu.duke.cabig.c3pr.dao.ParticipantDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>6</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.439</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.28.1"><h4>2.28.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.412</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.28.2"><h4>2.28.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.313</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.28.3"><h4>2.28.3. testSaveNewParticipantWithAllAssociations</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.238</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.28.4"><h4>2.28.4. testGetStudyParticipantAssignments</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.15</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.28.5"><h4>2.28.5. testSearchParticipantSimple</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.175</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.28.6"><h4>2.28.6. testSearchParticipantSimpleByWildCards</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.144</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.29"><h3>2.29. edu.duke.cabig.c3pr.dao.ResearchStaffDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>4</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.878</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.29.1"><h4>2.29.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.293</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.29.2"><h4>2.29.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.241</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.29.3"><h4>2.29.3. testGetBySubnameMatchesShortTitle</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.094</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.29.4"><h4>2.29.4. testGetBySubnameMatchesIntersectionOfSubnames</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.094</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30"><h3>2.30. edu.duke.cabig.c3pr.dao.StudyDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>13</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>4.304</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.1"><h4>2.30.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.552</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.2"><h4>2.30.2. testGetAll</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.504</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.3"><h4>2.30.3. testSaveNewStudy</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.311</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.4"><h4>2.30.4. testSaveNewStudyWithAssociations</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.335</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.5"><h4>2.30.5. testHibernateBug</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.299</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.6"><h4>2.30.6. testGetEpochs</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.261</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.7"><h4>2.30.7. testGetStudyParticipantAssignmentsForStudy</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.309</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.8"><h4>2.30.8. testSearchStudySimple</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.295</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.9"><h4>2.30.9. testSaveNewStudyWithTreatmentEpochs</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.312</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.10"><h4>2.30.10. testSaveNewStudyWithNonTreatmentEpochs</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.269</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.11"><h4>2.30.11. testSaveNewStudyWithTreatmentEpochsAndArms</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.291</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.12"><h4>2.30.12. testSearchStudyByWildCards</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.278</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.30.13"><h4>2.30.13. testSaveStudyWithInclusionEligibilityCriteria</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.277</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.31"><h3>2.31. edu.duke.cabig.c3pr.dao.StudySiteDaoTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.401</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.31.1"><h4>2.31.1. testGetById</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.392</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.32"><h3>2.32. edu.duke.cabig.c3pr.domain.AbstractDomainObjectTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>6</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.155</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.32.1"><h4>2.32.1. testEqualByIdWithTwoNulls</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0020</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.32.2"><h4>2.32.2. testEqualByIdWithFirstNull</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.32.3"><h4>2.32.3. testEqualByIdWithSecondNull</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.32.4"><h4>2.32.4. testEqualByIdWhenSame</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.32.5"><h4>2.32.5. testEqualByIdWhenEqual</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0010</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.32.6"><h4>2.32.6. testEqualByIdWhenNotEqual</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.33"><h3>2.33. edu.duke.cabig.c3pr.installer.ValidateConfigTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.966</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.33.1"><h4>2.33.1. testConfigFileExists</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.0010</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.33.2"><h4>2.33.2. testConfigFileValid</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.358</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.33.3"><h4>2.33.3. testBuildFileValid</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.038</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.34"><h3>2.34. edu.duke.cabig.c3pr.utils.ApplicationContextInitializationTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.27</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.34.1"><h4>2.34.1. testApplicationContextItself</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.109</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.35"><h3>2.35. edu.duke.cabig.c3pr.utils.CSMEncrypterTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.504</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.35.1"><h4>2.35.1. testEncryption</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.333</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.36"><h3>2.36. edu.duke.cabig.c3pr.web.CreateParticipantControllerTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>5.956</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.36.1"><h4>2.36.1. testReferenceData</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>3.997</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.36.2"><h4>2.36.2. testViewOnGet</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.979</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.36.3"><h4>2.36.3. testViewOnGoodSubmit</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.79</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.37"><h3>2.37. edu.duke.cabig.c3pr.web.CreateStudyControllerTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>2</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.755</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.37.1"><h4>2.37.1. testViewOnGet</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.458</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.37.2"><h4>2.37.2. testViewOnGoodSubmit</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.098</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.38"><h3>2.38. edu.duke.cabig.c3pr.web.EditParticipantControllerTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>4.391</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.38.1"><h4>2.38.1. testReferenceData</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>4.157</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.39"><h3>2.39. edu.duke.cabig.c3pr.xml.RegistrationMarshallingTestCase</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.782</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.39.1"><h4>2.39.1. testSerializationDeserializationTest</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.617</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.40"><h3>2.40. edu.duke.cabig.c3pr.xml.StudyHibernateObjectMarshallingTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.243</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.40.1"><h4>2.40.1. testMarshallStudy</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.234</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.41"><h3>2.41. edu.duke.cabig.c3pr.xml.StudyMarshallingTestCase</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.911</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.41.1"><h4>2.41.1. testSerializationDeserializationTest</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.757</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.42"><h3>2.42. edu.duke.cabig.c3pr.xml.StudyXMLImporterTestCase</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>3</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.559</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.42.1"><h4>2.42.1. testStudyValidation</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.066</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.42.2"><h4>2.42.2. testStudyImport</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.026</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.42.3"><h4>2.42.3. testSerializationDeserializationTest</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>0.461</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.43"><h3>2.43. gov.nih.nci.cabig.c3pr.grid.test.C3PRV2RegistrationConsumerTest</h3></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Tests:</b></td><td>1</td>
+<tr><td valign="top"><b>Failures:</b></td><td>0</td>
+<tr><td valign="top"><b>Errors:</b></td><td>0</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.586</td>
+</table>
+</dt></dl></dl>
+<p><a name="2.43.1"><h4>2.43.1. testRegister</h4></a></p>
+<dl><dl><dt>
+<table border="0">
+<tr><td valign="top"><b>Description:</b></td><td>NA</td>
+<tr><td valign="top"><b>Time&nbsp;(sec):</b></td><td>1.248</td>
+<tr><td valign="top"><b>Status:</b></td><td>SUCCESS
+</td>
+</table>
+</dt></dl></dl>
+</body></html>
