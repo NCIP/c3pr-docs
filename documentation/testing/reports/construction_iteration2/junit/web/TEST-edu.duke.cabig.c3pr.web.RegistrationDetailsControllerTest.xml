@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" name="edu.duke.cabig.c3pr.web.RegistrationDetailsControllerTest" tests="3" time="6.054">
+<testsuite errors="0" failures="0" name="edu.duke.cabig.c3pr.web.registration.RegistrationDetailsControllerTest" tests="3" time="6.054">
   <properties>
     <property name="java.vendor" value="Apple Computer, Inc."></property>
     <property name="lib.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/lib"></property>
@@ -133,9 +133,9 @@
     <property name="webapp.name" value="c3pr"></property>
     <property name="junit.results.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/logs/junit"></property>
   </properties>
-  <testcase classname="edu.duke.cabig.c3pr.web.RegistrationDetailsControllerTest" name="testReferenceData" time="3.921"></testcase>
-  <testcase classname="edu.duke.cabig.c3pr.web.RegistrationDetailsControllerTest" name="testViewOnGet" time="1.044"></testcase>
-  <testcase classname="edu.duke.cabig.c3pr.web.RegistrationDetailsControllerTest" name="testViewOnGoodSubmit" time="0.9"></testcase>
+  <testcase classname="edu.duke.cabig.c3pr.web.registration.RegistrationDetailsControllerTest" name="testReferenceData" time="3.921"></testcase>
+  <testcase classname="edu.duke.cabig.c3pr.web.registration.RegistrationDetailsControllerTest" name="testViewOnGet" time="1.044"></testcase>
+  <testcase classname="edu.duke.cabig.c3pr.web.registration.RegistrationDetailsControllerTest" name="testViewOnGoodSubmit" time="0.9"></testcase>
   <system-out><![CDATA[AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@932839)
    LogAbandoned: true
    RemoveAbandoned: true
