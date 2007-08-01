@@ -75,12 +75,18 @@ C3PRv2 has completed 5 iterations in the construction phase
     clubbed together to form a single intuitive page which allows the
     user to Create/Search Subject and Select Study and Epoch.
 
+    2.1.7 Added Manage Registration Worklow module where user can update
+	  a registration.
+    
+    2.1.8 Added Change Epochs module to Manage Registration  to enable users to
+	  move a subject between epochs.
 
 
 ================================================================
                 3.0 Known Issues
 ================================================================
 
+    3.0.1 Cannot move subject to a non-treatment epoch
 
 ----------------------------------------------------------------
 		3.1 C3PR Recommended JDK Version:
