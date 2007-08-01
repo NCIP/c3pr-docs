@@ -70,6 +70,10 @@ C3PRv2 has completed 5 iterations in the construction phase
     Future deployments of C3PRV2 will need a database update and
     not a rebuild of the entire datbase. This can be done with the
     build.xml ant script or the GUI installer
+    
+    2.1.6 The first two steps of the Create Registration flow were 
+    clubbed together to form a single intuitive page which allows the
+    user to Create/Search Subject and Select Study and Epoch.
 
 
 
