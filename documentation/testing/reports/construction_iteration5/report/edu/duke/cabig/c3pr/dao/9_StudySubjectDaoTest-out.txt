@@ -1,0 +1,10 @@
+AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@990d6e)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+WARN   doValidateClass, Unable to proxy method [public final void edu.duke.cabig.c3pr.dao.C3PRBaseDao.save(gov.nih.nci.cabig.ctms.domain.DomainObject)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+WARN   doValidateClass, Unable to proxy method [public final org.hibernate.SessionFactory org.springframework.orm.hibernate3.support.HibernateDaoSupport.getSessionFactory()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+WARN   doValidateClass, Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setSessionFactory(org.hibernate.SessionFactory)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+WARN   doValidateClass, Unable to proxy method [public final org.springframework.orm.hibernate3.HibernateTemplate org.springframework.orm.hibernate3.support.HibernateDaoSupport.getHibernateTemplate()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+WARN   doValidateClass, Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setHibernateTemplate(org.springframework.orm.hibernate3.HibernateTemplate)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+WARN   doValidateClass, Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
