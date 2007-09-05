@@ -61,6 +61,13 @@ C3PRv2 has completed 6 iterations in the construction phase
     Users can now be added and given authorization privileges
     from the UI
 
+2.3 Create Study
+	Users can now create Randomizations ,during Create Study, of type BOOK, PHONECALL and CALLOUT.
+	They can also also create Stratum Groups and upload Book Randomization Entries. 
+	They can now edit the above in the edit mode.
+	
+2.4 Create Registration
+	Users can now Randomize and assign arms during registration creation.	
 
 
 
@@ -69,6 +76,8 @@ C3PRv2 has completed 6 iterations in the construction phase
 ================================================================
 
     3.0.1 Cannot move subject to a non-treatment epoch
+    
+    3.0.1 Cannot load all existing Stratum Groups in Create Study edit mode.
 
 ----------------------------------------------------------------
 		3.1 C3PR Recommended JDK Version:
