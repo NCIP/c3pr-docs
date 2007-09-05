@@ -65,9 +65,15 @@ C3PRv2 has completed 6 iterations in the construction phase
 	Users can now create Randomizations ,during Create Study, of type BOOK, PHONECALL and CALLOUT.
 	They can also also create Stratum Groups and upload Book Randomization Entries. 
 	They can now edit the above in the edit mode.
+	Study Amendments can now be created.
+	Organization identifiers and system identifiers can now be captured.
+	Diseases from CTEP list can now be added to Study.
 	
 2.4 Create Registration
 	Users can now Randomize and assign arms during registration creation.	
+	
+2.5 Create Subject
+	Organization identifiers and system identifiers can now be captured.	
 
 
 
