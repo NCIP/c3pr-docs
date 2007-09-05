@@ -81,9 +81,9 @@ C3PRv2 has completed 6 iterations in the construction phase
                 3.0 Known Issues
 ================================================================
 
-    3.0.1 Cannot move subject to a non-treatment epoch
-    
     3.0.1 Cannot load all existing Stratum Groups in Create Study edit mode.
+    3.0.2 Deletion of rows not working properly.	
+
 
 ----------------------------------------------------------------
 		3.1 C3PR Recommended JDK Version:
