@@ -1,0 +1,4 @@
+Test case,Use case major index,Use case minor index,Use case title
+edu.duke.cabig.c3pr.web.study.CreateStudyControllerTest,4,3,Create Study Definition Manually
+edu.duke.cabig.c3pr.web.study.StudyAjaxFacadeTest,4,7,Search for Studies
+edu.duke.cabig.c3pr.web.study.ViewStudyControllerTest,4,8,View Studies

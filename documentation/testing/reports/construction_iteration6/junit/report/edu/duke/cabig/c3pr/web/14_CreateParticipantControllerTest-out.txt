@@ -1,0 +1,15 @@
+AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@663cdf)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+ Size of ref data : 7
+AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@96ceb3)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+------------Create Reference Data-------------
+AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@d25ddc)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+------------Create Reference Data-------------

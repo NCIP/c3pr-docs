@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Manav-Mac.local" name="edu.duke.cabig.c3pr.xml.RegistrationMarshallingTestCase" tests="1" time="0.794" timestamp="2007-09-06T00:17:20">
+  <properties>
+    <property name="java.vendor" value="Apple Computer, Inc." />
+    <property name="lib.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib" />
+    <property name="antfiles.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/antfiles" />
+    <property name="jikes.class.path" value=":/Library/Java/Home/../Classes/charsets.jar:/Library/Java/Home/../Classes/classes.jar:/Library/Java/Home/../Classes/dt.jar:/Library/Java/Home/../Classes/jce.jar:/Library/Java/Home/../Classes/jconsole.jar:/Library/Java/Home/../Classes/jsse.jar:/Library/Java/Home/../Classes/laf.jar:/Library/Java/Home/../Classes/ui.jar" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="env.SECURITYSESSIONID" value="aaa930" />
+    <property name="test.project.jar" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-tests-1.0.jar" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="csm.conf.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/conf//csm" />
+    <property name="cobertura.home" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/share/cobertura-1.8" />
+    <property name="sun.boot.class.path" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/ui.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/laf.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/sunrsasign.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jsse.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jce.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/charsets.jar" />
+    <property name="env.PWD" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles" />
+    <property name="postgresql.csm.db.scripts.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/db/PostGreSQL/csm" />
+    <property name="ant.file.c3pr-2.0-core" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/build.xml" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="net.sourceforge.cobertura.datafile" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/logs/queryengine.ser" />
+    <property name="ant.home" value="/Library/Ant1.7" />
+    <property name="jar.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/build/jars" />
+    <property name="java.runtime.version" value="1.5.0_07-164" />
+    <property name="env.XMLBEANS_HOME" value="/Users/kherm/dev/utils/xmlbeans" />
+    <property name="env.GLOBUS_LOCATION" value="/Users/kherm/dev/globus" />
+    <property name="src.java.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/src/java" />
+    <property name="user.name" value="kherm" />
+    <property name="bering.migration.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/db/bering" />
+    <property name="env.USER" value="kherm" />
+    <property name="test.classes.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/build/classes-test" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F6:0:0" />
+    <property name="debug" value="on" />
+    <property name="awt.nativeDoubleBuffering" value="true" />
+    <property name="core.properties.file" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/conf//core.properties" />
+    <property name="build.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/build" />
+    <property name="ext.lib.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib" />
+    <property name="env.PATH" value="/sw/bin:/sw/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/Library/Ant1.7/bin:/Library/Java/Home/bin:/Users/kherm/dev/tomcat-wsrf/bin:/Applications/Mplayer:/Users/kherm/dev/utils/maven/bin:/Users/kherm/dev/globus/bin:/Users/kherm/dev/utils/xmlbeans/bin:/usr/local/pgsql/data:/usr/local/pgsql/bin" />
+    <property name="user.language" value="en" />
+    <property name="ext.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext" />
+    <property name="sun.boot.library.path" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Libraries" />
+    <property name="ant.project.name" value="c3pr-2.0-core" />
+    <property name="java.version" value="1.5.0_07" />
+    <property name="user.timezone" value="" />
+    <property name="oracle.csm.db.scripts.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/db/oracle/csm" />
+    <property name="ext.test.lib.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/test/lib" />
+    <property name="resources.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/resources" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="test.src.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/src" />
+    <property name="java.endorsed.dirs" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/endorsed" />
+    <property name="env.JDK_HOME" value="/Library/Java/Home" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="MacRoman" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="1" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="env.JAVA_MAIN_CLASS_10816" value="org.apache.tools.ant.launch.Launcher" />
+    <property name="test.lib.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/lib" />
+    <property name="classes.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/build/classes" />
+    <property name="java.class.version" value="49.0" />
+    <property name="project.jarfile" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="postgresql.db.script.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/db/PostGreSQL" />
+    <property name="env.CATALINA_HOME" value="/Users/kherm/dev/tomcat-wsrf" />
+    <property name="env.XML_CATALOG_FILES" value="/sw/etc/xml/catalog" />
+    <property name="env.LOGNAME" value="kherm" />
+    <property name="ant.file" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/build.xml" />
+    <property name="os.version" value="10.4.10" />
+    <property name="env.TERM_PROGRAM_VERSION" value="133" />
+    <property name="test.src.java.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/src/java" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="1.5.0_07-87" />
+    <property name="ant.library.dir" value="/Library/Ant1.7/lib" />
+    <property name="env.JAVA_HOME" value="/Library/Java/Home" />
+    <property name="env.TERM" value="xterm-color" />
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="apple.awt.CToolkit" />
+    <property name="ant.file.c3pr-2.0-core-test" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/antfiles/build-test.xml" />
+    <property name="env.MANPATH" value="/sw/share/man:/usr/share/man:/Library/Java/Home/man:/sw/lib/perl5/5.8.6/man" />
+    <property name="ant.file.c3pr-2.0" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build.xml" />
+    <property name="user.home" value="/Users/kherm" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="env.TERM_PROGRAM" value="Apple_Terminal" />
+    <property name="test.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test" />
+    <property name="ant.file.c3pr-2.0-test" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build-test.xml" />
+    <property name="test.src.resources.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/src/resources" />
+    <property name="ext.resources.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/resources" />
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="java.vendor.url" value="http://apple.com/" />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.vm.vendor" value="&quot;Apple Computer, Inc.&quot;" />
+    <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition" />
+    <property name="java.class.path" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/activation-1.0.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/asm-attrs.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/asm.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/avalon-framework-cvs-20020806.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/castor-0.9.9.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/cglib-2.1.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/commons-beanutils-1.7.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/commons-collections-3.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/commons-dbcp-1.2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/commons-lang-2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/ejb3-persistence.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/fop.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/jakarta-oro-2.0.8.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/jstl.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/jta.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/mail-1.3.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/northwestern-core-commons.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/ojdbc14.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/postgresql-8.1-407.jdbc3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/standard.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/lib/xbean-spring-2.7.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/acegi-csm-0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/acegi-csm-1.0-SNAPSHOT.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/acegi-grid-1.0-SNAPSHOT.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/acegi-security-1.0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/acegi-security-cas-1.0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/acegi-security-tiger-1.0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/activeio-core-3.0-beta4.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/activemq-core-4.0.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/addressing-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/ant-contrib.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/antlr-2.7.6.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/aspectjrt-1.5.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/aspectjweaver-1.5.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/axis-url.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/axis.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/backport-util-concurrent-2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/bootstrap.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/c3p0-0.8.5.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/c3pr-2.0-esb-client-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-ServiceSecurityProvider-client.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-ServiceSecurityProvider-common.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-ServiceSecurityProvider-stubs.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-authentication-service-client.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-authentication-service-common.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-authentication-service-stubs.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-core.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-dorian-client.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-dorian-common.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-dorian-stubs.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-gridca.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-metadata-common.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-metadata-data.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-metadata-security.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/caGrid-1.0-opensaml-1.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/castor-0.9.9.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/client.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/clm-3.2.1-SNAPSHOT.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/cog-axis.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/cog-jglobus.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/cog-tomcat.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/cog-url.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/collections-generic-4.01.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/commonj.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/commons-cli-2.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/commons-collections-3.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/commons-digester.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/commons-discovery.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/commons-io-1.3.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/commons-logging.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/commons-pool-1.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/concurrent.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/cryptix-asn1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/cryptix.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/cryptix32.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/csmapi-3.2.1-SNAPSHOT.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/ctms-commons-base-0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/ctms-commons-core-0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/ctms-commons-lang-0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/ctms-commons-web-0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/dom4j-1.6.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/ehcache-1.2.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/globus_wsrf_mds_aggregator.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/globus_wsrf_mds_aggregator_stubs.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/globus_wsrf_servicegroup.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/globus_wsrf_servicegroup_stubs.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/grid-security-plugin-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/handle.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/handlerservice.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/hibernate-annotations.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/hibernate3.2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/jaxen-core.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/jaxen-jdom.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/jaxrpc.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/jboss-j2ee-4.0.5.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/jboss-jsr77.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/jce-jdk13-125.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/jdom.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/jgss.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/log4j-1.2.13.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/mobius_common_client-1.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/mobius_factories-1.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/mobius_gme_client-1.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/mobius_mako_client-1.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/mobius_tools-1.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/naming-java.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/puretls.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/saaj.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/saxpath.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/spring-aspects.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/spring2.0.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/wsdl4j.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/wsrf_core.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/wsrf_core_stubs.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/wss4j.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/xerces-2.6.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/xerces.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/xercesImpl.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/lib/xmlsec.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/compile/lib/c3pr-management-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-tests-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/lib/catrip-test-report-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/lib/core-commons-testing.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/lib/dbunit-2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/lib/easymock.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/lib/easymockclassextension.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/lib/hsqldb.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/lib/servlet-api.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/test/lib/junit-3.8.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/ext/test/lib/spring-mock.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/share/cobertura-1.8/cobertura.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/share/cobertura-1.8/lib/asm-2.2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/share/cobertura-1.8/lib/jakarta-oro-2.0.8.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/share/cobertura-1.8/lib/log4j-1.2.9.jar:/Library/Ant1.7/lib/ant-launcher.jar:/Library/Ant1.7/lib/ant.jar:/Library/Ant1.7/lib/ant-junit.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/.compatibility/14compatibility.jar" />
+    <property name="ant.file.catrip-1.0-codedrop" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build-codedrop.xml" />
+    <property name="env.PGDATA" value="/usr/local/pgsql/data" />
+    <property name="project.version" value="1.0" />
+    <property name="env.JPDA_TRANSPORT" value="dt_socket" />
+    <property name="env.JBOSS_HOME" value="/Users/kherm/dev/jboss" />
+    <property name="project.name" value="core" />
+    <property name="ant.file.c3pr-2.0-reports" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build-reports.xml" />
+    <property name="env.CVS_RSH" value="ssh" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="catalina.home" value="/Users/kherm/dev/tomcat-wsrf" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="env.HOME" value="/Users/kherm" />
+    <property name="env.ANT_HOME" value="/Library/Ant1.7" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="java.vendor.url.bug" value="http://developer.apple.com/java/" />
+    <property name="src.resources.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/src/resources" />
+    <property name="conf.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/conf/" />
+    <property name="os.arch" value="i386" />
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
+    <property name="env.PERL5LIB" value="/sw/lib/perl5:/sw/lib/perl5/darwin" />
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/ext" />
+    <property name="env.MAVEN_HOME" value="/Users/kherm/dev/utils/maven" />
+    <property name="mrj.version" value="1040.1.5.0_07-164" />
+    <property name="user.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core" />
+    <property name="testcoverage.datafile" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/logs/queryengine.ser" />
+    <property name="env.INFOPATH" value="/sw/share/info:/sw/info:/usr/share/info" />
+    <property name="line.separator" value="
+" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="env.CACORE_TOOLKIT_HOME" value="/Users/kherm/dev/utils/cacoresdk" />
+    <property name="env.JPDA_ADDRESS" value="8000" />
+    <property name="basedir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core" />
+    <property name="ant.file.c3pr-2.0-utilities" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build-utilities.xml" />
+    <property name="test.logs.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/test/logs" />
+    <property name="ant.java.version" value="1.5" />
+    <property name="env.SGML_CATALOG_FILES" value="/sw/etc/sgml/catalog" />
+    <property name="db.scripts.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/db" />
+    <property name="file.encoding" value="MacRoman" />
+    <property name="ant.file.c3pr-2.0-artifacts" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build-artifacts.xml" />
+    <property name="oracle.db.script.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/db/oracle" />
+    <property name="java.specification.version" value="1.5" />
+    <property name="src.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/core/src" />
+    <property name="junit.results.dir" value="/Users/kherm/dev/cvsroot/c3prv2/codebase/test/logs" />
+  </properties>
+  <testcase classname="edu.duke.cabig.c3pr.xml.RegistrationMarshallingTestCase" name="testSerializationDeserializationTest" time="0.609" />
+  <system-out><![CDATA[Inside getMapping
+
+<?xml version="1.0" encoding="UTF-8"?>
+<registration xmlns="gme://c3pr.cabig/2.0/edu.duke.cabig.c3pr.domain"><healthCareSiteGridId>siteGridId</healthCareSiteGridId><studyGridId>testStudyGridId</studyGridId><informedConsentFormSignedDate>2009-01-20</informedConsentFormSignedDate><startDate>2009-01-20</startDate><participant xmlns:ns1="gme://c3pr.cabig/2.0/edu.duke.cabig.c3pr.domain"><ns1:firstName>tempStr</ns1:firstName><ns1:lastName>tempStr</ns1:lastName><ns1:address><ns1:streetAddress>12359 Sunrise Valley Dr</ns1:streetAddress><ns1:city>Reston</ns1:city><ns1:stateCode>VA</ns1:stateCode><ns1:postalCode>20191</ns1:postalCode><ns1:countryCode>USA</ns1:countryCode></ns1:address><ns1:administrativeGenderCode>tempStr</ns1:administrativeGenderCode><ns1:birthDate>2009-01-20</ns1:birthDate><ns1:ethnicGroupCode>tempStr</ns1:ethnicGroupCode><ns1:maritalStatusCode>tempStr</ns1:maritalStatusCode><ns1:raceCode>tempStr</ns1:raceCode><ns1:identifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns1:systemAssignedIdentifier"><ns1:type>tempStr0</ns1:type><ns1:value>tempStr0</ns1:value><ns1:primaryIndicator>true</ns1:primaryIndicator><ns1:systemName>tempStr0</ns1:systemName></ns1:identifier><ns1:identifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns1:systemAssignedIdentifier"><ns1:type>tempStr1</ns1:type><ns1:value>tempStr1</ns1:value><ns1:primaryIndicator>true</ns1:primaryIndicator><ns1:systemName>tempStr1</ns1:systemName></ns1:identifier><ns1:identifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns1:systemAssignedIdentifier"><ns1:type>tempStr2</ns1:type><ns1:value>tempStr2</ns1:value><ns1:primaryIndicator>true</ns1:primaryIndicator><ns1:systemName>tempStr2</ns1:systemName></ns1:identifier></participant><identifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="systemAssignedIdentifier"><type>tempStr0</type><value>tempStr0</value><primaryIndicator>true</primaryIndicator><systemName>tempStr0</systemName></identifier><identifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="systemAssignedIdentifier"><type>tempStr1</type><value>tempStr1</value><primaryIndicator>true</primaryIndicator><systemName>tempStr1</systemName></identifier><identifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="systemAssignedIdentifier"><type>tempStr2</type><value>tempStr2</value><primaryIndicator>true</primaryIndicator><systemName>tempStr2</systemName></identifier></registration>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
