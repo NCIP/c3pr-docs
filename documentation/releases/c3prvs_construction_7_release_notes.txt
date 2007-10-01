@@ -77,7 +77,19 @@ C3PRv2 has completed 7 iterations in the construction phase
     the login name and last name as password. Future iterations
     will allow users to edit their account details.
 
-
+2.3 Study Amendment Flow
+	Studies the Active statuses can be Amended via this new Study
+	Amendment flow. The statuses can be modifed by the Admin on 
+	the	overview page. 
+	
+2.4 Deletions
+	As a new feature and for Data Integrity purposes all existing/saved 
+	data  will be non-editable. Any changes will have to be made 
+	by deleting	them and creating a new one instead.
+	e.g: In the amend/edit Study flow if the user chooses to delete
+	an arm attached	to a Treatment Epcoh, he cannot do so (as this
+	is equivalent to editing the epoch). However the user can delete
+	the existing Epoch and create a new Epoch/Arms as desired.
 
 
 
