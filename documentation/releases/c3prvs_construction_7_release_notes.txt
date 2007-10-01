@@ -77,10 +77,25 @@ C3PRv2 has completed 7 iterations in the construction phase
     the login name and last name as password. Future iterations
     will allow users to edit their account details.
 
+2.3 Study Statuses
+	C3PR now captures 3 kinds of study statuses: 
+   (a) Data Entry status- To determine if enough information is
+	entered in c3pr, data entry status is now derived within the 
+	application.
+	This status has to be 'Complete' before a study can be activated.
+   (b) Coordinating Center status - Based on the data entry status and
+	business rules, the user can now update the coordinating center study 
+	status on the over-view page.
+        These statuses include but are not restricted to ACTIVE, 
+	AMENDMENT_PENDING, CLOSED_TO_ACCRUAL etc.
+   (c) Site Study status - This status is for the study at the site level.
+	This status also can be updated by the user on the over-view page based on 
+	certain business rules like IRB approval date and the start Date at the site.	
+
 2.3 Study Amendment Flow
-	Studies the Active statuses can be Amended via this new Study
+	Studies with Active statuses can be Amended via this new Study
 	Amendment flow. The statuses can be modifed by the Admin on 
-	the	overview page. 
+	the overview page. 
 	
 2.4 Deletions
 	As a new feature and for Data Integrity purposes all existing/saved 
