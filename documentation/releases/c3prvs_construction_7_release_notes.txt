@@ -113,6 +113,11 @@ C3PRv2 has completed 7 iterations in the construction phase
 ================================================================
 
     3.0.1 Cannot move subject to a non-treatment epoch
+    
+    3.0.2 On deleting something in the Edit/Amend Flow, if the user navigates 
+    	  back to that tab, the deleted content is still shown on the screen.
+    	  In order to see the change, the user has to exit the flow and 
+    	  start the edit/amend flow again.
 
 ----------------------------------------------------------------
 		3.1 C3PR Recommended JDK Version:
