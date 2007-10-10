@@ -1,0 +1,14 @@
+AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@cb6895)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+
+hc site id ************16
+hcsi id ************11
+disease disCat id ************3
+disease term1 id ************5
+disease term2 id ************6
+hc site id ************17
+hcsi id ************12
+Study funding sponsor is: National Cancer Institute
+

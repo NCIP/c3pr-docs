@@ -1,0 +1,400 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Unit Test Results: edu.duke.cabig.c3pr.web.EditParticipantControllerTest</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../../../../../stylesheet.css">
+<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+        
+    cur = TestCases['edu.duke.cabig.c3pr.web.EditParticipantControllerTest'] = new Array();
+    
+        cur['ant.file'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/build.xml';
+    
+        cur['ant.file.c3pr-2.0'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build.xml';
+    
+        cur['ant.file.c3pr-2.0-artifacts'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build-artifacts.xml';
+    
+        cur['ant.file.c3pr-2.0-reports'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build-reports.xml';
+    
+        cur['ant.file.c3pr-2.0-test'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build-test.xml';
+    
+        cur['ant.file.c3pr-2.0-utilities'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build-utilities.xml';
+    
+        cur['ant.file.c3pr-2.0-web'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/build.xml';
+    
+        cur['ant.file.c3pr-2.0-web-test'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/antfiles/build-test.xml';
+    
+        cur['ant.file.catrip-1.0-codedrop'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles/build-codedrop.xml';
+    
+        cur['ant.home'] = '/Library/Ant1.7';
+    
+        cur['ant.java.version'] = '1.5';
+    
+        cur['ant.library.dir'] = '/Library/Ant1.7/lib';
+    
+        cur['ant.project.name'] = 'c3pr-2.0-web';
+    
+        cur['authorizationSwitch'] = 'true';
+    
+        cur['awt.nativeDoubleBuffering'] = 'true';
+    
+        cur['awt.toolkit'] = 'apple.awt.CToolkit';
+    
+        cur['basedir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web';
+    
+        cur['broadcastEnable'] = 'false';
+    
+        cur['build.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/build';
+    
+        cur['cacore.home'] = '~/dev/utils/cacore';
+    
+        cur['classes.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/build/classes';
+    
+        cur['cobertura.home'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/share/cobertura-1.8';
+    
+        cur['conf.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/conf';
+    
+        cur['csm.context.name'] = 'c3pr';
+    
+        cur['ctmsi.commons.version'] = '0.3';
+    
+        cur['datasource.dialect'] = 'org.hibernate.dialect.PostgreSQLDialect';
+    
+        cur['datasource.driver'] = 'org.postgresql.Driver';
+    
+        cur['datasource.password'] = 'pguser';
+    
+        cur['datasource.url'] = 'jdbc:postgresql://localhost:5432/c3pr_dev';
+    
+        cur['datasource.username'] = 'pg';
+    
+        cur['debug'] = 'on';
+    
+        cur['deploy.path'] = '/Users/kherm/dev/tomcat-wsrf/webapps';
+    
+        cur['DSTAMP'] = '20071010';
+    
+        cur['env.__CF_USER_TEXT_ENCODING'] = '0x1F6:0:0';
+    
+        cur['env.ANT_HOME'] = '/Library/Ant1.7';
+    
+        cur['env.CACORE_TOOLKIT_HOME'] = '/Users/kherm/dev/utils/cacoresdk';
+    
+        cur['env.CATALINA_HOME'] = '/Users/kherm/dev/tomcat-wsrf';
+    
+        cur['env.CVS_RSH'] = 'ssh';
+    
+        cur['env.CVSROOT'] = ':ext:kherm@cbiocvs2.nci.nih.gov:/share/content/gforge/c3prv2';
+    
+        cur['env.GLOBUS_LOCATION'] = '/Users/kherm/dev/globus';
+    
+        cur['env.HOME'] = '/Users/kherm';
+    
+        cur['env.INFOPATH'] = '/sw/share/info:/sw/info:/usr/share/info';
+    
+        cur['env.JAVA_HOME'] = '/Library/Java/Home';
+    
+        cur['env.JAVA_MAIN_CLASS_7270'] = 'org.apache.tools.ant.launch.Launcher';
+    
+        cur['env.JBOSS_HOME'] = '/Users/kherm/dev/jboss';
+    
+        cur['env.JDK_HOME'] = '/Library/Java/Home';
+    
+        cur['env.JPDA_ADDRESS'] = '8000';
+    
+        cur['env.JPDA_TRANSPORT'] = 'dt_socket';
+    
+        cur['env.LOGNAME'] = 'kherm';
+    
+        cur['env.MANPATH'] = '/sw/share/man:/usr/share/man:/Library/Java/Home/man:/sw/lib/perl5/5.8.6/man';
+    
+        cur['env.MAVEN_HOME'] = '/Users/kherm/dev/utils/maven';
+    
+        cur['env.PATH'] = '/sw/bin:/sw/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/Library/Ant1.7/bin:/Library/Java/Home/bin:/Users/kherm/dev/tomcat-wsrf/bin:/Applications/Mplayer:/Users/kherm/dev/utils/maven/bin:/Users/kherm/dev/globus/bin:/Users/kherm/dev/utils/xmlbeans/bin:/usr/local/pgsql/data:/usr/local/pgsql/bin';
+    
+        cur['env.PERL5LIB'] = '/sw/lib/perl5:/sw/lib/perl5/darwin';
+    
+        cur['env.PGDATA'] = '/usr/local/pgsql/data';
+    
+        cur['env.PWD'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/antfiles';
+    
+        cur['env.SECURITYSESSIONID'] = 'cab880';
+    
+        cur['env.SGML_CATALOG_FILES'] = '/sw/etc/sgml/catalog';
+    
+        cur['env.SHELL'] = '/bin/bash';
+    
+        cur['env.SHLVL'] = '1';
+    
+        cur['env.TERM'] = 'xterm-color';
+    
+        cur['env.TERM_PROGRAM'] = 'Apple_Terminal';
+    
+        cur['env.TERM_PROGRAM_VERSION'] = '133';
+    
+        cur['env.USER'] = 'kherm';
+    
+        cur['env.XML_CATALOG_FILES'] = '/sw/etc/xml/catalog';
+    
+        cur['env.XMLBEANS_HOME'] = '/Users/kherm/dev/utils/xmlbeans';
+    
+        cur['esb.brokerUrl'] = 'tcp://localhost:61616';
+    
+        cur['ext.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext';
+    
+        cur['ext.lib.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib';
+    
+        cur['ext.resources.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/resources';
+    
+        cur['ext.test.lib.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/test/lib';
+    
+        cur['file.encoding'] = 'MacRoman';
+    
+        cur['file.encoding.pkg'] = 'sun.io';
+    
+        cur['file.separator'] = '/';
+    
+        cur['gopherProxySet'] = 'false';
+    
+        cur['grid.idpUrl'] = 'https://10.10.10.2:8446/wsrf/services/cagrid/AuthenticationService';
+    
+        cur['grid.ifsUrl'] = 'https://10.10.10.2:8443/wsrf/services/cagrid/Dorian';
+    
+        cur['hotlinks.c3d'] = 'https://octrials-train.nci.nih.gov/opa45/rdclaunch.htm';
+    
+        cur['hotlinks.caaers'] = 'http://10.10.10.2:8030/caaers/pages/ae/list';
+    
+        cur['hotlinks.psc'] = 'http://10.10.10.2:8041/studycalendar/pages/schedule';
+    
+        cur['jar.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/build/jars';
+    
+        cur['java.awt.graphicsenv'] = 'apple.awt.CGraphicsEnvironment';
+    
+        cur['java.awt.printerjob'] = 'apple.awt.CPrinterJob';
+    
+        cur['java.class.path'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/lib/commons-fileupload-1.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/lib/commons-httpclient-3.0-rc2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/lib/dwr.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/lib/javax.servlet.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/lib/javax.servlet.jsp.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/lib/nls_charset12.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/lib/sitemesh-2.2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/acegi-csm-0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/acegi-security-1.0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/acegi-security-cas-1.0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/acegi-security-tiger-1.0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/activation-1.0.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/activeio-core-3.0-beta4.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/activemq-core-4.0.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/ant-contrib.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/antlr-2.7.6.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/aopalliance.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/asm-2.2.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/asm-commons-2.2.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/asm-util-2.2.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/aspectjrt-1.5.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/aspectjtools.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/aspectjweaver-1.5.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/avalon-framework-cvs-20020806.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/backport-util-concurrent-2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/c3p0-0.8.5.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/c3pr-2.0-core-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/c3pr-2.0-esb-client-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/castor-1.1.2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/cglib-nodep-2.1_3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/client.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/clm-3.2.1-ctms00.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/collections-generic-4.01.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/commons-beanutils-1.7.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/commons-collections-3.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/commons-collections-3.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/commons-dbcp-1.2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/commons-io-1.3.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/commons-lang-2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/commons-logging.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/commons-pool-1.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/csmapi-3.2.1-ctms00.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/ctms-commons-base-0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/ctms-commons-core-0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/ctms-commons-lang-0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/ctms-commons-web-0.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/dom4j-1.6.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/ehcache-1.2.3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/ejb3-persistence.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/extremecomponents-1.0.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/fop.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/handle.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/handlerservice.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/hibernate-annotations.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/hibernate3.2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/jakarta-oro-2.0.8.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/jboss-j2ee-4.0.5.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/jboss-jsr77.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/jdom.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/jstl.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/jta.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/log4j-1.2.13.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/mail-1.3.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/northwestern-core-commons.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/ojdbc14.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/poi-3.0-rc4-20070503.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/poi-contrib-3.0-rc4-20070503.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/poi-scratchpad-3.0-rc4-20070503.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/postgresql-8.1-407.jdbc3.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/spring-aspects.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/spring.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/standard.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/xbean-spring-2.7.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/xerces-2.6.2.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/lib/xercesImpl.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/ant-launcher.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/ant.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/clm.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/commons-collections-3.1.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/commons-dbcp-1.2.1.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/commons-el.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/commons-pool-1.2.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/jasper-compiler.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/jasper-runtime.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/jsp-api.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/mysql-connector-java-3.1.11-bin.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/naming-common.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/naming-factory.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/naming-java.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/naming-resources.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/ojdbc14.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/postgresql-8.1-407.jdbc3.jar:/Users/kherm/dev/tomcat-wsrf/common/lib/servlet-api.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/compile/lib/c3pr-management-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/build/jars/c3pr-2.0-c3pr-2.0-web-tests-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/build/jars/c3pr-2.0-web-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/lib/catrip-test-report-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/lib/core-commons-testing.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/lib/easymock.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/lib/easymockclassextension.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/lib/servlet-api.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/test/lib/c3pr-2.0-core-tests-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/test/lib/catrip-test-report-1.0.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/test/lib/core-commons-testing.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/test/lib/dbunit-2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/test/lib/easymock.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/test/lib/easymockclassextension.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/test/lib/hsqldb.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/test/lib/junit-3.8.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/test/lib/servlet-api.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/ext/test/lib/spring-mock.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/share/cobertura-1.8/cobertura.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/share/cobertura-1.8/lib/asm-2.2.1.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/share/cobertura-1.8/lib/jakarta-oro-2.0.8.jar:/Users/kherm/dev/cvsroot/c3prv2/codebase/share/cobertura-1.8/lib/log4j-1.2.9.jar:/Library/Ant1.7/lib/ant-launcher.jar:/Library/Ant1.7/lib/ant.jar:/Library/Ant1.7/lib/ant-junit.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/.compatibility/14compatibility.jar';
+    
+        cur['java.class.version'] = '49.0';
+    
+        cur['java.endorsed.dirs'] = '/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/endorsed';
+    
+        cur['java.ext.dirs'] = '/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/ext';
+    
+        cur['java.home'] = '/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home';
+    
+        cur['java.io.tmpdir'] = '/tmp';
+    
+        cur['java.library.path'] = '.:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java';
+    
+        cur['java.runtime.name'] = 'Java(TM) 2 Runtime Environment, Standard Edition';
+    
+        cur['java.runtime.version'] = '1.5.0_07-164';
+    
+        cur['java.specification.name'] = 'Java Platform API Specification';
+    
+        cur['java.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.specification.version'] = '1.5';
+    
+        cur['java.vendor'] = 'Apple Computer, Inc.';
+    
+        cur['java.vendor.url'] = 'http://apple.com/';
+    
+        cur['java.vendor.url.bug'] = 'http://developer.apple.com/java/';
+    
+        cur['java.version'] = '1.5.0_07';
+    
+        cur['java.vm.info'] = 'mixed mode, sharing';
+    
+        cur['java.vm.name'] = 'Java HotSpot(TM) Client VM';
+    
+        cur['java.vm.specification.name'] = 'Java Virtual Machine Specification';
+    
+        cur['java.vm.specification.vendor'] = 'Sun Microsystems Inc.';
+    
+        cur['java.vm.specification.version'] = '1.0';
+    
+        cur['java.vm.vendor'] = '"Apple Computer, Inc."';
+    
+        cur['java.vm.version'] = '1.5.0_07-87';
+    
+        cur['jikes.class.path'] = ':/Library/Java/Home/../Classes/charsets.jar:/Library/Java/Home/../Classes/classes.jar:/Library/Java/Home/../Classes/dt.jar:/Library/Java/Home/../Classes/jce.jar:/Library/Java/Home/../Classes/jconsole.jar:/Library/Java/Home/../Classes/jsse.jar:/Library/Java/Home/../Classes/laf.jar:/Library/Java/Home/../Classes/ui.jar';
+    
+        cur['junit.results.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/test/logs';
+    
+        cur['lib.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/lib';
+    
+        cur['line.separator'] = ' ';
+    
+        cur['log_sql'] = 'false';
+    
+        cur['log4j.filename'] = 'c3pr.log';
+    
+        cur['mrj.version'] = '1040.1.5.0_07-164';
+    
+        cur['net.sourceforge.cobertura.datafile'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/logs/web.ser';
+    
+        cur['os.arch'] = 'i386';
+    
+        cur['os.name'] = 'Mac OS X';
+    
+        cur['os.version'] = '10.4.10';
+    
+        cur['outgoing.mail.from.address'] = 'cruisecontrol@semanticbits.com';
+    
+        cur['outgoing.mail.password'] = 'cruisecontrolpasswd';
+    
+        cur['outgoing.mail.server'] = 'smtp.1and1.com';
+    
+        cur['outgoing.mail.smtp.auth'] = 'true';
+    
+        cur['outgoing.mail.username'] = 'cruisecontrol@semanticbits.com';
+    
+        cur['path.separator'] = ':';
+    
+        cur['project.jarfile'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/build/jars/c3pr-2.0-web-1.0.jar';
+    
+        cur['project.name'] = 'c3pr-2.0-web';
+    
+        cur['project.version'] = '1.0';
+    
+        cur['src.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/src';
+    
+        cur['src.java.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/src/java';
+    
+        cur['src.resources.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/src/resources';
+    
+        cur['sun.arch.data.model'] = '32';
+    
+        cur['sun.boot.class.path'] = '/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/ui.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/laf.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/sunrsasign.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jsse.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jce.jar:/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/charsets.jar';
+    
+        cur['sun.boot.library.path'] = '/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Libraries';
+    
+        cur['sun.cpu.endian'] = 'little';
+    
+        cur['sun.cpu.isalist'] = '';
+    
+        cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
+    
+        cur['sun.jnu.encoding'] = 'MacRoman';
+    
+        cur['sun.management.compiler'] = 'HotSpot Client Compiler';
+    
+        cur['sun.os.patch.level'] = 'unknown';
+    
+        cur['test.classes.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/build/classes-test';
+    
+        cur['test.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test';
+    
+        cur['test.lib.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/lib';
+    
+        cur['test.logs.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/logs';
+    
+        cur['test.project.jar'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/build/jars/c3pr-2.0-c3pr-2.0-web-tests-1.0.jar';
+    
+        cur['test.src.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/src';
+    
+        cur['test.src.java.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/src/java';
+    
+        cur['testcoverage.datafile'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/test/logs/web.ser';
+    
+        cur['TODAY'] = 'October 10 2007';
+    
+        cur['tomcat.home'] = '/Users/kherm/dev/tomcat-wsrf';
+    
+        cur['TSTAMP'] = '1708';
+    
+        cur['user.country'] = 'US';
+    
+        cur['user.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web';
+    
+        cur['user.home'] = '/Users/kherm';
+    
+        cur['user.language'] = 'en';
+    
+        cur['user.name'] = 'kherm';
+    
+        cur['user.timezone'] = '';
+    
+        cur['war.file'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/build/c3prv2.war';
+    
+        cur['web.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/web';
+    
+        cur['webapp.name'] = 'c3pr';
+    
+        cur['webinf.classes.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/web/WEB-INF/classes';
+    
+        cur['webinf.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/web/WEB-INF';
+    
+        cur['webinf.lib.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/web/WEB-INF/lib';
+    
+        cur['webinfviews.dir'] = '/Users/kherm/dev/cvsroot/c3prv2/codebase/projects/web/web/WEB-INF/views';
+    </script><script type="text/javascript" language="JavaScript">
+        function displayProperties (name) {
+          var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+          var doc = win.document;
+          doc.open();
+          doc.write("<html><head><title>Properties of " + name + "</title>");
+          doc.write("<style type=\"text/css\">");
+          doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+          doc.write("table tr td, table tr th { font-size: 68%; }");
+          doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+          doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+          doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+          doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+          doc.write("</style>");
+          doc.write("</head><body>");
+          doc.write("<h3>Properties of " + name + "</h3>");
+          doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+          doc.write("<table class='properties'>");
+          doc.write("<tr><th>Name</th><th>Value</th></tr>");
+          for (prop in TestCases[name]) {
+            doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+          }
+          doc.write("</table>");
+          doc.write("</body></html>");
+          doc.close();
+          win.focus();
+        }
+      
+      </script>
+</head>
+<body>
+<h1>Unit Test Results</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h3>Class edu.duke.cabig.c3pr.web.EditParticipantControllerTest</h3>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th nowrap="nowrap">Time(s)</th><th nowrap="nowrap">Time Stamp</th><th>Host</th>
+</tr>
+<tr valign="top" class="Pass">
+<td><a title="Display all tests" href="22_EditParticipantControllerTest.html">EditParticipantControllerTest</a></td><td><a title="Display all tests" href="22_EditParticipantControllerTest.html">1</a></td><td>0</td><td>0</td><td>8.919</td><td>2007-10-10T21:09:06</td><td>Manav-Mac.local</td>
+</tr>
+</table>
+<h2>Tests</h2>
+<table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap="nowrap">Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a name="testReferenceData"></a>testReferenceData</td><td>Success</td><td></td><td>8.683</td>
+</tr>
+</table>
+<div class="Properties">
+<a href="javascript:displayProperties('edu.duke.cabig.c3pr.web.EditParticipantControllerTest');">
+                    Properties &raquo;
+                </a>
+</div>
+<div class="Properties">
+<a href="./22_EditParticipantControllerTest-out.txt">
+                        System.out &raquo;
+                    </a>
+</div>
+</body>
+</html>

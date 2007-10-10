@@ -1,0 +1,5 @@
+AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@b92195)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+
