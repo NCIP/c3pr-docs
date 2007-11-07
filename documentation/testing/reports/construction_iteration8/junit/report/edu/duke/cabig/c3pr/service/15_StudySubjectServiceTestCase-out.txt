@@ -1,0 +1,946 @@
+2007-11-07 13:57:14,595 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2a6f16: display name [org.springframework.context.support.ClassPathXmlApplicationContext@2a6f16]; startup date [Wed Nov 07 13:57:14 EST 2007]; root of context hierarchy
+2007-11-07 13:57:14,684 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-core.xml]
+2007-11-07 13:57:15,294 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-core-db.xml]
+2007-11-07 13:57:15,348 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-csm.xml]
+2007-11-07 13:57:15,426 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@2a6f16]: org.springframework.beans.factory.support.DefaultListableBeanFactory@eac5a
+2007-11-07 13:57:15,614 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from class path resource [context/c3pr.properties]
+2007-11-07 13:57:15,616 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from URL [file:C:/Users/Vinay/.c3pr/c3pr.properties]
+2007-11-07 13:57:15,618 WARN  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Could not load properties from URL [file:C:/Users/Vinay/.c3pr/c3pr.properties]: C:\Users\Vinay\.c3pr\c3pr.properties (The system cannot find the path specified)
+2007-11-07 13:57:15,619 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from URL [file:C:/Tomcat 5.5/conf/c3pr.properties]
+2007-11-07 13:57:15,620 WARN  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Could not load properties from URL [file:C:/Tomcat 5.5/conf/c3pr.properties]: C:\Tomcat 5.5\conf\c3pr.properties (The system cannot find the file specified)
+2007-11-07 13:57:15,663 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.aop.config.internalAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:15,672 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:15,785 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'dataSource' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:15,793 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.hibernate.cfg.ImprovedNamingStrategy#1fe88d' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:15,812 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'gridIdentifierCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:15,812 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'gridIdentifierInterceptor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:15,816 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'chainedInterceptor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:15,830 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'hibernateProperties' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:15,830 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'hibernateProperties' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:15,872 INFO  org.hibernate.cfg.annotations.Version : Hibernate Annotations 3.2.0.CR2
+2007-11-07 13:57:15,889 INFO  org.hibernate.cfg.Environment : Hibernate 3.2.1
+2007-11-07 13:57:15,895 INFO  org.hibernate.cfg.Environment : hibernate.properties not found
+2007-11-07 13:57:15,898 INFO  org.hibernate.cfg.Environment : Bytecode provider name : cglib
+2007-11-07 13:57:15,903 INFO  org.hibernate.cfg.Environment : using JDK 1.4 java.sql.Timestamp handling
+2007-11-07 13:57:16,040 INFO  org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean : Building new Hibernate SessionFactory
+2007-11-07 13:57:16,180 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Study
+2007-11-07 13:57:16,230 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Study on table studies
+2007-11-07 13:57:16,439 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Epoch
+2007-11-07 13:57:16,440 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Epoch on table epochs
+2007-11-07 13:57:16,548 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.NonTreatmentEpoch
+2007-11-07 13:57:16,579 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.TreatmentEpoch
+2007-11-07 13:57:16,606 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Arm
+2007-11-07 13:57:16,607 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Arm on table arms
+2007-11-07 13:57:16,614 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyOrganization
+2007-11-07 13:57:16,617 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyOrganization on table study_organizations
+2007-11-07 13:57:16,633 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudySite
+2007-11-07 13:57:16,640 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyCoordinatingCenter
+2007-11-07 13:57:16,643 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyFundingSponsor
+2007-11-07 13:57:16,643 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.HealthcareSite
+2007-11-07 13:57:16,644 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.HealthcareSite on table organizations
+2007-11-07 13:57:16,660 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Address
+2007-11-07 13:57:16,661 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Address on table addresses
+2007-11-07 13:57:16,669 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudySubject
+2007-11-07 13:57:16,669 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudySubject on table study_subjects
+2007-11-07 13:57:16,698 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyInvestigator
+2007-11-07 13:57:16,698 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyInvestigator on table study_investigators
+2007-11-07 13:57:16,708 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator
+2007-11-07 13:57:16,709 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator on table hc_site_investigators
+2007-11-07 13:57:16,719 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyPersonnel
+2007-11-07 13:57:16,720 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyPersonnel on table study_personnel
+2007-11-07 13:57:16,729 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Participant
+2007-11-07 13:57:16,731 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Participant on table participants
+2007-11-07 13:57:16,751 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ResearchStaff
+2007-11-07 13:57:16,751 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ResearchStaff on table research_staff
+2007-11-07 13:57:16,769 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Investigator
+2007-11-07 13:57:16,770 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Investigator on table investigators
+2007-11-07 13:57:16,797 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledArm
+2007-11-07 13:57:16,797 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ScheduledArm on table scheduled_arms
+2007-11-07 13:57:16,806 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Identifier
+2007-11-07 13:57:16,807 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Identifier on table identifiers
+2007-11-07 13:57:16,811 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SystemAssignedIdentifier
+2007-11-07 13:57:16,813 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.OrganizationAssignedIdentifier
+2007-11-07 13:57:16,816 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.EligibilityCriteria
+2007-11-07 13:57:16,816 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.EligibilityCriteria on table eligibility_criteria
+2007-11-07 13:57:16,820 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SubjectEligibilityAnswer
+2007-11-07 13:57:16,821 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.SubjectEligibilityAnswer on table subject_eligibility_ans
+2007-11-07 13:57:16,827 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.InclusionEligibilityCriteria
+2007-11-07 13:57:16,828 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ExclusionEligibilityCriteria
+2007-11-07 13:57:16,831 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyDisease
+2007-11-07 13:57:16,831 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyDisease on table study_diseases
+2007-11-07 13:57:16,837 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseCategory
+2007-11-07 13:57:16,838 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseCategory on table disease_categories
+2007-11-07 13:57:16,844 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseTerm
+2007-11-07 13:57:16,845 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseTerm on table disease_terms
+2007-11-07 13:57:16,854 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterion
+2007-11-07 13:57:16,854 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterion on table strat_criteria
+2007-11-07 13:57:16,860 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterionPermissibleAnswer
+2007-11-07 13:57:16,861 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterionPermissibleAnswer on table strat_cri_per_ans
+2007-11-07 13:57:16,866 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SubjectStratificationAnswer
+2007-11-07 13:57:16,867 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.SubjectStratificationAnswer on table subject_strat_ans
+2007-11-07 13:57:16,874 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.AnatomicSite
+2007-11-07 13:57:16,875 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.AnatomicSite on table anatomic_sites
+2007-11-07 13:57:16,879 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseHistory
+2007-11-07 13:57:16,880 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseHistory on table disease_history
+2007-11-07 13:57:16,887 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ContactMechanism
+2007-11-07 13:57:16,888 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ContactMechanism on table contact_mechanisms
+2007-11-07 13:57:16,893 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledEpoch
+2007-11-07 13:57:16,894 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ScheduledEpoch on table scheduled_epochs
+2007-11-07 13:57:16,904 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch
+2007-11-07 13:57:16,911 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-11-07 13:57:16,912 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratumGroup
+2007-11-07 13:57:16,912 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratumGroup on table stratum_groups
+2007-11-07 13:57:16,922 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.BookRandomizationEntry
+2007-11-07 13:57:16,924 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.BookRandomizationEntry on table book_rndm_entry
+2007-11-07 13:57:16,928 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Randomization
+2007-11-07 13:57:16,929 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Randomization on table randomizations
+2007-11-07 13:57:16,934 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.BookRandomization
+2007-11-07 13:57:16,939 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.CalloutRandomization
+2007-11-07 13:57:16,940 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.PhonecallRandomization
+2007-11-07 13:57:16,942 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterionAnswerCombination
+2007-11-07 13:57:16,942 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterionAnswerCombination on table strat_cri_ans_cmb
+2007-11-07 13:57:16,947 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyAmendment
+2007-11-07 13:57:16,948 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyAmendment on table study_amendments
+2007-11-07 13:57:16,971 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.BookRandomization.bookRandomizationEntryInternal -> book_rndm_entry
+2007-11-07 13:57:16,973 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratumGroup.stratificationCriterionAnswerCombinationInternal -> strat_cri_ans_cmb
+2007-11-07 13:57:16,973 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.scheduledArmsInternal -> scheduled_arms
+2007-11-07 13:57:16,973 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.subjectStratificationAnswersInternal -> subject_strat_ans
+2007-11-07 13:57:16,974 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.subjectEligibilityAnswersInternal -> subject_eligibility_ans
+2007-11-07 13:57:16,976 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratificationCriterion.permissibleAnswersInternal -> strat_cri_per_ans
+2007-11-07 13:57:16,976 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Investigator.contactMechanisms -> contact_mechanisms
+2007-11-07 13:57:16,977 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ResearchStaff.contactMechanisms -> contact_mechanisms
+2007-11-07 13:57:16,978 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.contactMechanisms -> contact_mechanisms
+2007-11-07 13:57:16,978 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.identifiers -> identifiers
+2007-11-07 13:57:16,978 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySubject.identifiers -> identifiers
+2007-11-07 13:57:16,979 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySubject.scheduledEpochs -> scheduled_epochs
+2007-11-07 13:57:16,983 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.stratumGroupsInternal -> stratum_groups
+2007-11-07 13:57:16,983 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.inclusionEligibilityCriteriaInternal -> eligibility_criteria
+2007-11-07 13:57:16,984 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.stratificationCriteriaInternal -> strat_criteria
+2007-11-07 13:57:16,990 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.exclusionEligibilityCriteriaInternal -> eligibility_criteria
+2007-11-07 13:57:16,991 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.eligibilityCriteriaInternal -> eligibility_criteria
+2007-11-07 13:57:16,991 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.armsInternal -> arms
+2007-11-07 13:57:16,997 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyAmendmentsInternal -> study_amendments
+2007-11-07 13:57:16,998 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.identifiers -> identifiers
+2007-11-07 13:57:17,001 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.epochs -> epochs
+2007-11-07 13:57:17,006 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyOrganizations -> study_organizations
+2007-11-07 13:57:17,006 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyDiseases -> study_diseases
+2007-11-07 13:57:17,006 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudyOrganization.studyInvestigatorsInternal -> study_investigators
+2007-11-07 13:57:17,007 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudyOrganization.studyPersonnelInternal -> study_personnel
+2007-11-07 13:57:17,008 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySite.studySubjects -> study_subjects
+2007-11-07 13:57:17,008 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.identifiers -> identifiers
+2007-11-07 13:57:17,009 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.studyOrganizations -> study_organizations
+2007-11-07 13:57:17,011 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.healthcareSiteInvestigators -> hc_site_investigators
+2007-11-07 13:57:17,011 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.researchStaffs -> research_staff
+2007-11-07 13:57:17,011 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator.studyInvestigators -> study_investigators
+2007-11-07 13:57:17,016 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.studySubjects -> study_subjects
+2007-11-07 13:57:17,016 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ResearchStaff.studyPersonnels -> study_personnel
+2007-11-07 13:57:17,017 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Investigator.healthcareSiteInvestigatorsInternal -> hc_site_investigators
+2007-11-07 13:57:17,020 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.DiseaseCategory.terms -> disease_terms
+2007-11-07 13:57:17,020 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.DiseaseCategory.childCategories -> disease_categories
+2007-11-07 13:57:17,021 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratumGroup.bookRandomizationEntryInternal -> book_rndm_entry
+2007-11-07 13:57:17,340 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@f42160)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+2007-11-07 13:57:17,579 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-11-07 13:57:17,581 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-11-07 13:57:17,601 INFO  org.hibernate.dialect.Dialect : Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2007-11-07 13:57:17,698 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-11-07 13:57:17,701 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-11-07 13:57:17,701 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-11-07 13:57:17,702 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-11-07 13:57:17,702 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-11-07 13:57:17,702 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-11-07 13:57:17,703 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-11-07 13:57:17,703 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-11-07 13:57:17,703 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-11-07 13:57:17,703 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-11-07 13:57:17,703 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-11-07 13:57:17,703 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-11-07 13:57:17,706 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-11-07 13:57:17,710 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-11-07 13:57:17,712 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-11-07 13:57:17,712 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-11-07 13:57:17,712 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-11-07 13:57:17,713 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-11-07 13:57:17,713 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-11-07 13:57:17,713 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-11-07 13:57:17,713 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-11-07 13:57:17,723 INFO  org.hibernate.cfg.SettingsFactory : Echoing all SQL to stdout
+2007-11-07 13:57:17,723 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-11-07 13:57:17,723 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-11-07 13:57:17,723 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-11-07 13:57:17,766 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-11-07 13:57:19,039 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-11-07 13:57:19,068 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'sessionFactory' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:19,071 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'sessionFactory' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:19,090 INFO  org.springframework.orm.hibernate3.HibernateTransactionManager : Using DataSource [org.apache.commons.dbcp.BasicDataSource@11f139b] of Hibernate SessionFactory for HibernateTransactionManager
+2007-11-07 13:57:19,090 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'transactionManager' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:19,097 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:19,098 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:19,098 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:57:19,119 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@eac5a: defining beans [transactionManager,c3prPropertyConfigurer,org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor,sessionFactory,auditOpenSessionInViewInterceptor,auditSessionFactory,chainedInterceptor,auditInterceptor,dataAuditRepository,gridIdentifierInterceptor,hibernateTemplate,daoTemplate,openSessionInViewInterceptor,gridIdentifierCreator,studyValidator,studySiteValidator,epochValidator,armValidator,identifierValidator,participantValidator,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor,studyDao,studySubjectDao,studySiteDao,epochDao,scheduledEpochDao,armDao,participantDao,healthcareSiteDao,healthcareSiteInvestigatorDao,studyPersonnelDao,researchStaffDao,investigatorDao,diseaseCategoryDao,diseaseTermDao,studyInvestigatorDao,StratificationCriterionDao,anatomicSiteDao,organizationDao,stratificationAnswerDao,stratumGroupDao,studyService,participantService,studySubjectService,studyXMLImporterService,personnelService,organizationService,sitePrivilegeAndObjectIdGenerator,mailSender,confirmationEmailer,accountCreatedTemplateMessage,xmlUtility,xmlParser,c3prErrorMessages,multsiteErrorMessageSource,exceptionHelper,dataSourceTemplate,dataSource,hibernateProperties,auditHibernateProperties,csmApplicationContextName,ACCESS_PRIVILEGE,authorizationSwitch,booleanFromString,csmAuthorizationDao,csmUserProvisioningManager,csmAuthenticationManager]; root of factory hierarchy
+2007-11-07 13:57:19,144 INFO  org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean : Building new Hibernate SessionFactory
+2007-11-07 13:57:19,149 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEventValue
+2007-11-07 13:57:19,149 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity gov.nih.nci.cabig.ctms.audit.domain.DataAuditEventValue on table audit_event_values
+2007-11-07 13:57:19,155 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent
+2007-11-07 13:57:19,157 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent on table audit_events
+2007-11-07 13:57:19,187 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent.values -> audit_event_values
+2007-11-07 13:57:19,215 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2007-11-07 13:57:19,217 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-11-07 13:57:19,217 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-11-07 13:57:19,218 INFO  org.hibernate.dialect.Dialect : Using dialect: edu.duke.cabig.c3pr.hibernate.ImprovedPostgreSQLDialect
+2007-11-07 13:57:19,219 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-11-07 13:57:19,219 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-11-07 13:57:19,219 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-11-07 13:57:19,219 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-11-07 13:57:19,220 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-11-07 13:57:19,220 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-11-07 13:57:19,220 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-11-07 13:57:19,220 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-11-07 13:57:19,220 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-11-07 13:57:19,220 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-11-07 13:57:19,224 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-11-07 13:57:19,224 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-11-07 13:57:19,224 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-11-07 13:57:19,225 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-11-07 13:57:19,225 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-11-07 13:57:19,232 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-11-07 13:57:19,232 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-11-07 13:57:19,232 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-11-07 13:57:19,232 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-11-07 13:57:19,232 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-11-07 13:57:19,236 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-11-07 13:57:19,236 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-11-07 13:57:19,236 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-11-07 13:57:19,236 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-11-07 13:57:19,243 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-11-07 13:57:19,275 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-11-07 13:57:19,480 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setSessionFactory(org.hibernate.SessionFactory)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-11-07 13:57:19,480 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final org.hibernate.SessionFactory org.springframework.orm.hibernate3.support.HibernateDaoSupport.getSessionFactory()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-11-07 13:57:19,480 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final org.springframework.orm.hibernate3.HibernateTemplate org.springframework.orm.hibernate3.support.HibernateDaoSupport.getHibernateTemplate()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-11-07 13:57:19,482 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setHibernateTemplate(org.springframework.orm.hibernate3.HibernateTemplate)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-11-07 13:57:19,483 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-11-07 13:57:20,363 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Privilege -> CSM_PRIVILEGE
+2007-11-07 13:57:20,419 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Application -> CSM_APPLICATION
+2007-11-07 13:57:20,450 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Role -> CSM_ROLE
+2007-11-07 13:57:20,452 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.Role.privileges -> CSM_ROLE_PRIVILEGE
+2007-11-07 13:57:20,478 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.RolePrivilege -> CSM_ROLE_PRIVILEGE
+2007-11-07 13:57:20,496 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.UserGroup -> CSM_USER_GROUP
+2007-11-07 13:57:20,521 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.ProtectionGroupProtectionElement -> CSM_PG_PE
+2007-11-07 13:57:20,536 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Group -> CSM_GROUP
+2007-11-07 13:57:20,537 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.Group.users -> CSM_USER_GROUP
+2007-11-07 13:57:20,569 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.User -> CSM_USER
+2007-11-07 13:57:20,570 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.User.groups -> CSM_USER_GROUP
+2007-11-07 13:57:20,594 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.ProtectionGroup -> CSM_PROTECTION_GROUP
+2007-11-07 13:57:20,595 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionGroup.protectionElements -> CSM_PG_PE
+2007-11-07 13:57:20,612 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.ProtectionElement -> CSM_PROTECTION_ELEMENT
+2007-11-07 13:57:20,613 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionElement.protectionGroups -> CSM_PG_PE
+2007-11-07 13:57:20,614 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionElement.owners -> CSM_USER_PE
+2007-11-07 13:57:20,628 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.UserGroupRoleProtectionGroup -> CSM_USER_GROUP_ROLE_PG
+2007-11-07 13:57:20,640 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.UserProtectionElement -> CSM_USER_PE
+2007-11-07 13:57:20,641 INFO  org.springframework.orm.hibernate3.LocalSessionFactoryBean : Building new Hibernate SessionFactory
+2007-11-07 13:57:20,645 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2007-11-07 13:57:20,646 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-11-07 13:57:20,646 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-11-07 13:57:20,646 INFO  org.hibernate.dialect.Dialect : Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2007-11-07 13:57:20,647 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-11-07 13:57:20,648 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-11-07 13:57:20,648 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-11-07 13:57:20,648 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-11-07 13:57:20,649 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-11-07 13:57:20,650 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-11-07 13:57:20,650 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-11-07 13:57:20,651 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-11-07 13:57:20,651 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-11-07 13:57:20,651 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-11-07 13:57:20,651 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-11-07 13:57:20,655 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-11-07 13:57:20,655 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-11-07 13:57:20,655 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-11-07 13:57:20,656 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-11-07 13:57:20,656 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-11-07 13:57:20,662 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-11-07 13:57:20,662 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-11-07 13:57:20,662 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-11-07 13:57:20,662 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-11-07 13:57:20,662 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-11-07 13:57:20,666 INFO  org.hibernate.cfg.SettingsFactory : Echoing all SQL to stdout
+2007-11-07 13:57:20,666 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-11-07 13:57:20,666 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-11-07 13:57:20,666 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-11-07 13:57:20,679 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-11-07 13:57:20,807 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+Hibernate: select applicatio0_.APPLICATION_ID as APPLICAT1_83_, applicatio0_.APPLICATION_NAME as APPLICAT2_83_, applicatio0_.APPLICATION_DESCRIPTION as APPLICAT3_83_, applicatio0_.ACTIVE_FLAG as ACTIVE4_83_, applicatio0_.DECLARATIVE_FLAG as DECLARAT5_83_, applicatio0_.UPDATE_DATE as UPDATE6_83_, applicatio0_.DATABASE_URL as DATABASE7_83_, applicatio0_.DATABASE_USER_NAME as DATABASE8_83_, applicatio0_.DATABASE_PASSWORD as DATABASE9_83_, applicatio0_.DATABASE_DIALECT as DATABASE10_83_, applicatio0_.DATABASE_DRIVER as DATABASE11_83_ from CSM_APPLICATION applicatio0_ where applicatio0_.APPLICATION_NAME='c3pr'
+2007-11-07 13:57:22,090 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:22,626 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:23,049 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:23,459 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:23,885 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:24,295 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:24,689 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:25,083 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:25,479 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:25,865 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:26,333 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:26,722 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:27,108 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:27,502 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:27,881 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:28,265 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:28,653 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:29,040 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:29,420 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:29,803 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:30,187 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:30,568 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:30,952 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:31,333 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select healthcare0_.id as id4_1_, healthcare0_.version as version4_1_, healthcare0_.grid_id as grid3_4_1_, healthcare0_.retired_indicator as retired4_4_1_, healthcare0_.address_id as address8_4_1_, healthcare0_.name as name4_1_, healthcare0_.description_text as descript6_4_1_, healthcare0_.nci_institute_code as nci7_4_1_, address1_.id as id5_0_, address1_.version as version5_0_, address1_.grid_id as grid3_5_0_, address1_.retired_indicator as retired4_5_0_, address1_.street_address as street5_5_0_, address1_.city as city5_0_, address1_.state_code as state7_5_0_, address1_.postal_code as postal8_5_0_, address1_.country_code as country9_5_0_ from organizations healthcare0_ inner join addresses address1_ on healthcare0_.address_id=address1_.id where healthcare0_.id=?
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:31,399 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:31,438 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:31,438 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('RANDOMIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STRATUM_GROUPS_ID_SEQ')
+Hibernate: select nextval ('strat_criteria_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_ans_cmb_id_seq')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('book_rndm_entry_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into randomizations (version, grid_id, retired_indicator, dtype, id) values (?, ?, ?, 'BR', ?)
+Hibernate: insert into stratum_groups (version, grid_id, retired_indicator, stratum_group_number, current_position, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_criteria (version, grid_id, retired_indicator, question_number, question_text, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_ans_cmb (version, grid_id, retired_indicator, sc_id, scpa_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, eph_id, description_text, target_accrual_number, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into book_rndm_entry (version, grid_id, retired_indicator, str_grp_id, position, arms_id, rndm_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+Hibernate: update arms set version=?, grid_id=?, retired_indicator=?, name=?, eph_id=?, description_text=?, target_accrual_number=? where id=? and version=?
+Hibernate: update book_rndm_entry set rndm_id=? where id=?
+Hibernate: update strat_cri_ans_cmb set str_grp_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update strat_criteria set eph_id=? where id=?
+Hibernate: update stratum_groups set epochs_id=? where id=?
+2007-11-07 13:57:31,585 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:31,598 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:31,598 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select participan0_.id as id10_1_, participan0_.version as version10_1_, participan0_.grid_id as grid3_10_1_, participan0_.retired_indicator as retired4_10_1_, participan0_.first_name as first5_10_1_, participan0_.last_name as last6_10_1_, participan0_.add_id as add14_10_1_, participan0_.maiden_name as maiden7_10_1_, participan0_.middle_name as middle8_10_1_, participan0_.birth_date as birth9_10_1_, participan0_.race_code as race10_10_1_, participan0_.administrative_gender_code as adminis11_10_1_, participan0_.ethnic_group_code as ethnic12_10_1_, participan0_.marital_status_code as marital13_10_1_, address1_.id as id5_0_, address1_.version as version5_0_, address1_.grid_id as grid3_5_0_, address1_.retired_indicator as retired4_5_0_, address1_.street_address as street5_5_0_, address1_.city as city5_0_, address1_.state_code as state7_5_0_, address1_.postal_code as postal8_5_0_, address1_.country_code as country9_5_0_ from participants participan0_ left outer join addresses address1_ on participan0_.add_id=address1_.id where participan0_.id=?
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: select nextval ('subject_strat_ans_id_seq')
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, eligibility_indicator, eligibility_waiver_reason_text, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into subject_strat_ans (version, grid_id, retired_indicator, str_cri_id, strat_ans_id, sceph_id, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+Hibernate: update subject_strat_ans set sceph_id=? where id=?
+2007-11-07 13:57:31,654 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:31,665 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:31,665 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:31,667 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:31,692 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:31,692 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:32,236 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:32,242 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:32,266 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:32,266 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('RANDOMIZATIONS_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into randomizations (version, grid_id, retired_indicator, callout_url, dtype, id) values (?, ?, ?, ?, 'CR', ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, eph_id, description_text, target_accrual_number, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+Hibernate: update arms set eph_id=? where id=?
+2007-11-07 13:57:32,322 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:32,348 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:32,348 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, eligibility_indicator, eligibility_waiver_reason_text, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+2007-11-07 13:57:32,383 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:32,395 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:32,395 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:32,396 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:32,412 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:32,412 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:32,805 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:32,810 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:32,830 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:32,830 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, reservation_indicator, accrual_ceiling, accrual_indicator, enrollment_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+2007-11-07 13:57:32,872 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:32,893 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:32,893 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+2007-11-07 13:57:32,923 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:32,945 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:32,946 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:32,946 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:32,969 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:32,969 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:33,366 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:33,374 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:33,395 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:33,395 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('RANDOMIZATIONS_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into randomizations (version, grid_id, retired_indicator, phone_number, dtype, id) values (?, ?, ?, ?, 'PR', ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, eph_id, description_text, target_accrual_number, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+Hibernate: update arms set eph_id=? where id=?
+2007-11-07 13:57:33,463 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:33,481 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:33,481 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select healthcare0_.id as id4_1_, healthcare0_.version as version4_1_, healthcare0_.grid_id as grid3_4_1_, healthcare0_.retired_indicator as retired4_4_1_, healthcare0_.address_id as address8_4_1_, healthcare0_.name as name4_1_, healthcare0_.description_text as descript6_4_1_, healthcare0_.nci_institute_code as nci7_4_1_, address1_.id as id5_0_, address1_.version as version5_0_, address1_.grid_id as grid3_5_0_, address1_.retired_indicator as retired4_5_0_, address1_.street_address as street5_5_0_, address1_.city as city5_0_, address1_.state_code as state7_5_0_, address1_.postal_code as postal8_5_0_, address1_.country_code as country9_5_0_ from organizations healthcare0_ inner join addresses address1_ on healthcare0_.address_id=address1_.id where healthcare0_.id=?
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: select nextval ('IDENTIFIERS_ID_SEQ')
+2007-11-07 13:57:33,499 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, eligibility_indicator, eligibility_waiver_reason_text, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into identifiers (version, grid_id, retired_indicator, value, type, primary_indicator, hcs_id, dtype, id) values (?, ?, ?, ?, ?, ?, ?, 'OAI', ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+Hibernate: update identifiers set spa_id=? where id=?
+2007-11-07 13:57:33,538 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:33,538 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select healthcare0_.id as id4_1_, healthcare0_.version as version4_1_, healthcare0_.grid_id as grid3_4_1_, healthcare0_.retired_indicator as retired4_4_1_, healthcare0_.address_id as address8_4_1_, healthcare0_.name as name4_1_, healthcare0_.description_text as descript6_4_1_, healthcare0_.nci_institute_code as nci7_4_1_, address1_.id as id5_0_, address1_.version as version5_0_, address1_.grid_id as grid3_5_0_, address1_.retired_indicator as retired4_5_0_, address1_.street_address as street5_5_0_, address1_.city as city5_0_, address1_.state_code as state7_5_0_, address1_.postal_code as postal8_5_0_, address1_.country_code as country9_5_0_ from organizations healthcare0_ inner join addresses address1_ on healthcare0_.address_id=address1_.id where healthcare0_.id=?
+Hibernate: select nextval ('IDENTIFIERS_ID_SEQ')
+2007-11-07 13:57:33,549 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into identifiers (version, grid_id, retired_indicator, value, type, primary_indicator, hcs_id, dtype, id) values (?, ?, ?, ?, ?, ?, ?, 'OAI', ?)
+Hibernate: update study_subjects set version=?, grid_id=?, retired_indicator=?, reg_workflow_status=?, reg_data_entry_status=?, prt_id=?, sto_id=?, start_date=?, stratum_group_number=?, disease_history_id=?, informed_consent_signed_date=?, informed_consent_version=?, sti_id=?, other_treating_physician=?, off_study_date=?, off_study_reason_text=? where id=? and version=?
+Hibernate: update identifiers set spa_id=? where id=?
+2007-11-07 13:57:33,581 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:33,581 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('SCHEDULED_ARMS_ID_seq')
+Hibernate: insert into scheduled_arms (version, grid_id, retired_indicator, eligibility_indicator, eligibility_waiver_reason_text, start_date, arm_id, kit_number, sceph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: update study_subjects set version=?, grid_id=?, retired_indicator=?, reg_workflow_status=?, reg_data_entry_status=?, prt_id=?, sto_id=?, start_date=?, stratum_group_number=?, disease_history_id=?, informed_consent_signed_date=?, informed_consent_version=?, sti_id=?, other_treating_physician=?, off_study_date=?, off_study_reason_text=? where id=? and version=?
+Hibernate: update scheduled_epochs set version=?, grid_id=?, retired_indicator=?, eph_id=?, sc_epoch_workflow_status=?, sc_epoch_data_entry_status=?, disapproval_reason_text=?, start_date=?, eligibility_indicator=?, eligibility_waiver_reason_text=? where id=? and version=?
+Hibernate: update scheduled_arms set sceph_id=? where id=?
+2007-11-07 13:57:33,628 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:33,657 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:33,658 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:34,034 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:34,038 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:34,064 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:34,064 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('RANDOMIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STRATUM_GROUPS_ID_SEQ')
+Hibernate: select nextval ('strat_criteria_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_ans_cmb_id_seq')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('book_rndm_entry_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into randomizations (version, grid_id, retired_indicator, dtype, id) values (?, ?, ?, 'BR', ?)
+Hibernate: insert into stratum_groups (version, grid_id, retired_indicator, stratum_group_number, current_position, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_criteria (version, grid_id, retired_indicator, question_number, question_text, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_ans_cmb (version, grid_id, retired_indicator, sc_id, scpa_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, eph_id, description_text, target_accrual_number, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into book_rndm_entry (version, grid_id, retired_indicator, str_grp_id, position, arms_id, rndm_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+Hibernate: update arms set version=?, grid_id=?, retired_indicator=?, name=?, eph_id=?, description_text=?, target_accrual_number=? where id=? and version=?
+Hibernate: update book_rndm_entry set rndm_id=? where id=?
+Hibernate: update strat_cri_ans_cmb set str_grp_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update strat_criteria set eph_id=? where id=?
+Hibernate: update stratum_groups set epochs_id=? where id=?
+2007-11-07 13:57:34,155 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:34,168 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:34,168 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: select nextval ('subject_strat_ans_id_seq')
+2007-11-07 13:57:34,178 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, eligibility_indicator, eligibility_waiver_reason_text, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into subject_strat_ans (version, grid_id, retired_indicator, str_cri_id, strat_ans_id, sceph_id, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+Hibernate: update subject_strat_ans set sceph_id=? where id=?
+2007-11-07 13:57:34,212 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:34,212 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('SCHEDULED_ARMS_ID_seq')
+Hibernate: insert into scheduled_arms (version, grid_id, retired_indicator, eligibility_indicator, eligibility_waiver_reason_text, start_date, arm_id, kit_number, sceph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: update stratum_groups set version=?, grid_id=?, retired_indicator=?, stratum_group_number=?, current_position=? where id=? and version=?
+Hibernate: update study_subjects set version=?, grid_id=?, retired_indicator=?, reg_workflow_status=?, reg_data_entry_status=?, prt_id=?, sto_id=?, start_date=?, stratum_group_number=?, disease_history_id=?, informed_consent_signed_date=?, informed_consent_version=?, sti_id=?, other_treating_physician=?, off_study_date=?, off_study_reason_text=? where id=? and version=?
+Hibernate: update scheduled_epochs set version=?, grid_id=?, retired_indicator=?, eph_id=?, sc_epoch_workflow_status=?, sc_epoch_data_entry_status=?, disapproval_reason_text=?, start_date=?, eligibility_indicator=?, eligibility_waiver_reason_text=? where id=? and version=?
+Hibernate: update scheduled_arms set sceph_id=? where id=?
+2007-11-07 13:57:34,248 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:34,264 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:34,264 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:34,265 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:34,280 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:34,280 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select identifier0_.prt_id as prt11_3_, identifier0_.id as id3_, identifier0_.id as id14_2_, identifier0_.version as version14_2_, identifier0_.grid_id as grid4_14_2_, identifier0_.retired_indicator as retired5_14_2_, identifier0_.value as value14_2_, identifier0_.type as type14_2_, identifier0_.primary_indicator as primary8_14_2_, identifier0_.system_name as system9_14_2_, identifier0_.hcs_id as hcs10_14_2_, identifier0_.dtype as dtype14_2_, healthcare1_.id as id4_0_, healthcare1_.version as version4_0_, healthcare1_.grid_id as grid3_4_0_, healthcare1_.retired_indicator as retired4_4_0_, healthcare1_.address_id as address8_4_0_, healthcare1_.name as name4_0_, healthcare1_.description_text as descript6_4_0_, healthcare1_.nci_institute_code as nci7_4_0_, address2_.id as id5_1_, address2_.version as version5_1_, address2_.grid_id as grid3_5_1_, address2_.retired_indicator as retired4_5_1_, address2_.street_address as street5_5_1_, address2_.city as city5_1_, address2_.state_code as state7_5_1_, address2_.postal_code as postal8_5_1_, address2_.country_code as country9_5_1_ from identifiers identifier0_ left outer join organizations healthcare1_ on identifier0_.hcs_id=healthcare1_.id left outer join addresses address2_ on healthcare1_.address_id=address2_.id where identifier0_.prt_id=? order by identifier0_.id asc
+Inside getMapping
+
+<?xml version="1.0" encoding="UTF-8"?>
+<registration xmlns="gme://c3pr.cabig/2.0/edu.duke.cabig.c3pr.domain" gridId="3fe98d60-62e3-4e3a-a27c-01a469313064"><studySite gridId="eb5ad9ef-2519-44ea-a637-f22bf12e58d2"><healthcareSite><nciInstituteCode>code</nciInstituteCode></healthcareSite><irbApprovalDate>2007-11-07T13:57:34.034-05:00</irbApprovalDate><startDate>2007-11-07T13:57:34.035-05:00</startDate></studySite><studyRef gridId="965a9efc-20f0-413f-a867-45f6a060811a"><shortTitleText>ShortTitleText1</shortTitleText><longTitleText>LongTitleText1</longTitleText></studyRef><participant xmlns:ns1="gme://c3pr.cabig/2.0/edu.duke.cabig.c3pr.domain" ns1:gridId="AAAAA11111GridID"><ns1:gridId>AAAAA11111GridID</ns1:gridId><ns1:firstName>Rudolph</ns1:firstName><ns1:lastName>Clooney</ns1:lastName><ns1:address><ns1:streetAddress>12359 sunrise valley drive</ns1:streetAddress><ns1:city>Reston</ns1:city><ns1:stateCode>VA</ns1:stateCode><ns1:postalCode>20191</ns1:postalCode><ns1:countryCode>USA</ns1:countryCode></ns1:address><ns1:administrativeGenderCode>M</ns1:administrativeGenderCode><ns1:birthDate>0006-06-23</ns1:birthDate><ns1:raceCode>White</ns1:raceCode><ns1:identifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns1:SystemAssignedIdentifierType"><ns1:type>MRN</ns1:type><ns1:value>MRN-12A!2121</ns1:value><ns1:primaryIndicator>false</ns1:primaryIndicator><ns1:systemName>C3PR</ns1:systemName></ns1:identifier></participant><startDate>2007-11-07</startDate><informedConsentFormSignedDate>2007-11-07</informedConsentFormSignedDate><informedConsentVersion>1.0</informedConsentVersion><regDataEntryStatus>COMPLETE</regDataEntryStatus><regWorkflowStatus>REGISTERED</regWorkflowStatus><scheduledEpoch xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gridId="9b30c508-b67e-46a2-a6ec-4520973b53b2" xsi:type="ScheduledTreatmentEpochType"><startDate>2007-11-07</startDate><epoch gridId="331a458f-14b2-4ce6-9e05-72ee1b1837b5" xsi:type="TreatmentEpochType"><name>epoch1</name></epoch><scheduledArm><arm gridId="074c037c-c140-45eb-9d8b-21e3a4e2a84f"><name>A</name></arm></scheduledArm></scheduledEpoch><stratumGroup>0:lets find out1</stratumGroup></registration>
+2007-11-07 13:57:35,181 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:35,187 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: select nextval ('IDENTIFIERS_ID_SEQ')
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into identifiers (version, grid_id, retired_indicator, value, type, primary_indicator, system_name, dtype, id) values (?, ?, ?, ?, ?, ?, ?, 'SAI', ?)
+Hibernate: update participants set version=?, grid_id=?, retired_indicator=?, first_name=?, last_name=?, add_id=?, maiden_name=?, middle_name=?, birth_date=?, race_code=?, administrative_gender_code=?, ethnic_group_code=?, marital_status_code=? where id=? and version=?
+Hibernate: update identifiers set prt_id=? where id=?
+2007-11-07 13:57:35,230 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:35,230 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, eph_id, description_text, target_accrual_number, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+Hibernate: update arms set eph_id=? where id=?
+2007-11-07 13:57:35,276 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:35,300 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:35,300 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, eligibility_indicator, eligibility_waiver_reason_text, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+2007-11-07 13:57:35,359 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:35,375 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:35,375 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:35,376 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:35,392 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:35,392 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:35,783 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:35,788 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:35,811 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:35,812 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, reservation_indicator, accrual_ceiling, accrual_indicator, enrollment_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+2007-11-07 13:57:35,859 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:35,875 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:35,875 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+2007-11-07 13:57:35,914 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:35,929 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:35,929 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:35,930 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:35,945 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:35,945 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:36,331 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:36,339 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:36,359 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:36,359 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, reservation_indicator, accrual_ceiling, accrual_indicator, enrollment_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+2007-11-07 13:57:36,406 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:36,422 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:36,422 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+2007-11-07 13:57:36,473 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:36,499 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:36,499 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:36,500 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:36,515 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:36,515 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:36,905 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:36,910 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:36,931 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:36,931 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, reservation_indicator, accrual_ceiling, accrual_indicator, enrollment_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+2007-11-07 13:57:36,969 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:36,990 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:36,990 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+2007-11-07 13:57:37,024 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:37,039 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:37,040 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:37,040 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:37,058 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:37,058 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:37,436 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:37,443 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:37,466 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:37,466 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, reservation_indicator, accrual_ceiling, accrual_indicator, enrollment_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+2007-11-07 13:57:37,505 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:37,523 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:37,523 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+2007-11-07 13:57:37,558 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:37,576 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:37,576 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:37,577 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:37,595 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:37,595 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:37,988 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:37,995 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:38,022 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:38,022 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('RANDOMIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STRATUM_GROUPS_ID_SEQ')
+Hibernate: select nextval ('strat_criteria_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_ans_cmb_id_seq')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('book_rndm_entry_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into randomizations (version, grid_id, retired_indicator, dtype, id) values (?, ?, ?, 'BR', ?)
+Hibernate: insert into stratum_groups (version, grid_id, retired_indicator, stratum_group_number, current_position, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_criteria (version, grid_id, retired_indicator, question_number, question_text, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_ans_cmb (version, grid_id, retired_indicator, sc_id, scpa_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, eph_id, description_text, target_accrual_number, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into book_rndm_entry (version, grid_id, retired_indicator, str_grp_id, position, arms_id, rndm_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+Hibernate: update arms set version=?, grid_id=?, retired_indicator=?, name=?, eph_id=?, description_text=?, target_accrual_number=? where id=? and version=?
+Hibernate: update book_rndm_entry set rndm_id=? where id=?
+Hibernate: update strat_cri_ans_cmb set str_grp_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update strat_criteria set eph_id=? where id=?
+Hibernate: update stratum_groups set epochs_id=? where id=?
+2007-11-07 13:57:38,143 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:38,164 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:38,166 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: select nextval ('subject_strat_ans_id_seq')
+Hibernate: select nextval ('SCHEDULED_ARMS_ID_seq')
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, eligibility_indicator, eligibility_waiver_reason_text, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into subject_strat_ans (version, grid_id, retired_indicator, str_cri_id, strat_ans_id, sceph_id, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_arms (version, grid_id, retired_indicator, eligibility_indicator, eligibility_waiver_reason_text, start_date, arm_id, kit_number, sceph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: update stratum_groups set version=?, grid_id=?, retired_indicator=?, stratum_group_number=?, current_position=? where id=? and version=?
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+Hibernate: update subject_strat_ans set sceph_id=? where id=?
+Hibernate: update scheduled_arms set sceph_id=? where id=?
+2007-11-07 13:57:38,235 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:38,265 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:38,265 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:38,272 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:38,299 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:38,301 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:38,757 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:38,762 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:38,786 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:38,786 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, reservation_indicator, accrual_ceiling, accrual_indicator, enrollment_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+2007-11-07 13:57:38,831 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:38,852 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:38,852 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+2007-11-07 13:57:38,892 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:38,913 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:38,913 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:38,914 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:38,933 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:38,933 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:39,315 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:39,321 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:39,351 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:39,351 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, reservation_indicator, accrual_ceiling, accrual_indicator, enrollment_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+2007-11-07 13:57:39,400 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:39,422 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:39,422 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+2007-11-07 13:57:39,459 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:39,481 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:39,481 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:39,482 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:39,501 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:39,501 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:39,882 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:39,888 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:39,915 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:39,915 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('RANDOMIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STRATUM_GROUPS_ID_SEQ')
+Hibernate: select nextval ('strat_criteria_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_ans_cmb_id_seq')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('book_rndm_entry_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into randomizations (version, grid_id, retired_indicator, dtype, id) values (?, ?, ?, 'BR', ?)
+Hibernate: insert into stratum_groups (version, grid_id, retired_indicator, stratum_group_number, current_position, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_criteria (version, grid_id, retired_indicator, question_number, question_text, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_ans_cmb (version, grid_id, retired_indicator, sc_id, scpa_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, eph_id, description_text, target_accrual_number, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into book_rndm_entry (version, grid_id, retired_indicator, str_grp_id, position, arms_id, rndm_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+Hibernate: update arms set version=?, grid_id=?, retired_indicator=?, name=?, eph_id=?, description_text=?, target_accrual_number=? where id=? and version=?
+Hibernate: update book_rndm_entry set rndm_id=? where id=?
+Hibernate: update strat_cri_ans_cmb set str_grp_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update strat_criteria set eph_id=? where id=?
+Hibernate: update stratum_groups set epochs_id=? where id=?
+2007-11-07 13:57:40,017 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:40,039 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:40,040 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: select nextval ('subject_strat_ans_id_seq')
+2007-11-07 13:57:40,049 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, eligibility_indicator, eligibility_waiver_reason_text, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into subject_strat_ans (version, grid_id, retired_indicator, str_cri_id, strat_ans_id, sceph_id, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+Hibernate: update subject_strat_ans set sceph_id=? where id=?
+2007-11-07 13:57:40,085 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:40,085 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('SCHEDULED_ARMS_ID_seq')
+Hibernate: insert into scheduled_arms (version, grid_id, retired_indicator, eligibility_indicator, eligibility_waiver_reason_text, start_date, arm_id, kit_number, sceph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: update stratum_groups set version=?, grid_id=?, retired_indicator=?, stratum_group_number=?, current_position=? where id=? and version=?
+Hibernate: update study_subjects set version=?, grid_id=?, retired_indicator=?, reg_workflow_status=?, reg_data_entry_status=?, prt_id=?, sto_id=?, start_date=?, stratum_group_number=?, disease_history_id=?, informed_consent_signed_date=?, informed_consent_version=?, sti_id=?, other_treating_physician=?, off_study_date=?, off_study_reason_text=? where id=? and version=?
+Hibernate: update scheduled_epochs set version=?, grid_id=?, retired_indicator=?, eph_id=?, sc_epoch_workflow_status=?, sc_epoch_data_entry_status=?, disapproval_reason_text=?, start_date=?, eligibility_indicator=?, eligibility_waiver_reason_text=? where id=? and version=?
+Hibernate: update scheduled_arms set sceph_id=? where id=?
+2007-11-07 13:57:40,126 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:40,148 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:40,148 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:40,148 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:40,172 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:40,172 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:57:40,559 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+2007-11-07 13:57:40,565 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:57:40,597 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:40,597 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('RANDOMIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STRATUM_GROUPS_ID_SEQ')
+Hibernate: select nextval ('strat_criteria_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_ans_cmb_id_seq')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('book_rndm_entry_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, description_text, randomized_indicator, long_title_text, phase_code, precis_text, short_title_text, target_accrual_number, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into randomizations (version, grid_id, retired_indicator, dtype, id) values (?, ?, ?, 'BR', ?)
+Hibernate: insert into stratum_groups (version, grid_id, retired_indicator, stratum_group_number, current_position, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_criteria (version, grid_id, retired_indicator, question_number, question_text, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_ans_cmb (version, grid_id, retired_indicator, sc_id, scpa_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, eph_id, description_text, target_accrual_number, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into book_rndm_entry (version, grid_id, retired_indicator, str_grp_id, position, arms_id, rndm_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, start_date, target_accrual_number, site_study_status, irb_approval_date, role_code, end_date, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, study_id, hcs_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+Hibernate: update arms set version=?, grid_id=?, retired_indicator=?, name=?, eph_id=?, description_text=?, target_accrual_number=? where id=? and version=?
+Hibernate: update book_rndm_entry set rndm_id=? where id=?
+Hibernate: update strat_cri_ans_cmb set str_grp_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update strat_criteria set eph_id=? where id=?
+Hibernate: update stratum_groups set epochs_id=? where id=?
+2007-11-07 13:57:40,690 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-11-07 13:57:40,716 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:40,716 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDY_SUBJECTS_ID_SEQ')
+Hibernate: select nextval ('SCHEDULED_EPOCHS_ID_SEQ')
+Hibernate: select nextval ('subject_strat_ans_id_seq')
+2007-11-07 13:57:40,726 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+Hibernate: insert into study_subjects (version, grid_id, retired_indicator, reg_workflow_status, reg_data_entry_status, prt_id, sto_id, start_date, stratum_group_number, disease_history_id, informed_consent_signed_date, informed_consent_version, sti_id, other_treating_physician, off_study_date, off_study_reason_text, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into scheduled_epochs (version, grid_id, retired_indicator, eph_id, sc_epoch_workflow_status, sc_epoch_data_entry_status, disapproval_reason_text, start_date, spa_id, eligibility_indicator, eligibility_waiver_reason_text, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into subject_strat_ans (version, grid_id, retired_indicator, str_cri_id, strat_ans_id, sceph_id, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: update scheduled_epochs set spa_id=? where id=?
+Hibernate: update subject_strat_ans set sceph_id=? where id=?
+2007-11-07 13:57:40,765 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-11-07 13:57:40,765 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+Hibernate: update study_subjects set version=?, grid_id=?, retired_indicator=?, reg_workflow_status=?, reg_data_entry_status=?, prt_id=?, sto_id=?, start_date=?, stratum_group_number=?, disease_history_id=?, informed_consent_signed_date=?, informed_consent_version=?, sti_id=?, other_treating_physician=?, off_study_date=?, off_study_reason_text=? where id=? and version=?
+Hibernate: update scheduled_epochs set version=?, grid_id=?, retired_indicator=?, eph_id=?, sc_epoch_workflow_status=?, sc_epoch_data_entry_status=?, disapproval_reason_text=?, start_date=?, eligibility_indicator=?, eligibility_waiver_reason_text=? where id=? and version=?
+

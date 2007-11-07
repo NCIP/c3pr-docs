@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Vinay-Office-PC" name="edu.duke.cabig.c3pr.dao.StudyDaoTest" tests="31" time="16.166" timestamp="2007-11-07T18:55:46">
+  <properties>
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="ant.file.c3prv2 custom ant tasks" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-ant-tasks.xml" />
+    <property name="ant.file.c3pr-2.0-core" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build.xml" />
+    <property name="env.RoxioCentral" value="C:\Program Files\Common Files\Roxio Shared\9.0\Roxio Central33\" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.5.0_12\jre" />
+    <property name="test.src.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\src" />
+    <property name="test.project.jar" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build\jars\c3pr-2.0-core-tests-1.0.jar" />
+    <property name="env.PCBRAND" value="Pavilion" />
+    <property name="debug" value="on" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.5.0_12\jre\lib\endorsed" />
+    <property name="env.USERNAME" value="Vinay" />
+    <property name="src.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/src" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="env.COMPUTERNAME" value="VINAY-OFFICE-PC" />
+    <property name="ant.file.c3pr-2.0" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build.xml" />
+    <property name="java.version" value="1.5.0_12" />
+    <property name="csm.conf.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/conf//csm" />
+    <property name="test.logs.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\logs" />
+    <property name="conf.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/conf/" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="env.USERPROFILE" value="C:\Users\Vinay" />
+    <property name="test.lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib" />
+    <property name="env.SystemRoot" value="C:\Windows" />
+    <property name="user.name" value="Vinay" />
+    <property name="postgresql.csm.db.scripts.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db/PostGreSQL/csm" />
+    <property name="oracle.db.script.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db/oracle" />
+    <property name="ext.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/ext" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\Vinay\AppData\Local" />
+    <property name="lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/lib" />
+    <property name="project.version" value="1.0" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="user.timezone" value="" />
+    <property name="ant.file.c3pr-2.0-reports" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-reports.xml" />
+    <property name="path.separator" value=";" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 15 Stepping 6, GenuineIntel" />
+    <property name="env._JAVACMD" value="C:\Program Files\Java\jdk1.5.0_12\bin\java.exe" />
+    <property name="project.name" value="core" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="ext.resources.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\resources" />
+    <property name="junit.results.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\test\logs" />
+    <property name="env.NUMBER_OF_PROCESSORS" value="2" />
+    <property name="env.APPDATA" value="C:\Users\Vinay\AppData\Roaming" />
+    <property name="ant.file" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build.xml" />
+    <property name="src.java.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/src/java" />
+    <property name="ant.file.c3pr-2.0-artifacts" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-artifacts.xml" />
+    <property name="java.io.tmpdir" value="C:\Users\Vinay\AppData\Local\Temp\" />
+    <property name="ant.file.c3pr-2.0-core-test" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\antfiles\build-test.xml" />
+    <property name="user.language" value="en" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="line.separator" value="
+" />
+    <property name="bering.migration.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db/bering" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+    <property name="test.classes.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build\classes-test" />
+    <property name="ant.file.catrip-1.0-codedrop" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-codedrop.xml" />
+    <property name="env.LOGONSERVER" value="\\VINAY-OFFICE-PC" />
+    <property name="test.src.java.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\src\java" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="catalina.home" value="C:\Tomcat 5.5" />
+    <property name="env.USERDOMAIN" value="Vinay-Office-PC" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+    <property name="env.windir" value="C:\Windows" />
+    <property name="os.name" value="Windows Vista" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="env.TMP" value="C:\Users\Vinay\AppData\Local\Temp" />
+    <property name="postgresql.db.script.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db/PostGreSQL" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.5.0_12\jre\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_12\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Common Files\Roxio Shared\9.0\DLLShared\;C:\Tomcat 5.5\bin;C:\apache-ant-1.7.0\bin;" />
+    <property name="ant.java.version" value="1.5" />
+    <property name="basedir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core" />
+    <property name="java.class.version" value="49.0" />
+    <property name="ext.lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/ext/lib" />
+    <property name="ant.home" value="C:\apache-ant-1.7.0" />
+    <property name="env.Path" value="C:\Program Files\Java\jdk1.5.0_12\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Common Files\Roxio Shared\9.0\DLLShared\;C:\Tomcat 5.5\bin;C:\apache-ant-1.7.0\bin;" />
+    <property name="ext.test.lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\test\lib" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="net.sourceforge.cobertura.datafile" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\logs\queryengine.ser" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.5.0_12\jre\bin" />
+    <property name="build.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/build" />
+    <property name="env.PROCESSOR_REVISION" value="0f06" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="user.variant" value="" />
+    <property name="src.resources.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/src/resources" />
+    <property name="ant.file.c3pr-2.0-test" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-test.xml" />
+    <property name="jar.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/build/jars" />
+    <property name="ant.project.name" value="c3pr-2.0-core" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="env.GLOBUS_LOCATION" value="C:\Globus\ws-core-4.0.3" />
+    <property name="resources.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/resources" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="env.MAVEN_HOME" value="C:\Program Files\maven-2.0.7-bin\maven-2.0.7" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="build.context.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/build/classes/context" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.5.0_12\jre\lib\ext" />
+    <property name="os.version" value="6.0" />
+    <property name="cobertura.home" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8" />
+    <property name="db.scripts.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db" />
+    <property name="test.src.resources.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\src\resources" />
+    <property name="user.home" value="C:\Users\Vinay" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.5.0_12" />
+    <property name="antfiles.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/antfiles" />
+    <property name="user.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core" />
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+    <property name="test.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test" />
+    <property name="env.OnlineServices" value="Online Services" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env._USE_CLASSPATH" value="no" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
+    <property name="java.vm.version" value="1.5.0_12-b04" />
+    <property name="java.class.path" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\activation-1.0.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\avalon-framework-cvs-20020806.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\castor-1.1.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\commons-beanutils-1.7.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\commons-collections-3.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\commons-dbcp-1.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\commons-lang-2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\ejb3-persistence.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\fop.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\jakarta-oro-2.0.8.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\jstl.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\jta.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\mail-1.3.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\northwestern-core-commons.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\ojdbc14.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\postgresql-8.1-407.jdbc3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\standard.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\xbean-spring-2.7.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\acegi-csm-0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\acegi-csm-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\acegi-security-1.0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\acegi-security-cas-1.0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\acegi-security-tiger-1.0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\activeio-core-3.0-beta4.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\activemq-core-4.0.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\addressing-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ant-contrib.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\antlr-2.7.6.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\aopalliance.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\asm-2.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\asm-commons-2.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\asm-util-2.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\aspectjrt-1.5.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\aspectjweaver-1.5.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\axis-url.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\axis.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\backport-util-concurrent-2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\bootstrap.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\c3p0-0.8.5.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\c3pr-2.0-esb-client-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-ServiceSecurityProvider-client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-ServiceSecurityProvider-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-ServiceSecurityProvider-stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-authentication-service-client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-authentication-service-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-authentication-service-stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-dorian-client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-dorian-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-dorian-stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-metadata-security.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-opensaml-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cglib-nodep-2.1_3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\clm-3.2.1-ctms00.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\clm.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cog-axis.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cog-jglobus.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cog-tomcat.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cog-url.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\collections-generic-4.01.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commonj.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-cli-2.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-collections-3.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-digester.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-discovery.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-io-1.3.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-logging.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-pool-1.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\concurrent.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cryptix-asn1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cryptix.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cryptix32.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\csmapi-3.2.1-ctms00.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-base-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-base-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-core-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-core-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-laf-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-lang-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-lang-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-web-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-web-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\dom4j-1.6.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ehcache-1.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_wsrf_mds_aggregator.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_wsrf_mds_aggregator_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_wsrf_servicegroup.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_wsrf_servicegroup_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\grid-security-plugin-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\handle.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\handlerservice.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\hibernate-annotations.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\hibernate3.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jaxen-core.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jaxen-jdom.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jaxrpc.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jboss-j2ee-4.0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jboss-jsr77.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jce-jdk13-125.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jdom.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jgss.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\log4j-1.2.13.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\mobius_common_client-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\mobius_factories-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\mobius_gme_client-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\mobius_mako_client-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\mobius_tools-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\naming-java.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\puretls.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\saaj.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\saxpath.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\spring-aspects.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\spring.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsdl4j.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wss4j.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\xerces-2.6.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\xerces.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\xercesImpl.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\xmlsec.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\compile\lib\c3pr-management-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build\jars\c3pr-2.0-core-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build\jars\c3pr-2.0-core-tests-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\catrip-test-report-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\core-commons-testing.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\dbunit-2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\easymock.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\easymockclassextension.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\hsqldb.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\servlet-api.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\test\lib\junit-3.8.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\test\lib\spring-mock.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\cobertura.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\lib\asm-2.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\lib\jakarta-oro-2.0.8.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\lib\log4j-1.2.9.jar;C:\apache-ant-1.7.0\lib\ant-launcher.jar;C:\apache-ant-1.7.0\lib\ant.jar;C:\apache-ant-1.7.0\lib\ant-junit.jar" />
+    <property name="env.HOMEPATH" value="\Users\Vinay" />
+    <property name="oracle.csm.db.scripts.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db/oracle/csm" />
+    <property name="ant.library.dir" value="C:\apache-ant-1.7.0\lib" />
+    <property name="os.arch" value="x86" />
+    <property name="testcoverage.datafile" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\logs\queryengine.ser" />
+    <property name="env.PLATFORM" value="MCD" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="classes.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/build/classes" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.file.c3pr-2.0-utilities" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-utilities.xml" />
+    <property name="file.separator" value="\" />
+    <property name="env.ANT_CMD_LINE_ARGS" value="test" />
+    <property name="java.runtime.version" value="1.5.0_12-b04" />
+    <property name="project.jarfile" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/build/jars/c3pr-2.0-core-1.0.jar" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.5.0_12\jre\lib\rt.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\i18n.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\jce.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.5.0_12\jre\classes" />
+    <property name="env.ComSpec" value="C:\Windows\system32\cmd.exe" />
+    <property name="env.TEMP" value="C:\Users\Vinay\AppData\Local\Temp" />
+    <property name="user.country" value="US" />
+    <property name="env.ANT_HOME" value="C:\apache-ant-1.7.0" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="c3pr.properties.file" value="c3pr.properties" />
+    <property name="env.CATALINA_HOME" value="C:\Tomcat 5.5" />
+    <property name="java.specification.version" value="1.5" />
+    <property name="sun.arch.data.model" value="32" />
+  </properties>
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testWhereAndWhere" time="1.07" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testGetById" time="0.528" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testGetAll" time="0.573" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testAmendAnExistingStudy" time="0.575" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSaveNewStudyWithSecurity" time="0.509" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSaveCalloutRandomizations" time="0.521" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSaveStudyWithAnsComb" time="0.568" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSaveStudyWithRandomizations" time="0.538" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testComboGenerator" time="0.424" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSaveNewStudyWithAssociations" time="0.578" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testHibernateBug" time="0.548" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testGetStudySites" time="0.43" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testGetEpochs" time="0.433" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testGetTreatmentEpochs" time="0.666" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testGetStudySubjectsForStudy" time="0.52" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSearchStudySimple" time="0.52" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testIdentifierUniqueResults" time="0.463" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSaveNewStudyWithTreatmentEpochs" time="0.499" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSaveNewStudyWithNonTreatmentEpochs" time="0.622" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSaveNewStudyWithTreatmentEpochsAndArms" time="0.495" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSearchStudyByWildCards" time="0.477" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testGetStudyFundingSponsors" time="0.422" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testGetStudyCoordinatingCenters" time="0.411" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSaveNewStudyWithFundingSponsor" time="0.508" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSaveNewStudyWithCoordinatingCenter" time="0.475" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testFailureSaveTwoIdentifiersWithSameOrgAndSameTypeInStudy" time="0.489" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testFailureSaveTwoStudyOrganizationsWithSameOrgAndSameType" time="0.477" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testFailureTwoEpochsWithSameNameInStudy" time="0.426" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testFailureSaveTwoStudyFundingSponsorIdentifiersWithSameValue" time="0.479" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testSaveNewStudyWithAmendment" time="0.438" />
+  <testcase classname="edu.duke.cabig.c3pr.dao.StudyDaoTest" name="testEpochOrder" time="0.408" />
+  <system-out><![CDATA[2007-11-07 13:55:39,237 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@12611a7: display name [org.springframework.context.support.ClassPathXmlApplicationContext@12611a7]; startup date [Wed Nov 07 13:55:39 EST 2007]; root of context hierarchy
+2007-11-07 13:55:39,326 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-core.xml]
+2007-11-07 13:55:39,974 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-core-db.xml]
+2007-11-07 13:55:40,031 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-csm.xml]
+2007-11-07 13:55:40,111 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@12611a7]: org.springframework.beans.factory.support.DefaultListableBeanFactory@59fb21
+2007-11-07 13:55:40,321 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from class path resource [context/c3pr.properties]
+2007-11-07 13:55:40,323 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from URL [file:C:/Users/Vinay/.c3pr/c3pr.properties]
+2007-11-07 13:55:40,324 WARN  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Could not load properties from URL [file:C:/Users/Vinay/.c3pr/c3pr.properties]: C:\Users\Vinay\.c3pr\c3pr.properties (The system cannot find the path specified)
+2007-11-07 13:55:40,325 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from URL [file:C:/Tomcat 5.5/conf/c3pr.properties]
+2007-11-07 13:55:40,325 WARN  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Could not load properties from URL [file:C:/Tomcat 5.5/conf/c3pr.properties]: C:\Tomcat 5.5\conf\c3pr.properties (The system cannot find the file specified)
+2007-11-07 13:55:40,366 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.aop.config.internalAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:40,377 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:40,492 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'dataSource' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:40,501 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.hibernate.cfg.ImprovedNamingStrategy#1a001ff' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:40,520 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'gridIdentifierCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:40,521 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'gridIdentifierInterceptor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:40,525 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'chainedInterceptor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:40,539 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'hibernateProperties' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:40,539 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'hibernateProperties' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:40,582 INFO  org.hibernate.cfg.annotations.Version : Hibernate Annotations 3.2.0.CR2
+2007-11-07 13:55:40,600 INFO  org.hibernate.cfg.Environment : Hibernate 3.2.1
+2007-11-07 13:55:40,605 INFO  org.hibernate.cfg.Environment : hibernate.properties not found
+2007-11-07 13:55:40,609 INFO  org.hibernate.cfg.Environment : Bytecode provider name : cglib
+2007-11-07 13:55:40,614 INFO  org.hibernate.cfg.Environment : using JDK 1.4 java.sql.Timestamp handling
+2007-11-07 13:55:40,753 INFO  org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean : Building new Hibernate SessionFactory
+2007-11-07 13:55:40,895 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Study
+2007-11-07 13:55:40,941 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Study on table studies
+2007-11-07 13:55:41,100 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Epoch
+2007-11-07 13:55:41,101 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Epoch on table epochs
+2007-11-07 13:55:41,210 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.NonTreatmentEpoch
+2007-11-07 13:55:41,238 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.TreatmentEpoch
+2007-11-07 13:55:41,323 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Arm
+2007-11-07 13:55:41,323 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Arm on table arms
+2007-11-07 13:55:41,331 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyOrganization
+2007-11-07 13:55:41,334 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyOrganization on table study_organizations
+2007-11-07 13:55:41,350 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudySite
+2007-11-07 13:55:41,359 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyCoordinatingCenter
+2007-11-07 13:55:41,362 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyFundingSponsor
+2007-11-07 13:55:41,363 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.HealthcareSite
+2007-11-07 13:55:41,365 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.HealthcareSite on table organizations
+2007-11-07 13:55:41,381 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Address
+2007-11-07 13:55:41,381 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Address on table addresses
+2007-11-07 13:55:41,390 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudySubject
+2007-11-07 13:55:41,391 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudySubject on table study_subjects
+2007-11-07 13:55:41,419 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyInvestigator
+2007-11-07 13:55:41,420 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyInvestigator on table study_investigators
+2007-11-07 13:55:41,429 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator
+2007-11-07 13:55:41,430 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator on table hc_site_investigators
+2007-11-07 13:55:41,440 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyPersonnel
+2007-11-07 13:55:41,441 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyPersonnel on table study_personnel
+2007-11-07 13:55:41,450 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Participant
+2007-11-07 13:55:41,451 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Participant on table participants
+2007-11-07 13:55:41,472 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ResearchStaff
+2007-11-07 13:55:41,473 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ResearchStaff on table research_staff
+2007-11-07 13:55:41,489 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Investigator
+2007-11-07 13:55:41,490 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Investigator on table investigators
+2007-11-07 13:55:41,517 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledArm
+2007-11-07 13:55:41,518 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ScheduledArm on table scheduled_arms
+2007-11-07 13:55:41,526 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Identifier
+2007-11-07 13:55:41,527 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Identifier on table identifiers
+2007-11-07 13:55:41,532 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SystemAssignedIdentifier
+2007-11-07 13:55:41,534 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.OrganizationAssignedIdentifier
+2007-11-07 13:55:41,536 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.EligibilityCriteria
+2007-11-07 13:55:41,536 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.EligibilityCriteria on table eligibility_criteria
+2007-11-07 13:55:41,540 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SubjectEligibilityAnswer
+2007-11-07 13:55:41,541 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.SubjectEligibilityAnswer on table subject_eligibility_ans
+2007-11-07 13:55:41,548 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.InclusionEligibilityCriteria
+2007-11-07 13:55:41,549 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ExclusionEligibilityCriteria
+2007-11-07 13:55:41,550 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyDisease
+2007-11-07 13:55:41,550 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyDisease on table study_diseases
+2007-11-07 13:55:41,557 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseCategory
+2007-11-07 13:55:41,558 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseCategory on table disease_categories
+2007-11-07 13:55:41,564 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseTerm
+2007-11-07 13:55:41,564 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseTerm on table disease_terms
+2007-11-07 13:55:41,570 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterion
+2007-11-07 13:55:41,571 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterion on table strat_criteria
+2007-11-07 13:55:41,577 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterionPermissibleAnswer
+2007-11-07 13:55:41,577 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterionPermissibleAnswer on table strat_cri_per_ans
+2007-11-07 13:55:41,582 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SubjectStratificationAnswer
+2007-11-07 13:55:41,583 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.SubjectStratificationAnswer on table subject_strat_ans
+2007-11-07 13:55:41,589 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.AnatomicSite
+2007-11-07 13:55:41,590 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.AnatomicSite on table anatomic_sites
+2007-11-07 13:55:41,594 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseHistory
+2007-11-07 13:55:41,595 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseHistory on table disease_history
+2007-11-07 13:55:41,601 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ContactMechanism
+2007-11-07 13:55:41,602 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ContactMechanism on table contact_mechanisms
+2007-11-07 13:55:41,607 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledEpoch
+2007-11-07 13:55:41,608 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ScheduledEpoch on table scheduled_epochs
+2007-11-07 13:55:41,617 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch
+2007-11-07 13:55:41,626 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-11-07 13:55:41,628 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratumGroup
+2007-11-07 13:55:41,628 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratumGroup on table stratum_groups
+2007-11-07 13:55:41,637 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.BookRandomizationEntry
+2007-11-07 13:55:41,638 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.BookRandomizationEntry on table book_rndm_entry
+2007-11-07 13:55:41,643 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Randomization
+2007-11-07 13:55:41,644 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Randomization on table randomizations
+2007-11-07 13:55:41,648 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.BookRandomization
+2007-11-07 13:55:41,652 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.CalloutRandomization
+2007-11-07 13:55:41,654 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.PhonecallRandomization
+2007-11-07 13:55:41,656 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterionAnswerCombination
+2007-11-07 13:55:41,657 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterionAnswerCombination on table strat_cri_ans_cmb
+2007-11-07 13:55:41,660 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyAmendment
+2007-11-07 13:55:41,661 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyAmendment on table study_amendments
+2007-11-07 13:55:41,683 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.BookRandomization.bookRandomizationEntryInternal -> book_rndm_entry
+2007-11-07 13:55:41,685 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratumGroup.stratificationCriterionAnswerCombinationInternal -> strat_cri_ans_cmb
+2007-11-07 13:55:41,686 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.scheduledArmsInternal -> scheduled_arms
+2007-11-07 13:55:41,686 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.subjectStratificationAnswersInternal -> subject_strat_ans
+2007-11-07 13:55:41,686 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.subjectEligibilityAnswersInternal -> subject_eligibility_ans
+2007-11-07 13:55:41,687 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratificationCriterion.permissibleAnswersInternal -> strat_cri_per_ans
+2007-11-07 13:55:41,688 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Investigator.contactMechanisms -> contact_mechanisms
+2007-11-07 13:55:41,688 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ResearchStaff.contactMechanisms -> contact_mechanisms
+2007-11-07 13:55:41,690 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.contactMechanisms -> contact_mechanisms
+2007-11-07 13:55:41,691 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.identifiers -> identifiers
+2007-11-07 13:55:41,691 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySubject.scheduledEpochs -> scheduled_epochs
+2007-11-07 13:55:41,695 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySubject.identifiers -> identifiers
+2007-11-07 13:55:41,695 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.stratumGroupsInternal -> stratum_groups
+2007-11-07 13:55:41,695 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.stratificationCriteriaInternal -> strat_criteria
+2007-11-07 13:55:41,699 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.exclusionEligibilityCriteriaInternal -> eligibility_criteria
+2007-11-07 13:55:41,699 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.eligibilityCriteriaInternal -> eligibility_criteria
+2007-11-07 13:55:41,700 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.armsInternal -> arms
+2007-11-07 13:55:41,703 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.inclusionEligibilityCriteriaInternal -> eligibility_criteria
+2007-11-07 13:55:41,703 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyAmendmentsInternal -> study_amendments
+2007-11-07 13:55:41,706 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.identifiers -> identifiers
+2007-11-07 13:55:41,713 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.epochs -> epochs
+2007-11-07 13:55:41,713 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyOrganizations -> study_organizations
+2007-11-07 13:55:41,714 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyDiseases -> study_diseases
+2007-11-07 13:55:41,714 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudyOrganization.studyInvestigatorsInternal -> study_investigators
+2007-11-07 13:55:41,714 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudyOrganization.studyPersonnelInternal -> study_personnel
+2007-11-07 13:55:41,715 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySite.studySubjects -> study_subjects
+2007-11-07 13:55:41,715 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.identifiers -> identifiers
+2007-11-07 13:55:41,719 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.studyOrganizations -> study_organizations
+2007-11-07 13:55:41,719 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.healthcareSiteInvestigators -> hc_site_investigators
+2007-11-07 13:55:41,719 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.researchStaffs -> research_staff
+2007-11-07 13:55:41,725 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator.studyInvestigators -> study_investigators
+2007-11-07 13:55:41,725 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.studySubjects -> study_subjects
+2007-11-07 13:55:41,726 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ResearchStaff.studyPersonnels -> study_personnel
+2007-11-07 13:55:41,728 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Investigator.healthcareSiteInvestigatorsInternal -> hc_site_investigators
+2007-11-07 13:55:41,728 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.DiseaseCategory.terms -> disease_terms
+2007-11-07 13:55:41,728 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.DiseaseCategory.childCategories -> disease_categories
+2007-11-07 13:55:41,732 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratumGroup.bookRandomizationEntryInternal -> book_rndm_entry
+2007-11-07 13:55:42,056 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@1128f5a)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+2007-11-07 13:55:42,305 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-11-07 13:55:42,306 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-11-07 13:55:42,330 INFO  org.hibernate.dialect.Dialect : Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2007-11-07 13:55:42,338 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-11-07 13:55:42,341 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-11-07 13:55:42,341 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-11-07 13:55:42,343 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-11-07 13:55:42,343 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-11-07 13:55:42,343 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-11-07 13:55:42,344 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-11-07 13:55:42,345 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-11-07 13:55:42,345 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-11-07 13:55:42,345 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-11-07 13:55:42,345 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-11-07 13:55:42,345 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-11-07 13:55:42,346 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-11-07 13:55:42,351 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-11-07 13:55:42,351 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-11-07 13:55:42,351 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-11-07 13:55:42,352 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-11-07 13:55:42,353 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-11-07 13:55:42,353 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-11-07 13:55:42,353 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-11-07 13:55:42,353 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-11-07 13:55:42,364 INFO  org.hibernate.cfg.SettingsFactory : Echoing all SQL to stdout
+2007-11-07 13:55:42,364 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-11-07 13:55:42,364 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-11-07 13:55:42,364 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-11-07 13:55:42,404 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-11-07 13:55:43,807 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-11-07 13:55:43,837 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'sessionFactory' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:43,841 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'sessionFactory' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:43,858 INFO  org.springframework.orm.hibernate3.HibernateTransactionManager : Using DataSource [org.apache.commons.dbcp.BasicDataSource@11f139b] of Hibernate SessionFactory for HibernateTransactionManager
+2007-11-07 13:55:43,858 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'transactionManager' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:43,869 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:43,869 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:43,869 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-11-07 13:55:43,895 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59fb21: defining beans [transactionManager,c3prPropertyConfigurer,org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor,sessionFactory,auditOpenSessionInViewInterceptor,auditSessionFactory,chainedInterceptor,auditInterceptor,dataAuditRepository,gridIdentifierInterceptor,hibernateTemplate,daoTemplate,openSessionInViewInterceptor,gridIdentifierCreator,studyValidator,studySiteValidator,epochValidator,armValidator,identifierValidator,participantValidator,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor,studyDao,studySubjectDao,studySiteDao,epochDao,scheduledEpochDao,armDao,participantDao,healthcareSiteDao,healthcareSiteInvestigatorDao,studyPersonnelDao,researchStaffDao,investigatorDao,diseaseCategoryDao,diseaseTermDao,studyInvestigatorDao,StratificationCriterionDao,anatomicSiteDao,organizationDao,stratificationAnswerDao,stratumGroupDao,studyService,participantService,studySubjectService,studyXMLImporterService,personnelService,organizationService,sitePrivilegeAndObjectIdGenerator,mailSender,confirmationEmailer,accountCreatedTemplateMessage,xmlUtility,xmlParser,c3prErrorMessages,multsiteErrorMessageSource,exceptionHelper,dataSourceTemplate,dataSource,hibernateProperties,auditHibernateProperties,csmApplicationContextName,ACCESS_PRIVILEGE,authorizationSwitch,booleanFromString,csmAuthorizationDao,csmUserProvisioningManager,csmAuthenticationManager]; root of factory hierarchy
+2007-11-07 13:55:43,923 INFO  org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean : Building new Hibernate SessionFactory
+2007-11-07 13:55:43,925 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEventValue
+2007-11-07 13:55:43,926 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity gov.nih.nci.cabig.ctms.audit.domain.DataAuditEventValue on table audit_event_values
+2007-11-07 13:55:43,932 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent
+2007-11-07 13:55:43,933 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent on table audit_events
+2007-11-07 13:55:43,967 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent.values -> audit_event_values
+2007-11-07 13:55:43,996 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2007-11-07 13:55:43,998 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-11-07 13:55:43,998 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-11-07 13:55:44,000 INFO  org.hibernate.dialect.Dialect : Using dialect: edu.duke.cabig.c3pr.hibernate.ImprovedPostgreSQLDialect
+2007-11-07 13:55:44,000 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-11-07 13:55:44,000 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-11-07 13:55:44,000 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-11-07 13:55:44,001 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-11-07 13:55:44,001 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-11-07 13:55:44,001 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-11-07 13:55:44,001 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-11-07 13:55:44,001 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-11-07 13:55:44,004 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-11-07 13:55:44,004 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-11-07 13:55:44,004 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-11-07 13:55:44,004 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-11-07 13:55:44,004 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-11-07 13:55:44,009 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-11-07 13:55:44,009 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-11-07 13:55:44,009 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-11-07 13:55:44,009 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-11-07 13:55:44,009 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-11-07 13:55:44,015 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-11-07 13:55:44,015 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-11-07 13:55:44,015 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-11-07 13:55:44,016 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-11-07 13:55:44,016 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-11-07 13:55:44,021 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-11-07 13:55:44,028 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-11-07 13:55:44,064 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-11-07 13:55:44,274 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setSessionFactory(org.hibernate.SessionFactory)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-11-07 13:55:44,274 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final org.hibernate.SessionFactory org.springframework.orm.hibernate3.support.HibernateDaoSupport.getSessionFactory()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-11-07 13:55:44,274 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final org.springframework.orm.hibernate3.HibernateTemplate org.springframework.orm.hibernate3.support.HibernateDaoSupport.getHibernateTemplate()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-11-07 13:55:44,277 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setHibernateTemplate(org.springframework.orm.hibernate3.HibernateTemplate)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-11-07 13:55:44,277 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-11-07 13:55:45,182 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Privilege -> CSM_PRIVILEGE
+2007-11-07 13:55:45,237 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Application -> CSM_APPLICATION
+2007-11-07 13:55:45,267 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Role -> CSM_ROLE
+2007-11-07 13:55:45,269 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.Role.privileges -> CSM_ROLE_PRIVILEGE
+2007-11-07 13:55:45,294 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.RolePrivilege -> CSM_ROLE_PRIVILEGE
+2007-11-07 13:55:45,312 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.UserGroup -> CSM_USER_GROUP
+2007-11-07 13:55:45,333 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.ProtectionGroupProtectionElement -> CSM_PG_PE
+2007-11-07 13:55:45,347 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Group -> CSM_GROUP
+2007-11-07 13:55:45,348 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.Group.users -> CSM_USER_GROUP
+2007-11-07 13:55:45,380 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.User -> CSM_USER
+2007-11-07 13:55:45,382 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.User.groups -> CSM_USER_GROUP
+2007-11-07 13:55:45,400 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.ProtectionGroup -> CSM_PROTECTION_GROUP
+2007-11-07 13:55:45,401 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionGroup.protectionElements -> CSM_PG_PE
+2007-11-07 13:55:45,422 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.ProtectionElement -> CSM_PROTECTION_ELEMENT
+2007-11-07 13:55:45,425 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionElement.protectionGroups -> CSM_PG_PE
+2007-11-07 13:55:45,425 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionElement.owners -> CSM_USER_PE
+2007-11-07 13:55:45,436 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.UserGroupRoleProtectionGroup -> CSM_USER_GROUP_ROLE_PG
+2007-11-07 13:55:45,452 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.UserProtectionElement -> CSM_USER_PE
+2007-11-07 13:55:45,453 INFO  org.springframework.orm.hibernate3.LocalSessionFactoryBean : Building new Hibernate SessionFactory
+2007-11-07 13:55:45,457 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2007-11-07 13:55:45,458 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-11-07 13:55:45,458 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-11-07 13:55:45,458 INFO  org.hibernate.dialect.Dialect : Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2007-11-07 13:55:45,459 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-11-07 13:55:45,460 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-11-07 13:55:45,460 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-11-07 13:55:45,460 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-11-07 13:55:45,460 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-11-07 13:55:45,463 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-11-07 13:55:45,463 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-11-07 13:55:45,463 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-11-07 13:55:45,463 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-11-07 13:55:45,463 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-11-07 13:55:45,463 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-11-07 13:55:45,467 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-11-07 13:55:45,467 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-11-07 13:55:45,467 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-11-07 13:55:45,467 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-11-07 13:55:45,467 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-11-07 13:55:45,474 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-11-07 13:55:45,474 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-11-07 13:55:45,474 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-11-07 13:55:45,474 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-11-07 13:55:45,474 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-11-07 13:55:45,478 INFO  org.hibernate.cfg.SettingsFactory : Echoing all SQL to stdout
+2007-11-07 13:55:45,479 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-11-07 13:55:45,479 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-11-07 13:55:45,479 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-11-07 13:55:45,485 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-11-07 13:55:45,609 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+Hibernate: select applicatio0_.APPLICATION_ID as APPLICAT1_83_, applicatio0_.APPLICATION_NAME as APPLICAT2_83_, applicatio0_.APPLICATION_DESCRIPTION as APPLICAT3_83_, applicatio0_.ACTIVE_FLAG as ACTIVE4_83_, applicatio0_.DECLARATIVE_FLAG as DECLARAT5_83_, applicatio0_.UPDATE_DATE as UPDATE6_83_, applicatio0_.DATABASE_URL as DATABASE7_83_, applicatio0_.DATABASE_USER_NAME as DATABASE8_83_, applicatio0_.DATABASE_PASSWORD as DATABASE9_83_, applicatio0_.DATABASE_DIALECT as DATABASE10_83_, applicatio0_.DATABASE_DRIVER as DATABASE11_83_ from CSM_APPLICATION applicatio0_ where applicatio0_.APPLICATION_NAME='c3pr'
+2007-11-07 13:55:46,870 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select study0_.id as id0_0_, study0_.version as version0_0_, study0_.grid_id as grid3_0_0_, study0_.retired_indicator as retired4_0_0_, study0_.type as type0_0_, study0_.precis_text as precis6_0_0_, study0_.short_title_text as short7_0_0_, study0_.description_text as descript8_0_0_, study0_.randomized_indicator as randomized9_0_0_, study0_.target_accrual_number as target10_0_0_, study0_.long_title_text as long11_0_0_, study0_.phase_code as phase12_0_0_, study0_.blinded_indicator as blinded13_0_0_, study0_.multi_institution_indicator as multi14_0_0_, study0_.randomization_type as randomi15_0_0_, study0_.data_entry_status as data16_0_0_, study0_.status as status0_0_, study0_.consent_version as consent18_0_0_ from studies study0_ where study0_.id=?
+Hibernate: select epochs0_.stu_id as stu14_2_, epochs0_.id as id2_, epochs0_.id as id1_1_, epochs0_.version as version1_1_, epochs0_.grid_id as grid4_1_1_, epochs0_.retired_indicator as retired5_1_1_, epochs0_.name as name1_1_, epochs0_.stu_id as stu14_1_1_, epochs0_.description_text as descript7_1_1_, epochs0_.epoch_order as epoch8_1_1_, epochs0_.enrollment_indicator as enrollment9_1_1_, epochs0_.accrual_indicator as accrual10_1_1_, epochs0_.reservation_indicator as reserva11_1_1_, epochs0_.accrual_ceiling as accrual12_1_1_, epochs0_.rndm_id as rndm15_1_1_, epochs0_.randomized_indicator as randomized13_1_1_, epochs0_.type as type1_1_, randomizat1_.id as id29_0_, randomizat1_.version as version29_0_, randomizat1_.grid_id as grid4_29_0_, randomizat1_.retired_indicator as retired5_29_0_, randomizat1_.callout_url as callout6_29_0_, randomizat1_.phone_number as phone7_29_0_, randomizat1_.dtype as dtype29_0_ from epochs epochs0_ left outer join randomizations randomizat1_ on epochs0_.rndm_id=randomizat1_.id where  ( epochs0_.retired_indicator  = 'false')  and epochs0_.stu_id=? order by epochs0_.epoch_order asc
+Hibernate: select inclusione0_.eph_id as eph9_1_, inclusione0_.id as id1_, inclusione0_.id as id15_0_, inclusione0_.version as version15_0_, inclusione0_.grid_id as grid4_15_0_, inclusione0_.retired_indicator as retired5_15_0_, inclusione0_.not_applicable_indicator as not6_15_0_, inclusione0_.question_number as question7_15_0_, inclusione0_.question_text as question8_15_0_ from eligibility_criteria inclusione0_ where  ( inclusione0_.DTYPE = 'I' and inclusione0_.retired_indicator  = 'false')  and inclusione0_.eph_id=?
+2007-11-07 13:55:47,714 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:48,165 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select study0_.id as id0_, study0_.version as version0_, study0_.grid_id as grid3_0_, study0_.retired_indicator as retired4_0_, study0_.type as type0_, study0_.precis_text as precis6_0_, study0_.short_title_text as short7_0_, study0_.description_text as descript8_0_, study0_.randomized_indicator as randomized9_0_, study0_.target_accrual_number as target10_0_, study0_.long_title_text as long11_0_, study0_.phase_code as phase12_0_, study0_.blinded_indicator as blinded13_0_, study0_.multi_institution_indicator as multi14_0_, study0_.randomization_type as randomi15_0_, study0_.data_entry_status as data16_0_, study0_.status as status0_, study0_.consent_version as consent18_0_ from studies study0_
+2007-11-07 13:55:48,773 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select studyamend0_.stu_id as stu15_1_, studyamend0_.id as id1_, studyamend0_.id as id31_0_, studyamend0_.version as version31_0_, studyamend0_.grid_id as grid3_31_0_, studyamend0_.retired_indicator as retired4_31_0_, studyamend0_.comments as comments31_0_, studyamend0_.amendment_date as amendment6_31_0_, studyamend0_.consent_changed_indicator as consent7_31_0_, studyamend0_.diseases_changed_indicator as diseases8_31_0_, studyamend0_.eligibility_changed_indicator as eligibil9_31_0_, studyamend0_.ea_changed_indicator as ea10_31_0_, studyamend0_.strat_changed_indicator as strat11_31_0_, studyamend0_.pi_changed_indicator as pi12_31_0_, studyamend0_.rndm_changed_indicator as rndm13_31_0_, studyamend0_.amendment_version as amendment14_31_0_ from study_amendments studyamend0_ where studyamend0_.stu_id=?
+Hibernate: select nextval ('STUDY_AMENDMENTS_ID_SEQ')
+Hibernate: insert into study_amendments (version, grid_id, retired_indicator, comments, amendment_date, consent_changed_indicator, diseases_changed_indicator, eligibility_changed_indicator, ea_changed_indicator, strat_changed_indicator, pi_changed_indicator, rndm_changed_indicator, amendment_version, stu_id, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: update studies set version=?, grid_id=?, retired_indicator=?, type=?, precis_text=?, short_title_text=?, description_text=?, randomized_indicator=?, target_accrual_number=?, long_title_text=?, phase_code=?, blinded_indicator=?, multi_institution_indicator=?, randomization_type=?, data_entry_status=?, status=?, consent_version=? where id=? and version=?
+Hibernate: update study_amendments set stu_id=? where id=?
+2007-11-07 13:55:48,853 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:48,876 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:48,876 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:49,340 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2007-11-07 13:55:49,372 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:49,381 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:49,381 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:49,833 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('RANDOMIZATIONS_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into randomizations (version, grid_id, retired_indicator, callout_url, dtype, id) values (?, ?, ?, ?, 'CR', ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: update arms set eph_id=? where id=?
+2007-11-07 13:55:49,881 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:49,905 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:49,905 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:50,344 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('STRATUM_GROUPS_ID_SEQ')
+Hibernate: select nextval ('strat_criteria_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_ans_cmb_id_seq')
+Hibernate: select nextval ('strat_criteria_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_ans_cmb_id_seq')
+Hibernate: select nextval ('STRATUM_GROUPS_ID_SEQ')
+Hibernate: select nextval ('strat_cri_ans_cmb_id_seq')
+Hibernate: select nextval ('strat_cri_ans_cmb_id_seq')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into stratum_groups (version, grid_id, retired_indicator, current_position, stratum_group_number, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_criteria (version, grid_id, retired_indicator, question_number, question_text, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_ans_cmb (version, grid_id, retired_indicator, sc_id, scpa_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_criteria (version, grid_id, retired_indicator, question_number, question_text, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_ans_cmb (version, grid_id, retired_indicator, sc_id, scpa_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into stratum_groups (version, grid_id, retired_indicator, current_position, stratum_group_number, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_ans_cmb (version, grid_id, retired_indicator, sc_id, scpa_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_ans_cmb (version, grid_id, retired_indicator, sc_id, scpa_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update stratum_groups set epochs_id=? where id=?
+Hibernate: update stratum_groups set epochs_id=? where id=?
+Hibernate: update strat_cri_ans_cmb set str_grp_id=? where id=?
+Hibernate: update strat_cri_ans_cmb set str_grp_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update strat_cri_ans_cmb set str_grp_id=? where id=?
+Hibernate: update strat_cri_ans_cmb set str_grp_id=? where id=?
+2007-11-07 13:55:50,460 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:50,474 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:50,474 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:50,911 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('RANDOMIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STRATUM_GROUPS_ID_SEQ')
+Hibernate: select nextval ('strat_criteria_ID_SEQ')
+Hibernate: select nextval ('strat_cri_per_ans_ID_SEQ')
+Hibernate: select nextval ('strat_cri_ans_cmb_id_seq')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('book_rndm_entry_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into randomizations (version, grid_id, retired_indicator, dtype, id) values (?, ?, ?, 'BR', ?)
+Hibernate: insert into stratum_groups (version, grid_id, retired_indicator, current_position, stratum_group_number, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_criteria (version, grid_id, retired_indicator, question_number, question_text, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_per_ans (version, grid_id, retired_indicator, permissible_answer, str_cri_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into strat_cri_ans_cmb (version, grid_id, retired_indicator, sc_id, scpa_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into book_rndm_entry (version, grid_id, retired_indicator, str_grp_id, position, arms_id, rndm_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: update arms set version=?, grid_id=?, retired_indicator=?, name=?, description_text=?, target_accrual_number=?, eph_id=? where id=? and version=?
+Hibernate: update book_rndm_entry set rndm_id=? where id=?
+Hibernate: update strat_cri_ans_cmb set str_grp_id=? where id=?
+Hibernate: update strat_cri_per_ans set str_cri_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update strat_criteria set eph_id=? where id=?
+Hibernate: update stratum_groups set epochs_id=? where id=?
+2007-11-07 13:55:51,004 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:51,017 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:51,017 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:51,451 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+
+2007-11-07 13:55:51,867 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('investigators_id_seq')
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+hc site id ************85
+Hibernate: select nextval ('hc_site_investigators_id_seq')
+hcsi id ************35
+Hibernate: select nextval ('DISEASE_CATEGORIES_ID_SEQ')
+disease disCat id ************10
+Hibernate: select nextval ('DISEASE_TERMS_ID_SEQ')
+disease term1 id ************19
+Hibernate: select nextval ('DISEASE_TERMS_ID_SEQ')
+disease term2 id ************20
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('IDENTIFIERS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('study_investigators_id_seq')
+Hibernate: select nextval ('STUDY_DISEASES_ID_SEQ')
+Hibernate: insert into investigators (version, grid_id, retired_indicator, first_name, last_name, add_id, maiden_name, middle_name, login_id, nci_identifier, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into hc_site_investigators (version, grid_id, retired_indicator, hcs_id, status_code, inv_id, status_date, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into disease_categories (version, grid_id, retired_indicator, name, parent_id, id) values (?, ?, ?, ?, ?, ?)
+Hibernate: insert into disease_terms (version, grid_id, retired_indicator, category_id, term, medra_code, ctep_term, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into disease_terms (version, grid_id, retired_indicator, category_id, term, medra_code, ctep_term, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into identifiers (version, grid_id, retired_indicator, value, type, primary_indicator, system_name, dtype, id) values (?, ?, ?, ?, ?, ?, ?, 'SAI', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, hcs_id, study_id, irb_approval_date, start_date, role_code, end_date, site_study_status, target_accrual_number, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_investigators (version, grid_id, retired_indicator, status_code, start_date, role_code, end_date, hsi_id, sto_id, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into study_diseases (version, grid_id, retired_indicator, study_id, disease_term_id, lead_disease, id) values (?, ?, ?, ?, ?, ?, ?)
+Hibernate: update identifiers set stu_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+2007-11-07 13:55:51,999 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:52,022 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:52,022 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:52,451 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('organizations_id_seq')
+Hibernate: select nextval ('addresses_id_seq')
+hc site id ************86
+Hibernate: select nextval ('investigators_id_seq')
+Hibernate: select nextval ('hc_site_investigators_id_seq')
+hcsi id ************36
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('IDENTIFIERS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('study_investigators_id_seq')
+Hibernate: insert into addresses (version, grid_id, retired_indicator, street_address, city, state_code, postal_code, country_code, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into organizations (version, grid_id, retired_indicator, address_id, name, description_text, nci_institute_code, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into investigators (version, grid_id, retired_indicator, first_name, last_name, add_id, maiden_name, middle_name, login_id, nci_identifier, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into hc_site_investigators (version, grid_id, retired_indicator, hcs_id, status_code, inv_id, status_date, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into identifiers (version, grid_id, retired_indicator, value, type, primary_indicator, system_name, dtype, id) values (?, ?, ?, ?, ?, ?, ?, 'SAI', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, hcs_id, study_id, irb_approval_date, start_date, role_code, end_date, site_study_status, target_accrual_number, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_investigators (version, grid_id, retired_indicator, status_code, start_date, role_code, end_date, hsi_id, sto_id, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: update identifiers set stu_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+2007-11-07 13:55:52,555 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:52,577 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:52,577 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:52,997 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select studyorgan0_.study_id as study12_3_, studyorgan0_.id as id3_, studyorgan0_.id as id3_2_, studyorgan0_.version as version3_2_, studyorgan0_.grid_id as grid4_3_2_, studyorgan0_.retired_indicator as retired5_3_2_, studyorgan0_.hcs_id as hcs13_3_2_, studyorgan0_.study_id as study12_3_2_, studyorgan0_.irb_approval_date as irb6_3_2_, studyorgan0_.start_date as start7_3_2_, studyorgan0_.role_code as role8_3_2_, studyorgan0_.end_date as end9_3_2_, studyorgan0_.site_study_status as site10_3_2_, studyorgan0_.target_accrual_number as target11_3_2_, studyorgan0_.type as type3_2_, healthcare1_.id as id4_0_, healthcare1_.version as version4_0_, healthcare1_.grid_id as grid3_4_0_, healthcare1_.retired_indicator as retired4_4_0_, healthcare1_.address_id as address8_4_0_, healthcare1_.name as name4_0_, healthcare1_.description_text as descript6_4_0_, healthcare1_.nci_institute_code as nci7_4_0_, address2_.id as id5_1_, address2_.version as version5_1_, address2_.grid_id as grid3_5_1_, address2_.retired_indicator as retired4_5_1_, address2_.street_address as street5_5_1_, address2_.city as city5_1_, address2_.state_code as state7_5_1_, address2_.postal_code as postal8_5_1_, address2_.country_code as country9_5_1_ from study_organizations studyorgan0_ inner join organizations healthcare1_ on studyorgan0_.hcs_id=healthcare1_.id left outer join addresses address2_ on healthcare1_.address_id=address2_.id where studyorgan0_.study_id=? order by studyorgan0_.id asc
+2007-11-07 13:55:53,434 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:54,006 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: update studies set version=?, grid_id=?, retired_indicator=?, type=?, precis_text=?, short_title_text=?, description_text=?, randomized_indicator=?, target_accrual_number=?, long_title_text=?, phase_code=?, blinded_indicator=?, multi_institution_indicator=?, randomization_type=?, data_entry_status=?, status=?, consent_version=? where id=? and version=?
+2007-11-07 13:55:54,061 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:54,096 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:54,096 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:54,527 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select studysubje2_.id as id6_, studysubje2_.version as version6_, studysubje2_.grid_id as grid3_6_, studysubje2_.retired_indicator as retired4_6_, studysubje2_.stratum_group_number as stratum5_6_, studysubje2_.start_date as start6_6_, studysubje2_.reg_workflow_status as reg7_6_, studysubje2_.sto_id as sto14_6_, studysubje2_.prt_id as prt15_6_, studysubje2_.reg_data_entry_status as reg8_6_, studysubje2_.informed_consent_version as informed9_6_, studysubje2_.disease_history_id as disease17_6_, studysubje2_.informed_consent_signed_date as informed10_6_, studysubje2_.sti_id as sti16_6_, studysubje2_.other_treating_physician as other11_6_, studysubje2_.off_study_date as off12_6_, studysubje2_.off_study_reason_text as off13_6_ from studies study0_ inner join study_organizations studyorgan1_ on study0_.id=studyorgan1_.study_id inner join study_subjects studysubje2_ on studyorgan1_.id=studysubje2_.sto_id where study0_.id=?
+Hibernate: select participan0_.id as id10_1_, participan0_.version as version10_1_, participan0_.grid_id as grid3_10_1_, participan0_.retired_indicator as retired4_10_1_, participan0_.first_name as first5_10_1_, participan0_.last_name as last6_10_1_, participan0_.add_id as add14_10_1_, participan0_.maiden_name as maiden7_10_1_, participan0_.middle_name as middle8_10_1_, participan0_.birth_date as birth9_10_1_, participan0_.race_code as race10_10_1_, participan0_.administrative_gender_code as adminis11_10_1_, participan0_.ethnic_group_code as ethnic12_10_1_, participan0_.marital_status_code as marital13_10_1_, address1_.id as id5_0_, address1_.version as version5_0_, address1_.grid_id as grid3_5_0_, address1_.retired_indicator as retired4_5_0_, address1_.street_address as street5_5_0_, address1_.city as city5_0_, address1_.state_code as state7_5_0_, address1_.postal_code as postal8_5_0_, address1_.country_code as country9_5_0_ from participants participan0_ left outer join addresses address1_ on participan0_.add_id=address1_.id where participan0_.id=?
+2007-11-07 13:55:55,049 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.grid_id as grid3_0_0_, this_.retired_indicator as retired4_0_0_, this_.type as type0_0_, this_.precis_text as precis6_0_0_, this_.short_title_text as short7_0_0_, this_.description_text as descript8_0_0_, this_.randomized_indicator as randomized9_0_0_, this_.target_accrual_number as target10_0_0_, this_.long_title_text as long11_0_0_, this_.phase_code as phase12_0_0_, this_.blinded_indicator as blinded13_0_0_, this_.multi_institution_indicator as multi14_0_0_, this_.randomization_type as randomi15_0_0_, this_.data_entry_status as data16_0_0_, this_.status as status0_0_, this_.consent_version as consent18_0_0_ from studies this_ where (lower(this_.retired_indicator)=? and lower(this_.short_title_text)=?) order by this_.short_title_text asc
+2007-11-07 13:55:55,577 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.grid_id as grid3_0_0_, this_.retired_indicator as retired4_0_0_, this_.type as type0_0_, this_.precis_text as precis6_0_0_, this_.short_title_text as short7_0_0_, this_.description_text as descript8_0_0_, this_.randomized_indicator as randomized9_0_0_, this_.target_accrual_number as target10_0_0_, this_.long_title_text as long11_0_0_, this_.phase_code as phase12_0_0_, this_.blinded_indicator as blinded13_0_0_, this_.multi_institution_indicator as multi14_0_0_, this_.randomization_type as randomi15_0_0_, this_.data_entry_status as data16_0_0_, this_.status as status0_0_, this_.consent_version as consent18_0_0_ from studies this_ where (lower(this_.retired_indicator)=? and lower(this_.short_title_text)=?) order by this_.short_title_text asc
+2007-11-07 13:55:56,041 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+2007-11-07 13:55:56,095 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:56,114 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:56,114 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:56,675 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, enrollment_indicator, accrual_indicator, reservation_indicator, accrual_ceiling, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, enrollment_indicator, accrual_indicator, reservation_indicator, accrual_ceiling, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'NON-TREATMENT', ?)
+2007-11-07 13:55:56,726 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:56,747 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:56,747 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:57,161 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: select nextval ('EPOCHS_ID_SEQ')
+Hibernate: select nextval ('ARMS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into epochs (version, grid_id, retired_indicator, name, stu_id, description_text, epoch_order, rndm_id, randomized_indicator, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, 'TREATMENT', ?)
+Hibernate: insert into arms (version, grid_id, retired_indicator, name, description_text, target_accrual_number, eph_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+Hibernate: update arms set eph_id=? where id=?
+2007-11-07 13:55:57,218 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:57,237 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:57,237 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:57,654 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.grid_id as grid3_0_0_, this_.retired_indicator as retired4_0_0_, this_.type as type0_0_, this_.precis_text as precis6_0_0_, this_.short_title_text as short7_0_0_, this_.description_text as descript8_0_0_, this_.randomized_indicator as randomized9_0_0_, this_.target_accrual_number as target10_0_0_, this_.long_title_text as long11_0_0_, this_.phase_code as phase12_0_0_, this_.blinded_indicator as blinded13_0_0_, this_.multi_institution_indicator as multi14_0_0_, this_.randomization_type as randomi15_0_0_, this_.data_entry_status as data16_0_0_, this_.status as status0_0_, this_.consent_version as consent18_0_0_ from studies this_ where (lower(this_.retired_indicator) like ? and lower(this_.short_title_text) like ?) order by this_.short_title_text asc
+Hibernate: select this_.id as id0_0_, this_.version as version0_0_, this_.grid_id as grid3_0_0_, this_.retired_indicator as retired4_0_0_, this_.type as type0_0_, this_.precis_text as precis6_0_0_, this_.short_title_text as short7_0_0_, this_.description_text as descript8_0_0_, this_.randomized_indicator as randomized9_0_0_, this_.target_accrual_number as target10_0_0_, this_.long_title_text as long11_0_0_, this_.phase_code as phase12_0_0_, this_.blinded_indicator as blinded13_0_0_, this_.multi_institution_indicator as multi14_0_0_, this_.randomization_type as randomi15_0_0_, this_.data_entry_status as data16_0_0_, this_.status as status0_0_, this_.consent_version as consent18_0_0_ from studies this_ where (lower(this_.retired_indicator) like ? and lower(this_.short_title_text) like ?) and (lower(this_.retired_indicator) like ? and lower(this_.short_title_text) like ?) order by this_.short_title_text asc
+2007-11-07 13:55:58,137 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Study funding sponsor is: National Cancer Institute
+2007-11-07 13:55:58,559 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:58,979 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, hcs_id, study_id, irb_approval_date, start_date, role_code, end_date, site_study_status, target_accrual_number, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, hcs_id, study_id, type, id) values (?, ?, ?, ?, ?, 'SFS', ?)
+2007-11-07 13:55:59,040 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:59,059 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:59,059 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:59,482 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, hcs_id, study_id, irb_approval_date, start_date, role_code, end_date, site_study_status, target_accrual_number, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, hcs_id, study_id, type, id) values (?, ?, ?, ?, ?, 'SFS', ?)
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, hcs_id, study_id, type, id) values (?, ?, ?, ?, ?, 'SCC', ?)
+2007-11-07 13:55:59,522 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:55:59,542 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:55:59,542 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:55:59,959 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select identifier0_.stu_id as stu13_3_, identifier0_.id as id3_, identifier0_.id as id14_2_, identifier0_.version as version14_2_, identifier0_.grid_id as grid4_14_2_, identifier0_.retired_indicator as retired5_14_2_, identifier0_.value as value14_2_, identifier0_.type as type14_2_, identifier0_.primary_indicator as primary8_14_2_, identifier0_.system_name as system9_14_2_, identifier0_.hcs_id as hcs10_14_2_, identifier0_.dtype as dtype14_2_, healthcare1_.id as id4_0_, healthcare1_.version as version4_0_, healthcare1_.grid_id as grid3_4_0_, healthcare1_.retired_indicator as retired4_4_0_, healthcare1_.address_id as address8_4_0_, healthcare1_.name as name4_0_, healthcare1_.description_text as descript6_4_0_, healthcare1_.nci_institute_code as nci7_4_0_, address2_.id as id5_1_, address2_.version as version5_1_, address2_.grid_id as grid3_5_1_, address2_.retired_indicator as retired4_5_1_, address2_.street_address as street5_5_1_, address2_.city as city5_1_, address2_.state_code as state7_5_1_, address2_.postal_code as postal8_5_1_, address2_.country_code as country9_5_1_ from identifiers identifier0_ left outer join organizations healthcare1_ on identifier0_.hcs_id=healthcare1_.id left outer join addresses address2_ on healthcare1_.address_id=address2_.id where  ( identifier0_.retired_indicator  = 'false')  and identifier0_.stu_id=? order by identifier0_.id asc
+Hibernate: select nextval ('IDENTIFIERS_ID_SEQ')
+Hibernate: select nextval ('IDENTIFIERS_ID_SEQ')
+Hibernate: insert into identifiers (version, grid_id, retired_indicator, value, type, primary_indicator, hcs_id, dtype, id) values (?, ?, ?, ?, ?, ?, ?, 'OAI', ?)
+Hibernate: insert into identifiers (version, grid_id, retired_indicator, value, type, primary_indicator, hcs_id, dtype, id) values (?, ?, ?, ?, ?, ?, ?, 'OAI', ?)
+Hibernate: update studies set version=?, grid_id=?, retired_indicator=?, type=?, precis_text=?, short_title_text=?, description_text=?, randomized_indicator=?, target_accrual_number=?, long_title_text=?, phase_code=?, blinded_indicator=?, multi_institution_indicator=?, randomization_type=?, data_entry_status=?, status=?, consent_version=? where id=? and version=?
+2007-11-07 13:56:00,008 ERROR org.hibernate.event.def.AbstractFlushingEventListener : Could not synchronize database state with session
+org.hibernate.StaleObjectStateException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect): [edu.duke.cabig.c3pr.domain.Study#1000]
+	at org.hibernate.persister.entity.AbstractEntityPersister.check(AbstractEntityPersister.java:1714)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2357)
+	at org.hibernate.persister.entity.AbstractEntityPersister.updateOrInsert(AbstractEntityPersister.java:2257)
+	at org.hibernate.persister.entity.AbstractEntityPersister.update(AbstractEntityPersister.java:2557)
+	at org.hibernate.action.EntityUpdateAction.execute(EntityUpdateAction.java:92)
+	at org.hibernate.engine.ActionQueue.execute(ActionQueue.java:248)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:232)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:140)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:298)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:27)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1000)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:338)
+	at org.hibernate.transaction.JDBCTransaction.commit(JDBCTransaction.java:106)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doCommit(HibernateTransactionManager.java:578)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:662)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:632)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:314)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:116)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:629)
+	at edu.duke.cabig.c3pr.dao.StudyDao$$EnhancerByCGLIB$$4359b076.save(<generated>)
+	at edu.duke.cabig.c3pr.dao.StudyDaoTest.testFailureSaveTwoIdentifiersWithSameOrgAndSameTypeInStudy(StudyDaoTest.java:1213)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at edu.duke.cabig.c3pr.utils.DaoTestCase.runBare(DaoTestCase.java:62)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:421)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:912)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:766)
+2007-11-07 13:56:00,017 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:56:00,017 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:56:00,017 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:56:00,452 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select study0_.id as id0_0_, study0_.version as version0_0_, study0_.grid_id as grid3_0_0_, study0_.retired_indicator as retired4_0_0_, study0_.type as type0_0_, study0_.precis_text as precis6_0_0_, study0_.short_title_text as short7_0_0_, study0_.description_text as descript8_0_0_, study0_.randomized_indicator as randomized9_0_0_, study0_.target_accrual_number as target10_0_0_, study0_.long_title_text as long11_0_0_, study0_.phase_code as phase12_0_0_, study0_.blinded_indicator as blinded13_0_0_, study0_.multi_institution_indicator as multi14_0_0_, study0_.randomization_type as randomi15_0_0_, study0_.data_entry_status as data16_0_0_, study0_.status as status0_0_, study0_.consent_version as consent18_0_0_ from studies study0_ where study0_.id=?
+Hibernate: select healthcare0_.id as id4_1_, healthcare0_.version as version4_1_, healthcare0_.grid_id as grid3_4_1_, healthcare0_.retired_indicator as retired4_4_1_, healthcare0_.address_id as address8_4_1_, healthcare0_.name as name4_1_, healthcare0_.description_text as descript6_4_1_, healthcare0_.nci_institute_code as nci7_4_1_, address1_.id as id5_0_, address1_.version as version5_0_, address1_.grid_id as grid3_5_0_, address1_.retired_indicator as retired4_5_0_, address1_.street_address as street5_5_0_, address1_.city as city5_0_, address1_.state_code as state7_5_0_, address1_.postal_code as postal8_5_0_, address1_.country_code as country9_5_0_ from organizations healthcare0_ inner join addresses address1_ on healthcare0_.address_id=address1_.id where healthcare0_.id=?
+Hibernate: select nextval ('STUDY_ORGANIZATIONS_ID_SEQ')
+Hibernate: insert into study_organizations (version, grid_id, retired_indicator, hcs_id, study_id, irb_approval_date, start_date, role_code, end_date, site_study_status, target_accrual_number, type, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SST', ?)
+2007-11-07 13:56:00,484 WARN  org.hibernate.util.JDBCExceptionReporter : SQL Error: 0, SQLState: null
+2007-11-07 13:56:00,484 ERROR org.hibernate.util.JDBCExceptionReporter : Batch entry 0 insert into study_organizations (version, grid_id, retired_indicator, hcs_id, study_id, irb_approval_date, start_date, role_code, end_date, site_study_status, target_accrual_number, type, id) values (0, 3c33a3fc-ef14-49d1-b808-bbc7ca18c150, false, 1000, 1000, 2007-11-07 13:56:00.463000 -0500, 2007-11-07 13:56:00.463000 -0500, NULL, NULL, PENDING, NULL, 'SST', 206) was aborted.  Call getNextException to see the cause.
+2007-11-07 13:56:00,484 WARN  org.hibernate.util.JDBCExceptionReporter : SQL Error: 0, SQLState: 23505
+2007-11-07 13:56:00,485 ERROR org.hibernate.util.JDBCExceptionReporter : ERROR: duplicate key violates unique constraint "uk_stu_org_dtype"
+2007-11-07 13:56:00,486 ERROR org.hibernate.event.def.AbstractFlushingEventListener : Could not synchronize database state with session
+org.hibernate.exception.ConstraintViolationException: Could not execute JDBC batch update
+	at org.hibernate.exception.SQLStateConverter.convert(SQLStateConverter.java:71)
+	at org.hibernate.exception.JDBCExceptionHelper.convert(JDBCExceptionHelper.java:43)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:249)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:235)
+	at org.hibernate.engine.ActionQueue.executeActions(ActionQueue.java:139)
+	at org.hibernate.event.def.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:298)
+	at org.hibernate.event.def.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:27)
+	at org.hibernate.impl.SessionImpl.flush(SessionImpl.java:1000)
+	at org.hibernate.impl.SessionImpl.managedFlush(SessionImpl.java:338)
+	at org.hibernate.transaction.JDBCTransaction.commit(JDBCTransaction.java:106)
+	at org.springframework.orm.hibernate3.HibernateTransactionManager.doCommit(HibernateTransactionManager.java:578)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:662)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:632)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:314)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:116)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:629)
+	at edu.duke.cabig.c3pr.dao.StudyDao$$EnhancerByCGLIB$$4359b076.save(<generated>)
+	at edu.duke.cabig.c3pr.dao.StudyDaoTest.testFailureSaveTwoStudyOrganizationsWithSameOrgAndSameType(StudyDaoTest.java:1230)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at edu.duke.cabig.c3pr.utils.DaoTestCase.runBare(DaoTestCase.java:62)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:421)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:912)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:766)
+Caused by: java.sql.BatchUpdateException: Batch entry 0 insert into study_organizations (version, grid_id, retired_indicator, hcs_id, study_id, irb_approval_date, start_date, role_code, end_date, site_study_status, target_accrual_number, type, id) values (0, 3c33a3fc-ef14-49d1-b808-bbc7ca18c150, false, 1000, 1000, 2007-11-07 13:56:00.463000 -0500, 2007-11-07 13:56:00.463000 -0500, NULL, NULL, PENDING, NULL, 'SST', 206) was aborted.  Call getNextException to see the cause.
+	at org.postgresql.jdbc2.AbstractJdbc2Statement$BatchResultHandler.handleError(AbstractJdbc2Statement.java:2512)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1310)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:347)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeBatch(AbstractJdbc2Statement.java:2574)
+	at org.apache.commons.dbcp.DelegatingStatement.executeBatch(DelegatingStatement.java:294)
+	at org.hibernate.jdbc.BatchingBatcher.doExecuteBatch(BatchingBatcher.java:48)
+	at org.hibernate.jdbc.AbstractBatcher.executeBatch(AbstractBatcher.java:242)
+	... 31 more
+2007-11-07 13:56:00,927 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select study0_.id as id0_0_, study0_.version as version0_0_, study0_.grid_id as grid3_0_0_, study0_.retired_indicator as retired4_0_0_, study0_.type as type0_0_, study0_.precis_text as precis6_0_0_, study0_.short_title_text as short7_0_0_, study0_.description_text as descript8_0_0_, study0_.randomized_indicator as randomized9_0_0_, study0_.target_accrual_number as target10_0_0_, study0_.long_title_text as long11_0_0_, study0_.phase_code as phase12_0_0_, study0_.blinded_indicator as blinded13_0_0_, study0_.multi_institution_indicator as multi14_0_0_, study0_.randomization_type as randomi15_0_0_, study0_.data_entry_status as data16_0_0_, study0_.status as status0_0_, study0_.consent_version as consent18_0_0_ from studies study0_ where study0_.id=?
+Hibernate: select epochs0_.stu_id as stu14_2_, epochs0_.id as id2_, epochs0_.id as id1_1_, epochs0_.version as version1_1_, epochs0_.grid_id as grid4_1_1_, epochs0_.retired_indicator as retired5_1_1_, epochs0_.name as name1_1_, epochs0_.stu_id as stu14_1_1_, epochs0_.description_text as descript7_1_1_, epochs0_.epoch_order as epoch8_1_1_, epochs0_.enrollment_indicator as enrollment9_1_1_, epochs0_.accrual_indicator as accrual10_1_1_, epochs0_.reservation_indicator as reserva11_1_1_, epochs0_.accrual_ceiling as accrual12_1_1_, epochs0_.rndm_id as rndm15_1_1_, epochs0_.randomized_indicator as randomized13_1_1_, epochs0_.type as type1_1_, randomizat1_.id as id29_0_, randomizat1_.version as version29_0_, randomizat1_.grid_id as grid4_29_0_, randomizat1_.retired_indicator as retired5_29_0_, randomizat1_.callout_url as callout6_29_0_, randomizat1_.phone_number as phone7_29_0_, randomizat1_.dtype as dtype29_0_ from epochs epochs0_ left outer join randomizations randomizat1_ on epochs0_.rndm_id=randomizat1_.id where  ( epochs0_.retired_indicator  = 'false')  and epochs0_.stu_id=? order by epochs0_.epoch_order asc
+2007-11-07 13:56:01,363 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select study0_.id as id0_0_, study0_.version as version0_0_, study0_.grid_id as grid3_0_0_, study0_.retired_indicator as retired4_0_0_, study0_.type as type0_0_, study0_.precis_text as precis6_0_0_, study0_.short_title_text as short7_0_0_, study0_.description_text as descript8_0_0_, study0_.randomized_indicator as randomized9_0_0_, study0_.target_accrual_number as target10_0_0_, study0_.long_title_text as long11_0_0_, study0_.phase_code as phase12_0_0_, study0_.blinded_indicator as blinded13_0_0_, study0_.multi_institution_indicator as multi14_0_0_, study0_.randomization_type as randomi15_0_0_, study0_.data_entry_status as data16_0_0_, study0_.status as status0_0_, study0_.consent_version as consent18_0_0_ from studies study0_ where study0_.id=?
+Hibernate: select study0_.id as id0_0_, study0_.version as version0_0_, study0_.grid_id as grid3_0_0_, study0_.retired_indicator as retired4_0_0_, study0_.type as type0_0_, study0_.precis_text as precis6_0_0_, study0_.short_title_text as short7_0_0_, study0_.description_text as descript8_0_0_, study0_.randomized_indicator as randomized9_0_0_, study0_.target_accrual_number as target10_0_0_, study0_.long_title_text as long11_0_0_, study0_.phase_code as phase12_0_0_, study0_.blinded_indicator as blinded13_0_0_, study0_.multi_institution_indicator as multi14_0_0_, study0_.randomization_type as randomi15_0_0_, study0_.data_entry_status as data16_0_0_, study0_.status as status0_0_, study0_.consent_version as consent18_0_0_ from studies study0_ where study0_.id=?
+Hibernate: select healthcare0_.id as id4_1_, healthcare0_.version as version4_1_, healthcare0_.grid_id as grid3_4_1_, healthcare0_.retired_indicator as retired4_4_1_, healthcare0_.address_id as address8_4_1_, healthcare0_.name as name4_1_, healthcare0_.description_text as descript6_4_1_, healthcare0_.nci_institute_code as nci7_4_1_, address1_.id as id5_0_, address1_.version as version5_0_, address1_.grid_id as grid3_5_0_, address1_.retired_indicator as retired4_5_0_, address1_.street_address as street5_5_0_, address1_.city as city5_0_, address1_.state_code as state7_5_0_, address1_.postal_code as postal8_5_0_, address1_.country_code as country9_5_0_ from organizations healthcare0_ inner join addresses address1_ on healthcare0_.address_id=address1_.id where healthcare0_.id=?
+Hibernate: select identifier0_.stu_id as stu13_3_, identifier0_.id as id3_, identifier0_.id as id14_2_, identifier0_.version as version14_2_, identifier0_.grid_id as grid4_14_2_, identifier0_.retired_indicator as retired5_14_2_, identifier0_.value as value14_2_, identifier0_.type as type14_2_, identifier0_.primary_indicator as primary8_14_2_, identifier0_.system_name as system9_14_2_, identifier0_.hcs_id as hcs10_14_2_, identifier0_.dtype as dtype14_2_, healthcare1_.id as id4_0_, healthcare1_.version as version4_0_, healthcare1_.grid_id as grid3_4_0_, healthcare1_.retired_indicator as retired4_4_0_, healthcare1_.address_id as address8_4_0_, healthcare1_.name as name4_0_, healthcare1_.description_text as descript6_4_0_, healthcare1_.nci_institute_code as nci7_4_0_, address2_.id as id5_1_, address2_.version as version5_1_, address2_.grid_id as grid3_5_1_, address2_.retired_indicator as retired4_5_1_, address2_.street_address as street5_5_1_, address2_.city as city5_1_, address2_.state_code as state7_5_1_, address2_.postal_code as postal8_5_1_, address2_.country_code as country9_5_1_ from identifiers identifier0_ left outer join organizations healthcare1_ on identifier0_.hcs_id=healthcare1_.id left outer join addresses address2_ on healthcare1_.address_id=address2_.id where  ( identifier0_.retired_indicator  = 'false')  and identifier0_.stu_id=? order by identifier0_.id asc
+Hibernate: select identifier0_.stu_id as stu13_3_, identifier0_.id as id3_, identifier0_.id as id14_2_, identifier0_.version as version14_2_, identifier0_.grid_id as grid4_14_2_, identifier0_.retired_indicator as retired5_14_2_, identifier0_.value as value14_2_, identifier0_.type as type14_2_, identifier0_.primary_indicator as primary8_14_2_, identifier0_.system_name as system9_14_2_, identifier0_.hcs_id as hcs10_14_2_, identifier0_.dtype as dtype14_2_, healthcare1_.id as id4_0_, healthcare1_.version as version4_0_, healthcare1_.grid_id as grid3_4_0_, healthcare1_.retired_indicator as retired4_4_0_, healthcare1_.address_id as address8_4_0_, healthcare1_.name as name4_0_, healthcare1_.description_text as descript6_4_0_, healthcare1_.nci_institute_code as nci7_4_0_, address2_.id as id5_1_, address2_.version as version5_1_, address2_.grid_id as grid3_5_1_, address2_.retired_indicator as retired4_5_1_, address2_.street_address as street5_5_1_, address2_.city as city5_1_, address2_.state_code as state7_5_1_, address2_.postal_code as postal8_5_1_, address2_.country_code as country9_5_1_ from identifiers identifier0_ left outer join organizations healthcare1_ on identifier0_.hcs_id=healthcare1_.id left outer join addresses address2_ on healthcare1_.address_id=address2_.id where  ( identifier0_.retired_indicator  = 'false')  and identifier0_.stu_id=? order by identifier0_.id asc
+Hibernate: select nextval ('IDENTIFIERS_ID_SEQ')
+Hibernate: select nextval ('IDENTIFIERS_ID_SEQ')
+Hibernate: insert into identifiers (version, grid_id, retired_indicator, value, type, primary_indicator, hcs_id, dtype, id) values (?, ?, ?, ?, ?, ?, ?, 'OAI', ?)
+Hibernate: insert into identifiers (version, grid_id, retired_indicator, value, type, primary_indicator, hcs_id, dtype, id) values (?, ?, ?, ?, ?, ?, ?, 'OAI', ?)
+Hibernate: update studies set version=?, grid_id=?, retired_indicator=?, type=?, precis_text=?, short_title_text=?, description_text=?, randomized_indicator=?, target_accrual_number=?, long_title_text=?, phase_code=?, blinded_indicator=?, multi_institution_indicator=?, randomization_type=?, data_entry_status=?, status=?, consent_version=? where id=? and version=?
+Hibernate: update studies set version=?, grid_id=?, retired_indicator=?, type=?, precis_text=?, short_title_text=?, description_text=?, randomized_indicator=?, target_accrual_number=?, long_title_text=?, phase_code=?, blinded_indicator=?, multi_institution_indicator=?, randomization_type=?, data_entry_status=?, status=?, consent_version=? where id=? and version=?
+Hibernate: update identifiers set stu_id=? where id=?
+Hibernate: update identifiers set stu_id=? where id=?
+2007-11-07 13:56:01,840 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+Hibernate: select nextval ('STUDIES_ID_SEQ')
+Hibernate: select nextval ('STUDY_AMENDMENTS_ID_SEQ')
+Hibernate: insert into studies (version, grid_id, retired_indicator, type, precis_text, short_title_text, description_text, randomized_indicator, target_accrual_number, long_title_text, phase_code, blinded_indicator, multi_institution_indicator, randomization_type, data_entry_status, status, consent_version, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: insert into study_amendments (version, grid_id, retired_indicator, comments, amendment_date, consent_changed_indicator, diseases_changed_indicator, eligibility_changed_indicator, ea_changed_indicator, strat_changed_indicator, pi_changed_indicator, rndm_changed_indicator, amendment_version, stu_id, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: update study_amendments set stu_id=? where id=?
+2007-11-07 13:56:01,858 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : --    ending DaoTestCase interceptor session --
+2007-11-07 13:56:01,864 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- interrupted DaoTestCase session --
+2007-11-07 13:56:01,864 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+2007-11-07 13:56:02,274 INFO  edu.duke.cabig.c3pr.dao.StudyDaoTest : -- beginning DaoTestCase interceptor session --
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

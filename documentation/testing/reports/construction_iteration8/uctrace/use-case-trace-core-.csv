@@ -1,0 +1,29 @@
+Test case,Use case major index,Use case minor index,Use case title
+edu.duke.cabig.c3pr.dao.OrganizationDaoTest,3,4,Create Organization
+edu.duke.cabig.c3pr.dao.ParticipantDaoTest,3,1,Create Subject
+edu.duke.cabig.c3pr.dao.ParticipantDaoTest,3,9,Update Subject
+edu.duke.cabig.c3pr.dao.ParticipantDaoTest,3,11,Verify Subject
+edu.duke.cabig.c3pr.dao.ParticipantDaoTest,3,18,Search for a Subject
+edu.duke.cabig.c3pr.dao.ResearchStaffDaoTest,3,11,Verify Subject
+edu.duke.cabig.c3pr.dao.ResearchStaffDaoTest,3,18,Search for a Subject
+edu.duke.cabig.c3pr.dao.StudyDaoTest,4,3,Create Study Definition Manually
+edu.duke.cabig.c3pr.dao.StudyDaoTest,4,9,Update Study
+edu.duke.cabig.c3pr.dao.StudyDaoTest,4,7,Search for Studies
+edu.duke.cabig.c3pr.dao.StudyDaoTest,3,5,Associate Investigator to Study
+edu.duke.cabig.c3pr.dao.StudyDaoTest,3,7,Add Startification
+edu.duke.cabig.c3pr.dao.StudyDaoTest,3,8,Add Diseases
+edu.duke.cabig.c3pr.dao.StudyDaoTest,3,11,Verify Subject
+edu.duke.cabig.c3pr.dao.StudySubjectDaoTest,3,22,Associate Disease to Subject
+edu.duke.cabig.c3pr.dao.StudySubjectDaoTest,5,2,Register an Existing Unregistered Subject to a Study
+edu.duke.cabig.c3pr.dao.StudySubjectDaoTest,5,3,Register an Existing Registered Subject to a Study
+edu.duke.cabig.c3pr.dao.StudySubjectDaoTest,5,4,Save a registration in an incomplete status
+edu.duke.cabig.c3pr.dao.StudySubjectDaoTest,5,5,Register Subject to Local Study
+edu.duke.cabig.c3pr.dao.StudySubjectDaoTest,5,11,5.11	Assign Subject to a Randomization Arm
+edu.duke.cabig.c3pr.dao.StudySubjectDaoTest,5,12,Update Registration Status of a Subject on a given Study
+edu.duke.cabig.c3pr.service.OrganizationServiceTest,3,4,Create Organization
+edu.duke.cabig.c3pr.service.PersonnelServiceTest,3,3,Create Research Staff
+edu.duke.cabig.c3pr.service.PersonnelServiceTest,3,5,Associate Investigator to Study
+edu.duke.cabig.c3pr.service.StudyXMLImporterTestCase,4,5,Import Study definition to a File
+edu.duke.cabig.c3pr.xml.StudyHibernateObjectMarshallingTest,4,5,Import Study definition to a File
+edu.duke.cabig.c3pr.xml.StudyHibernateObjectMarshallingTest,4,4,Export Study definition to a File
+edu.duke.cabig.c3pr.xml.StudyMarshallingTestCase,4,4,Export Study definition to a File
