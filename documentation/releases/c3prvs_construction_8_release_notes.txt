@@ -67,7 +67,11 @@ Enhancement features:
 2.3 View subject
 	This release has a separate view subject details page and a registrations summary page just for viewing.
 	This is different from the edit flow where in the details can be updated.
-
+2.4 Blinded Randomization
+	Blinded Randomization can now be selected which will result in the Phone call randomization being applied 
+	to the study. The corresponding Kit Number can be entered at the time of registration.
+2.5 All auto-completers are now displayed with a blue background and validate the entered text. Incase of an 
+	invalid entry the text box clears itself so the user can re-enter the correct value.
 
 ================================================================
                 3.0 Known Issues
@@ -75,6 +79,9 @@ Enhancement features:
 
     3.0.1 In the edit flow of a study, the application currently cannot handle duplicate epoch names, arm names, 
 	study sites names, identifiers investigators and research staff.
+	3.0.2 In Study Stratum groups creation, at this point it is not possible to selectively delete generated
+	groups and then register against the remaining ones.	
+	
     
   ----------------------------------------------------------------
 		3.1 C3PR Recommended JDK Version:
