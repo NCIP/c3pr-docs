@@ -59,6 +59,10 @@ Enhancement features:
 imports. It will also reject any XML imports that do not conform
 to the expected schema.
 
+2.2 Complete integration with other CCTS applications and
+ messaging with caXchange
+This is an optional feature and can be turned off.
+
 
 ================================================================
                 3.0 Known Issues
