@@ -1,0 +1,284 @@
+2007-12-10 16:46:21,157 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@119dc16: display name [org.springframework.context.support.ClassPathXmlApplicationContext@119dc16]; startup date [Mon Dec 10 16:46:21 EST 2007]; root of context hierarchy
+2007-12-10 16:46:21,266 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-core.xml]
+2007-12-10 16:46:21,954 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-core-db.xml]
+2007-12-10 16:46:22,055 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-csm.xml]
+2007-12-10 16:46:22,101 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-esb.xml]
+2007-12-10 16:46:22,182 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@119dc16]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7bc899
+2007-12-10 16:46:22,436 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from class path resource [context/c3pr.properties]
+2007-12-10 16:46:22,439 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from URL [file:C:/Users/Vinay/.c3pr/c3pr.properties]
+2007-12-10 16:46:22,441 WARN  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Could not load properties from URL [file:C:/Users/Vinay/.c3pr/c3pr.properties]: C:\Users\Vinay\.c3pr\c3pr.properties (The system cannot find the path specified)
+2007-12-10 16:46:22,441 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from URL [file:C:/Tomcat 5.5/conf/c3pr.properties]
+2007-12-10 16:46:22,442 WARN  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Could not load properties from URL [file:C:/Tomcat 5.5/conf/c3pr.properties]: C:\Tomcat 5.5\conf\c3pr.properties (The system cannot find the file specified)
+2007-12-10 16:46:22,508 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.aop.config.internalAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:22,521 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:22,666 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'dataSource' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:22,678 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.hibernate.cfg.ImprovedNamingStrategy#149b290' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:22,706 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'gridIdentifierCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:22,709 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'gridIdentifierInterceptor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:22,717 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'chainedInterceptor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:22,735 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'hibernateProperties' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:22,735 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'hibernateProperties' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:22,811 INFO  org.hibernate.cfg.annotations.Version : Hibernate Annotations 3.2.0.CR2
+2007-12-10 16:46:22,833 INFO  org.hibernate.cfg.Environment : Hibernate 3.2.1
+2007-12-10 16:46:22,840 INFO  org.hibernate.cfg.Environment : hibernate.properties not found
+2007-12-10 16:46:22,844 INFO  org.hibernate.cfg.Environment : Bytecode provider name : cglib
+2007-12-10 16:46:22,850 INFO  org.hibernate.cfg.Environment : using JDK 1.4 java.sql.Timestamp handling
+2007-12-10 16:46:22,990 INFO  org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean : Building new Hibernate SessionFactory
+2007-12-10 16:46:23,143 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Study
+2007-12-10 16:46:23,198 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Study on table studies
+2007-12-10 16:46:23,386 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Epoch
+2007-12-10 16:46:23,389 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Epoch on table epochs
+2007-12-10 16:46:23,496 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.NonTreatmentEpoch
+2007-12-10 16:46:23,523 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.TreatmentEpoch
+2007-12-10 16:46:23,551 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Arm
+2007-12-10 16:46:23,552 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Arm on table arms
+2007-12-10 16:46:23,565 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyOrganization
+2007-12-10 16:46:23,566 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyOrganization on table study_organizations
+2007-12-10 16:46:23,581 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudySite
+2007-12-10 16:46:23,593 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyCoordinatingCenter
+2007-12-10 16:46:23,596 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyFundingSponsor
+2007-12-10 16:46:23,598 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.HealthcareSite
+2007-12-10 16:46:23,600 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.HealthcareSite on table organizations
+2007-12-10 16:46:23,700 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Address
+2007-12-10 16:46:23,701 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Address on table addresses
+2007-12-10 16:46:23,711 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudySubject
+2007-12-10 16:46:23,712 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudySubject on table study_subjects
+2007-12-10 16:46:23,744 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyInvestigator
+2007-12-10 16:46:23,744 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyInvestigator on table study_investigators
+2007-12-10 16:46:23,757 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator
+2007-12-10 16:46:23,758 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator on table hc_site_investigators
+2007-12-10 16:46:23,771 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyPersonnel
+2007-12-10 16:46:23,774 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyPersonnel on table study_personnel
+2007-12-10 16:46:23,800 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Participant
+2007-12-10 16:46:23,802 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Participant on table participants
+2007-12-10 16:46:23,822 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ResearchStaff
+2007-12-10 16:46:23,825 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ResearchStaff on table research_staff
+2007-12-10 16:46:23,842 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Investigator
+2007-12-10 16:46:23,842 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Investigator on table investigators
+2007-12-10 16:46:23,858 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledArm
+2007-12-10 16:46:23,859 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ScheduledArm on table scheduled_arms
+2007-12-10 16:46:23,866 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Identifier
+2007-12-10 16:46:23,867 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Identifier on table identifiers
+2007-12-10 16:46:23,874 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SystemAssignedIdentifier
+2007-12-10 16:46:23,876 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.OrganizationAssignedIdentifier
+2007-12-10 16:46:23,878 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.EligibilityCriteria
+2007-12-10 16:46:23,879 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.EligibilityCriteria on table eligibility_criteria
+2007-12-10 16:46:23,883 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SubjectEligibilityAnswer
+2007-12-10 16:46:23,883 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.SubjectEligibilityAnswer on table subject_eligibility_ans
+2007-12-10 16:46:23,890 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.InclusionEligibilityCriteria
+2007-12-10 16:46:23,893 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ExclusionEligibilityCriteria
+2007-12-10 16:46:23,893 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyDisease
+2007-12-10 16:46:23,894 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyDisease on table study_diseases
+2007-12-10 16:46:23,907 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseCategory
+2007-12-10 16:46:23,908 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseCategory on table disease_categories
+2007-12-10 16:46:23,922 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseTerm
+2007-12-10 16:46:23,923 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseTerm on table disease_terms
+2007-12-10 16:46:23,928 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterion
+2007-12-10 16:46:23,928 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterion on table strat_criteria
+2007-12-10 16:46:23,940 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterionPermissibleAnswer
+2007-12-10 16:46:23,940 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterionPermissibleAnswer on table strat_cri_per_ans
+2007-12-10 16:46:23,952 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SubjectStratificationAnswer
+2007-12-10 16:46:23,952 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.SubjectStratificationAnswer on table subject_strat_ans
+2007-12-10 16:46:23,959 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.AnatomicSite
+2007-12-10 16:46:23,960 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.AnatomicSite on table anatomic_sites
+2007-12-10 16:46:23,963 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseHistory
+2007-12-10 16:46:23,964 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseHistory on table disease_history
+2007-12-10 16:46:23,974 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ContactMechanism
+2007-12-10 16:46:23,980 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ContactMechanism on table contact_mechanisms
+2007-12-10 16:46:23,987 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledEpoch
+2007-12-10 16:46:23,987 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ScheduledEpoch on table scheduled_epochs
+2007-12-10 16:46:24,000 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch
+2007-12-10 16:46:24,010 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-12-10 16:46:24,011 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratumGroup
+2007-12-10 16:46:24,011 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratumGroup on table stratum_groups
+2007-12-10 16:46:24,024 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.BookRandomizationEntry
+2007-12-10 16:46:24,026 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.BookRandomizationEntry on table book_rndm_entry
+2007-12-10 16:46:24,034 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Randomization
+2007-12-10 16:46:24,035 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Randomization on table randomizations
+2007-12-10 16:46:24,039 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.BookRandomization
+2007-12-10 16:46:24,043 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.CalloutRandomization
+2007-12-10 16:46:24,045 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.PhonecallRandomization
+2007-12-10 16:46:24,050 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterionAnswerCombination
+2007-12-10 16:46:24,051 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterionAnswerCombination on table strat_cri_ans_cmb
+2007-12-10 16:46:24,056 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyAmendment
+2007-12-10 16:46:24,057 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyAmendment on table study_amendments
+2007-12-10 16:46:24,066 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Notification
+2007-12-10 16:46:24,066 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Notification on table notifications
+2007-12-10 16:46:24,078 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Recepient
+2007-12-10 16:46:24,078 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Recepient on table recepients
+2007-12-10 16:46:24,081 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.EmailBasedRecepient
+2007-12-10 16:46:24,083 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.RoleBasedRecepient
+2007-12-10 16:46:24,105 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Notification.roleBasedRecepientInternal -> recepients
+2007-12-10 16:46:24,112 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Notification.emailBasedRecepientInternal -> recepients
+2007-12-10 16:46:24,113 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.BookRandomization.bookRandomizationEntryInternal -> book_rndm_entry
+2007-12-10 16:46:24,115 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratumGroup.stratificationCriterionAnswerCombinationInternal -> strat_cri_ans_cmb
+2007-12-10 16:46:24,116 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.scheduledArmsInternal -> scheduled_arms
+2007-12-10 16:46:24,118 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.subjectStratificationAnswersInternal -> subject_strat_ans
+2007-12-10 16:46:24,118 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.subjectEligibilityAnswersInternal -> subject_eligibility_ans
+2007-12-10 16:46:24,119 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratificationCriterion.permissibleAnswersInternal -> strat_cri_per_ans
+2007-12-10 16:46:24,127 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Investigator.contactMechanisms -> contact_mechanisms
+2007-12-10 16:46:24,127 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ResearchStaff.contactMechanisms -> contact_mechanisms
+2007-12-10 16:46:24,127 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.contactMechanisms -> contact_mechanisms
+2007-12-10 16:46:24,142 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.identifiers -> identifiers
+2007-12-10 16:46:24,143 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySubject.identifiers -> identifiers
+2007-12-10 16:46:24,143 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySubject.scheduledEpochs -> scheduled_epochs
+2007-12-10 16:46:24,145 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.stratumGroupsInternal -> stratum_groups
+2007-12-10 16:46:24,155 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.inclusionEligibilityCriteriaInternal -> eligibility_criteria
+2007-12-10 16:46:24,155 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.stratificationCriteriaInternal -> strat_criteria
+2007-12-10 16:46:24,155 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.exclusionEligibilityCriteriaInternal -> eligibility_criteria
+2007-12-10 16:46:24,169 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.eligibilityCriteriaInternal -> eligibility_criteria
+2007-12-10 16:46:24,170 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.armsInternal -> arms
+2007-12-10 16:46:24,170 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.notificationsInternal -> notifications
+2007-12-10 16:46:24,185 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyAmendmentsInternal -> study_amendments
+2007-12-10 16:46:24,185 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.identifiers -> identifiers
+2007-12-10 16:46:24,186 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyOrganizations -> study_organizations
+2007-12-10 16:46:24,186 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.epochs -> epochs
+2007-12-10 16:46:24,197 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyDiseases -> study_diseases
+2007-12-10 16:46:24,197 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudyOrganization.studyInvestigatorsInternal -> study_investigators
+2007-12-10 16:46:24,197 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudyOrganization.studyPersonnelInternal -> study_personnel
+2007-12-10 16:46:24,212 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySite.studySubjects -> study_subjects
+2007-12-10 16:46:24,212 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.identifiers -> identifiers
+2007-12-10 16:46:24,213 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.studyOrganizations -> study_organizations
+2007-12-10 16:46:24,221 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.healthcareSiteInvestigators -> hc_site_investigators
+2007-12-10 16:46:24,221 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.researchStaffs -> research_staff
+2007-12-10 16:46:24,221 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator.studyInvestigators -> study_investigators
+2007-12-10 16:46:24,233 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.studySubjects -> study_subjects
+2007-12-10 16:46:24,233 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ResearchStaff.studyPersonnels -> study_personnel
+2007-12-10 16:46:24,233 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Investigator.healthcareSiteInvestigatorsInternal -> hc_site_investigators
+2007-12-10 16:46:24,242 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.DiseaseCategory.terms -> disease_terms
+2007-12-10 16:46:24,249 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.DiseaseCategory.childCategories -> disease_categories
+2007-12-10 16:46:24,250 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratumGroup.bookRandomizationEntryInternal -> book_rndm_entry
+2007-12-10 16:46:24,606 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@a1aa85)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+2007-12-10 16:46:24,843 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-12-10 16:46:24,845 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-12-10 16:46:24,872 INFO  org.hibernate.dialect.Dialect : Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2007-12-10 16:46:24,884 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-12-10 16:46:24,888 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-12-10 16:46:24,888 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-12-10 16:46:24,889 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-12-10 16:46:24,889 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-12-10 16:46:24,889 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-12-10 16:46:24,890 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-12-10 16:46:24,894 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-12-10 16:46:24,894 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-12-10 16:46:24,894 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-12-10 16:46:24,894 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-12-10 16:46:24,894 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-12-10 16:46:24,894 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-12-10 16:46:24,913 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-12-10 16:46:24,913 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-12-10 16:46:24,913 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-12-10 16:46:24,913 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-12-10 16:46:24,914 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-12-10 16:46:24,928 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-12-10 16:46:24,928 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-12-10 16:46:24,928 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-12-10 16:46:24,943 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-12-10 16:46:24,943 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-12-10 16:46:24,949 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-12-10 16:46:25,001 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-12-10 16:46:26,482 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-12-10 16:46:26,513 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'sessionFactory' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:26,518 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'sessionFactory' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:26,545 INFO  org.springframework.orm.hibernate3.HibernateTransactionManager : Using DataSource [org.apache.commons.dbcp.BasicDataSource@63e563] of Hibernate SessionFactory for HibernateTransactionManager
+2007-12-10 16:46:26,545 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'transactionManager' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:26,560 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:26,561 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:26,561 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:46:26,602 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7bc899: defining beans [c3pr-xml-castorMapping,ccts-study-castorMapping,ccts-registration-castorMapping,transactionManager,org.springframework.transaction.aspectj.AnnotationTransactionAspect,c3prPropertyConfigurer,org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor,sessionFactory,auditOpenSessionInViewInterceptor,auditSessionFactory,chainedInterceptor,auditInterceptor,dataAuditRepository,gridIdentifierInterceptor,hibernateTemplate,daoTemplate,openSessionInViewInterceptor,gridIdentifierCreator,studyValidator,studySiteValidator,epochValidator,armValidator,identifierValidator,participantValidator,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor,studyDao,studySubjectDao,studySiteDao,epochDao,scheduledEpochDao,armDao,participantDao,healthcareSiteDao,healthcareSiteInvestigatorDao,studyPersonnelDao,researchStaffDao,investigatorDao,diseaseCategoryDao,diseaseTermDao,studyInvestigatorDao,StratificationCriterionDao,anatomicSiteDao,organizationDao,stratificationAnswerDao,stratumGroupDao,cctsWorkflowService,studyService,participantService,studySubjectService,studyXMLImporterService,studySubjectXMLImporterService,personnelService,organizationService,sitePrivilegeAndObjectIdGenerator,mailSender,confirmationEmailer,notificationEmailer,accountCreatedTemplateMessage,xmlUtility,xmlParser,c3prErrorMessages,multsiteErrorMessageSource,exceptionHelper,dataSourceTemplate,dataSource,hibernateProperties,auditHibernateProperties,csmApplicationContextName,ACCESS_PRIVILEGE,authorizationSwitch,booleanFromString,csmAuthorizationDao,csmUserProvisioningManager,csmAuthenticationManager,messageTypesMapping,c3dPatientPositionResponseHandler,caXchangeMessageResponseHandlerSet,cctsMessageWorkflowCallbackFactory,messageBroadcaster]; root of factory hierarchy
+2007-12-10 16:46:26,752 INFO  org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean : Building new Hibernate SessionFactory
+2007-12-10 16:46:26,753 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEventValue
+2007-12-10 16:46:26,754 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity gov.nih.nci.cabig.ctms.audit.domain.DataAuditEventValue on table audit_event_values
+2007-12-10 16:46:26,761 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent
+2007-12-10 16:46:26,762 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent on table audit_events
+2007-12-10 16:46:26,790 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent.values -> audit_event_values
+2007-12-10 16:46:26,820 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2007-12-10 16:46:26,822 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-12-10 16:46:26,822 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-12-10 16:46:26,824 INFO  org.hibernate.dialect.Dialect : Using dialect: edu.duke.cabig.c3pr.hibernate.ImprovedPostgreSQLDialect
+2007-12-10 16:46:26,825 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-12-10 16:46:26,826 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-12-10 16:46:26,826 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-12-10 16:46:26,826 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-12-10 16:46:26,826 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-12-10 16:46:26,833 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-12-10 16:46:26,833 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-12-10 16:46:26,833 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-12-10 16:46:26,833 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-12-10 16:46:26,834 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-12-10 16:46:26,834 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-12-10 16:46:26,850 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-12-10 16:46:26,850 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-12-10 16:46:26,850 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-12-10 16:46:26,851 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-12-10 16:46:26,851 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-12-10 16:46:26,872 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-12-10 16:46:26,872 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-12-10 16:46:26,872 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-12-10 16:46:26,872 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-12-10 16:46:26,872 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-12-10 16:46:26,881 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-12-10 16:46:26,881 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-12-10 16:46:26,881 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-12-10 16:46:27,032 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-12-10 16:46:27,057 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-12-10 16:46:27,292 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setSessionFactory(org.hibernate.SessionFactory)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:46:27,292 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final org.hibernate.SessionFactory org.springframework.orm.hibernate3.support.HibernateDaoSupport.getSessionFactory()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:46:27,292 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setHibernateTemplate(org.springframework.orm.hibernate3.HibernateTemplate)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:46:27,298 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final org.springframework.orm.hibernate3.HibernateTemplate org.springframework.orm.hibernate3.support.HibernateDaoSupport.getHibernateTemplate()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:46:27,298 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:46:28,174 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Privilege -> CSM_PRIVILEGE
+2007-12-10 16:46:28,233 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Application -> CSM_APPLICATION
+2007-12-10 16:46:28,274 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Role -> CSM_ROLE
+2007-12-10 16:46:28,275 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.Role.privileges -> CSM_ROLE_PRIVILEGE
+2007-12-10 16:46:28,307 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.RolePrivilege -> CSM_ROLE_PRIVILEGE
+2007-12-10 16:46:28,331 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.UserGroup -> CSM_USER_GROUP
+2007-12-10 16:46:28,353 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.ProtectionGroupProtectionElement -> CSM_PG_PE
+2007-12-10 16:46:28,370 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Group -> CSM_GROUP
+2007-12-10 16:46:28,371 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.Group.users -> CSM_USER_GROUP
+2007-12-10 16:46:28,521 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.User -> CSM_USER
+2007-12-10 16:46:28,523 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.User.groups -> CSM_USER_GROUP
+2007-12-10 16:46:28,547 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.ProtectionGroup -> CSM_PROTECTION_GROUP
+2007-12-10 16:46:28,547 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionGroup.protectionElements -> CSM_PG_PE
+2007-12-10 16:46:28,572 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.ProtectionElement -> CSM_PROTECTION_ELEMENT
+2007-12-10 16:46:28,573 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionElement.protectionGroups -> CSM_PG_PE
+2007-12-10 16:46:28,574 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionElement.owners -> CSM_USER_PE
+2007-12-10 16:46:28,589 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.UserGroupRoleProtectionGroup -> CSM_USER_GROUP_ROLE_PG
+2007-12-10 16:46:28,611 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.UserProtectionElement -> CSM_USER_PE
+2007-12-10 16:46:28,612 INFO  org.springframework.orm.hibernate3.LocalSessionFactoryBean : Building new Hibernate SessionFactory
+2007-12-10 16:46:28,617 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2007-12-10 16:46:28,619 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-12-10 16:46:28,619 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-12-10 16:46:28,619 INFO  org.hibernate.dialect.Dialect : Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2007-12-10 16:46:28,620 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-12-10 16:46:28,621 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-12-10 16:46:28,621 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-12-10 16:46:28,621 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-12-10 16:46:28,621 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-12-10 16:46:28,634 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-12-10 16:46:28,634 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-12-10 16:46:28,634 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-12-10 16:46:28,634 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-12-10 16:46:28,634 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-12-10 16:46:28,634 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-12-10 16:46:28,644 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-12-10 16:46:28,644 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-12-10 16:46:28,644 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-12-10 16:46:28,645 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-12-10 16:46:28,645 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-12-10 16:46:28,665 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-12-10 16:46:28,665 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-12-10 16:46:28,666 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-12-10 16:46:28,666 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-12-10 16:46:28,666 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-12-10 16:46:28,677 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-12-10 16:46:28,677 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-12-10 16:46:28,677 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-12-10 16:46:28,685 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-12-10 16:46:28,837 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-12-10 16:46:30,346 INFO  edu.duke.cabig.c3pr.utils.CCTSMessageWorkflowCallbackTestCase : -- beginning DaoTestCase interceptor session --
+

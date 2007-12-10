@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Vinay-Office-PC" name="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" tests="38" time="21.45" timestamp="2007-12-10T21:45:00">
+  <properties>
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="ant.file.c3prv2 custom ant tasks" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-ant-tasks.xml" />
+    <property name="ant.file.c3pr-2.0-core" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build.xml" />
+    <property name="env.RoxioCentral" value="C:\Program Files\Common Files\Roxio Shared\9.0\Roxio Central33\" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.5.0_12\jre" />
+    <property name="test.src.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\src" />
+    <property name="test.project.jar" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build\jars\c3pr-2.0-core-tests-1.0.jar" />
+    <property name="env.PCBRAND" value="Pavilion" />
+    <property name="debug" value="on" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.5.0_12\jre\lib\endorsed" />
+    <property name="env.USERNAME" value="Vinay" />
+    <property name="src.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/src" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="env.COMPUTERNAME" value="VINAY-OFFICE-PC" />
+    <property name="ant.file.c3pr-2.0" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build.xml" />
+    <property name="java.version" value="1.5.0_12" />
+    <property name="csm.conf.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/conf//csm" />
+    <property name="test.logs.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\logs" />
+    <property name="conf.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/conf/" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="env.USERPROFILE" value="C:\Users\Vinay" />
+    <property name="test.lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib" />
+    <property name="env.SystemRoot" value="C:\Windows" />
+    <property name="user.name" value="Vinay" />
+    <property name="postgresql.csm.db.scripts.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db/PostGreSQL/csm" />
+    <property name="oracle.db.script.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db/oracle" />
+    <property name="ext.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/ext" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\Vinay\AppData\Local" />
+    <property name="lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/lib" />
+    <property name="project.version" value="1.0" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="user.timezone" value="" />
+    <property name="ant.file.c3pr-2.0-reports" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-reports.xml" />
+    <property name="path.separator" value=";" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 15 Stepping 6, GenuineIntel" />
+    <property name="env._JAVACMD" value="C:\Program Files\Java\jdk1.5.0_12\bin\java.exe" />
+    <property name="project.name" value="core" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="ext.resources.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\resources" />
+    <property name="junit.results.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\test\logs" />
+    <property name="env.NUMBER_OF_PROCESSORS" value="2" />
+    <property name="env.APPDATA" value="C:\Users\Vinay\AppData\Roaming" />
+    <property name="ant.file" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build.xml" />
+    <property name="src.java.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/src/java" />
+    <property name="ant.file.c3pr-2.0-artifacts" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-artifacts.xml" />
+    <property name="java.io.tmpdir" value="C:\Users\Vinay\AppData\Local\Temp\" />
+    <property name="ant.file.c3pr-2.0-core-test" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\antfiles\build-test.xml" />
+    <property name="user.language" value="en" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="line.separator" value="
+" />
+    <property name="bering.migration.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db/bering" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+    <property name="test.classes.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build\classes-test" />
+    <property name="ant.file.catrip-1.0-codedrop" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-codedrop.xml" />
+    <property name="env.LOGONSERVER" value="\\VINAY-OFFICE-PC" />
+    <property name="test.src.java.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\src\java" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="catalina.home" value="C:\Tomcat 5.5" />
+    <property name="env.USERDOMAIN" value="Vinay-Office-PC" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+    <property name="env.windir" value="C:\Windows" />
+    <property name="os.name" value="Windows Vista" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="env.TMP" value="C:\Users\Vinay\AppData\Local\Temp" />
+    <property name="postgresql.db.script.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db/PostGreSQL" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.5.0_12\jre\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_12\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Common Files\Roxio Shared\9.0\DLLShared\;C:\Tomcat 5.5\bin;C:\apache-ant-1.7.0\bin;" />
+    <property name="ant.java.version" value="1.5" />
+    <property name="basedir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core" />
+    <property name="java.class.version" value="49.0" />
+    <property name="ext.lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/ext/lib" />
+    <property name="ant.home" value="C:\apache-ant-1.7.0" />
+    <property name="env.Path" value="C:\Program Files\Java\jdk1.5.0_12\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Common Files\Roxio Shared\9.0\DLLShared\;C:\Tomcat 5.5\bin;C:\apache-ant-1.7.0\bin;" />
+    <property name="ext.test.lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\test\lib" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="net.sourceforge.cobertura.datafile" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\logs\queryengine.ser" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.5.0_12\jre\bin" />
+    <property name="build.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/build" />
+    <property name="env.PROCESSOR_REVISION" value="0f06" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="user.variant" value="" />
+    <property name="src.resources.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/src/resources" />
+    <property name="ant.file.c3pr-2.0-test" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-test.xml" />
+    <property name="jar.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/build/jars" />
+    <property name="ant.project.name" value="c3pr-2.0-core" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="env.GLOBUS_LOCATION" value="C:\Globus\ws-core-4.0.3" />
+    <property name="resources.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/resources" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="env.MAVEN_HOME" value="C:\Program Files\maven-2.0.7-bin\maven-2.0.7" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="build.context.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/build/classes/context" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.5.0_12\jre\lib\ext" />
+    <property name="os.version" value="6.0" />
+    <property name="cobertura.home" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8" />
+    <property name="db.scripts.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db" />
+    <property name="test.src.resources.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\src\resources" />
+    <property name="user.home" value="C:\Users\Vinay" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.5.0_12" />
+    <property name="antfiles.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/antfiles" />
+    <property name="user.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core" />
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+    <property name="test.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test" />
+    <property name="env.OnlineServices" value="Online Services" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env._USE_CLASSPATH" value="no" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
+    <property name="java.vm.version" value="1.5.0_12-b04" />
+    <property name="java.class.path" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\activation-1.0.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\avalon-framework-cvs-20020806.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\castor-1.1.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\commons-beanutils-1.7.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\commons-collections-3.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\commons-configuration-1.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\commons-dbcp-1.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\ejb3-persistence.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\fop.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\jakarta-oro-2.0.8.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\jstl.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\jta.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\mail-1.3.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\northwestern-core-commons.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\ojdbc14.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\postgresql-8.1-407.jdbc3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\standard.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\lib\xbean-spring-2.7.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\CaXchangeRequestProcessor-client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\CaXchangeRequestProcessor-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\CaXchangeRequestProcessor-stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\acegi-csm-0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\acegi-csm-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\acegi-security-1.0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\acegi-security-cas-1.0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\acegi-security-tiger-1.0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\activeio-core-3.0-beta4.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\activemq-core-4.0.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\addressing-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ant-contrib.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\antlr-2.7.6.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\aopalliance.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\asm-2.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\asm-commons-2.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\asm-util-2.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\aspectjrt-1.5.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\aspectjweaver-1.5.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\axis-url.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\axis.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\backport-util-concurrent-2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\bootstrap.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\c3p0-0.8.5.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\c3pr-2.0-esb-client-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-Introduce-1.1-serviceTools.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-ServiceSecurityProvider-client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-ServiceSecurityProvider-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-ServiceSecurityProvider-service.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-ServiceSecurityProvider-stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-advertisement.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-authentication-service-client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-authentication-service-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-authentication-service-stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-core.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-dorian-client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-dorian-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-dorian-stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-metadata-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-metadata-data.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-metadata-security.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-metadataUtils.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\caGrid-1.1-opensaml-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\castor-0.9.9.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cglib-nodep-2.1_3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\clm-3.2.1-ctms00.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\clm.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cog-axis.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cog-jglobus.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cog-tomcat.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cog-url.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\collections-generic-4.01.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commonj.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-beanutils.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-cli-2.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-collections-3.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-collections-3.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-collections-3.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-digester.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-discovery.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-io-1.3.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-lang-2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-logging-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-logging.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\commons-pool-1.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\concurrent.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cryptix-asn1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cryptix.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\cryptix32.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\csmapi-3.2.1-ctms00.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-base-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-base-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-core-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-core-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-laf-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-lang-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-lang-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-web-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ctms-commons-web-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\dom4j-1.6.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\ehcache-1.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_resolution_service.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_resolution_stubs_java.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_resolution_test.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_transfer_service.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_transfer_stubs_java.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_transfer_test.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_usage_core.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_usage_packets_common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_wsrf_mds_aggregator.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_wsrf_mds_aggregator_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_wsrf_servicegroup.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_wsrf_servicegroup_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\globus_wsrf_tools_test.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\grid-security-plugin-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\handle.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\handlerservice.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\hibernate-annotations.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\hibernate3.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jaxen-core.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jaxen-jdom.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jaxrpc.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jboss-j2ee-4.0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jboss-jsr77.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jce-jdk13-125.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jdom-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jdom.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\jgss.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\junit.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\log4j-1.2.13.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\log4j-1.2.8.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\mobius_common_client-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\mobius_factories-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\mobius_gme_client-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\mobius_mako_client-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\mobius_tools-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\naming-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\naming-factory.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\naming-java.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\naming-resources.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\opensaml.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\puretls.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\resolver.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\saaj.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\saxpath.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\servlet.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\spring-aspects.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\spring.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsdl4j.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core_registry.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core_registry_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core_samples_authzService.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core_samples_authzService_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core_samples_counter.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core_samples_counter_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core_samples_mgmt.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core_samples_mgmt_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_core_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_provider_jce.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_test.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_test_interop.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_test_interop_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_test_unit.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_test_unit_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wsrf_tools.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\wss4j.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\xalan.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\xerces-2.6.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\xerces.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\xercesImpl.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\xml-apis.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\lib\xmlsec.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\compile\lib\c3pr-management-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build\jars\c3pr-2.0-core-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\build\jars\c3pr-2.0-core-tests-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\catrip-test-report-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\core-commons-testing.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\dbunit-2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\easymock.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\easymockclassextension.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\hsqldb.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\lib\servlet-api.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\test\lib\junit-3.8.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\ext\test\lib\spring-mock.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\cobertura.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\lib\asm-2.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\lib\jakarta-oro-2.0.8.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\lib\log4j-1.2.9.jar;C:\apache-ant-1.7.0\lib\ant-launcher.jar;C:\apache-ant-1.7.0\lib\ant.jar;C:\apache-ant-1.7.0\lib\ant-junit.jar" />
+    <property name="env.HOMEPATH" value="\Users\Vinay" />
+    <property name="oracle.csm.db.scripts.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/db/oracle/csm" />
+    <property name="ant.library.dir" value="C:\apache-ant-1.7.0\lib" />
+    <property name="os.arch" value="x86" />
+    <property name="testcoverage.datafile" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core\test\logs\queryengine.ser" />
+    <property name="env.PLATFORM" value="MCD" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="classes.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/build/classes" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.file.c3pr-2.0-utilities" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-utilities.xml" />
+    <property name="file.separator" value="\" />
+    <property name="env.ANT_CMD_LINE_ARGS" value="test" />
+    <property name="java.runtime.version" value="1.5.0_12-b04" />
+    <property name="project.jarfile" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\core/build/jars/c3pr-2.0-core-1.0.jar" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.5.0_12\jre\lib\rt.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\i18n.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\jce.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.5.0_12\jre\classes" />
+    <property name="env.ComSpec" value="C:\Windows\system32\cmd.exe" />
+    <property name="env.TEMP" value="C:\Users\Vinay\AppData\Local\Temp" />
+    <property name="user.country" value="US" />
+    <property name="env.ANT_HOME" value="C:\apache-ant-1.7.0" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="c3pr.properties.file" value="c3pr.properties" />
+    <property name="env.CATALINA_HOME" value="C:\Tomcat 5.5" />
+    <property name="java.specification.version" value="1.5" />
+    <property name="sun.arch.data.model" value="32" />
+  </properties>
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testEvaluateRegistrationDataEntryStatusInComplete" time="0.784" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testEvaluateRegistrationDataEntryStatusComplete" time="0.507" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testEvaluateEpochDataEntryStatusInComplete1" time="0.461" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testEvaluateEpochDataEntryStatusInComplete2" time="0.476" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testEvaluateEpochDataEntryStatusInComplete3" time="0.463" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testEvaluateEpochDataEntryStatusComplete1" time="0.44" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testEvaluateEpochDataEntryStatusComplete2" time="0.44" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testEvaluateEpochDataEntryStatusComplete3" time="0.441" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageSchEpochWorkFlowStatusIfUnAppCase0" time="0.455" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageSchEpochWorkFlowStatusIfUnAppCase1" time="0.449" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageSchEpochWorkFlowStatusIfUnAppCase2" time="0.448" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageSchEpochWorkFlowStatusIfUnAppCase3" time="0.43" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageSchEpochWorkFlowStatusIfUnAppCase4" time="0.441" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageSchEpochWorkFlowStatusIfUnAppCase5" time="0.565" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageSchEpochWorkFlowStatusIfUnAppCase6" time="0.454" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageRegWorkFlowIfUnRegCase0" time="0.468" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageRegWorkFlowIfUnRegCase1" time="0.448" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageRegWorkFlowIfUnRegCase2" time="0.437" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageRegWorkFlowIfUnRegCase3" time="0.438" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageRegWorkFlowIfUnRegCase4" time="0.446" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageRegWorkFlowIfUnRegCase5" time="0.597" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageRegWorkFlowIfUnRegCase6" time="0.441" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testManageRegWorkFlowIfUnRegCase7" time="0.429" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase0" time="0.427" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase1" time="0.857" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase2" time="0.747" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase3" time="0.498" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase4" time="0.45" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase5" time="0.699" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase6" time="0.784" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase7" time="0.447" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase8" time="0.744" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase9" time="1.325" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase10" time="0.433" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase11" time="0.834" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase12" time="0.845" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testCreateRegistrationCase13" time="0.438" />
+  <testcase classname="edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase" name="testInvalidStratumGroup" time="0.852" />
+  <system-out><![CDATA[2007-12-10 16:44:50,584 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@94884d: display name [org.springframework.context.support.ClassPathXmlApplicationContext@94884d]; startup date [Mon Dec 10 16:44:50 EST 2007]; root of context hierarchy
+2007-12-10 16:44:50,696 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-core.xml]
+2007-12-10 16:44:51,398 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-core-db.xml]
+2007-12-10 16:44:51,499 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-csm.xml]
+2007-12-10 16:44:51,544 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-esb.xml]
+2007-12-10 16:44:51,624 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@94884d]: org.springframework.beans.factory.support.DefaultListableBeanFactory@131303f
+2007-12-10 16:44:51,850 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from class path resource [context/c3pr.properties]
+2007-12-10 16:44:51,853 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from URL [file:C:/Users/Vinay/.c3pr/c3pr.properties]
+2007-12-10 16:44:51,855 WARN  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Could not load properties from URL [file:C:/Users/Vinay/.c3pr/c3pr.properties]: C:\Users\Vinay\.c3pr\c3pr.properties (The system cannot find the path specified)
+2007-12-10 16:44:51,855 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from URL [file:C:/Tomcat 5.5/conf/c3pr.properties]
+2007-12-10 16:44:51,864 WARN  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Could not load properties from URL [file:C:/Tomcat 5.5/conf/c3pr.properties]: C:\Tomcat 5.5\conf\c3pr.properties (The system cannot find the file specified)
+2007-12-10 16:44:51,966 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.aop.config.internalAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:51,979 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:52,121 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'dataSource' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:52,138 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.hibernate.cfg.ImprovedNamingStrategy#b60b93' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:52,164 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'gridIdentifierCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:52,164 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'gridIdentifierInterceptor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:52,171 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'chainedInterceptor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:52,202 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'hibernateProperties' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:52,202 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'hibernateProperties' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:52,267 INFO  org.hibernate.cfg.annotations.Version : Hibernate Annotations 3.2.0.CR2
+2007-12-10 16:44:52,288 INFO  org.hibernate.cfg.Environment : Hibernate 3.2.1
+2007-12-10 16:44:52,294 INFO  org.hibernate.cfg.Environment : hibernate.properties not found
+2007-12-10 16:44:52,300 INFO  org.hibernate.cfg.Environment : Bytecode provider name : cglib
+2007-12-10 16:44:52,307 INFO  org.hibernate.cfg.Environment : using JDK 1.4 java.sql.Timestamp handling
+2007-12-10 16:44:52,455 INFO  org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean : Building new Hibernate SessionFactory
+2007-12-10 16:44:52,609 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Study
+2007-12-10 16:44:52,665 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Study on table studies
+2007-12-10 16:44:52,854 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Epoch
+2007-12-10 16:44:52,856 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Epoch on table epochs
+2007-12-10 16:44:52,968 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.NonTreatmentEpoch
+2007-12-10 16:44:52,998 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.TreatmentEpoch
+2007-12-10 16:44:53,024 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Arm
+2007-12-10 16:44:53,025 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Arm on table arms
+2007-12-10 16:44:53,039 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyOrganization
+2007-12-10 16:44:53,040 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyOrganization on table study_organizations
+2007-12-10 16:44:53,054 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudySite
+2007-12-10 16:44:53,068 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyCoordinatingCenter
+2007-12-10 16:44:53,070 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyFundingSponsor
+2007-12-10 16:44:53,071 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.HealthcareSite
+2007-12-10 16:44:53,071 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.HealthcareSite on table organizations
+2007-12-10 16:44:53,099 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Address
+2007-12-10 16:44:53,100 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Address on table addresses
+2007-12-10 16:44:53,108 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudySubject
+2007-12-10 16:44:53,108 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudySubject on table study_subjects
+2007-12-10 16:44:53,188 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyInvestigator
+2007-12-10 16:44:53,189 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyInvestigator on table study_investigators
+2007-12-10 16:44:53,292 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator
+2007-12-10 16:44:53,293 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator on table hc_site_investigators
+2007-12-10 16:44:53,304 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyPersonnel
+2007-12-10 16:44:53,305 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyPersonnel on table study_personnel
+2007-12-10 16:44:53,333 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Participant
+2007-12-10 16:44:53,335 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Participant on table participants
+2007-12-10 16:44:53,358 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ResearchStaff
+2007-12-10 16:44:53,359 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ResearchStaff on table research_staff
+2007-12-10 16:44:53,384 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Investigator
+2007-12-10 16:44:53,385 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Investigator on table investigators
+2007-12-10 16:44:53,398 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledArm
+2007-12-10 16:44:53,398 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ScheduledArm on table scheduled_arms
+2007-12-10 16:44:53,405 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Identifier
+2007-12-10 16:44:53,405 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Identifier on table identifiers
+2007-12-10 16:44:53,413 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SystemAssignedIdentifier
+2007-12-10 16:44:53,417 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.OrganizationAssignedIdentifier
+2007-12-10 16:44:53,429 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.EligibilityCriteria
+2007-12-10 16:44:53,430 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.EligibilityCriteria on table eligibility_criteria
+2007-12-10 16:44:53,435 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SubjectEligibilityAnswer
+2007-12-10 16:44:53,436 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.SubjectEligibilityAnswer on table subject_eligibility_ans
+2007-12-10 16:44:53,441 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.InclusionEligibilityCriteria
+2007-12-10 16:44:53,443 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ExclusionEligibilityCriteria
+2007-12-10 16:44:53,444 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyDisease
+2007-12-10 16:44:53,445 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyDisease on table study_diseases
+2007-12-10 16:44:53,450 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseCategory
+2007-12-10 16:44:53,478 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseCategory on table disease_categories
+2007-12-10 16:44:53,512 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseTerm
+2007-12-10 16:44:53,512 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseTerm on table disease_terms
+2007-12-10 16:44:53,526 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterion
+2007-12-10 16:44:53,527 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterion on table strat_criteria
+2007-12-10 16:44:53,549 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterionPermissibleAnswer
+2007-12-10 16:44:53,549 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterionPermissibleAnswer on table strat_cri_per_ans
+2007-12-10 16:44:53,555 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SubjectStratificationAnswer
+2007-12-10 16:44:53,555 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.SubjectStratificationAnswer on table subject_strat_ans
+2007-12-10 16:44:53,568 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.AnatomicSite
+2007-12-10 16:44:53,569 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.AnatomicSite on table anatomic_sites
+2007-12-10 16:44:53,572 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseHistory
+2007-12-10 16:44:53,579 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseHistory on table disease_history
+2007-12-10 16:44:53,610 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ContactMechanism
+2007-12-10 16:44:53,612 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ContactMechanism on table contact_mechanisms
+2007-12-10 16:44:53,625 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledEpoch
+2007-12-10 16:44:53,625 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ScheduledEpoch on table scheduled_epochs
+2007-12-10 16:44:53,639 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch
+2007-12-10 16:44:53,654 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-12-10 16:44:53,655 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratumGroup
+2007-12-10 16:44:53,656 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratumGroup on table stratum_groups
+2007-12-10 16:44:53,672 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.BookRandomizationEntry
+2007-12-10 16:44:53,673 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.BookRandomizationEntry on table book_rndm_entry
+2007-12-10 16:44:53,683 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Randomization
+2007-12-10 16:44:53,683 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Randomization on table randomizations
+2007-12-10 16:44:53,686 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.BookRandomization
+2007-12-10 16:44:53,690 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.CalloutRandomization
+2007-12-10 16:44:53,693 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.PhonecallRandomization
+2007-12-10 16:44:53,695 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterionAnswerCombination
+2007-12-10 16:44:53,695 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterionAnswerCombination on table strat_cri_ans_cmb
+2007-12-10 16:44:53,700 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyAmendment
+2007-12-10 16:44:53,711 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyAmendment on table study_amendments
+2007-12-10 16:44:53,727 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Notification
+2007-12-10 16:44:53,728 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Notification on table notifications
+2007-12-10 16:44:53,747 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Recepient
+2007-12-10 16:44:53,747 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Recepient on table recepients
+2007-12-10 16:44:53,750 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.EmailBasedRecepient
+2007-12-10 16:44:53,761 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.RoleBasedRecepient
+2007-12-10 16:44:53,790 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Notification.roleBasedRecepientInternal -> recepients
+2007-12-10 16:44:53,792 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Notification.emailBasedRecepientInternal -> recepients
+2007-12-10 16:44:53,793 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.BookRandomization.bookRandomizationEntryInternal -> book_rndm_entry
+2007-12-10 16:44:53,797 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratumGroup.stratificationCriterionAnswerCombinationInternal -> strat_cri_ans_cmb
+2007-12-10 16:44:53,799 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.scheduledArmsInternal -> scheduled_arms
+2007-12-10 16:44:53,803 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.subjectStratificationAnswersInternal -> subject_strat_ans
+2007-12-10 16:44:53,807 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.subjectEligibilityAnswersInternal -> subject_eligibility_ans
+2007-12-10 16:44:53,807 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratificationCriterion.permissibleAnswersInternal -> strat_cri_per_ans
+2007-12-10 16:44:53,808 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Investigator.contactMechanisms -> contact_mechanisms
+2007-12-10 16:44:53,829 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ResearchStaff.contactMechanisms -> contact_mechanisms
+2007-12-10 16:44:53,829 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.contactMechanisms -> contact_mechanisms
+2007-12-10 16:44:53,830 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.identifiers -> identifiers
+2007-12-10 16:44:53,847 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySubject.identifiers -> identifiers
+2007-12-10 16:44:53,847 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySubject.scheduledEpochs -> scheduled_epochs
+2007-12-10 16:44:53,858 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.stratumGroupsInternal -> stratum_groups
+2007-12-10 16:44:53,863 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.inclusionEligibilityCriteriaInternal -> eligibility_criteria
+2007-12-10 16:44:53,864 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.stratificationCriteriaInternal -> strat_criteria
+2007-12-10 16:44:53,864 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.exclusionEligibilityCriteriaInternal -> eligibility_criteria
+2007-12-10 16:44:53,882 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.eligibilityCriteriaInternal -> eligibility_criteria
+2007-12-10 16:44:53,883 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.armsInternal -> arms
+2007-12-10 16:44:53,883 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.notificationsInternal -> notifications
+2007-12-10 16:44:53,898 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyAmendmentsInternal -> study_amendments
+2007-12-10 16:44:53,898 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.identifiers -> identifiers
+2007-12-10 16:44:53,899 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.epochs -> epochs
+2007-12-10 16:44:53,907 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyOrganizations -> study_organizations
+2007-12-10 16:44:53,932 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyDiseases -> study_diseases
+2007-12-10 16:44:53,932 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudyOrganization.studyInvestigatorsInternal -> study_investigators
+2007-12-10 16:44:53,933 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudyOrganization.studyPersonnelInternal -> study_personnel
+2007-12-10 16:44:53,961 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySite.studySubjects -> study_subjects
+2007-12-10 16:44:53,962 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.studyOrganizations -> study_organizations
+2007-12-10 16:44:53,966 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.identifiers -> identifiers
+2007-12-10 16:44:53,994 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.healthcareSiteInvestigators -> hc_site_investigators
+2007-12-10 16:44:53,994 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.researchStaffs -> research_staff
+2007-12-10 16:44:53,995 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator.studyInvestigators -> study_investigators
+2007-12-10 16:44:54,009 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.studySubjects -> study_subjects
+2007-12-10 16:44:54,009 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ResearchStaff.studyPersonnels -> study_personnel
+2007-12-10 16:44:54,010 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Investigator.healthcareSiteInvestigatorsInternal -> hc_site_investigators
+2007-12-10 16:44:54,025 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.DiseaseCategory.terms -> disease_terms
+2007-12-10 16:44:54,026 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.DiseaseCategory.childCategories -> disease_categories
+2007-12-10 16:44:54,026 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratumGroup.bookRandomizationEntryInternal -> book_rndm_entry
+2007-12-10 16:44:54,453 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@2d0479)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+2007-12-10 16:44:54,825 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-12-10 16:44:54,827 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-12-10 16:44:54,861 INFO  org.hibernate.dialect.Dialect : Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2007-12-10 16:44:54,879 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-12-10 16:44:54,882 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-12-10 16:44:54,883 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-12-10 16:44:54,883 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-12-10 16:44:54,883 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-12-10 16:44:54,893 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-12-10 16:44:54,894 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-12-10 16:44:54,894 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-12-10 16:44:54,894 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-12-10 16:44:54,895 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-12-10 16:44:54,895 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-12-10 16:44:54,908 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-12-10 16:44:54,908 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-12-10 16:44:54,912 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-12-10 16:44:54,913 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-12-10 16:44:54,913 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-12-10 16:44:54,938 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-12-10 16:44:54,938 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-12-10 16:44:54,938 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-12-10 16:44:54,938 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-12-10 16:44:54,939 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-12-10 16:44:54,971 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-12-10 16:44:54,971 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-12-10 16:44:54,971 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-12-10 16:44:55,046 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-12-10 16:44:56,832 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-12-10 16:44:56,867 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'sessionFactory' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:56,872 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'sessionFactory' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:56,895 INFO  org.springframework.orm.hibernate3.HibernateTransactionManager : Using DataSource [org.apache.commons.dbcp.BasicDataSource@dab859] of Hibernate SessionFactory for HibernateTransactionManager
+2007-12-10 16:44:56,898 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'transactionManager' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:56,912 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:56,912 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:56,913 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:44:56,947 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@131303f: defining beans [c3pr-xml-castorMapping,ccts-study-castorMapping,ccts-registration-castorMapping,transactionManager,org.springframework.transaction.aspectj.AnnotationTransactionAspect,c3prPropertyConfigurer,org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor,sessionFactory,auditOpenSessionInViewInterceptor,auditSessionFactory,chainedInterceptor,auditInterceptor,dataAuditRepository,gridIdentifierInterceptor,hibernateTemplate,daoTemplate,openSessionInViewInterceptor,gridIdentifierCreator,studyValidator,studySiteValidator,epochValidator,armValidator,identifierValidator,participantValidator,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor,studyDao,studySubjectDao,studySiteDao,epochDao,scheduledEpochDao,armDao,participantDao,healthcareSiteDao,healthcareSiteInvestigatorDao,studyPersonnelDao,researchStaffDao,investigatorDao,diseaseCategoryDao,diseaseTermDao,studyInvestigatorDao,StratificationCriterionDao,anatomicSiteDao,organizationDao,stratificationAnswerDao,stratumGroupDao,cctsWorkflowService,studyService,participantService,studySubjectService,studyXMLImporterService,studySubjectXMLImporterService,personnelService,organizationService,sitePrivilegeAndObjectIdGenerator,mailSender,confirmationEmailer,notificationEmailer,accountCreatedTemplateMessage,xmlUtility,xmlParser,c3prErrorMessages,multsiteErrorMessageSource,exceptionHelper,dataSourceTemplate,dataSource,hibernateProperties,auditHibernateProperties,csmApplicationContextName,ACCESS_PRIVILEGE,authorizationSwitch,booleanFromString,csmAuthorizationDao,csmUserProvisioningManager,csmAuthenticationManager,messageTypesMapping,c3dPatientPositionResponseHandler,caXchangeMessageResponseHandlerSet,cctsMessageWorkflowCallbackFactory,messageBroadcaster]; root of factory hierarchy
+2007-12-10 16:44:57,108 INFO  org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean : Building new Hibernate SessionFactory
+2007-12-10 16:44:57,109 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEventValue
+2007-12-10 16:44:57,109 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity gov.nih.nci.cabig.ctms.audit.domain.DataAuditEventValue on table audit_event_values
+2007-12-10 16:44:57,116 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent
+2007-12-10 16:44:57,117 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent on table audit_events
+2007-12-10 16:44:57,145 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent.values -> audit_event_values
+2007-12-10 16:44:57,176 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2007-12-10 16:44:57,177 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-12-10 16:44:57,177 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-12-10 16:44:57,179 INFO  org.hibernate.dialect.Dialect : Using dialect: edu.duke.cabig.c3pr.hibernate.ImprovedPostgreSQLDialect
+2007-12-10 16:44:57,180 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-12-10 16:44:57,182 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-12-10 16:44:57,182 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-12-10 16:44:57,182 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-12-10 16:44:57,182 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-12-10 16:44:57,188 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-12-10 16:44:57,189 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-12-10 16:44:57,189 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-12-10 16:44:57,189 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-12-10 16:44:57,189 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-12-10 16:44:57,189 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-12-10 16:44:57,204 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-12-10 16:44:57,204 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-12-10 16:44:57,204 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-12-10 16:44:57,204 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-12-10 16:44:57,204 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-12-10 16:44:57,225 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-12-10 16:44:57,225 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-12-10 16:44:57,225 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-12-10 16:44:57,225 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-12-10 16:44:57,225 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-12-10 16:44:57,236 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-12-10 16:44:57,237 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-12-10 16:44:57,237 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-12-10 16:44:57,248 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-12-10 16:44:57,298 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-12-10 16:44:57,640 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setSessionFactory(org.hibernate.SessionFactory)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:44:57,640 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final org.hibernate.SessionFactory org.springframework.orm.hibernate3.support.HibernateDaoSupport.getSessionFactory()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:44:57,640 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final org.springframework.orm.hibernate3.HibernateTemplate org.springframework.orm.hibernate3.support.HibernateDaoSupport.getHibernateTemplate()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:44:57,646 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setHibernateTemplate(org.springframework.orm.hibernate3.HibernateTemplate)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:44:57,646 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:44:58,519 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Privilege -> CSM_PRIVILEGE
+2007-12-10 16:44:58,582 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Application -> CSM_APPLICATION
+2007-12-10 16:44:58,622 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Role -> CSM_ROLE
+2007-12-10 16:44:58,623 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.Role.privileges -> CSM_ROLE_PRIVILEGE
+2007-12-10 16:44:58,651 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.RolePrivilege -> CSM_ROLE_PRIVILEGE
+2007-12-10 16:44:58,677 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.UserGroup -> CSM_USER_GROUP
+2007-12-10 16:44:58,697 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.ProtectionGroupProtectionElement -> CSM_PG_PE
+2007-12-10 16:44:58,719 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Group -> CSM_GROUP
+2007-12-10 16:44:58,720 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.Group.users -> CSM_USER_GROUP
+2007-12-10 16:44:58,745 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.User -> CSM_USER
+2007-12-10 16:44:58,753 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.User.groups -> CSM_USER_GROUP
+2007-12-10 16:44:58,779 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.ProtectionGroup -> CSM_PROTECTION_GROUP
+2007-12-10 16:44:58,780 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionGroup.protectionElements -> CSM_PG_PE
+2007-12-10 16:44:58,930 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.ProtectionElement -> CSM_PROTECTION_ELEMENT
+2007-12-10 16:44:58,931 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionElement.protectionGroups -> CSM_PG_PE
+2007-12-10 16:44:58,932 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionElement.owners -> CSM_USER_PE
+2007-12-10 16:44:58,946 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.UserGroupRoleProtectionGroup -> CSM_USER_GROUP_ROLE_PG
+2007-12-10 16:44:58,975 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.UserProtectionElement -> CSM_USER_PE
+2007-12-10 16:44:58,976 INFO  org.springframework.orm.hibernate3.LocalSessionFactoryBean : Building new Hibernate SessionFactory
+2007-12-10 16:44:58,981 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2007-12-10 16:44:58,984 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-12-10 16:44:58,984 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-12-10 16:44:58,985 INFO  org.hibernate.dialect.Dialect : Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2007-12-10 16:44:58,986 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-12-10 16:44:58,993 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-12-10 16:44:58,993 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-12-10 16:44:58,993 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-12-10 16:44:58,993 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-12-10 16:44:58,999 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-12-10 16:44:59,000 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-12-10 16:44:59,000 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-12-10 16:44:59,000 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-12-10 16:44:59,000 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-12-10 16:44:59,000 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-12-10 16:44:59,015 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-12-10 16:44:59,015 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-12-10 16:44:59,015 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-12-10 16:44:59,015 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-12-10 16:44:59,015 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-12-10 16:44:59,042 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-12-10 16:44:59,042 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-12-10 16:44:59,042 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-12-10 16:44:59,042 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-12-10 16:44:59,042 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-12-10 16:44:59,048 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-12-10 16:44:59,048 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-12-10 16:44:59,048 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-12-10 16:44:59,055 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-12-10 16:44:59,205 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-12-10 16:45:00,780 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:01,336 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:01,806 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:02,273 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:02,753 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:03,198 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:03,638 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:04,080 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:04,529 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:04,990 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:05,435 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:05,874 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:06,311 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:06,751 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:07,329 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:07,804 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:08,260 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:08,698 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:09,138 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:09,587 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:10,184 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:10,631 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:11,061 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:11,491 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:11,929 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:12,007 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:12,046 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:12,046 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:12,156 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:12,174 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:12,174 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:12,278 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:12,305 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:12,305 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:12,306 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:12,333 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:12,333 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:12,811 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:12,818 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:12,857 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:12,857 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:12,917 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:12,954 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:12,954 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:13,011 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:13,044 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:13,044 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:13,045 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:13,072 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:13,073 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:13,586 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:14,047 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:14,480 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:14,487 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:14,520 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:14,520 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:14,587 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:14,615 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:14,615 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:14,673 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:14,707 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:14,707 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:14,708 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:14,741 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:14,741 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:15,193 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:15,199 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:15,235 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:15,235 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:15,308 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:15,347 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:15,347 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:15,408 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:15,462 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:15,462 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:15,463 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:15,513 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:15,513 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:15,975 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:16,428 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:16,438 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:16,487 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:16,487 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:16,556 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:16,587 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:16,588 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:16,644 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:16,677 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:16,678 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:16,678 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:16,717 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:16,717 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:17,746 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:17,753 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:17,796 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:17,796 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:17,853 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:17,888 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:17,888 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:17,947 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:17,994 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:17,994 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:17,995 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:18,037 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:18,037 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:18,494 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:18,948 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:18,955 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:19,000 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:19,000 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:19,077 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:19,119 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:19,119 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:19,183 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:19,238 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:19,238 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:19,239 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:19,287 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:19,287 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:19,776 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:19,786 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:19,835 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:19,835 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:19,906 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:19,962 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:19,962 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:20,031 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:20,085 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:20,085 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:20,086 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:20,135 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:20,135 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:20,615 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:21,060 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:21,067 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:21,119 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:21,119 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:21,244 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:21,298 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:21,298 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:21,314 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:21,384 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:21,384 INFO  edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase : -- beginning DaoTestCase interceptor session --
+]]></system-out>
+  <system-err><![CDATA[edu.duke.cabig.c3pr.exception.C3PRCodedException: 201:Could not send registration request to co ordinating center.<; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: edu.duke.cabig.c3pr.domain.StudySite; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: edu.duke.cabig.c3pr.domain.StudySite>
+Caused by: org.springframework.dao.InvalidDataAccessApiUsageException: object references an unsaved transient instance - save the transient instance before flushing: edu.duke.cabig.c3pr.domain.StudySite; nested exception is org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: edu.duke.cabig.c3pr.domain.StudySite
+Caused by: org.hibernate.TransientObjectException: object references an unsaved transient instance - save the transient instance before flushing: edu.duke.cabig.c3pr.domain.StudySite
+	at org.hibernate.engine.ForeignKeys.getEntityIdentifierIfNotUnsaved(ForeignKeys.java:219)
+	at org.hibernate.type.EntityType.getIdentifier(EntityType.java:397)
+	at org.hibernate.type.EntityType.replace(EntityType.java:253)
+	at org.hibernate.type.AbstractType.replace(AbstractType.java:153)
+	at org.hibernate.type.TypeFactory.replace(TypeFactory.java:495)
+	at org.hibernate.event.def.DefaultMergeEventListener.copyValues(DefaultMergeEventListener.java:377)
+	at org.hibernate.event.def.DefaultMergeEventListener.entityIsTransient(DefaultMergeEventListener.java:179)
+	at org.hibernate.event.def.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:123)
+	at org.hibernate.event.def.DefaultMergeEventListener.onMerge(DefaultMergeEventListener.java:53)
+	at org.hibernate.impl.SessionImpl.fireMerge(SessionImpl.java:677)
+	at org.hibernate.impl.SessionImpl.merge(SessionImpl.java:661)
+	at org.hibernate.impl.SessionImpl.merge(SessionImpl.java:665)
+	at org.springframework.orm.hibernate3.HibernateTemplate$23.doInHibernate(HibernateTemplate.java:765)
+	at org.springframework.orm.hibernate3.HibernateTemplate.execute(HibernateTemplate.java:372)
+	at org.springframework.orm.hibernate3.HibernateTemplate.merge(HibernateTemplate.java:762)
+	at edu.duke.cabig.c3pr.dao.StudySubjectDao.merge(StudySubjectDao.java:267)
+	at edu.duke.cabig.c3pr.service.impl.StudySubjectServiceImpl.manageSchEpochWorkFlow(StudySubjectServiceImpl.java:195)
+	at edu.duke.cabig.c3pr.service.impl.StudySubjectServiceImpl.manageSchEpochWorkFlow(StudySubjectServiceImpl.java:328)
+	at edu.duke.cabig.c3pr.service.impl.StudySubjectServiceImpl$$FastClassByCGLIB$$f5f7c222.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:622)
+	at edu.duke.cabig.c3pr.service.impl.StudySubjectServiceImpl$$EnhancerByCGLIB$$e1738e15.manageSchEpochWorkFlow(<generated>)
+	at edu.duke.cabig.c3pr.service.StudySubjectServiceTestCase.testManageSchEpochWorkFlowStatusIfUnAppCase5(StudySubjectServiceTestCase.java:308)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at edu.duke.cabig.c3pr.utils.DaoTestCase.runBare(DaoTestCase.java:62)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:421)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:912)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:766)
+]]></system-err>
+</testsuite>

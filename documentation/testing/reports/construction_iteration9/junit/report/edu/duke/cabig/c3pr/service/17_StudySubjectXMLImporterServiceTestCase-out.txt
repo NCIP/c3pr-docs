@@ -1,0 +1,475 @@
+2007-12-10 16:45:25,444 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@84da23: display name [org.springframework.context.support.ClassPathXmlApplicationContext@84da23]; startup date [Mon Dec 10 16:45:25 EST 2007]; root of context hierarchy
+2007-12-10 16:45:25,553 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-core.xml]
+2007-12-10 16:45:26,222 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-core-db.xml]
+2007-12-10 16:45:26,326 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-csm.xml]
+2007-12-10 16:45:26,372 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [jar:file:/C:/eclipse/WorkspaceSemanticBits/c3prv2/codebase/projects/core/build/jars/c3pr-2.0-core-1.0.jar!/edu/duke/cabig/c3pr/applicationContext-esb.xml]
+2007-12-10 16:45:26,488 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@84da23]: org.springframework.beans.factory.support.DefaultListableBeanFactory@b122a1
+2007-12-10 16:45:26,722 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from class path resource [context/c3pr.properties]
+2007-12-10 16:45:26,725 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from URL [file:C:/Users/Vinay/.c3pr/c3pr.properties]
+2007-12-10 16:45:26,727 WARN  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Could not load properties from URL [file:C:/Users/Vinay/.c3pr/c3pr.properties]: C:\Users\Vinay\.c3pr\c3pr.properties (The system cannot find the path specified)
+2007-12-10 16:45:26,727 INFO  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Loading properties file from URL [file:C:/Tomcat 5.5/conf/c3pr.properties]
+2007-12-10 16:45:26,730 WARN  org.springframework.beans.factory.config.PropertyPlaceholderConfigurer : Could not load properties from URL [file:C:/Tomcat 5.5/conf/c3pr.properties]: C:\Tomcat 5.5\conf\c3pr.properties (The system cannot find the file specified)
+2007-12-10 16:45:26,787 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.aop.config.internalAutoProxyCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:26,800 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:26,943 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'dataSource' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:26,961 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.hibernate.cfg.ImprovedNamingStrategy#1829e6f' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:26,982 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'gridIdentifierCreator' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:26,983 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'gridIdentifierInterceptor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:26,988 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'chainedInterceptor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:27,011 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'hibernateProperties' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:27,011 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'hibernateProperties' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:27,074 INFO  org.hibernate.cfg.annotations.Version : Hibernate Annotations 3.2.0.CR2
+2007-12-10 16:45:27,094 INFO  org.hibernate.cfg.Environment : Hibernate 3.2.1
+2007-12-10 16:45:27,101 INFO  org.hibernate.cfg.Environment : hibernate.properties not found
+2007-12-10 16:45:27,106 INFO  org.hibernate.cfg.Environment : Bytecode provider name : cglib
+2007-12-10 16:45:27,113 INFO  org.hibernate.cfg.Environment : using JDK 1.4 java.sql.Timestamp handling
+2007-12-10 16:45:27,256 INFO  org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean : Building new Hibernate SessionFactory
+2007-12-10 16:45:27,407 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Study
+2007-12-10 16:45:27,462 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Study on table studies
+2007-12-10 16:45:27,647 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Epoch
+2007-12-10 16:45:27,649 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Epoch on table epochs
+2007-12-10 16:45:27,760 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.NonTreatmentEpoch
+2007-12-10 16:45:27,789 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.TreatmentEpoch
+2007-12-10 16:45:27,814 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Arm
+2007-12-10 16:45:27,815 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Arm on table arms
+2007-12-10 16:45:27,825 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyOrganization
+2007-12-10 16:45:27,829 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyOrganization on table study_organizations
+2007-12-10 16:45:27,843 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudySite
+2007-12-10 16:45:27,932 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyCoordinatingCenter
+2007-12-10 16:45:27,933 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyFundingSponsor
+2007-12-10 16:45:27,934 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.HealthcareSite
+2007-12-10 16:45:27,935 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.HealthcareSite on table organizations
+2007-12-10 16:45:27,957 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Address
+2007-12-10 16:45:27,957 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Address on table addresses
+2007-12-10 16:45:27,969 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudySubject
+2007-12-10 16:45:27,969 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudySubject on table study_subjects
+2007-12-10 16:45:28,001 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyInvestigator
+2007-12-10 16:45:28,002 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyInvestigator on table study_investigators
+2007-12-10 16:45:28,012 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator
+2007-12-10 16:45:28,018 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator on table hc_site_investigators
+2007-12-10 16:45:28,029 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyPersonnel
+2007-12-10 16:45:28,029 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyPersonnel on table study_personnel
+2007-12-10 16:45:28,056 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Participant
+2007-12-10 16:45:28,057 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Participant on table participants
+2007-12-10 16:45:28,078 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ResearchStaff
+2007-12-10 16:45:28,078 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ResearchStaff on table research_staff
+2007-12-10 16:45:28,100 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Investigator
+2007-12-10 16:45:28,101 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Investigator on table investigators
+2007-12-10 16:45:28,113 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledArm
+2007-12-10 16:45:28,114 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ScheduledArm on table scheduled_arms
+2007-12-10 16:45:28,120 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Identifier
+2007-12-10 16:45:28,120 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Identifier on table identifiers
+2007-12-10 16:45:28,125 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SystemAssignedIdentifier
+2007-12-10 16:45:28,127 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.OrganizationAssignedIdentifier
+2007-12-10 16:45:28,133 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.EligibilityCriteria
+2007-12-10 16:45:28,133 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.EligibilityCriteria on table eligibility_criteria
+2007-12-10 16:45:28,138 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SubjectEligibilityAnswer
+2007-12-10 16:45:28,138 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.SubjectEligibilityAnswer on table subject_eligibility_ans
+2007-12-10 16:45:28,144 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.InclusionEligibilityCriteria
+2007-12-10 16:45:28,146 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ExclusionEligibilityCriteria
+2007-12-10 16:45:28,146 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyDisease
+2007-12-10 16:45:28,147 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyDisease on table study_diseases
+2007-12-10 16:45:28,160 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseCategory
+2007-12-10 16:45:28,161 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseCategory on table disease_categories
+2007-12-10 16:45:28,170 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseTerm
+2007-12-10 16:45:28,171 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseTerm on table disease_terms
+2007-12-10 16:45:28,181 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterion
+2007-12-10 16:45:28,181 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterion on table strat_criteria
+2007-12-10 16:45:28,191 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterionPermissibleAnswer
+2007-12-10 16:45:28,191 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterionPermissibleAnswer on table strat_cri_per_ans
+2007-12-10 16:45:28,201 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.SubjectStratificationAnswer
+2007-12-10 16:45:28,202 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.SubjectStratificationAnswer on table subject_strat_ans
+2007-12-10 16:45:28,208 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.AnatomicSite
+2007-12-10 16:45:28,209 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.AnatomicSite on table anatomic_sites
+2007-12-10 16:45:28,218 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.DiseaseHistory
+2007-12-10 16:45:28,219 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.DiseaseHistory on table disease_history
+2007-12-10 16:45:28,229 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ContactMechanism
+2007-12-10 16:45:28,231 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ContactMechanism on table contact_mechanisms
+2007-12-10 16:45:28,243 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledEpoch
+2007-12-10 16:45:28,243 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.ScheduledEpoch on table scheduled_epochs
+2007-12-10 16:45:28,253 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch
+2007-12-10 16:45:28,265 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-12-10 16:45:28,266 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratumGroup
+2007-12-10 16:45:28,267 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratumGroup on table stratum_groups
+2007-12-10 16:45:28,280 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.BookRandomizationEntry
+2007-12-10 16:45:28,281 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.BookRandomizationEntry on table book_rndm_entry
+2007-12-10 16:45:28,288 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Randomization
+2007-12-10 16:45:28,289 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Randomization on table randomizations
+2007-12-10 16:45:28,292 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.BookRandomization
+2007-12-10 16:45:28,297 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.CalloutRandomization
+2007-12-10 16:45:28,298 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.PhonecallRandomization
+2007-12-10 16:45:28,299 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StratificationCriterionAnswerCombination
+2007-12-10 16:45:28,303 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StratificationCriterionAnswerCombination on table strat_cri_ans_cmb
+2007-12-10 16:45:28,312 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.StudyAmendment
+2007-12-10 16:45:28,313 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.StudyAmendment on table study_amendments
+2007-12-10 16:45:28,320 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Notification
+2007-12-10 16:45:28,320 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Notification on table notifications
+2007-12-10 16:45:28,331 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.Recepient
+2007-12-10 16:45:28,331 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity edu.duke.cabig.c3pr.domain.Recepient on table recepients
+2007-12-10 16:45:28,338 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.EmailBasedRecepient
+2007-12-10 16:45:28,340 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: edu.duke.cabig.c3pr.domain.RoleBasedRecepient
+2007-12-10 16:45:28,365 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Notification.roleBasedRecepientInternal -> recepients
+2007-12-10 16:45:28,367 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Notification.emailBasedRecepientInternal -> recepients
+2007-12-10 16:45:28,368 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.BookRandomization.bookRandomizationEntryInternal -> book_rndm_entry
+2007-12-10 16:45:28,370 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratumGroup.stratificationCriterionAnswerCombinationInternal -> strat_cri_ans_cmb
+2007-12-10 16:45:28,373 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.scheduledArmsInternal -> scheduled_arms
+2007-12-10 16:45:28,374 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.subjectStratificationAnswersInternal -> subject_strat_ans
+2007-12-10 16:45:28,374 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ScheduledTreatmentEpoch.subjectEligibilityAnswersInternal -> subject_eligibility_ans
+2007-12-10 16:45:28,382 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratificationCriterion.permissibleAnswersInternal -> strat_cri_per_ans
+2007-12-10 16:45:28,383 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Investigator.contactMechanisms -> contact_mechanisms
+2007-12-10 16:45:28,383 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ResearchStaff.contactMechanisms -> contact_mechanisms
+2007-12-10 16:45:28,398 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.contactMechanisms -> contact_mechanisms
+2007-12-10 16:45:28,398 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.identifiers -> identifiers
+2007-12-10 16:45:28,399 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySubject.identifiers -> identifiers
+2007-12-10 16:45:28,399 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySubject.scheduledEpochs -> scheduled_epochs
+2007-12-10 16:45:28,409 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.stratumGroupsInternal -> stratum_groups
+2007-12-10 16:45:28,410 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.inclusionEligibilityCriteriaInternal -> eligibility_criteria
+2007-12-10 16:45:28,410 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.stratificationCriteriaInternal -> strat_criteria
+2007-12-10 16:45:28,424 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.exclusionEligibilityCriteriaInternal -> eligibility_criteria
+2007-12-10 16:45:28,425 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.eligibilityCriteriaInternal -> eligibility_criteria
+2007-12-10 16:45:28,425 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.TreatmentEpoch.armsInternal -> arms
+2007-12-10 16:45:28,437 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.notificationsInternal -> notifications
+2007-12-10 16:45:28,438 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyAmendmentsInternal -> study_amendments
+2007-12-10 16:45:28,438 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.identifiers -> identifiers
+2007-12-10 16:45:28,438 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.epochs -> epochs
+2007-12-10 16:45:28,450 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyOrganizations -> study_organizations
+2007-12-10 16:45:28,450 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Study.studyDiseases -> study_diseases
+2007-12-10 16:45:28,451 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudyOrganization.studyInvestigatorsInternal -> study_investigators
+2007-12-10 16:45:28,467 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudyOrganization.studyPersonnelInternal -> study_personnel
+2007-12-10 16:45:28,467 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StudySite.studySubjects -> study_subjects
+2007-12-10 16:45:28,468 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.studyOrganizations -> study_organizations
+2007-12-10 16:45:28,476 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.identifiers -> identifiers
+2007-12-10 16:45:28,477 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.healthcareSiteInvestigators -> hc_site_investigators
+2007-12-10 16:45:28,477 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSite.researchStaffs -> research_staff
+2007-12-10 16:45:28,489 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.HealthcareSiteInvestigator.studyInvestigators -> study_investigators
+2007-12-10 16:45:28,490 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Participant.studySubjects -> study_subjects
+2007-12-10 16:45:28,490 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.ResearchStaff.studyPersonnels -> study_personnel
+2007-12-10 16:45:28,504 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.Investigator.healthcareSiteInvestigatorsInternal -> hc_site_investigators
+2007-12-10 16:45:28,504 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.DiseaseCategory.terms -> disease_terms
+2007-12-10 16:45:28,504 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.DiseaseCategory.childCategories -> disease_categories
+2007-12-10 16:45:28,517 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: edu.duke.cabig.c3pr.domain.StratumGroup.bookRandomizationEntryInternal -> book_rndm_entry
+2007-12-10 16:45:28,872 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+AbandonedObjectPool is used (org.apache.commons.dbcp.AbandonedObjectPool@2d0479)
+   LogAbandoned: true
+   RemoveAbandoned: true
+   RemoveAbandonedTimeout: 300
+2007-12-10 16:45:29,134 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-12-10 16:45:29,136 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-12-10 16:45:29,166 INFO  org.hibernate.dialect.Dialect : Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2007-12-10 16:45:29,177 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-12-10 16:45:29,183 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-12-10 16:45:29,183 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-12-10 16:45:29,184 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-12-10 16:45:29,184 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-12-10 16:45:29,184 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-12-10 16:45:29,186 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-12-10 16:45:29,188 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-12-10 16:45:29,188 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-12-10 16:45:29,188 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-12-10 16:45:29,188 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-12-10 16:45:29,188 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-12-10 16:45:29,188 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-12-10 16:45:29,206 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-12-10 16:45:29,206 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-12-10 16:45:29,206 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-12-10 16:45:29,207 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-12-10 16:45:29,207 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-12-10 16:45:29,220 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-12-10 16:45:29,220 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-12-10 16:45:29,220 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-12-10 16:45:29,233 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-12-10 16:45:29,234 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-12-10 16:45:29,239 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-12-10 16:45:29,297 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-12-10 16:45:30,769 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-12-10 16:45:30,805 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'sessionFactory' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:30,811 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'sessionFactory' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:30,832 INFO  org.springframework.orm.hibernate3.HibernateTransactionManager : Using DataSource [org.apache.commons.dbcp.BasicDataSource@dab859] of Hibernate SessionFactory for HibernateTransactionManager
+2007-12-10 16:45:30,832 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'transactionManager' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:30,843 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:30,844 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean '(inner bean)' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:30,845 INFO  org.springframework.context.support.ClassPathXmlApplicationContext : Bean 'org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor' is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2007-12-10 16:45:30,878 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory : Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b122a1: defining beans [c3pr-xml-castorMapping,ccts-study-castorMapping,ccts-registration-castorMapping,transactionManager,org.springframework.transaction.aspectj.AnnotationTransactionAspect,c3prPropertyConfigurer,org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor,sessionFactory,auditOpenSessionInViewInterceptor,auditSessionFactory,chainedInterceptor,auditInterceptor,dataAuditRepository,gridIdentifierInterceptor,hibernateTemplate,daoTemplate,openSessionInViewInterceptor,gridIdentifierCreator,studyValidator,studySiteValidator,epochValidator,armValidator,identifierValidator,participantValidator,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor,studyDao,studySubjectDao,studySiteDao,epochDao,scheduledEpochDao,armDao,participantDao,healthcareSiteDao,healthcareSiteInvestigatorDao,studyPersonnelDao,researchStaffDao,investigatorDao,diseaseCategoryDao,diseaseTermDao,studyInvestigatorDao,StratificationCriterionDao,anatomicSiteDao,organizationDao,stratificationAnswerDao,stratumGroupDao,cctsWorkflowService,studyService,participantService,studySubjectService,studyXMLImporterService,studySubjectXMLImporterService,personnelService,organizationService,sitePrivilegeAndObjectIdGenerator,mailSender,confirmationEmailer,notificationEmailer,accountCreatedTemplateMessage,xmlUtility,xmlParser,c3prErrorMessages,multsiteErrorMessageSource,exceptionHelper,dataSourceTemplate,dataSource,hibernateProperties,auditHibernateProperties,csmApplicationContextName,ACCESS_PRIVILEGE,authorizationSwitch,booleanFromString,csmAuthorizationDao,csmUserProvisioningManager,csmAuthenticationManager,messageTypesMapping,c3dPatientPositionResponseHandler,caXchangeMessageResponseHandlerSet,cctsMessageWorkflowCallbackFactory,messageBroadcaster]; root of factory hierarchy
+2007-12-10 16:45:31,008 INFO  org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean : Building new Hibernate SessionFactory
+2007-12-10 16:45:31,009 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEventValue
+2007-12-10 16:45:31,010 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity gov.nih.nci.cabig.ctms.audit.domain.DataAuditEventValue on table audit_event_values
+2007-12-10 16:45:31,015 INFO  org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent
+2007-12-10 16:45:31,016 INFO  org.hibernate.cfg.annotations.EntityBinder : Bind entity gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent on table audit_events
+2007-12-10 16:45:31,043 INFO  org.hibernate.cfg.annotations.CollectionBinder : Mapping collection: gov.nih.nci.cabig.ctms.audit.domain.DataAuditEvent.values -> audit_event_values
+2007-12-10 16:45:31,074 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2007-12-10 16:45:31,076 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-12-10 16:45:31,076 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-12-10 16:45:31,078 INFO  org.hibernate.dialect.Dialect : Using dialect: edu.duke.cabig.c3pr.hibernate.ImprovedPostgreSQLDialect
+2007-12-10 16:45:31,079 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-12-10 16:45:31,081 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-12-10 16:45:31,081 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-12-10 16:45:31,081 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-12-10 16:45:31,081 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-12-10 16:45:31,090 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-12-10 16:45:31,090 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-12-10 16:45:31,090 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-12-10 16:45:31,090 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-12-10 16:45:31,090 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-12-10 16:45:31,091 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-12-10 16:45:31,101 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-12-10 16:45:31,101 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-12-10 16:45:31,101 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-12-10 16:45:31,101 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-12-10 16:45:31,101 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-12-10 16:45:31,117 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-12-10 16:45:31,117 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-12-10 16:45:31,117 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-12-10 16:45:31,117 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-12-10 16:45:31,118 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-12-10 16:45:31,131 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-12-10 16:45:31,131 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-12-10 16:45:31,131 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-12-10 16:45:31,146 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-12-10 16:45:31,181 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-12-10 16:45:31,531 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setSessionFactory(org.hibernate.SessionFactory)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:45:31,531 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final org.hibernate.SessionFactory org.springframework.orm.hibernate3.support.HibernateDaoSupport.getSessionFactory()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:45:31,532 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final org.springframework.orm.hibernate3.HibernateTemplate org.springframework.orm.hibernate3.support.HibernateDaoSupport.getHibernateTemplate()] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:45:31,532 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.orm.hibernate3.support.HibernateDaoSupport.setHibernateTemplate(org.springframework.orm.hibernate3.HibernateTemplate)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:45:31,539 WARN  org.springframework.aop.framework.Cglib2AopProxy : Unable to proxy method [public final void org.springframework.dao.support.DaoSupport.afterPropertiesSet() throws java.lang.IllegalArgumentException,org.springframework.beans.factory.BeanInitializationException] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2007-12-10 16:45:32,390 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Privilege -> CSM_PRIVILEGE
+2007-12-10 16:45:32,446 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Application -> CSM_APPLICATION
+2007-12-10 16:45:32,487 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Role -> CSM_ROLE
+2007-12-10 16:45:32,488 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.Role.privileges -> CSM_ROLE_PRIVILEGE
+2007-12-10 16:45:32,516 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.RolePrivilege -> CSM_ROLE_PRIVILEGE
+2007-12-10 16:45:32,539 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.UserGroup -> CSM_USER_GROUP
+2007-12-10 16:45:32,557 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.dao.hibernate.ProtectionGroupProtectionElement -> CSM_PG_PE
+2007-12-10 16:45:32,577 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.Group -> CSM_GROUP
+2007-12-10 16:45:32,577 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.Group.users -> CSM_USER_GROUP
+2007-12-10 16:45:32,606 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.User -> CSM_USER
+2007-12-10 16:45:32,608 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.User.groups -> CSM_USER_GROUP
+2007-12-10 16:45:32,628 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.ProtectionGroup -> CSM_PROTECTION_GROUP
+2007-12-10 16:45:32,629 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionGroup.protectionElements -> CSM_PG_PE
+2007-12-10 16:45:32,654 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.ProtectionElement -> CSM_PROTECTION_ELEMENT
+2007-12-10 16:45:32,655 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionElement.protectionGroups -> CSM_PG_PE
+2007-12-10 16:45:32,656 INFO  org.hibernate.cfg.HbmBinder : Mapping collection: gov.nih.nci.security.authorization.domainobjects.ProtectionElement.owners -> CSM_USER_PE
+2007-12-10 16:45:32,676 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.UserGroupRoleProtectionGroup -> CSM_USER_GROUP_ROLE_PG
+2007-12-10 16:45:32,691 INFO  org.hibernate.cfg.HbmBinder : Mapping class: gov.nih.nci.security.authorization.domainobjects.UserProtectionElement -> CSM_USER_PE
+2007-12-10 16:45:32,692 INFO  org.springframework.orm.hibernate3.LocalSessionFactoryBean : Building new Hibernate SessionFactory
+2007-12-10 16:45:32,696 INFO  org.hibernate.connection.ConnectionProviderFactory : Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+2007-12-10 16:45:32,697 INFO  org.hibernate.cfg.SettingsFactory : RDBMS: PostgreSQL, version: 8.2.4
+2007-12-10 16:45:32,697 INFO  org.hibernate.cfg.SettingsFactory : JDBC driver: PostgreSQL Native Driver, version: PostgreSQL 8.1 JDBC3 with SSL (build 407)
+2007-12-10 16:45:32,697 INFO  org.hibernate.dialect.Dialect : Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2007-12-10 16:45:32,703 INFO  org.hibernate.transaction.TransactionFactoryFactory : Using default transaction strategy (direct JDBC transactions)
+2007-12-10 16:45:32,703 INFO  org.hibernate.transaction.TransactionManagerLookupFactory : No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2007-12-10 16:45:32,703 INFO  org.hibernate.cfg.SettingsFactory : Automatic flush during beforeCompletion(): disabled
+2007-12-10 16:45:32,703 INFO  org.hibernate.cfg.SettingsFactory : Automatic session close at end of transaction: disabled
+2007-12-10 16:45:32,710 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch size: 30
+2007-12-10 16:45:32,710 INFO  org.hibernate.cfg.SettingsFactory : JDBC batch updates for versioned data: disabled
+2007-12-10 16:45:32,710 INFO  org.hibernate.cfg.SettingsFactory : Scrollable result sets: enabled
+2007-12-10 16:45:32,710 INFO  org.hibernate.cfg.SettingsFactory : JDBC3 getGeneratedKeys(): disabled
+2007-12-10 16:45:32,710 INFO  org.hibernate.cfg.SettingsFactory : Connection release mode: on_close
+2007-12-10 16:45:32,710 INFO  org.hibernate.cfg.SettingsFactory : Default batch fetch size: 1
+2007-12-10 16:45:32,723 INFO  org.hibernate.cfg.SettingsFactory : Generate SQL with comments: disabled
+2007-12-10 16:45:32,730 INFO  org.hibernate.cfg.SettingsFactory : Order SQL updates by primary key: disabled
+2007-12-10 16:45:32,730 INFO  org.hibernate.cfg.SettingsFactory : Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2007-12-10 16:45:32,730 INFO  org.hibernate.hql.ast.ASTQueryTranslatorFactory : Using ASTQueryTranslatorFactory
+2007-12-10 16:45:32,731 INFO  org.hibernate.cfg.SettingsFactory : Query language substitutions: {no='N', true=1, yes='Y', false=0}
+2007-12-10 16:45:32,743 INFO  org.hibernate.cfg.SettingsFactory : JPA-QL strict compliance: disabled
+2007-12-10 16:45:32,743 INFO  org.hibernate.cfg.SettingsFactory : Second-level cache: enabled
+2007-12-10 16:45:32,743 INFO  org.hibernate.cfg.SettingsFactory : Query cache: disabled
+2007-12-10 16:45:32,743 INFO  org.hibernate.cfg.SettingsFactory : Cache provider: org.hibernate.cache.NoCacheProvider
+2007-12-10 16:45:32,743 INFO  org.hibernate.cfg.SettingsFactory : Optimize cache for minimal puts: disabled
+2007-12-10 16:45:32,761 INFO  org.hibernate.cfg.SettingsFactory : Structured second-level cache entries: disabled
+2007-12-10 16:45:32,761 INFO  org.hibernate.cfg.SettingsFactory : Statistics: disabled
+2007-12-10 16:45:32,761 INFO  org.hibernate.cfg.SettingsFactory : Deleted entity synthetic identifier rollback: disabled
+2007-12-10 16:45:32,761 INFO  org.hibernate.cfg.SettingsFactory : Default entity-mode: pojo
+2007-12-10 16:45:32,767 INFO  org.hibernate.impl.SessionFactoryImpl : building session factory
+2007-12-10 16:45:33,032 INFO  org.hibernate.impl.SessionFactoryObjectFactory : Not binding factory to JNDI, no JNDI name configured
+2007-12-10 16:45:34,562 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:34,616 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:34,715 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:34,715 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:34,730 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:34,748 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:34,748 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:34,925 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:34,953 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:34,953 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+Inside getMapping
+
+2007-12-10 16:45:35,601 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : edu.duke.cabig.c3pr.exception.C3PRBaseException: No startum group found. Maybe the answer combination does not have a valid startum group
+2007-12-10 16:45:35,661 WARN  edu.duke.cabig.c3pr.service.StudySubjectService : Participant with the same MRN found in the database
+2007-12-10 16:45:35,790 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:35,831 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:35,831 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:35,874 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:35,899 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:35,899 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:36,414 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:36,436 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:36,453 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:36,453 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:36,469 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:36,487 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:36,488 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:36,554 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:36,575 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:36,575 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+Inside getMapping
+
+2007-12-10 16:45:36,655 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : edu.duke.cabig.c3pr.exception.C3PRBaseException: No startum group found. Maybe the answer combination does not have a valid startum group
+2007-12-10 16:45:36,739 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : edu.duke.cabig.c3pr.exception.C3PRBaseException: No startum group found. Maybe the answer combination does not have a valid startum group
+2007-12-10 16:45:36,748 WARN  edu.duke.cabig.c3pr.service.StudySubjectService : Participant with the same MRN found in the database
+2007-12-10 16:45:36,857 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:36,874 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:36,874 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:37,502 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:37,503 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:37,518 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:37,518 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:37,520 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:37,538 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:37,538 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:37,547 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:37,570 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:37,570 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:37,621 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:37,640 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:37,640 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+Inside getMapping
+
+2007-12-10 16:45:37,710 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : java.lang.ClassCastException: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-12-10 16:45:37,848 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : java.lang.ClassCastException: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-12-10 16:45:37,914 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:37,955 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:37,955 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:37,955 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:37,979 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:37,979 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:37,980 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:38,023 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:38,023 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:38,496 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:38,499 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:38,521 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:38,521 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:38,532 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:38,564 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:38,565 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:38,684 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:38,712 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:38,712 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+Inside getMapping
+
+2007-12-10 16:45:39,033 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : edu.duke.cabig.c3pr.exception.C3PRBaseException: No startum group found. Maybe the answer combination does not have a valid startum group
+2007-12-10 16:45:39,132 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:39,192 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:39,192 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:39,192 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:39,229 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:39,229 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:39,230 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:39,266 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:39,267 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:39,885 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:39,887 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:39,926 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:39,926 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:39,936 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:39,979 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:39,979 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:40,067 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:40,101 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:40,101 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+Inside getMapping
+
+2007-12-10 16:45:40,168 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : edu.duke.cabig.c3pr.exception.C3PRBaseException: No startum group found. Maybe the answer combination does not have a valid startum group
+2007-12-10 16:45:40,247 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : edu.duke.cabig.c3pr.exception.C3PRBaseException: No startum group found. Maybe the answer combination does not have a valid startum group
+2007-12-10 16:45:40,384 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:40,428 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:40,428 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:40,862 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:40,865 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:40,896 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:40,896 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:40,907 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:40,947 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:40,947 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:41,010 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:41,049 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:41,049 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+Inside getMapping
+
+2007-12-10 16:45:41,107 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : java.lang.ClassCastException: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-12-10 16:45:41,174 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : java.lang.ClassCastException: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-12-10 16:45:41,273 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:41,345 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:41,345 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:41,345 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:41,404 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:41,405 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:41,408 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:41,453 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:41,453 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:41,903 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:41,907 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:41,946 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:41,946 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:41,953 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:42,000 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:42,000 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:42,074 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:42,111 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:42,111 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+Inside getMapping
+
+2007-12-10 16:45:42,170 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : java.lang.ClassCastException: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-12-10 16:45:42,232 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : java.lang.ClassCastException: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-12-10 16:45:42,334 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:42,394 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:42,394 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:42,395 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:42,447 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:42,447 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:42,448 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:42,489 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:42,489 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:42,945 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:42,947 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:42,988 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:42,988 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:42,995 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:43,042 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:43,042 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:43,122 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:43,165 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:43,165 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+Inside getMapping
+
+2007-12-10 16:45:43,219 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : java.lang.ClassCastException: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-12-10 16:45:43,295 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : java.lang.ClassCastException: edu.duke.cabig.c3pr.domain.ScheduledNonTreatmentEpoch
+2007-12-10 16:45:43,407 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:43,491 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:43,491 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:43,491 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:43,538 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:43,538 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:43,539 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:43,584 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:43,585 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:44,037 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:44,497 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:44,503 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:44,553 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:44,553 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:44,674 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:44,724 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:44,724 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+Inside getMapping
+
+2007-12-10 16:45:44,846 WARN  edu.duke.cabig.c3pr.xml.StratumGroupFieldHandler : edu.duke.cabig.c3pr.exception.C3PRBaseException: No startum group found. Maybe the answer combination does not have a valid startum group
+2007-12-10 16:45:44,993 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:45,086 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:45,087 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:45,087 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:45,142 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:45,142 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+2007-12-10 16:45:45,143 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : --    ending DaoTestCase interceptor session --
+2007-12-10 16:45:45,199 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- interrupted DaoTestCase session --
+2007-12-10 16:45:45,199 INFO  edu.duke.cabig.c3pr.service.StudySubjectXMLImporterServiceTestCase : -- beginning DaoTestCase interceptor session --
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Vinay-Office-PC" name="edu.duke.cabig.c3pr.utils.web.ContextRetainingFilterAdapterTest" tests="3" time="0.32" timestamp="2007-12-10T21:40:25">
+  <properties>
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="ant.file.c3prv2 custom ant tasks" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-ant-tasks.xml" />
+    <property name="env.RoxioCentral" value="C:\Program Files\Common Files\Roxio Shared\9.0\Roxio Central33\" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.5.0_12\jre" />
+    <property name="test.src.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test\src" />
+    <property name="webapp.name" value="c3pr" />
+    <property name="test.project.jar" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\build\jars\c3pr-2.0-c3pr-2.0-web-tests-1.0.jar" />
+    <property name="env.PCBRAND" value="Pavilion" />
+    <property name="debug" value="on" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.5.0_12\jre\lib\endorsed" />
+    <property name="env.USERNAME" value="Vinay" />
+    <property name="src.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web/src" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="env.COMPUTERNAME" value="VINAY-OFFICE-PC" />
+    <property name="ant.file.c3pr-2.0" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build.xml" />
+    <property name="java.version" value="1.5.0_12" />
+    <property name="hostedMode" value="true" />
+    <property name="test.logs.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test\logs" />
+    <property name="conf.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web/conf" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="hotlinks.psc" value="http://10.10.10.2:8041/studycalendar/pages/schedule" />
+    <property name="env.USERPROFILE" value="C:\Users\Vinay" />
+    <property name="datasource.schema" value="c3pr_dev" />
+    <property name="test.lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test\lib" />
+    <property name="env.SystemRoot" value="C:\Windows" />
+    <property name="user.name" value="Vinay" />
+    <property name="authorizationSwitch" value="true" />
+    <property name="outgoing.mail.from.address" value="admin@semanticbits.com" />
+    <property name="ext.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web/ext" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="webinf.lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\web/WEB-INF/lib" />
+    <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\Vinay\AppData\Local" />
+    <property name="datasource.url" value="jdbc:postgresql://localhost:5432/c3pr_schema_tester" />
+    <property name="ant.file.c3pr-2.0-web" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\build.xml" />
+    <property name="lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web/lib" />
+    <property name="project.version" value="1.0" />
+    <property name="datasource.driver" value="org.postgresql.Driver" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="esb.brokerUrl" value="http://localhost:19080/wsrf/services/cagrid/CaXchangeRequestProcessor" />
+    <property name="user.timezone" value="" />
+    <property name="ant.file.c3pr-2.0-reports" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-reports.xml" />
+    <property name="path.separator" value=";" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 15 Stepping 6, GenuineIntel" />
+    <property name="env._JAVACMD" value="C:\Program Files\Java\jdk1.5.0_12\bin\java.exe" />
+    <property name="project.name" value="c3pr-2.0-web" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="ext.resources.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\resources" />
+    <property name="junit.results.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\test\logs" />
+    <property name="env.NUMBER_OF_PROCESSORS" value="2" />
+    <property name="webinf.classes.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\web/WEB-INF/classes" />
+    <property name="env.APPDATA" value="C:\Users\Vinay\AppData\Roaming" />
+    <property name="ant.file" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\build.xml" />
+    <property name="src.java.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web/src/java" />
+    <property name="outgoing.mail.smtp.auth" value="true" />
+    <property name="ant.file.c3pr-2.0-artifacts" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-artifacts.xml" />
+    <property name="broadcastEnable" value="false" />
+    <property name="java.io.tmpdir" value="C:\Users\Vinay\AppData\Local\Temp\" />
+    <property name="TODAY" value="December 10 2007" />
+    <property name="user.language" value="en" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="line.separator" value="
+" />
+    <property name="ctmsi.commons.version" value="0.5" />
+    <property name="cacore.home" value="~/dev/utils/cacore" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="localInstanceNCIInstituteCode" value="NCI-DUKE" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="outgoing.mail.password" value="biju1234" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+    <property name="test.classes.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\build\classes-test" />
+    <property name="ant.file.catrip-1.0-codedrop" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-codedrop.xml" />
+    <property name="env.LOGONSERVER" value="\\VINAY-OFFICE-PC" />
+    <property name="test.src.java.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test\src\java" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="catalina.home" value="C:\Tomcat 5.5" />
+    <property name="env.USERDOMAIN" value="Vinay-Office-PC" />
+    <property name="csm.context.name" value="c3pr" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+    <property name="env.windir" value="C:\Windows" />
+    <property name="os.name" value="Windows Vista" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="env.TMP" value="C:\Users\Vinay\AppData\Local\Temp" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.5.0_12\jre\bin;.;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.5.0_12\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Common Files\Roxio Shared\9.0\DLLShared\;C:\Tomcat 5.5\bin;C:\apache-ant-1.7.0\bin;" />
+    <property name="hotlinks.caaers" value="http://10.10.10.2:8030/caaers/pages/ae/list" />
+    <property name="outgoing.mail.server" value="smtp.comcast.net" />
+    <property name="ant.java.version" value="1.5" />
+    <property name="basedir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web" />
+    <property name="java.class.version" value="49.0" />
+    <property name="ext.lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web/ext/lib" />
+    <property name="ant.home" value="C:\apache-ant-1.7.0" />
+    <property name="env.Path" value="C:\Program Files\Java\jdk1.5.0_12\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Common Files\Roxio Shared\9.0\DLLShared\;C:\Tomcat 5.5\bin;C:\apache-ant-1.7.0\bin;" />
+    <property name="datasource.password" value="postgres" />
+    <property name="ext.test.lib.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\test\lib" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="net.sourceforge.cobertura.datafile" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test\logs\web.ser" />
+    <property name="war.file" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\build\c3prv2.war" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.5.0_12\jre\bin" />
+    <property name="build.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web/build" />
+    <property name="env.PROCESSOR_REVISION" value="0f06" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="user.variant" value="" />
+    <property name="log4j.filename" value="c3pr.log" />
+    <property name="src.resources.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web/src/resources" />
+    <property name="webinf.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\web/WEB-INF" />
+    <property name="ant.file.c3pr-2.0-test" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-test.xml" />
+    <property name="jar.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web/build/jars" />
+    <property name="ant.project.name" value="c3pr-2.0-web" />
+    <property name="log_sql" value="false" />
+    <property name="deploy.path" value="C:\Tomcat 5.5/webapps" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="env.GLOBUS_LOCATION" value="C:\Globus\ws-core-4.0.3" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="env.MAVEN_HOME" value="C:\Program Files\maven-2.0.7-bin\maven-2.0.7" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.5.0_12\jre\lib\ext" />
+    <property name="os.version" value="6.0" />
+    <property name="cobertura.home" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8" />
+    <property name="user.home" value="C:\Users\Vinay" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.file.c3pr-2.0-web-test" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\antfiles\build-test.xml" />
+    <property name="env.JAVA_HOME" value="C:\Program Files\Java\jdk1.5.0_12" />
+    <property name="user.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web" />
+    <property name="outgoing.mail.username" value="biju.joseph@semanticbits.com" />
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+    <property name="test.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test" />
+    <property name="env.OnlineServices" value="Online Services" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env._USE_CLASSPATH" value="no" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
+    <property name="java.vm.version" value="1.5.0_12-b04" />
+    <property name="java.class.path" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\lib\commons-fileupload-1.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\lib\commons-httpclient-3.0-rc2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\lib\dwr.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\lib\javax.servlet.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\lib\javax.servlet.jsp.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\lib\nls_charset12.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\lib\sitemesh-2.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\CaXchangeRequestProcessor-client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\CaXchangeRequestProcessor-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\CaXchangeRequestProcessor-stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\acegi-csm-0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\acegi-csm-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\acegi-security-1.0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\acegi-security-cas-1.0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\acegi-security-tiger-1.0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\activation-1.0.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\activeio-core-3.0-beta4.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\activemq-core-4.0.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\addressing-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ant-contrib.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\antlr-2.7.6.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\aopalliance.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\asm-2.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\asm-commons-2.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\asm-util-2.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\aspectjrt-1.5.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\aspectjweaver-1.5.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\avalon-framework-cvs-20020806.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\axis-url.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\axis.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\backport-util-concurrent-2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\bootstrap.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\c3p0-0.8.5.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\c3pr-2.0-core-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\c3pr-2.0-esb-client-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-Introduce-1.1-serviceTools.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-ServiceSecurityProvider-client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-ServiceSecurityProvider-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-ServiceSecurityProvider-service.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-ServiceSecurityProvider-stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-advertisement.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-authentication-service-client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-authentication-service-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-authentication-service-stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-core.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-dorian-client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-dorian-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-dorian-stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-metadata-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-metadata-data.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-metadata-security.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-metadataUtils.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\caGrid-1.1-opensaml-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\castor-0.9.9.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\castor-1.1.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\cglib-nodep-2.1_3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\client.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\clm-3.2.1-ctms00.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\clm.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\cog-axis.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\cog-jglobus.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\cog-tomcat.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\cog-url.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\collections-generic-4.01.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commonj.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-beanutils-1.7.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-beanutils.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-cli-2.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-collections-3.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-collections-3.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-collections-3.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-configuration-1.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-dbcp-1.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-digester.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-discovery.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-io-1.3.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-lang-2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-lang-2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-logging-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-logging.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\commons-pool-1.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\concurrent.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\cryptix-asn1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\cryptix.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\cryptix32.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\csmapi-3.2.1-ctms00.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-base-0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-base-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-base-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-core-0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-core-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-core-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-laf-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-lang-0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-lang-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-lang-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-web-0.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-web-0.5-SNAPSHOT.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-commons-web-0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ctms-web-sso.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\dom4j-1.6.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ehcache-1.2.3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ejb3-persistence.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\extremecomponents-1.0.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\fop.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_resolution_service.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_resolution_stubs_java.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_resolution_test.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_transfer_service.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_transfer_stubs_java.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_transfer_test.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_usage_core.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_usage_packets_common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_wsrf_mds_aggregator.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_wsrf_mds_aggregator_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_wsrf_servicegroup.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_wsrf_servicegroup_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\globus_wsrf_tools_test.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\grid-security-plugin-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\handle.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\handlerservice.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\hibernate-annotations.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\hibernate3.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jakarta-oro-2.0.8.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jaxen-core.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jaxen-jdom.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jaxrpc.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jboss-j2ee-4.0.5.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jboss-jsr77.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jce-jdk13-125.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jdom-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jdom.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jgss.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jstl.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\jta.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\junit.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\log4j-1.2.13.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\log4j-1.2.8.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\mail-1.3.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\mobius_common_client-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\mobius_factories-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\mobius_gme_client-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\mobius_mako_client-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\mobius_tools-1.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\naming-common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\naming-factory.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\naming-java.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\naming-resources.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\northwestern-core-commons.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\ojdbc14.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\opensaml.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\poi-3.0-rc4-20070503.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\poi-contrib-3.0-rc4-20070503.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\poi-scratchpad-3.0-rc4-20070503.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\postgresql-8.1-407.jdbc3.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\puretls.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\resolver.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\saaj.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\saxpath.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\servlet.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\spring-aspects.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\spring.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\standard.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsdl4j.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_common.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_core.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_core_registry.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_core_registry_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_core_samples_authzService.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_core_samples_authzService_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_core_samples_counter.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_core_samples_counter_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_core_samples_mgmt.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_core_samples_mgmt_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_core_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_provider_jce.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_test.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_test_interop.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_test_interop_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_test_unit.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_test_unit_stubs.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wsrf_tools.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\wss4j.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\xalan.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\xbean-spring-2.7.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\xerces-2.6.2.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\xerces.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\xercesImpl.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\xml-apis.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\lib\xmlsec.jar;C:\Tomcat 5.5\common\lib\commons-el.jar;C:\Tomcat 5.5\common\lib\jasper-compiler-jdt.jar;C:\Tomcat 5.5\common\lib\jasper-compiler.jar;C:\Tomcat 5.5\common\lib\jasper-runtime.jar;C:\Tomcat 5.5\common\lib\jsp-api.jar;C:\Tomcat 5.5\common\lib\naming-factory-dbcp.jar;C:\Tomcat 5.5\common\lib\naming-factory.jar;C:\Tomcat 5.5\common\lib\naming-resources.jar;C:\Tomcat 5.5\common\lib\servlet-api.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\compile\lib\c3pr-management-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\build\jars\c3pr-2.0-c3pr-2.0-web-tests-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\build\jars\c3pr-2.0-web-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test\lib\catrip-test-report-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test\lib\core-commons-testing.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test\lib\easymock.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test\lib\easymockclassextension.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test\lib\servlet-api.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\test\lib\c3pr-2.0-core-tests-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\test\lib\catrip-test-report-1.0.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\test\lib\core-commons-testing.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\test\lib\dbunit-2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\test\lib\easymock.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\test\lib\easymockclassextension.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\test\lib\hsqldb.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\test\lib\junit-3.8.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\test\lib\servlet-api.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\ext\test\lib\spring-mock.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\cobertura.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\lib\asm-2.2.1.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\lib\jakarta-oro-2.0.8.jar;C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\share\cobertura-1.8\lib\log4j-1.2.9.jar;C:\apache-ant-1.7.0\lib\ant-launcher.jar;C:\apache-ant-1.7.0\lib\ant.jar;C:\apache-ant-1.7.0\lib\ant-junit.jar" />
+    <property name="env.HOMEPATH" value="\Users\Vinay" />
+    <property name="DSTAMP" value="20071210" />
+    <property name="ant.library.dir" value="C:\apache-ant-1.7.0\lib" />
+    <property name="webinfviews.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\web/WEB-INF/views" />
+    <property name="os.arch" value="x86" />
+    <property name="testcoverage.datafile" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\test\logs\web.ser" />
+    <property name="env.PLATFORM" value="MCD" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="classes.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web/build/classes" />
+    <property name="datasource.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files\Common Files" />
+    <property name="env.ProgramFiles" value="C:\Program Files" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="datasource.username" value="postgres" />
+    <property name="grid.idpUrl" value="https://10.10.10.2:8446/wsrf/services/cagrid/AuthenticationService" />
+    <property name="TSTAMP" value="1640" />
+    <property name="file.separator" value="\" />
+    <property name="ant.file.c3pr-2.0-utilities" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\antfiles\build-utilities.xml" />
+    <property name="java.runtime.version" value="1.5.0_12-b04" />
+    <property name="env.ANT_CMD_LINE_ARGS" value="test" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.5.0_12\jre\lib\rt.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\i18n.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\jce.jar;C:\Program Files\Java\jdk1.5.0_12\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.5.0_12\jre\classes" />
+    <property name="project.jarfile" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web/build/jars/c3pr-2.0-web-1.0.jar" />
+    <property name="env.ComSpec" value="C:\Windows\system32\cmd.exe" />
+    <property name="outgoing.mail.server.port" value="25" />
+    <property name="env.TEMP" value="C:\Users\Vinay\AppData\Local\Temp" />
+    <property name="user.country" value="US" />
+    <property name="env.ANT_HOME" value="C:\apache-ant-1.7.0" />
+    <property name="hotlinks.c3d" value="https://octrials-train.nci.nih.gov/opa45/rdclaunch.htm" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="grid.ifsUrl" value="https://10.10.10.2:8443/wsrf/services/cagrid/Dorian" />
+    <property name="web.dir" value="C:\eclipse\WorkspaceSemanticBits\c3prv2\codebase\projects\web\web" />
+    <property name="env.CATALINA_HOME" value="C:\Tomcat 5.5" />
+    <property name="java.specification.version" value="1.5" />
+    <property name="sun.arch.data.model" value="32" />
+  </properties>
+  <testcase classname="edu.duke.cabig.c3pr.utils.web.ContextRetainingFilterAdapterTest" name="testServletContextRetained" time="0.181" />
+  <testcase classname="edu.duke.cabig.c3pr.utils.web.ContextRetainingFilterAdapterTest" name="testGetApplicationContext" time="0.028" />
+  <testcase classname="edu.duke.cabig.c3pr.utils.web.ContextRetainingFilterAdapterTest" name="testGetApplicationContextFailsWhenMissing" time="0.0030" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
