@@ -63,6 +63,13 @@ to the expected schema.
  messaging with caXchange
 This is an optional feature and can be turned off.
 
+2.3 Study Notifications
+A notifications tab has been added to the Create/Edit/Amend Study flow 
+which allows the user to add emails and roles to a notification list
+which also has a threshold accrual field. Everytime the regstered
+participants list reaches a specified threshold, the corresponding 
+email addresses/roles are notified.
+
 
 ================================================================
                 3.0 Known Issues
@@ -78,12 +85,20 @@ information, visit Sun's website
 
 http://java.sun.com/javase/downloads/index_jdk5.jsp
 
+ ----------------------------------------------------------------
+		3.2 Notification emails to roles.	
+----------------------------------------------------------------
+
+The notification emails are currently being sent out only to email addresses
+specified through the UI. The roles selected do not receive the 
+notifications yet. 
+
 
 ================================================================
                 4.0 Bug fixes
 ================================================================
 Several Bugs have been fixed for this release, most notably are UI level
-validations. For a complete list of fixed, open bugs,
+validations and the Advanced Search. For a complete list of fixed, open bugs,
 
 Please refer the Gforge Bug Tracker
 
