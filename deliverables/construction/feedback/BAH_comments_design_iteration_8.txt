@@ -1,0 +1,29 @@
+Hi Patrick,
+ 
+David has the following comments regarding the "Updated Design Document – (Task 3.4.8) - iteration 8” deliverable.  I'm going to move the deliverable forward for NCI to consider but we'd like you to address the following comments in the next versions of this deliverable. 
+ 
+Please let me know if you have any questions or concerns with this request.
+ 
+Thanks,
+Karen
+ 
+
+Summary of C3PR – Core & Web Technical Specification
+
+The document should specify (have links to) requirement or requirements for which this design were satisfying.  
+
+>> I added links to these documents.
+
+My understanding on this design was the C3PR core components and modules were not intended to be used as a single C3PR application but can be configured and grouped as a package for the development of a targeted application.  In another word, the design intension was for reusability.  Much like the concept called Software Product Line.  The idea was to allow other C3PR like applications or variant of C3PR applications to reuse these core components without much modification.  If that was the intent, then I recommend this document includes requirement references that can be traced.  This way, a reuser (C3PR like apps) of these core components would know what requirements were these core components designed for.  Unlike traditional software libraries and packages, a reuser wouldn’t know a library’s requirements and would have tough time to figure out its general functionality unless by examining the actual source code.
+
+>> While our general software methodology is geared to reusability, this is not the intention of C3PR application itself.
+
+Summary of C3PR – Integration Technical Specification
+
+There was discrepancy regarding which caGrid version C3PR was leveraging.  For example, in page 9, second paragraph, it said the WSRF component provides connectivity to caGrid 1.0 services.  On page 15, it indicates the Registration Consumer Grid node was a custom caGrid 1.1 service.  Therefore, which version of caGrid does this C3PR release support?  
+
+>> caGrid 1.1 is used.  I have fixed the discrepancies.
+
+It seems that the integration design calls for the use of ESB for integrating services.  However, it also uses caGrid to integrate services.  Although the two approaches can use in a complementary way, but using both seems to be over kill.  I suspect the performance of services may suffer as a result.
+
+>> caGrid is used to provide services, and the ESB is used to integrate them.

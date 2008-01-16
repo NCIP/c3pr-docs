@@ -1,0 +1,17 @@
+This version lists them import of participants as a feature, which I remember being excluded, and don’t remember testing before.
+
+ 
+
+Audit logging lists “features”, I have not seen  such features, and the last time I inquired, it was not really going to be a feature but something accessible via the database management utility, not c3pr. Has this changed?
+
+ 
+
+Has caGRID 1.0 been de-supported, with 1.5, should some mention be made of that?
+
+ 
+
+What would be the use of req. ID FR-249?
+
+ 
+
+Why is FR262 “may” whereas FR-620 is “must”?
