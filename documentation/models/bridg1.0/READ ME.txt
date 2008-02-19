@@ -1,0 +1,13 @@
+This BRIDG Release 1.0 package contains the following files:
+
+
+BRIDG Release 1.EAP
+BRIDG Release 1.0.xml
+BRIDG Release 1 Static Elements report .RTF
+BRIDG Project Documentation and Release Notes for R1.doc
+BRIDG Release 1 Mapping Document.xls
+
+
+BRIDG Project website is at https://cabig.nci.nih.gov/inventory/infrastructure/bridg/
+
+Comments and Feedback can be posted to the BRIDG_Users listserv at https://list.nih.gov/cgi-bin/wa?SUBED1=bridg_users&A=1
