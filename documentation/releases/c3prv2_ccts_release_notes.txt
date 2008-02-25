@@ -54,10 +54,13 @@ C3PRv2 has completed 2 iterations in the transition phase
 ================================================================
 Enhancement features:
 
-1.All the CTEP organizations are loaded into c3pr. The user can now create administration staff, manage studies and do
+2.1 All the CTEP organizations are loaded into c3pr. The user can now create administration staff, manage studies and do
 registrations at any of these organizations.
 
-2.Help text has been added to most of the fields for explanation and contextual information.
+2.2 Help text has been added to most of the fields for explanation and contextual information(Configuration Page).
+
+2.3 Notifications for accrual thersholds based on user roles are now functional.
+
 
 ================================================================
                 3.0 Known Issues
@@ -70,7 +73,7 @@ re-enters the flow.
 
 2. Import Study/Registration : The system doesn't show user-friendly messages yet.
 
-
+3. The delete icons are clickable on disabled pages.
 
 
   ----------------------------------------------------------------
