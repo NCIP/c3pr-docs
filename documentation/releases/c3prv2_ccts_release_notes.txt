@@ -54,13 +54,23 @@ C3PRv2 has completed 2 iterations in the transition phase
 ================================================================
 Enhancement features:
 
+1.All the CTEP organizations are loaded into c3pr. The user can now create administration staff, manage studies and do
+registrations at any of these organizations.
+
+2.Help text has been added to most of the fields for explanation and contextual information.
+
 ================================================================
                 3.0 Known Issues
 ================================================================
 
-1. Edit Study Flow: In the edit study flow, the system first shows appropriate error message when adding duplicate values
+1. Edit Study Flow: In the edit study flow, the system first shows appropriate error message(s) if duplicate values are detected
 (epoch names, arm names, diseases, investigators, study sites, study personnel) 
-but still doesn't show a user-friendly message even after updating the values.
+but doesn't show a user-friendly message even if these values are updated unless the user comes out of the edit flow and 
+re-enters the flow.
+
+2. Import Study/Registration : The system doesn't show user-friendly messages yet.
+
+
 
 
   ----------------------------------------------------------------
