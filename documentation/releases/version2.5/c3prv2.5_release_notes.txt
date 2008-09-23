@@ -1,0 +1,137 @@
+
+
+              C3PRv2.5 Release Notes
+
+National Cancer Institute Center for Bioinformatics
+
+================================================================
+                            Contents
+================================================================
+
+    1.0         Introduction
+    1.1         Description
+    1.2         History
+    2.0         New Features for this release
+    3.0         Known Issues
+    4.0         Bug fixes since last release
+    5.0         Bug Reports and Support
+    6.0         Documentation
+    7.0         Knowledge Center Web Pages
+    8.0         NCICB Web Pages
+
+================================================================
+               Introduction
+================================================================
+
+This document contains the release notes for the C3PR v2.5  release.
+
+This is an major release that implements new use cases,
+fixes some minor issues also has feature enhancement to existing
+Use Cases
+
+
+----------------------------------------------------------------
+                1.1 Description
+----------------------------------------------------------------
+
+For information, refer to:
+http://gforge.nci.nih.gov/projects/c3prv2/
+
+Wiki:
+https://cabig-kc.nci.nih.gov/CTMS/KC/index.php/C3PR
+
+----------------------------------------------------------------
+                1.2 History
+----------------------------------------------------------------
+
+C3PRv2 has been released
+C3PR v2.5 has completed 6 iterations in the construction phase
+
+
+
+================================================================
+                2.0 New Features for this Release
+================================================================
+Enhancement features:
+
+2.1 UI Redesign: Now C3PR home page gives a nice dashboard view which has 
+some utility sections for a quick view of the interested modules.
+
+2.2 Subject Demographics: Now C3PR captures multiple races for a subject.
+
+2.3 Enrolment Details: Now C3PR captures 'Payment method' for a subject
+while registering on a trial.
+
+New Features
+2.4 Skinnable UI: Users can choose different skin colors for their UI.
+
+2.5 Companion Protocols: Now C3PR provides a way to add embedded or standalone
+protocols. Registration module also ensures that correct business rules are
+applied while registering a subject to a study which has companion
+protocol(s).
+
+2.6 Notification: Now C3PR provides a sophisticated rule based
+notification module. Users can create notification with a variety
+of flavors and events and configure the recipients depending on
+their role. Notifications are also shown on the dashboard which
+helps users see the notification when they log in to the application.
+
+2.7 Password Policy: C3PR provides a way to reset forgotten password.
+
+2.8 PMRP Integration: C3PR integrates with PMRP and allow PMRP users 
+to see subject details in C3PR application.
+
+================================================================
+                3.0 Known Issues
+================================================================
+
+-----------------------------------------------------------------
+		3.1 Put Bug Here	
+----------------------------------------------------------------
+
+There are minor issues while sending mails.
+
+
+================================================================
+                4.0 Bug fixes
+================================================================
+Several Bugs have been fixed for this release. For a complete list 
+of fixed, open bugs, please refer the Gforge Bug Tracker
+
+http://gforge.nci.nih.gov/tracker/index.php?group_id=214&atid=995
+
+
+================================================================
+                5.0 Bug Reports and Support
+================================================================
+
+Send email to c3prv2-support@gforge.nci.nih.gov  to request support
+or report a bug.
+
+
+================================================================
+                6.0 Documentation
+================================================================
+
+To understand C3PR architecture, please refer the C3PR Technical Architecture/Specification, refer
+
+https://cabig-kc.nci.nih.gov/CTMS/KC/index.php/C3PR_Architecture_Guide
+
+Latest C3PR Installation guide can be found at
+https://cabig-kc.nci.nih.gov/CTMS/KC/index.php/C3PR_Installation_Guide
+
+================================================================
+                    7.0 Knowledge Center Web Pages
+================================================================
+
+For information, refer to C3PR homepage on KC WIKI:
+
+https://cabig-kc.nci.nih.gov/CTMS/KC/index.php/C3PR
+
+================================================================
+                    7.0 NCICB Web Pages
+================================================================
+
+For information, refer to C3PR homepage on NCI WIKI:
+
+https://wiki.nci.nih.gov/display/CTMS/Cancer+Central+Clinical+Participant+Registry+%28C3PR%29
