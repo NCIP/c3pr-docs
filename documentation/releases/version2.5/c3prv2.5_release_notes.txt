@@ -86,7 +86,20 @@ to see subject details in C3PR application.
 ================================================================
 
 -----------------------------------------------------------------
-		3.1 Put Bug Here	
+3.1 Imports: Import Registrations/Studies have not been updated and
+	are not currently working.
+3.2 Taking subject off study for companion registrations has 
+	issues.
+3.3 Image Url site banner in configuration page cannot be empty.
+3.3 IE 7 Issues:
+	-> Cannot change the status of Study/Study Sites from the 
+	summary screen.
+	-> Cannot create Research staff/Investigator from prototype
+	window in study flows.
+	-> Help icons and Buttons are not rendering accurately on certain
+	screens.
+
+	
 ----------------------------------------------------------------
 
 There are minor issues while sending mails.
