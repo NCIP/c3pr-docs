@@ -92,8 +92,6 @@ to see subject details in C3PR application.
 	issues.
 3.3 Image Url site banner in configuration page cannot be empty.
 3.3 IE 7 Issues:
-	-> Cannot change the status of Study/Study Sites from the 
-	summary screen.
 	-> Cannot create Research staff/Investigator from prototype
 	window in study flows.
 	-> Help icons and Buttons are not rendering accurately on certain
