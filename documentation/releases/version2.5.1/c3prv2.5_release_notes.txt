@@ -64,13 +64,13 @@ C3PR v2.5 has been released
                 3.0 Known Issues
 ================================================================
 
------------------------------------------------------------------
 3.1 Imports: Import Registrations has minor issues.
 3.2 Taking subject off study for companion registrations has 
 	issues.
 3.3 Cannot transfer participant on companion registrations.
 3.4 Image Url site banner in configuration page cannot be empty.
-3.5 IE 7 Issues:
+3.5 Create investigator/research staff pop-up in study flow has issues while closing.
+3.6 IE 7 Issues:
 		-> Cannot drag/drop stratum groups in study flow.
 		-> Help icons and Buttons are not rendering accurately on certain
 		   screens.
