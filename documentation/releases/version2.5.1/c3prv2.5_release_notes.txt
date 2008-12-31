@@ -1,6 +1,6 @@
 
 
-              C3PRv2.5.1 Release Notes
+              C3PRv2.5.5 Release Notes
 
 National Cancer Institute Center for Bioinformatics
 
@@ -23,7 +23,7 @@ National Cancer Institute Center for Bioinformatics
                Introduction
 ================================================================
 
-This document contains the release notes for the C3PR v2.5.1  release.
+This document contains the release notes for the C3PR v2.5.5  release.
 
 This is an point release that fixes some minor issues also has feature 
 enhancement to existing Use Cases
@@ -52,6 +52,13 @@ C3PR v2.5 has been released
                 2.0 New Features for this Release
 ================================================================
 
+2.1 Features an all new more user-friendly and intuitive user interface.
+2.2 Study management has been split into create, edit and manage flows. 
+	The create and edit comprose of the core details of the protocol while 
+	the manage is provided for general study management.
+2.3 Randomization for Companion studies are now possible. Along with 
+	registrations for the same. 
+
 
 ================================================================
                 3.0 Known Issues
@@ -61,12 +68,12 @@ C3PR v2.5 has been released
 3.1 Imports: Import Registrations has minor issues.
 3.2 Taking subject off study for companion registrations has 
 	issues.
-3.3 Image Url site banner in configuration page cannot be empty.
-3.3 IE 7 Issues:
-	-> Cannot create Research staff/Investigator from prototype
-	window in study flows.
-	-> Help icons and Buttons are not rendering accurately on certain
-	screens.
+3.3 Cannot transfer participant on companion registrations.
+3.4 Image Url site banner in configuration page cannot be empty.
+3.5 IE 7 Issues:
+		-> Cannot drag/drop stratum groups in study flow.
+		-> Help icons and Buttons are not rendering accurately on certain
+		   screens.
 
 
 ================================================================
@@ -82,7 +89,7 @@ http://gforge.nci.nih.gov/tracker/index.php?group_id=214&atid=995
                 5.0 Bug Reports and Support
 ================================================================
 
-Send email to c3prv2-support@gforge.nci.nih.gov  to request support
+Send email to c3prv2-support@gforge.nci.nih.gov to request support
 or report a bug.
 
 
@@ -91,7 +98,6 @@ or report a bug.
 ================================================================
 
 To understand C3PR architecture, please refer the C3PR Technical Architecture/Specification, refer
-
 https://cabig-kc.nci.nih.gov/CTMS/KC/index.php/C3PR_Architecture_Guide
 
 Latest C3PR Installation guide can be found at
