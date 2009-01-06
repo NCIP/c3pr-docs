@@ -73,6 +73,7 @@ C3PR v2.5 has been released
 		-> Cannot drag/drop stratum groups in study flow.
 		-> Help icons and Buttons are not rendering accurately on certain
 		   screens.
+3.6 Enrolling on studies which have notifications may not work properly
 
 
 ================================================================
