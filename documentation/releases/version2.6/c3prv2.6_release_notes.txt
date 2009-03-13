@@ -87,6 +87,7 @@ he/she is taken off study.
 3.5 Study Investigator: When an investigator/personnel is associate to the
 study it is by default associated to the coordinating center irrespective 
 of the organization selected.
+3.6 Import Issues: Study Import not working.
 3.4 Notification: Weekly report going to wrong person.
 	
 ----------------------------------------------------------------
