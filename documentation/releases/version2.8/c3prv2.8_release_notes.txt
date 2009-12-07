@@ -23,7 +23,7 @@ National Cancer Institute Center for Bioinformatics
                Introduction
 ================================================================
 
-This document contains the release notes for the C3PR v2.8  release.
+This document contains the release notes for the C3PR v2.8 release.
 
 This is an major release that implements new use cases,
 fixes some minor issues also has feature enhancement to existing
@@ -60,9 +60,9 @@ workflow, more intuitive web pages.
 2.2 Companion Registration: Complete rework of Companion registration.
 
 New Features
-2.3 COPPA Integration: Now C3PR includes the first stage of COPPA integration.
-C3PR utilizes COPPA mock services to access COPPA entities like Person and
-Organization. Future releases of C3PR will include the actual integration.
+2.3 COPPA Integration: Now C3PR includes the first stage of actual integration with 
+COPPA. C3PR utilizes COPPA services to access COPPA entities like Person,
+Organization and Protocols.
 
 ================================================================
                 3.0 Known Issues
@@ -91,8 +91,6 @@ of the organization selected.
 3.4 Notification: Weekly report going to wrong person.
 	
 ----------------------------------------------------------------
-
-There are minor issues while sending mails.
 
 
 ================================================================
