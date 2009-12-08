@@ -96,10 +96,9 @@ he/she is taken off study.
 3.5 Study Investigator: When an investigator/personnel is associate to the
 study it is by default associated to the coordinating center irrespective 
 of the organization selected.
-3.6 Import Issues: Study Import not working.
-3.7 Notification: Weekly report going to wrong person.
-3.8 To capture back dated registration, the current status of the study site has to be Active.
-3.9 Cannot transfer to an epoch on a different study version.
+3.6 Notification: Weekly report going to wrong person.
+3.7 To capture back dated registration, the current status of the study site has to be Active.
+3.8 Cannot transfer to an epoch on a different study version.
 
 	
 ----------------------------------------------------------------
