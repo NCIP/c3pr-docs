@@ -54,15 +54,24 @@ C3PR v2.8 has completed 7 iterations in the construction phase
 ================================================================
 Enhancement features:
 
-2.1 Registration UI Redesign: Complete rework of Registration UI. Better
-workflow, more intuitive web pages.
+2.1 The application now supports study versioning. All the data elements in each study version can now be captured 
+and tracked. Similarly, each study site can be on a different study version and the status and IRB approval date of study site
+for each of these versions is tracked.
 
-2.2 Companion Registration: Complete rework of Companion registration.
+2.2 The application now supports capturing of back dated registrations i.e. registrations at a study site that occur on a 
+study version prior to latest study version.
+
+2.3 Multiple consents can now be added to each study version instead of a single consent.
+
+2.4 UI look and feel has changed
 
 New Features
-2.3 COPPA Integration: Now C3PR includes the first stage of actual integration with 
+2.5 COPPA Integration: Now C3PR includes the first stage of actual integration with 
 COPPA. C3PR utilizes COPPA services to access COPPA entities like Person,
 Organization and Protocols.
+
+2.6 ICD9 disease sites can be captured in the registration and Summary3 Reports can be generated off the ICD9 disease sites 
+
 
 ================================================================
                 3.0 Known Issues
@@ -88,7 +97,10 @@ he/she is taken off study.
 study it is by default associated to the coordinating center irrespective 
 of the organization selected.
 3.6 Import Issues: Study Import not working.
-3.4 Notification: Weekly report going to wrong person.
+3.7 Notification: Weekly report going to wrong person.
+3.8 To capture back dated registration, the current status of the study site has to be Active.
+3.9 Cannot transfer to an epoch on a different study version.
+
 	
 ----------------------------------------------------------------
 
