@@ -87,15 +87,12 @@ New Features:
 	->No Duplicate identifiers check in create companion study pop up.
 3.2 IE issues: 
 	->Once the companion registration popup is closed, the
-	progress bar loads an image for a long time. It
-	happens randomly. 
+	progress bar loads an image for a long time. It	happens randomly. 
 	->On companion registration popup, entering the disease 
 	site autocompleter leads to a blank page.
 	->Help icons and Buttons are not rendering accurately on certain
 	screens. 
-3.3 Oracle Issues: 
-	->
-3.4 COPPA Issues:
+3.3 COPPA Issues:
 	-> Sync functionality for Persons and Organizations has been deprecated for the current release.
 	-> The application only fetches a maximum of 200 person records and 100 protocol records at a 
 	   time for any given search.
