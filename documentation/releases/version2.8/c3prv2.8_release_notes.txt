@@ -65,17 +65,16 @@ Enhancement features:
 
 2.4 User Interface across the application has been updated to be more intuitive and user-friendly.
 
-2.5 The application now supports a new password policy wherein the created user receives the password via 
-	email for future logins.
+2.5 The application now supports a new feature for password management wherein the created user receives the 
+	password via email for future logins.
 	
+New Features:
 2.6 Support for multiple consents has been provided. Versioning of consents can be done by amendments.
 
-New Features
-2.5 COPPA Integration: Now C3PR includes the first stage of actual integration with 
-COPPA. C3PR utilizes COPPA services to access COPPA entities like Person,
-Organization and Protocols.
+2.7 COPPA Integration: Now C3PR includes the first stage of actual integration with COPPA for PA. 
+	C3PR now utilizes COPPA services to access COPPA entities like Person, Organization and Protocols.
 
-2.6 ICD9 disease sites can be captured in the registration and Summary3 Reports can be generated off the ICD9 disease sites 
+2.8 ICD9 disease sites can be captured in the registration and Summary3 Reports can be generated off the ICD9 disease sites 
 
 
 ================================================================
@@ -95,15 +94,17 @@ Organization and Protocols.
 	->Help icons and Buttons are not rendering accurately on certain
 	screens. 
 3.3 Oracle Issues: Cannot enroll a subject on a study involving
-companion with a site level notification.
+	companion with a site level notification.
+3.4 COPPA Issues:
+	-> Sync functionality for Persons and Organizations has been deprecated for the current release.
+	-> The application only fetches a maximum of 200 person records and 100 protocol records at a time for any given search.
 3.4 Enrollment issues: No way to put a subject back on study after
 he/she is taken off study.
 3.5 Study Investigator: When an investigator/personnel is associate to the
 study it is by default associated to the coordinating center irrespective 
 of the organization selected.
-3.6 Notification: Weekly report going to wrong person.
-3.7 To capture back dated registration, the current status of the study site has to be Active.
-3.8 Cannot transfer to an epoch on a different study version.
+3.6 To capture back dated registration, the current status of the study site has to be Active.
+3.7 Cannot transfer to an epoch on a different study version.
 
 	
 ----------------------------------------------------------------
