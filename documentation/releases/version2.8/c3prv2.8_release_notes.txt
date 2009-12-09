@@ -93,16 +93,16 @@ New Features:
 	site autocompleter leads to a blank page.
 	->Help icons and Buttons are not rendering accurately on certain
 	screens. 
-3.3 Oracle Issues: Cannot enroll a subject on a study involving
-	companion with a site level notification.
+3.3 Oracle Issues: 
+	->
 3.4 COPPA Issues:
 	-> Sync functionality for Persons and Organizations has been deprecated for the current release.
-	-> The application only fetches a maximum of 200 person records and 100 protocol records at a time for any given search.
-3.4 Enrollment issues: No way to put a subject back on study after
-he/she is taken off study.
+	-> The application only fetches a maximum of 200 person records and 100 protocol records at a 
+	   time for any given search.
+3.4 Enrollment issues: No way to put a subject back on study after he/she is taken off study.
 3.5 Study Investigator: When an investigator/personnel is associate to the
-study it is by default associated to the coordinating center irrespective 
-of the organization selected.
+	study it is by default associated to the coordinating center irrespective 
+	of the organization selected.
 3.6 To capture back dated registration, the current status of the study site has to be Active.
 3.7 Cannot transfer to an epoch on a different study version.
 
