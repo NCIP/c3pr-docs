@@ -69,12 +69,10 @@ Enhancement features:
 	password via email for future logins.
 	
 New Features:
-2.6 Support for multiple consents has been provided. Versioning of consents can be done by amendments.
-
-2.7 COPPA Integration: Now C3PR includes the first stage of actual integration with COPPA for PA. 
+2.6 COPPA Integration: Now C3PR includes the first stage of actual integration with COPPA for PA. 
 	C3PR now utilizes COPPA services to access COPPA entities like Person, Organization and Protocols.
 
-2.8 ICD9 disease sites can be captured in the registration and Summary3 Reports can be generated off the ICD9 disease sites 
+2.7 ICD9 disease sites can be captured in the registration and Summary3 Reports can be generated off the ICD9 disease sites 
 
 
 ================================================================
