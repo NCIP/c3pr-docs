@@ -55,15 +55,20 @@ C3PR v2.8 has completed 7 iterations in the construction phase
 Enhancement features:
 
 2.1 The application now supports study versioning. All the data elements in each study version can now be captured 
-and tracked. Similarly, each study site can be on a different study version and the status and IRB approval date of study site
-for each of these versions is tracked.
+	and tracked. Similarly, each study site can be on a different study version and the status and IRB approval date 
+	of study site for each of these versions is tracked.
 
-2.2 The application now supports capturing of back dated registrations i.e. registrations at a study site that occur on a 
-study version prior to latest study version.
+2.2 The application now supports capturing of back dated registrations i.e. registrations at a study site that occur on
+	a study version prior to latest study version.
 
 2.3 Multiple consents can now be added to each study version instead of a single consent.
 
-2.4 UI look and feel has changed
+2.4 User Interface across the application has been updated to be more intuitive and user-friendly.
+
+2.5 The application now supports a new password policy wherein the created user receives the password via 
+	email for future logins.
+	
+2.6 Support for multiple consents has been provided. Versioning of consents can be done by amendments.
 
 New Features
 2.5 COPPA Integration: Now C3PR includes the first stage of actual integration with 
