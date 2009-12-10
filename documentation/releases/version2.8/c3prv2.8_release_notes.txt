@@ -45,7 +45,7 @@ https://cabig-kc.nci.nih.gov/CTMS/KC/index.php/C3PR
 ----------------------------------------------------------------
 
 C3PRv2 has been released
-C3PR v2.8 has completed 7 iterations in the construction phase
+C3PR v2.8 is being released as a part of the CCTS 2.0 suite release.
 
 
 
