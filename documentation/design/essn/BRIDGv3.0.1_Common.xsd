@@ -1,0 +1,1555 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="BiologicEntityGroup" type="BiologicEntityGroup"/>
+	<xs:complexType name="BiologicEntityGroup">
+		<xs:annotation>
+			<xs:documentation>A collection of biologic entities.
+
+For example, flock of ducks, litter of mice, or herd of cows.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="actualIndicator" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Specifies whether the biologic entity group is real (actual) vs. placeholder (kind of).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="name" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A non-unique textual identifier for the biologic entity group.
+
+For example, Litter1, X12, Farmer Brown's Cows.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="quantity" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>The number of members in a biologic entity group.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of biologic entity group.
+
+For example, litter, herd.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="grouped" type="BiologicEntity" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Performer" type="Performer"/>
+	<xs:complexType name="Performer">
+		<xs:annotation>
+			<xs:documentation>A person, organization or device that is participates in an activity.  
+
+For example, surgeon, monitoring device, performing laboratory.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the performer is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the performer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="postalAddress" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A contact point used to send physical forms of communication to the performer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="telecomAddress" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A sequence of digits or characters used to identify a particular telephone, fax, or email of the performer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of performer.
+
+For example, surgeon, monitoring device, performing laboratory.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="performed" type="Activity" maxOccurs="unbounded"/>
+			<xs:element name="performing" type="Device" minOccurs="0"/>
+			<xs:element name="performing" type="Person" minOccurs="0"/>
+			<xs:element name="performing" type="Organization" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="TreatingSite" type="TreatingSite"/>
+	<xs:complexType name="TreatingSite">
+		<xs:annotation>
+			<xs:documentation>Any healthcare facility where care is provided as part of a cooperative group.
+
+For example, a cancer center that is part of the North Central Cancer Treatment Group (NCCTG). 
+
+NOTE: There are two ways a TreatingSite can be associated to a CooperativeGroup: either directly or through a CooperativeGroupMember.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="containing" type="CooperativeGroup" minOccurs="0"/>
+			<xs:element name="containing" type="CooperativeGroupMember" minOccurs="0"/>
+			<xs:element name="performing" type="HealthcareFacility"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Subject" type="Subject"/>
+	<xs:complexType name="Subject">
+		<xs:annotation>
+			<xs:documentation>An entity of interest, either biological or otherwise.
+
+For example, a human being who might be of interest because they are on a study, a sheep who might have experienced an adverse event, or a pacemaker that failed.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="state" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A value specifying the state of participation of a person in the given investigation.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="performing" type="BiologicEntity" minOccurs="0"/>
+			<xs:element name="performing" type="Product" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ExperimentalUnit" type="ExperimentalUnit"/>
+	<xs:complexType name="ExperimentalUnit">
+		<xs:annotation>
+			<xs:documentation>A physical entity which is the primary unit of interest in a specific research objective. In an interventional study, the experimental unit is assigned to an intervention. The experimental unit is also the unit of primary statistical analysis. Commonly the individual study subject (animal, person or product) is the experimental unit. Different experimental units must be capable of receiving different experimental interventions. 
+
+For example, if all pigs in a pen receive the same intervention in their feed, and the primary observations and analyses of interest are associated with the entire pen (e.g. total feed consumed, total weight of all pigs combined), then the pen of pigs rather than the individual animal is the experimental unit. [CDISC/HL7 Study Participation RMIM, PORT_RM100001UV]
+
+For example, a human StudySubject may have 10 patches of skin each considered an ExperimentalUnit, or a Product StudySubject may have 10 bearings in it, each considered an ExperimentalUnit.  Alternatively, each StudySubject may be an ExperimentalUnit.
+
+NOTE: Depending on the research objectives, a single study may have multiple levels of experimental units, such as whole people and patches of skin.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the experimental unit.
+
+For example, patient number 7 on a study. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="statusCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the state of the experimental unit.
+
+For example, active, cancelled, pending, suspended, terminated, nullified.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="statusDate" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date (and time) on which the status is assigned to the experimental unit.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="subgroupCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the identification of uniform groups of subjects for separate analysis or treatment.
+
+For example, in National Cancer Institute (NCI) this is the Clinical Data Update System (CDUS) Reporting.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="performing" type="BiologicEntityPart" minOccurs="0"/>
+			<xs:element name="performing" type="BiologicSpecimen" minOccurs="0"/>
+			<xs:element name="performing" type="BiologicEntity" minOccurs="0"/>
+			<xs:element name="performing" type="ProductGroup" minOccurs="0"/>
+			<xs:element name="performing" type="Product" minOccurs="0"/>
+			<xs:element name="performing" type="BiologicEntityGroup" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="BiologicEntityPart" type="BiologicEntityPart"/>
+	<xs:complexType name="BiologicEntityPart">
+		<xs:annotation>
+			<xs:documentation>A limb, organ, or other portion of a biologic entity.
+
+For example, the left kidney of a person, a dog's right from paw, a patch of skin on a person's left forearm, etc.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="anatomicSiteCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the anatomic site(s) or system of the biologic entity part.
+
+For example, eye, skin, kidney, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="anatomicSiteLateralityCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the side of the body (or a paired organ) where the anatomic site is in a biologic entity part.
+
+For example, left, right, both, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="containing" type="BiologicEntity"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ManufacturingSite" type="ManufacturingSite"/>
+	<xs:complexType name="ManufacturingSite">
+		<xs:annotation>
+			<xs:documentation>The particular plant or processing location at which the product was produced.  The site could pertain to a different corporation that the one which is the formal manufacturer.  
+
+For example, "GSK Zebulon, NC"</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="fabricating" type="Product" maxOccurs="unbounded"/>
+			<xs:element name="performing" type="Place"/>
+			<xs:element name="operating" type="Manufacturer" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="FoodProduct" type="FoodProduct"/>
+	<xs:complexType name="FoodProduct">
+		<xs:annotation>
+			<xs:documentation>A substance consumed by humans and animals for nutritional purposes.
+
+For example, broccoli, donuts, pet treats. </xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="Product">
+				<xs:sequence>
+					<xs:element name="lotNumberText" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>An alphanumeric string used to identify a particular batch of food product.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="DocumentAuthor" type="DocumentAuthor"/>
+	<xs:complexType name="DocumentAuthor">
+		<xs:annotation>
+			<xs:documentation>The individual who is responsible for the content of a document.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="authored" type="Document"/>
+			<xs:element name="performing" type="HealthcareProvider" minOccurs="0"/>
+			<xs:element name="performing" type="ResearchStaff" minOccurs="0"/>
+			<xs:element name="performing" type="AssociatedBiologicEntity" minOccurs="0"/>
+			<xs:element name="performing" type="Subject" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ResearchStaff" type="ResearchStaff"/>
+	<xs:complexType name="ResearchStaff">
+		<xs:annotation>
+			<xs:documentation>Individual who is employed and/or involved in any aspect of conduct of protocol driven research.
+
+For example, administrators, clinical and data managers, clinical research pharmacists, clinical research associates, clinical trials compliance coordinators, clinical trials specialists, laboratory technologists, nurses, research services consultants, study coordinators and others.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the research staff is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="postalAddress" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A contact point used to send physical forms of communication to the research staff.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="telecomAddress" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A sequence of digits or characters used to identify a particular telephone, fax, or email of the research staff.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="performing" type="Person"/>
+			<xs:element name="staffed" type="ResearchOrganization"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ResourceProvider" type="ResourceProvider"/>
+	<xs:complexType name="ResourceProvider">
+		<xs:annotation>
+			<xs:documentation>An organization or person that typically provides financial or other resources for the conduct of research.
+
+For example, federal agencies (National Cancer Institute, National Institutes of Health) and private industry (pharmaceutical companies)</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the resource provider is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the resource provider.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="performing" type="Organization" minOccurs="0"/>
+			<xs:element name="performing" type="Person" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="HealthcareFacility" type="HealthcareFacility"/>
+	<xs:complexType name="HealthcareFacility">
+		<xs:annotation>
+			<xs:documentation>An organization that devotes some or all of its resources (people, places, things) to the delivery of healthcare services (including the financial and administrative management of those resources).  A healthcare facility may be manifest as a single physical location (e.g. building), or, alternatively, as a distributed collection of physical spaces.
+
+For example, Northwestern Memorial Hospital.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the healthcare facility is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the healthcare facility.
+
+For example, in Cancer Therapy Evaluation Program (CTEP), every site that interacts with the National Cancer Institute (NCI) gets an NCI unique identifier. 
+
+For example, hospitals get an American Hospital Association (AHA) ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="postalAddress" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A contact point used to send physical forms of communication for the healthcare facility.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="performing" type="Organization"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Distributor" type="Distributor"/>
+	<xs:complexType name="Distributor">
+		<xs:annotation>
+			<xs:documentation>An organization who takes part in the distribution chain for a product, as it is moved from its producer to the ultimate consumer.
+
+NOTE: In this sense, the retailer is a distributor as well, the last one.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="providing" type="Product" maxOccurs="unbounded"/>
+			<xs:element name="performing" type="Organization"/>
+			<xs:element name="represented" type="Manufacturer" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Material" type="Material"/>
+	<xs:complexType name="Material" abstract="true">
+		<xs:annotation>
+			<xs:documentation>A physical substance.
+
+For example, drug, device, specimen.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="actualIndicator" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Specifies whether the material is real (actual) vs. placeholder (kind of).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="description" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The textual representation of the material.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the material is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="formCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the state and nature of the material.
+
+For example, solid, liquid, gas, tablet, ointment, gel, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the material.
+
+For example, serial number, product number, model number.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="name" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A non-unique textual identifier for the material.  
+
+For example, the therapeutic agent used in a chemotherapy clinical trial.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="StudySubject" type="StudySubject"/>
+	<xs:complexType name="StudySubject">
+		<xs:annotation>
+			<xs:documentation>A physical entity which is the primary unit of operational and/or administrative interest in a study. 
+
+For example, a person who is registered in a study as a recipient of an investigational product or as a control.  May also include individuals who are being screened for studies, or individuals participating in observational or other studies.  Other examples may include a pacemaker, a fuse that can be used in medical devices, a cow, a farm, a pen of pigs, a tissue sample from a tissue bank, etc.
+
+NOTE: StudySubjects within a study are all of the same type.  An entity registered in a study is not part of another entity registered in the same study.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="Subject">
+				<xs:sequence>
+					<xs:element name="confidentialityIndicator" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Specifies whether the study subject, or their legally acceptable representative, has not authorized the use and disclosure of their protected health information (i.e., the subject's data is private and confidential).</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="paymentMethodCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying the primary payer/insurance carrier information at the time of treatment on a study. 
+
+For example, Private Insurance, Medicare, Medicare And Private Insurance, Medicaid, etc. </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="statusCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying the state of the study subject.
+
+For example, new, active, inactive, nullified, normal, completed, suspended, draft, retired, terminated, pending approval, held, cancelled, aborted) of a study subject.
+
+For example, the status change of a study protocol to 'suspended', requiring that subject accrual be halted until the study protocol is restored to fully active status. This refers to codes to represent the status of a study protocol in relation to the ability to enroll participants/subjects. </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="statusDate" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>The date (and time) on which the status is assigned to the study subject.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="assigning" type="StudySite"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Animal" type="Animal"/>
+	<xs:complexType name="Animal">
+		<xs:annotation>
+			<xs:documentation>A non-human living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement, as distinguished from a plant or mineral. 
+
+For example, dog, cat, mouse.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="BiologicEntity">
+				<xs:sequence>
+					<xs:element name="breedCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying a group of animals presumably related by descent from common ancestors and visibly similar in most characters. 
+
+For example, Holstein, Angora, Himalayan cat, Labrador Retriever.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="description" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A textual or media representation of the animal.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="reproductiveOrgansPresentIndicator" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Specifies whether the anatomical parts of the body involved in reproduction are missing.
+
+For example, has the animal been spayed or neutered?</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="speciesCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying one of the basic units of biological classification and taxonomic rank that specifies a group of organisms that share similar characteristics and can interbreed with one another to produce fertile offspring.   
+
+For example, "&lt;i&gt;Canis lupus"&lt;/i&gt;, "&lt;i&gt;Rattus rattus"&lt;/i&gt;, etc.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="strain" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A group of presumed common ancestry with clear-cut physiological but usually not morphological distinctions.
+
+For example, The specific genotypic or phenotypic variant of an animal. 
+
+For example, Minnesota5 (swine strain), DXL (poultry strain), RB51 (vaccine strain of brucella abortus)</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="AdministrativeMemberPI" type="AdministrativeMemberPI"/>
+	<xs:complexType name="AdministrativeMemberPI">
+		<xs:annotation>
+			<xs:documentation>The principal investigator (PI) at a site who is responsible for all activities related to a specific network's research at that site.
+
+For example, Dr. Habermann is the ECOG site PI at Mayo Clinic. Dr. Long is the site PI for the GOG network participation at Mayo. They are responsible for the overall management of the entire network's (ECOG, GOG) studies in which the Mayo Clinic participates.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="staffed" type="CooperativeGroupMember"/>
+			<xs:element name="performing" type="ResearchStaff"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Biologic" type="Biologic"/>
+	<xs:complexType name="Biologic">
+		<xs:annotation>
+			<xs:documentation>A substance made from living organisms or things they produce.
+
+For example, virus, therapeutic serum, toxin, antitoxin, vaccine, blood, blood component or derivative, allergenic product, or analogous product.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="Product">
+				<xs:sequence>
+					<xs:element name="lotNumberText" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>An alphanumeric string used to identify a particular batch of biologic.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="StudyRegistry" type="StudyRegistry"/>
+	<xs:complexType name="StudyRegistry">
+		<xs:annotation>
+			<xs:documentation>An organization (typically a government agency) that administers the registration of studies for products. 
+
+For example, ClinicalTrials.gov, The Netherlands National Trial Register (NTR)
+
+NOTE: The registry should contain basic information about each trial sufficient to inform potential StudySubjects (and their healthcare providers) how to enroll in the study.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="acronym" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The non-unique initials or abbreviated name used for identification of the registry.
+
+For example, NTR (Netherlands National Trial Register)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="name" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A non-unique textual identifier for the registry.
+
+For example, ClinicalTrials.gov</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="managing" type="Organization"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="HealthcareProvider" type="HealthcareProvider"/>
+	<xs:complexType name="HealthcareProvider">
+		<xs:annotation>
+			<xs:documentation>A person who directly or indirectly administers interventions that are designed to improve the physical or emotional status of another person. A person licensed, certified or otherwise authorized or permitted by law to administer healthcare in the ordinary course of business or practice of a profession.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="certificateLicenseText" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A character string that describes the credentials of the healthcare provider.
+
+For example, board certified, etc. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the healthcare provider is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the healthcare provider.
+
+For example, the identifier assigned in the NCI investigator registry (National Cancer Institute Principal Investigator Identifier Number) to a physician approved for conducting a clinical trial.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="postalAddress" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A contact point used to send physical forms of communication to the healthcare provider.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="telecomAddress" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A sequence of digits or characters used to identify a particular telephone, fax, or email of the healthcare provider.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="performing" type="Person"/>
+			<xs:element name="staffed" type="HealthcareFacility"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Activity" type="Activity"/>
+	<xs:complexType name="Activity" abstract="true">
+		<xs:annotation>
+			<xs:documentation>Any action that can, in the context of a study, be planned, scheduled or performed.  
+
+For example, a surgical procedure, a laboratory test, or the administration of a drug.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="comment" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Additional description of the activity.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of an activity.
+
+For example, 12345 is the identifier for a substance administration.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="reasonCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the motivation, cause, or rationale of an activity. 
+
+For example, routine requirement, drug reaction, infectious disease reporting requirement, on patient request, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="involved" type="ExperimentalUnit" minOccurs="0"/>
+			<xs:element name="involved" type="Subject" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="DocumentRelationship" type="DocumentRelationship"/>
+	<xs:complexType name="DocumentRelationship">
+		<xs:annotation>
+			<xs:documentation>Specifies the meaning (or semantics) of the relationship of one document to another.
+
+For example, in a Regulated Product Submission (RPS), relationships of interest include "replaces" or "amends" (among others).  For example, support of versioning could be accomplished by having two different revisions of a document related through a "replaces" relationship. </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of document relationship. Each value implies specific constraints to what kinds of objects can be related and in which way.
+
+For example, decomposition (component), pre-condition, post-condition, sequel (replaces, modifies), attribution (cause and effect) would be types of relationships that could be coded. Neutrophil count is a component of complete blood count. 
+The IV bag is weighed before and after the infusion. (sequel) 
+Injection site swelling and redness are attributed to the injection. (attribution) </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="target" type="Document"/>
+			<xs:element name="source" type="Document"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="DocumentWorkflowStatus" type="DocumentWorkflowStatus"/>
+	<xs:complexType name="DocumentWorkflowStatus">
+		<xs:annotation>
+			<xs:documentation>The workflow status associated with a document from submission thru abstraction.  
+
+NOTE: we have a state diagram for this that illustrate the various states</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="comment" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Additional description of the document workflow status.
+
+For example, to capture the reasons of statuses or other notes.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="statusCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the state of the document workflow.
+
+For example, On-hold; Accepted; Rejected; Abstracted; Abstraction Verified; Abstraction not verified</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="statusDate" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date (and time) on which the status is assigned to the document workflow.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="described" type="Document"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Manufacturer" type="Manufacturer"/>
+	<xs:complexType name="Manufacturer">
+		<xs:annotation>
+			<xs:documentation>The organization defined as being responsible for creating the product as stated on the package in which the product is supplied. 
+
+For example, the maker identified on the product's box.
+
+NOTE: In some cases, the responsible organization will actually be listed as a reprocessor of the item.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="performing" type="Organization"/>
+			<xs:element name="producing" type="Product" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ProductPart" type="ProductPart"/>
+	<xs:complexType name="ProductPart">
+		<xs:annotation>
+			<xs:documentation>A subdivision of a product</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="activeIngredientIndicator" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Specifies whether the ingredient is an active ingredient.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="strength" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>An indication of the amount of the ingredient contained in a reference amount of the product.
+
+For example, 50 mg per tablet, or 300 ml / liter.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="composite" type="Product"/>
+			<xs:element name="performing" type="Product"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="OrganizationPart" type="OrganizationPart"/>
+	<xs:complexType name="OrganizationPart">
+		<xs:annotation>
+			<xs:documentation>A subdivision within an organization.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the organization part is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the organization part.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of organization part. 
+
+For example, department, center, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="subdivided" type="Organization"/>
+			<xs:element name="performing" type="Organization"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Person" type="Person"/>
+	<xs:complexType name="Person">
+		<xs:annotation>
+			<xs:documentation>A human being.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="BiologicEntity">
+				<xs:sequence>
+					<xs:element name="deathIndicator" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Specifies whether the person is dead.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="educationLevelCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying the highest level of education completed.
+
+For example, Less than High School Diploma, High School Diploma, Some College, etc.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="ethnicGroupCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying the self-declared ethnic origination, independent of racial origination. 
+
+For example, for the NCI, these ethnic groups are based on OMB approved categories. </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="initials" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>The first letters of the person's first name, middle name, and last name. 
+
+NOTE: If the person does not have a middle initial, the initials will only be two characters.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="maritalStatusCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying the domestic partnership status of a person.  
+
+For example, Married, Widowed, Single, Separated, etc.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="name" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A non-unique textual identifier for the person.
+
+For example, proper name, nickname, legal name, etc.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="occupationDateRange" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>The date and time span specifying the start and end of a person's occupation.
+
+NOTE: The occupation is determined by the Person.primaryOccupationCode.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="postalAddress" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A contact point used to send physical forms of communication to the person.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="primaryOccupationCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying the principal activity that a person does to earn money. </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="raceCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying a self-declared racial origination, independent of ethnic origination.
+
+For example, for the National Cancer Institute, this code is based on Office of Management &amp;amp; Budget (OMB) approved categories. </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="telecomAddress" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A sequence of digits or characters used to identify a particular telephone, fax, or email of the person.
+
+For example, the set of digits that serves as the address for a telephone device.  Included in the phone number are country, city, and area codes needed to uniquely address the telephone.  A URL or e-mail would be similarly described. </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="HealthcareProviderGroup" type="HealthcareProviderGroup"/>
+	<xs:complexType name="HealthcareProviderGroup">
+		<xs:annotation>
+			<xs:documentation>A collection of healthcare providers loosely based upon a criterion (i.e., specialty, department, credentials).</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the healthcare provider group is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="performing" type="Organization"/>
+			<xs:element name="using" type="HealthcareFacility"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="AdministrativeMemberCRA" type="AdministrativeMemberCRA"/>
+	<xs:complexType name="AdministrativeMemberCRA">
+		<xs:annotation>
+			<xs:documentation>A clinical research associate (CRA) at a site who has the primary responsibility for communications and data related to a specific network in which that site participates.
+
+For example, Jane Doe is the Primary CRA for ECOG at Mayo; she receives all of the ECOG communications at Mayo and distributes them appropriately.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="staffed" type="CooperativeGroupMember"/>
+			<xs:element name="performing" type="ResearchStaff"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="StudySubjectIdentifier" type="StudySubjectIdentifier"/>
+	<xs:complexType name="StudySubjectIdentifier">
+		<xs:annotation>
+			<xs:documentation>The unique identification of a study subject in a specified context.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the study subject identifier is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the study subject.
+
+For example, study subject number 7 on a specific study. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of study subject identifier.
+
+For example, study level subject identifier, study site level subject identifier, cross study identifier.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="assigning" type="Organization" minOccurs="0"/>
+			<xs:element name="identified" type="StudySubject"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Package" type="Package"/>
+	<xs:complexType name="Package">
+		<xs:annotation>
+			<xs:documentation>A container within which the product is delivered or shipped.  
+
+For example, a shipping carton, bottle.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="capacityQuantity" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The maximum number of product units within a package.
+
+For example, 1000 cc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="capTypeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the type of container cap. 
+
+NOTE: In some cases, it is important for this to be consistent with decapping, piercing or other automated manipulation.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="formCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value representing the state (solid, liquid, gas) and nature of the package.
+
+For example, for containers, the value provides an indication of the package type.  </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the package.
+
+NOTE: This is most usually, but not necessarily assigned by the manufacturer. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="lotNumberText" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>An alphanumeric string used to identify a particular batch of package.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="name" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A non-unique textual identifier for the package.
+
+NOTE: To be used when no suitable coding scheme is available. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of package.
+
+NOTE: For drugs in the US, this is the NDC number. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Device" type="Device"/>
+	<xs:complexType name="Device">
+		<xs:annotation>
+			<xs:documentation>An object intended for use whether alone or in combination for diagnostic, prevention, monitoring, or therapeutic purposes. 
+
+For example, tongue depressor, pacemaker.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="Product">
+				<xs:sequence>
+					<xs:element name="age" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Age of the device at the time of use or a best estimate including the unit of time used (e.g.  month, year). </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="availableForEvaluationIndicator" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Specifies whether or not the suspect medical device is accessible for assessment by the manufacturer. </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="manufactureDate" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>The date (and time) on which the suspect medical device is made.  </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="overTheCounterProductIndicator" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Specifies whether a device is available over-the-counter.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="reprocessedDeviceCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying that a device is reconditioned or not.
+
+For example, initial use of device, reuse, unknown. </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="singleUseDeviceIndicator" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Specifies whether a device is intended to be used only one time.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Place" type="Place"/>
+	<xs:complexType name="Place">
+		<xs:annotation>
+			<xs:documentation>A bounded physical location with contained structures, if any. 
+
+For example, ambulance, helicopter, manufacturing site, service delivery location, home, emergency department, surgical suite, patient room. 
+
+Constraints: Place may be natural or man-made. The geographic position of a place may or may not be constant. 
+
+Discussion: Places may be work facilities (where relevant acts occur), homes (where people live) or offices (where people work). Places may contain sub-places (floor, room, booth, bed). Places may also be sites that are investigated in the context of health care, social work, public health administration (e.g., buildings, picnic grounds, day care centers, prisons, counties, states, and other focuses of epidemiological events). </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The unique symbol that establishes identity of the place.
+
+For example, the license plate number of an ambulance or an identifier for a bed in a hospital ward.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of place.
+
+For example, emergency department, surgical suite, patient room.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="containing" type="Place" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="OrganizationalContact" type="OrganizationalContact"/>
+	<xs:complexType name="OrganizationalContact">
+		<xs:annotation>
+			<xs:documentation>A person who provides or receives information on behalf of an organization.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the organizational contact is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="postalAddress" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A contact point used to send physical forms of communication to the organizational contact.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="primaryIndicator" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Specifies whether this is the main or principal organizational contact.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="telecomAddress" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A sequence of digits or characters used to identify a particular telephone, fax, or email of the organizational contact.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="title" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A descriptive or distinctive appellation, especially one belonging to a person by right of rank, office, attainment, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of organizational contact.
+
+For example, safety, sales, financial, manufacturing, Review Board contact, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="supported" type="Organization"/>
+			<xs:element name="performing" type="Person" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="QualifiedPerson" type="QualifiedPerson"/>
+	<xs:complexType name="QualifiedPerson">
+		<xs:annotation>
+			<xs:documentation>A person that has been recognized as having certain training/experience or other characteristics that would make that person an appropriate performer for a certain activity.
+For example, board certification, academic degree, medical license, etc.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="certificateLicenseText" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A character string that describes the credentials of the qualified person.
+
+For example, board certification, academic degree, medical license, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the qualified person is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the qualified person.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of the qualified person.
+
+For example, license, academic degree, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="credentialing" type="Organization"/>
+			<xs:element name="performing" type="Person"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="CooperativeGroupMember" type="CooperativeGroupMember"/>
+	<xs:complexType name="CooperativeGroupMember">
+		<xs:annotation>
+			<xs:documentation>An organization comprised of a group of treating sites. 
+
+For example, a group of cancer centers with outreach clinics forming a loose confederation for research purposes.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="performing" type="Organization"/>
+			<xs:element name="grouping" type="CooperativeGroup"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ResearchOrganization" type="ResearchOrganization"/>
+	<xs:complexType name="ResearchOrganization">
+		<xs:annotation>
+			<xs:documentation>An organization whose purpose is to support systemic, rigorous study and investigation into a particular field or fields.
+
+For example, Clinical Research Organization (CRO).</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the research organization is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of research organization.
+
+For example, cancer center, institute, drug company, clinical center, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="performing" type="Organization"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Product" type="Product"/>
+	<xs:complexType name="Product">
+		<xs:annotation>
+			<xs:documentation>A thing produced by or resulting from a process.
+
+For example, a drug or device.
+
+For example, the FDA list of regulated products: animal and human drugs; therapeutic biologics; allergenics; cell, tissue and gene therapy products; blood components; blood derivative products; devices; and animal (pets and livestock) and human food/feed (medicated and un-medicated); cosmetics; pet treats; and dietary supplements. </xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="Material">
+				<xs:sequence>
+					<xs:element name="classCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying a group of products that are homogeneous or generally considered as substitutes for each other. The class is considered as narrow or broad depending on how substitutable the various products are. 
+
+For example, stents, breakfast cereals, cox-2 inhibitors.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="expirationDate" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>The date (and time), assigned by the manufacturer, on which the product should not be used.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="nameCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying the non-unique textual identifier for the product.
+
+For example, aspirin, tobacco, caffeine.
+
+NOTE: The granularity of the code may vary depending on the specificity of the product. For example, acetaminophen, Tylenol, Tylenol 250 mg gel cap.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="nameModifiedText" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A character string that is a revision of the original text of the product to enable the coding of the text.
+
+For example, if the original text is "aspriin", the nameModifiedText could be set to "aspirin", so that the text can be successfully coded.
+
+NOTE: In the context of BRIDG, text modification occurs a single time for a given instance of OriginalText.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="pre1938Indicator" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>Specifies whether the product qualifies under the 1938 Grandfather Clause, contained in section 20l(p)(l) of the U.S. Federal Food, Drug and Cosmetic Act.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="typeCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying the kind of product.  
+
+For example, veterinary medicine, diagnostic device, etc. 
+
+NOTE: All members of a type share similar functions and general characteristics, especially the purpose for which they are used.  </xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="containing" type="Package" minOccurs="0"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="BiologicEntityIdentifier" type="BiologicEntityIdentifier"/>
+	<xs:complexType name="BiologicEntityIdentifier">
+		<xs:annotation>
+			<xs:documentation>The unique identification of a biologic entity in a specified context.
+
+NOTE:  This class is a resolution of the requirement for noting the type of an identifier which is not handled by the purely technical HL7 II data type.  It is the result of applying a pattern provided by HL7 data type expert, Grahame Grieve.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the biologic entity identifier is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The unique symbol that establishes identity of the biologic entity.
+
+For example, medical record number. 
+
+NOTE: This is different from the StudySubject.identifier.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of biologic entity identifier.
+
+For example, hospital record number, medical record number.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="assigning" type="Organization"/>
+			<xs:element name="identified" type="BiologicEntity"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="HealthcareProviderGroupMember" type="HealthcareProviderGroupMember"/>
+	<xs:complexType name="HealthcareProviderGroupMember">
+		<xs:annotation>
+			<xs:documentation>The role of an individual healthcare provider as a constituent part of a group.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="effectiveDateRange" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date and time span for when the healthcare provider group member is active.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="grouping" type="HealthcareProviderGroup"/>
+			<xs:element name="performing" type="HealthcareProvider"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Report" type="Report"/>
+	<xs:complexType name="Report">
+		<xs:annotation>
+			<xs:documentation>A document characterized by information or other content which is tailored to the context of a given situation and audience.
+
+For example, Safety Report, Study Report, etc. </xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="Document">
+				<xs:sequence>
+					<xs:element name="communicationModeCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying the form in which the report is transmitted.
+
+For example, physically present, over the telephone, written communication, electronic.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="described" type="PerformedObservationResult" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="CooperativeGroup" type="CooperativeGroup"/>
+	<xs:complexType name="CooperativeGroup">
+		<xs:annotation>
+			<xs:documentation>A group of researchers, cancer centers, and community doctors who provide infrastructure for studies of new cancer treatment, prevention, early detection, quality of life, and rehabilitation.
+
+For example, Eastern Cooperative Oncology Group (ECOG), Southwest Oncology Group (SWOG).</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="credentialing" type="Organization"/>
+			<xs:element name="performing" type="Organization"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Drug" type="Drug"/>
+	<xs:complexType name="Drug">
+		<xs:annotation>
+			<xs:documentation>An article other than food intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease; or intended to affect the structure or any function of the body. 
+
+For example, aspirin.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="Product">
+				<xs:sequence>
+					<xs:element name="lotNumberText" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>An alphanumeric string used to identify a particular batch of drug.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="ProductGroup" type="ProductGroup"/>
+	<xs:complexType name="ProductGroup">
+		<xs:annotation>
+			<xs:documentation>A collection of instances of a product.
+
+For example, 10 pills, 5 pace makers</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="actualIndicator" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Specifies whether the product group is real (actual) vs. placeholder (kind of).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the product group.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="quantity" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>The number of members in a product group.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="grouped" type="Product" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="DocumentReceiver" type="DocumentReceiver"/>
+	<xs:complexType name="DocumentReceiver">
+		<xs:annotation>
+			<xs:documentation>A person or organization that acknowledges receipt of a document that was sent.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="performing" type="Organization" minOccurs="0"/>
+			<xs:element name="received" type="Report"/>
+			<xs:element name="performing" type="Person" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="BiologicEntity" type="BiologicEntity"/>
+	<xs:complexType name="BiologicEntity" abstract="true">
+		<xs:annotation>
+			<xs:documentation>Any individual living (or previously living) being.
+
+For example, animal, human being.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="actualIndicator" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Specifies whether the biologic entity is real (actual) vs. placeholder (kind of).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="administrativeGenderCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the physical or societal properties by which male is distinguished from female.
+
+NOTE: For humans, identification of sex is usually based upon self-report and may come from a form, questionnaire, interview, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="birthCountryCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the name of the country in which the biologic entity is born.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="birthDate" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date (and time) on which the biologic entity is born.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="birthOrder" type="xs:int">
+				<xs:annotation>
+					<xs:documentation>Indicates the sequence of a biologic entity's birth in the family group. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="deathDate" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The date (and time) on which the biologic entity died.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="OversightCommittee" type="OversightCommittee"/>
+	<xs:complexType name="OversightCommittee">
+		<xs:annotation>
+			<xs:documentation>An organization that approves, monitors and reviews biomedical research to protect the rights, safety and welfare of the study subjects. This committee performs critical oversight functions for research conducted on human study subjects that are scientific, ethical, and regulatory.
+
+For example, Institutional Review Board (IRB), ethics committee, research ethics board, etc.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="OversightAuthority">
+				<xs:sequence>
+					<xs:element name="effectiveDateRange" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>The date and time span for when the oversight committee is active.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="typeCode" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>A coded value specifying the kind of oversight committee.
+
+For example, Adjudication Committee, IRB, Data Safety Monitoring Board.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					<xs:element name="overseen" type="StudySite" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="overseen" type="HealthcareFacility" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="DocumentIdentifier" type="DocumentIdentifier"/>
+	<xs:complexType name="DocumentIdentifier">
+		<xs:annotation>
+			<xs:documentation>The unique identification of a document in a specified context.
+
+NOTE:  This class is a resolution of the requirement for noting the type of an identifier which is not handled by the purely technical HL7 II data type.  It is the result of applying a pattern provided by HL7 data type expert, Grahame Grieve.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The unique symbol that establishes identity of the document.
+
+For example, an identifier assigned by some organization in the context of a study.
+
+For example, in a Regulatory Product Submission (RPS) message, this identifies the file (with a Uniform Resource Identifier (URI)), which is part of the documentation. A URI is a compact string of characters used to identify or name a resource. The main purpose of this identification is to enable interaction with representations of the resource over a network, typically the World Wide Web, using specific protocols. URIs are defined in schemes defining a specific syntax and associated protocols.
+
+NOTE: A particular document can have one or more ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="primaryIndicator" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Specifies whether this is the main or principal document identifier. 
+
+NOTE: primaryIndicator may only apply for a given typeCode.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of document identifier.
+
+For example, sponsor protocol number, national number, cooperative group protocol number, CDISC protocol identifying number, registry identifier. </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="issuing" type="Organization" minOccurs="0"/>
+			<xs:element name="identified" type="Document"/>
+			<xs:element name="issuing" type="StudyRegistry" minOccurs="0"/>
+			<xs:element name="resulted in" type="PerformedStudyAdministrativeActivity" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Document" type="Document"/>
+	<xs:complexType name="Document">
+		<xs:annotation>
+			<xs:documentation>A collection (physical or logical) of data with the following characteristics: 
+1) Stewardship, 2) Potential for authentication, 3) Wholeness, 4) Human readability, 5) Persistence, 6) Global vs local context (the person that signs it is the author of all sections unless otherwise noted).
+
+For example, regulatory processes require the submission of documents from the Applicant to the Regulatory Authority. These documents are varied in focus and are often defined by the field of study or by the regulatory application requirements of the region or Regulatory Authority (e.g., Integrated Summary of Safety, Pharmacokinetics Written Summary). 
+
+For example, Adverse Event Report, Expedited Adverse Event Report, Institutional Review Board (IRB) Report, X-Ray Report, Lab Summary Report, Autopsy Report, etc.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="bibliographicDesignation" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A text block containing publishing and authoring information that allows receivers to refer appropriately to the cited document.
+
+For example, IRB Minutes, 18-Jan-2008; Charles Darwin, The Origin of the Species, London 1863, Oxford Press.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="keywordCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the words or phrases that best describe the document and/or its context. Keywords help users find documents of interest. 
+
+For example, species, indication, biocompatibility, drug substance, drug product.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="keywordText" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A character string of ad hoc words or phrases that best describe the document and/or its context. Keywords help users find documents of interest. 
+
+For example, species, indication, biocompatibility, drug substance, drug product.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="officialTitle" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The formal title of the document.  
+
+NOTE: If there is only one title, use this attribute.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="revisionNumberText" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A character string that identifies a given collection of content of a document at a point in time.
+
+For example, over time, there may be multiple changes to a document, and the revision allows an individual to capture relationships between changes in the instances of a document over time. There can be a new revision every time the content changes. 
+
+For example, in RPS this could be implemented as follows: The version number would be an integer starting at '1' and incrementing by 1. The first instance or original report should always be valued as '1'. The version number value must be incremented by one when a report is replaced, but can also be incremented more often to meet local requirements. 
+
+Different versions of the same document belong to the same document group.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="revisionReason" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The reason why the document is revised.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="text" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A character string that is the full or comprehensive narrative or content of the document.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of document.
+
+For example, amendment, background material, guide, etc.
+
+For example, in RPS, this is the code that specifies how the file is to be used within the submission process (e.g. Protocol, Summary Introduction). Also known as context of use.
+
+For example, a RegulatoryRecord - A document that meets a record requirement of a regulatory authority and must be retained in accordance with that agency's records retention requirements.  Example: Data Clarification Form (DCF)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="uniformResourceLocator" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A complete reference to a website (including http://) from which the document contents can be retrieved.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="AssociatedBiologicEntity" type="AssociatedBiologicEntity"/>
+	<xs:complexType name="AssociatedBiologicEntity">
+		<xs:annotation>
+			<xs:documentation>An individual biologic entity connected/linked to a subject.
+
+For example, family member, roommate, nursing home attendant, etc.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of associated biologic entity. 
+
+For example, family member, roommate, guardian, nursing home attendant, etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="performing" type="BiologicEntity"/>
+			<xs:element name="scoping" type="BiologicEntity"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="Cosmetic" type="Cosmetic"/>
+	<xs:complexType name="Cosmetic">
+		<xs:annotation>
+			<xs:documentation>An article intended to be rubbed, poured, sprinkled, or sprayed on or introduced into or otherwise applied to the human body for cleansing, beautifying, promoting attractiveness or altering the appearance. </xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="Product">
+				<xs:sequence>
+					<xs:element name="lotNumberText" type="xs:string">
+						<xs:annotation>
+							<xs:documentation>An alphanumeric string used to identify a particular batch of cosmetic.</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Organization" type="Organization"/>
+	<xs:complexType name="Organization">
+		<xs:annotation>
+			<xs:documentation>A formalized group of persons or other organizations collected together for a common purpose (such as administrative, legal, political) and the infrastructure to carry out that purpose.</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="actualIndicator" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>Specifies whether the organization is real (actual) vs. placeholder (kind of).
+
+For example, a placeholder organization is the KIND OF organization that can play some role on a study during study design, whereas Good Health Hospital is an INSTANCE OF an organization that plays a role on a study conduct, such as StudySite.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="description" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>The textual representation of the organization.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="identifier" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A unique symbol that establishes identity of the organization.
+
+For example, in cases of laboratories this is the Clinical Laboratory Improvement Act/Amendment (CLIA) ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="name" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A non-unique textual identifier for the organization.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="postalAddress" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A contact point used to send physical forms of communication to the organization.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="telecomAddress" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A sequence of digits or characters used to identify a particular telephone, fax, or email of the organization.
+
+For example, the set of digits that serves as the address for a telephone device.  Included in the phone number are country, city, and area codes needed to uniquely address the telephone.  A URL or e-mail would be similarly described.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="typeCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>A coded value specifying the kind of organization.
+
+For example, academic, pharmaceutical industry, government, other. EudraCT example: commercial, non-commercial.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
