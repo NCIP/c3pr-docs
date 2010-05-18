@@ -4,7 +4,8 @@
 	elementFormDefault="qualified">
 
 	<annotation>
-		<documentation>XML Schema defining types for NCI Enterprise Services
+		<documentation>XML Schema defining types and faults for NCI Enterprise
+			Services
 			implementation.
         </documentation>
 	</annotation>
@@ -188,4 +189,53 @@
 			</element>
 		</sequence>
 	</complexType>
+
+	<complexType name="SubjectManagementException">
+		<sequence>
+			<element name="message" type="string" />
+		</sequence>
+	</complexType>
+
+	<complexType name="InvalidSubjectDataException">
+		<complexContent>
+			<extension base="tns:SubjectManagementException">
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="InvalidStateTransitionException">
+		<complexContent>
+			<extension base="tns:SubjectManagementException">
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="NoSuchSubjectException">
+		<complexContent>
+			<extension base="tns:SubjectManagementException">
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="SubjectAlreadyExistsException">
+		<complexContent>
+			<extension base="tns:SubjectManagementException">
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="UnableToCreateOrUpdateSubjectException">
+		<complexContent>
+			<extension base="tns:SubjectManagementException">
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="InsufficientPrivilegesException">
+		<complexContent>
+			<extension base="tns:SubjectManagementException">
+			</extension>
+		</complexContent>
+	</complexType>
+
 </schema>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://enterpriseservices.nci.nih.gov/SubjectManagementService"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sm="http://enterpriseservices.nci.nih.gov"
+	xsi:schemaLocation="http://enterpriseservices.nci.nih.gov SubjectManagement.xsd"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	name="SubjectManagementService" targetNamespace="http://enterpriseservices.nci.nih.gov/SubjectManagementService">
+	<wsdl:types>
+		<xsd:schema
+			targetNamespace="http://enterpriseservices.nci.nih.gov/SubjectManagementService">
+			<xsd:import namespace="http://enterpriseservices.nci.nih.gov"
+				schemaLocation="SubjectManagement.xsd" />
+			<xsd:element name="CreateSubjectRequest" type="sm:Subject"></xsd:element>
+			<xsd:element name="CreateSubjectResponse" type="sm:Subject"></xsd:element>
+			<xsd:element name="SubjectManagementException" type="sm:SubjectManagementException"></xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="CreateSubjectRequestMessage">
+		<wsdl:part name="parameters" element="tns:CreateSubjectRequest" />
+	</wsdl:message>
+	<wsdl:message name="CreateSubjectResponseMessage">
+		<wsdl:part name="parameters" element="tns:CreateSubjectResponse" />
+	</wsdl:message>
+	<wsdl:message name="SubjectManagementExceptionFaultMessage">
+		<wsdl:part name="fault" element="tns:SubjectManagementException"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="SubjectManagement">
+		<wsdl:operation name="createSubject">
+			<wsdl:input message="tns:CreateSubjectRequestMessage" />
+			<wsdl:output message="tns:CreateSubjectResponseMessage" />
+			<wsdl:fault message="tns:SubjectManagementExceptionFaultMessage"
+				name="SubjectManagementExceptionFault" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="SubjectManagementSOAP" type="tns:SubjectManagement">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="createSubject">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SubjectManagementExceptionFault">
+				<soap:fault name="SubjectManagementExceptionFault" />
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<!--
+		<wsdl:service name="SubjectManagement"> <wsdl:port
+		binding="tns:SubjectManagementSOAP" name="SubjectManagementSOAP">
+		<soap:address location="http://www.example.org/" /> </wsdl:port>
+		</wsdl:service>
+	-->
+</wsdl:definitions>
