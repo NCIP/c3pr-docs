@@ -20,13 +20,6 @@
             </documentation>
         </annotation>
         <sequence>
-            <element name="actualIndicator" type="ISO:BL">
-                <annotation>
-                    <documentation>Specifies whether the biologic entity is real
-                        (actual) vs. placeholder (kind of).
-                    </documentation>
-                </annotation>
-            </element>
             <element name="administrativeGenderCode" type="ISO:CD">
                 <annotation>
                     <documentation>A coded value specifying the physical or societal
