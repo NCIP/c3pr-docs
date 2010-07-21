@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:sub="http://enterpriseservices.nci.nih.gov/SubjectManagementService"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ent="http://enterpriseservices.nci.nih.gov"
+	xmlns:iso="uri:iso.org:21090"
+	xsi:schemaLocation="uri:iso.org:21090 ISO_datatypes_Narrative.xsd http://enterpriseservices.nci.nih.gov SubjectManagement.xsd">
+	<soapenv:Header />
+	<soapenv:Body>
+		<sub:CreateSubjectRequest>
+			<subject>
+				<ent:entity xsi:type="ent:Person">
+					<ent:administrativeGenderCode code="M" />
+					<ent:birthDate value="19800101000000"/>
+					<ent:deathDate nullFlavor="NI"></ent:deathDate>
+					
+					<ent:biologicEntityIdentifier>
+						<ent:effectiveDateRange nullFlavor="NI" />
+						<ent:identifier extension="12345" />
+						<ent:typeCode code="MRN" />
+						<ent:assigningOrganization>
+							<ent:organizationIdentifier>
+								<ent:identifier extension="MN026" />
+								<ent:primaryIndicator value="true" />
+								<ent:typeCode code="CTEP" />
+							</ent:organizationIdentifier>
+						</ent:assigningOrganization>
+					</ent:biologicEntityIdentifier>
+
+					<ent:deathIndicator value="false" />
+					<ent:ethnicGroupCode>
+						<iso:item code="Not Reported" />
+					</ent:ethnicGroupCode>
+					<ent:maritalStatusCode code="Single" />
+					<ent:name>
+						<iso:item>							
+							<iso:part type="GIV" value="John" />
+							<iso:part type="FAM" value="Doe" />							
+						</iso:item>
+					</ent:name>
+					<ent:postalAddress>						
+						<iso:part value="1029 N Stuart St Unit 999" type="SAL" />
+						<iso:part value="Arlington" type="CTY" />
+						<iso:part value="VA" type="STA" />
+						<iso:part value="22203-9292" type="ZIP" />
+						<iso:part value="USA" type="CNT" />
+					</ent:postalAddress>
+					<ent:raceCode>
+						<iso:item code="White" />
+						<iso:item code="Asian" />
+					</ent:raceCode>
+					<ent:telecomAddress>
+						<iso:item value="mailto:johndoe@semanticbits.com"/>
+						<iso:item value="tel:+15555555555"/>
+						<iso:item value="fax:+15555555555"/>
+					</ent:telecomAddress>
+				</ent:entity>
+			</subject>
+		</sub:CreateSubjectRequest>
+	</soapenv:Body>
+</soapenv:Envelope>
