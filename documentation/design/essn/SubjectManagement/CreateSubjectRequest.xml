@@ -15,13 +15,13 @@
 					
 					<ent:biologicEntityIdentifier>
 						<ent:effectiveDateRange nullFlavor="NI" />
-						<ent:identifier extension="12345" />
+						<ent:identifier extension="12345" identifierName="MRN" />
 						<ent:typeCode code="MRN" />
 						<ent:assigningOrganization>
 							<ent:organizationIdentifier>
-								<ent:identifier extension="MN026" />
+								<ent:identifier extension="MN026" identifierName="CTEP ID" root="2.16.840.1.113883.3.26.6.2" />
 								<ent:primaryIndicator value="true" />
-								<ent:typeCode code="CTEP" />
+								<ent:typeCode code="CTEP ID" />
 							</ent:organizationIdentifier>
 						</ent:assigningOrganization>
 					</ent:biologicEntityIdentifier>
@@ -51,7 +51,7 @@
 					<ent:telecomAddress>
 						<iso:item value="mailto:johndoe@semanticbits.com"/>
 						<iso:item value="tel:+15555555555"/>
-						<iso:item value="fax:+15555555555"/>
+						<iso:item value="x-text-fax:+15555555555"/>
 					</ent:telecomAddress>
 				</ent:entity>
 			</subject>
