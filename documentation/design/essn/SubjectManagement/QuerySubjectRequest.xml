@@ -6,11 +6,11 @@
 	xsi:schemaLocation="uri:iso.org:21090 ISO_datatypes_Narrative.xsd http://enterpriseservices.nci.nih.gov SubjectManagement.xsd">
 	<soapenv:Header />
 	<soapenv:Body>
-		<sub:CreateSubjectRequest>
+		<sub:QuerySubjectRequest>
 			<subject>
 				<ent:entity xsi:type="ent:Person">
-					<ent:administrativeGenderCode code="Male" />
-					<ent:birthDate value="19800101000000"/>
+					<ent:administrativeGenderCode code="Female" />
+					<ent:birthDate value="19810101000000"/>
 					<ent:deathDate nullFlavor="NI"></ent:deathDate>
 					
 					<ent:biologicEntityIdentifier>
@@ -28,33 +28,34 @@
 
 					<ent:deathIndicator value="false" />
 					<ent:ethnicGroupCode>
-						<iso:item code="Not Reported" />
+						<iso:item code="Unknown" />
 					</ent:ethnicGroupCode>
-					<ent:maritalStatusCode code="Single" />
+					<ent:maritalStatusCode code="Married" />
 					<ent:name>
 						<iso:item>							
 							<iso:part type="GIV" value="John" />
+							<iso:part type="GIV" value="G" />
 							<iso:part type="FAM" value="Doe" />							
 						</iso:item>
 					</ent:name>
 					<ent:postalAddress>						
-						<iso:part value="1029 N Stuart St Unit 999" type="SAL" />
+						<iso:part value="1029 N Stuart St Unit 888" type="SAL" />
 						<iso:part value="Arlington" type="CTY" />
 						<iso:part value="VA" type="STA" />
-						<iso:part value="22203-9292" type="ZIP" />
+						<iso:part value="22204-9292" type="ZIP" />
 						<iso:part value="USA" type="CNT" />
 					</ent:postalAddress>
 					<ent:raceCode>
-						<iso:item code="White" />
+						<iso:item code="Black or African American" />
 						<iso:item code="Asian" />
 					</ent:raceCode>
 					<ent:telecomAddress>
-						<iso:item value="mailto:johndoe@semanticbits.com"/>
-						<iso:item value="tel:555-555-5555"/>
-						<iso:item value="x-text-fax:555-555-5555"/>
+						<iso:item value="mailto:johndoe02@semanticbits.com"/>
+						<iso:item value="tel:666-555-5555"/>
+						<iso:item value="x-text-fax:666-555-5555"/>
 					</ent:telecomAddress>
 				</ent:entity>
 			</subject>
-		</sub:CreateSubjectRequest>
+		</sub:QuerySubjectRequest>
 	</soapenv:Body>
 </soapenv:Envelope>
