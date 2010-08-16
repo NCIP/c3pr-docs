@@ -265,7 +265,7 @@
 			</xsd:complexType>
 			<xsd:complexType name="InsufficientPrivilegesExceptionFault">
 				<xsd:complexContent>
-					<xsd:extension base="tns:SubjectManagementFault"/>
+					<xsd:extension base="tns:SubjectRegistrationFault"/>
 				</xsd:complexContent>
 			</xsd:complexType>
 		</xsd:schema>
