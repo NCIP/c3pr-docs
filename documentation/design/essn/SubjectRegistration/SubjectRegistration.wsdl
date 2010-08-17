@@ -335,13 +335,13 @@
 		<wsdl:part name="parameters" element="tns:RetrieveAccrualDataRequest" />
 	</wsdl:message>
 	<wsdl:message name="RetrieveAccrualDataResponseMessage">
-		<wsdl:part name="parameters" element="tns:QuerySubjectRegistrationResponse" />
+		<wsdl:part name="parameters" element="tns:RetrieveAccrualDataResponse" />
 	</wsdl:message>
 	<wsdl:message name="GenerateSummary3ReportRequestMessage">
-		<wsdl:part name="parameters" element="tns:RetrieveAccrualDataRequest" />
+		<wsdl:part name="parameters" element="tns:GenerateSummary3ReportRequest" />
 	</wsdl:message>
-	<wsdl:message name="GenerateSummary3ReportRequestResponseMessage">
-		<wsdl:part name="parameters" element="tns:RetrieveAccrualDataRequest" />
+	<wsdl:message name="GenerateSummary3ReportResponseMessage">
+		<wsdl:part name="parameters" element="tns:GenerateSummary3ReportResponse" />
 	</wsdl:message>
 
 	<!-- Fault Messages -->
