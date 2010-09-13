@@ -1,4 +1,14 @@
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><Assertion xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AssertionID="_84a2dba9583195eb43fab0d3abf3f356" IssueInstant="2010-08-09T19:36:59.319Z" Issuer="dkrylov" MajorVersion="1" MinorVersion="1"><AuthenticationStatement AuthenticationInstant="2010-08-09T19:36:59.319Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:password"><Subject><NameIdentifier NameQualifier="c3pr">jdoe01</NameIdentifier><SubjectConfirmation><ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:holder-of-key</ConfirmationMethod><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:sub="http://enterpriseservices.nci.nih.gov/SubjectManagementService"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xmlns:ent="http://enterpriseservices.nci.nih.gov"
+	xmlns:iso="uri:iso.org:21090"
+	xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+	xsi:schemaLocation="uri:iso.org:21090 ISO_datatypes_Narrative.xsd http://enterpriseservices.nci.nih.gov SubjectManagement.xsd">
+	<soapenv:Header>
+		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><Assertion xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AssertionID="_84a2dba9583195eb43fab0d3abf3f356" IssueInstant="2010-08-09T19:36:59.319Z" Issuer="dkrylov" MajorVersion="1" MinorVersion="1"><AuthenticationStatement AuthenticationInstant="2010-08-09T19:36:59.319Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:password"><Subject><NameIdentifier NameQualifier="c3pr">jdoe01</NameIdentifier><SubjectConfirmation><ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:holder-of-key</ConfirmationMethod><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 <ds:X509Data>
 <ds:X509Certificate>
 MIIDBjCCAsMCBExgWAQwCwYHKoZIzjgEAwUAMGgxDDAKBgNVBAYTA1VTQTELMAkGA1UECBMCVkEx
@@ -50,4 +60,37 @@ isk/G8q0fkLHnfrcmPKRh4MHvKQwSGxlMXGJzgW9tDALBgcqhkjOOAQDBQADMAAwLQIUF83BLhDU
 gjRXybQuhiDEp9baBjMCFQCBuvPoXWRi3wgYshBzxI0ebaLMiQ==
 </ds:X509Certificate>
 </ds:X509Data>
-</ds:KeyInfo></ds:Signature></Assertion></wsse:Security></soap:Header><soap:Body><ns4:QuerySubjectRequest xmlns:ns2="http://enterpriseservices.nci.nih.gov" xmlns:ns3="uri:iso.org:21090" xmlns:ns4="http://enterpriseservices.nci.nih.gov/SubjectManagementService"><subject><ns2:entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns2:Person"><ns2:administrativeGenderCode code="Male" /></ns2:entity></subject></ns4:QuerySubjectRequest></soap:Body></soap:Envelope>
+</ds:KeyInfo></ds:Signature></Assertion></wsse:Security>
+	</soapenv:Header>
+
+	<soapenv:Body>
+		<sub:QuerySubjectRequest>
+			<subject>
+				<ent:entity xsi:type="ent:Person" xmlns:ent="http://enterpriseservices.nci.nih.gov">
+					<ent:administrativeGenderCode/>
+					<ent:birthDate/>
+					<ent:deathDate></ent:deathDate>
+					<ent:biologicEntityIdentifier>
+						<ent:effectiveDateRange nullFlavor="NI" />
+						<ent:identifier extension="013" identifierName="MRN" />
+						<ent:typeCode code="MRN" />
+						<ent:assigningOrganization>
+							<ent:organizationIdentifier>
+								<ent:identifier extension="MN026" />
+								<ent:primaryIndicator value="true" />
+								<ent:typeCode code="CTEP" />
+							</ent:organizationIdentifier>
+						</ent:assigningOrganization>
+					</ent:biologicEntityIdentifier>
+					<ent:deathIndicator/>
+					<ent:ethnicGroupCode/>
+					<ent:maritalStatusCode/>
+					<ent:name/>
+					<ent:postalAddress/>
+					<ent:raceCode/>
+					<ent:telecomAddress/>
+				</ent:entity>
+			</subject>
+		</sub:QuerySubjectRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

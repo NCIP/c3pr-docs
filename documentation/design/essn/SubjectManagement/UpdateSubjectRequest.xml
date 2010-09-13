@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
 	xmlns:sub="http://enterpriseservices.nci.nih.gov/SubjectManagementService"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ent="http://enterpriseservices.nci.nih.gov"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xmlns:ent="http://enterpriseservices.nci.nih.gov"
 	xmlns:iso="uri:iso.org:21090"
 	xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
 	xsi:schemaLocation="uri:iso.org:21090 ISO_datatypes_Narrative.xsd http://enterpriseservices.nci.nih.gov SubjectManagement.xsd">
 	<soapenv:Header>
-		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soapenv:mustUnderstand="1"><Assertion xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AssertionID="_84a2dba9583195eb43fab0d3abf3f356" IssueInstant="2010-08-09T19:36:59.319Z" Issuer="dkrylov" MajorVersion="1" MinorVersion="1"><AuthenticationStatement AuthenticationInstant="2010-08-09T19:36:59.319Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:password"><Subject><NameIdentifier NameQualifier="c3pr">jdoe01</NameIdentifier><SubjectConfirmation><ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:holder-of-key</ConfirmationMethod><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1"><Assertion xmlns="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AssertionID="_84a2dba9583195eb43fab0d3abf3f356" IssueInstant="2010-08-09T19:36:59.319Z" Issuer="dkrylov" MajorVersion="1" MinorVersion="1"><AuthenticationStatement AuthenticationInstant="2010-08-09T19:36:59.319Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:password"><Subject><NameIdentifier NameQualifier="c3pr">jdoe01</NameIdentifier><SubjectConfirmation><ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:holder-of-key</ConfirmationMethod><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 <ds:X509Data>
 <ds:X509Certificate>
 MIIDBjCCAsMCBExgWAQwCwYHKoZIzjgEAwUAMGgxDDAKBgNVBAYTA1VTQTELMAkGA1UECBMCVkEx
@@ -64,14 +66,14 @@ gjRXybQuhiDEp9baBjMCFQCBuvPoXWRi3wgYshBzxI0ebaLMiQ==
 	<soapenv:Body>
 		<sub:UpdateSubjectRequest>
 			<subject>
-				<ent:entity xsi:type="ent:Person">
-					<ent:administrativeGenderCode code="Male" />
+				<ent:entity xsi:type="ent:Person" xmlns:ent="http://enterpriseservices.nci.nih.gov">
+					<ent:administrativeGenderCode code="Female" />
 					<ent:birthDate value="19810101000000" />
-					<ent:deathDate nullFlavor="NI"></ent:deathDate>
+					<ent:deathDate value="19910101000000"></ent:deathDate>
 
 					<ent:biologicEntityIdentifier>
 						<ent:effectiveDateRange nullFlavor="NI" />
-						<ent:identifier extension="010" identifierName="MRN" />
+						<ent:identifier extension="013" identifierName="MRN" />
 						<ent:typeCode code="MRN" />
 						<ent:assigningOrganization>
 							<ent:organizationIdentifier>
@@ -82,31 +84,39 @@ gjRXybQuhiDEp9baBjMCFQCBuvPoXWRi3wgYshBzxI0ebaLMiQ==
 						</ent:assigningOrganization>
 					</ent:biologicEntityIdentifier>
 
-					<ent:deathIndicator value="false" />
+					<ent:deathIndicator value="true" />
 					<ent:ethnicGroupCode>
 						<iso:item code="Unknown" />
 					</ent:ethnicGroupCode>
 					<ent:maritalStatusCode code="Married" />
 					<ent:name>
 						<iso:item>
-							<iso:part type="GIV" value="John" />
-							<iso:part type="GIV" value="G" />
-							<iso:part type="FAM" value="Doe" />
+							<iso:part type="GIV" value="Johny" />
+							<iso:part type="GIV" value="X" />
+							<iso:part type="FAM" value="Doezer" />
 						</iso:item>
 					</ent:name>
 					<ent:postalAddress>
-						<iso:part value="1029 N Stuart St Unit 888" type="SAL" />
-						<iso:part value="Arlington" type="CTY" />
-						<iso:part value="VA" type="STA" />
-						<iso:part value="22204-9292" type="ZIP" />
-						<iso:part value="USA" type="CNT" />
+						<iso:item>
+							<iso:part value="3029 N Stuart St Unit 999" type="SAL" />
+							<iso:part value="AArlington" type="CTY" />
+							<iso:part value="GA" type="STA" />
+							<iso:part value="52203-9292" type="ZIP" />
+							<iso:part value="USA" type="CNT" />
+						</iso:item>
+						<iso:item>
+							<iso:part value="3029 N Stuart St Unit 999" type="SAL" />
+							<iso:part value="Mclean" type="CTY" />
+							<iso:part value="DC" type="STA" />
+							<iso:part value="52203-9292" type="ZIP" />
+							<iso:part value="USA" type="CNT" />
+						</iso:item>
 					</ent:postalAddress>
 					<ent:raceCode>
-						<iso:item code="Black or African American" />
-						<iso:item code="Asian" />
+						<iso:item code="Unknown" />						
 					</ent:raceCode>
 					<ent:telecomAddress>
-						<iso:item value="mailto:johndoe02@semanticbits.com" />
+						<iso:item value="mailto:johndoe2@semanticbits.com" />
 						<iso:item value="tel:666-555-5555" />
 						<iso:item value="x-text-fax:666-555-5555" />
 					</ent:telecomAddress>
