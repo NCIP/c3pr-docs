@@ -3,6 +3,7 @@
     xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
 	xmlns:sub="http://enterpriseservices.nci.nih.gov/SubjectManagementService"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:common="http://enterpriseservices.nci.nih.gov/Common"
         xmlns:ent="http://enterpriseservices.nci.nih.gov"
 	xmlns:iso="uri:iso.org:21090"
 	xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
@@ -66,29 +67,32 @@ gjRXybQuhiDEp9baBjMCFQCBuvPoXWRi3wgYshBzxI0ebaLMiQ==
 	<soapenv:Body>
 		<sub:QuerySubjectRequest>
 			<subject>
-				<ent:entity xsi:type="ent:Person" xmlns:ent="http://enterpriseservices.nci.nih.gov">
-					<ent:administrativeGenderCode/>
-					<ent:birthDate/>
-					<ent:deathDate></ent:deathDate>
-					<ent:biologicEntityIdentifier>
-						<ent:effectiveDateRange nullFlavor="NI" />
-						<ent:identifier extension="013" identifierName="MRN" />
-						<ent:typeCode code="MRN" />
-						<ent:assigningOrganization>
-							<ent:organizationIdentifier>
-								<ent:identifier extension="MN026" />
-								<ent:primaryIndicator value="true" />
-								<ent:typeCode code="CTEP" />
-							</ent:organizationIdentifier>
-						</ent:assigningOrganization>
-					</ent:biologicEntityIdentifier>
-					<ent:deathIndicator/>
-					<ent:ethnicGroupCode/>
-					<ent:maritalStatusCode/>
-					<ent:name/>
-					<ent:postalAddress/>
-					<ent:raceCode/>
-					<ent:telecomAddress/>
+				<ent:entity xsi:type="common:Person" xmlns:common="http://enterpriseservices.nci.nih.gov/Common" xmlns:ent="http://enterpriseservices.nci.nih.gov">
+					<common:administrativeGenderCode/>
+					<common:birthDate/>
+					<common:deathDate></common:deathDate>
+					<!--
+					<common:biologicEntityIdentifier>
+						<common:effectiveDateRange nullFlavor="NI" />
+						<common:identifier extension="#{identifier}" identifierName="MRN" />
+						<common:primaryIndicator value="true" />
+						<common:typeCode code="MRN" />
+						<common:assigningOrganization>
+							<common:organizationIdentifier>
+								<common:identifier extension="MN026" />
+								<common:primaryIndicator value="true" />
+								<common:typeCode code="CTEP" />
+							</common:organizationIdentifier>
+						</common:assigningOrganization>
+					</common:biologicEntityIdentifier>
+					-->
+					<common:deathIndicator/>
+					<common:ethnicGroupCode/>
+					<common:maritalStatusCode/>
+					<common:name/>
+					<common:postalAddress/>
+					<common:raceCode/>
+					<common:telecomAddress/>
 				</ent:entity>
 			</subject>
 		</sub:QuerySubjectRequest>
