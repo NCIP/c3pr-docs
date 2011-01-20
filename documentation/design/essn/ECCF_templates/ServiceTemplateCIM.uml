@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Standard="http://www.eclipse.org/uml2/schemas/Standard/1" xmlns:eccfprofile="http:///schemas/eccfprofile/_uGorYOX4Ed-pf5Jv_cJ2sQ/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/eccfprofile/_uGorYOX4Ed-pf5Jv_cJ2sQ/0 pathmap://ECCF_PROFILES/eccf.profile.uml#_urLkAuX4Ed-pf5Jv_cJ2sQ">
+  <uml:Model xmi:id="5A1A8ADD-7357-4f79-B3E1-ECF3176EA1F2" name="CIM">
+    <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287243409304_642769_24008" name="CIM Enterprise/Business Viewpoint">
+      <packageImport xmi:id="LSLR_Common_CIM_CIMBV">
+        <importedPackage href="pathmap://LSLR_LIBRARIES/LSLR_Common_CIM.uml#CIMBV"/>
+      </packageImport>
+      <packagedElement xmi:type="uml:Package" xmi:id="F7CF1FE3-3A08-4602-87AC-FBD6BAA1CBD4" name="CIM Community Behaviour">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_16_5_1_24a0131_1287226158239_774498_20664" name="CIM Community" representation="_16_5_1_24a0131_1287230774143_512156_21338">
+          <collaborationUse xmi:id="_16_5_1_24a0131_1287230774143_512156_21338" name="" visibility="public" type="_16_5_1_24a0131_1287230545072_636146_21305"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_16_5_1_24a0131_1287230545072_636146_21305" name="CIM Community Contract">
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287230888823_955021_21351" name="cim performance policy" visibility="private" type="_16_5_1_24a0131_1287222738513_797622_20225" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287230955326_19363_21365" name="" visibility="private" type="_16_5_1_24a0131_1287224262792_869762_20445" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287739111485_665202_1184" name="" visibility="private" type="_16_5_1_24a0131_1287695491174_724500_990" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287739124677_142150_1197" name="" visibility="private" type="_16_5_1_24a0131_1287735785818_735796_1003" aggregation="composite"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="7BC43059-ECC7-494a-8398-72B0E1BD3B9F" name="ECCF - Storyboards">
+        <ownedComment xmi:id="_16_5_1_24a0131_1287176681835_828621_18315" annotatedElement="7BC43059-ECC7-494a-8398-72B0E1BD3B9F">
+          <body></body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Package" xmi:id="0C239BE8-3415-40fe-B375-04E9717F6067" name="StakeHolders">
+          <packagedElement xmi:type="uml:Actor" xmi:id="4CC1FAF8-C0B8-40d1-B131-C21F5F6AA266" name="generic Project Team"/>
+          <packagedElement xmi:type="uml:Actor" xmi:id="C4BC4217-10ED-4730-B3F7-9B202A9C00C1" name="ECCF Implementation Guide Team"/>
+          <packagedElement xmi:type="uml:Actor" xmi:id="5CEF801A-FEAF-4e33-9D18-E3EF80BBFA53" name="Governance Team"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287242420875_418819_23730" name="Actors">
+          <packagedElement xmi:type="uml:Actor" xmi:id="_16_5_1_24a0131_1287242455784_880064_23756" name="generic Service"/>
+          <packagedElement xmi:type="uml:Actor" xmi:id="_16_5_1_24a0131_1287242728231_715649_23875" name="generic Researcher">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287754082636_158927_973" annotatedElement="_16_5_1_24a0131_1287242728231_715649_23875">
+              <body>Usually an investigator associated with a study working in conjunction with the bioinformatics developer
+</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_16_5_1_24a0131_1287754657152_536279_1111" name="" memberEnd="_16_5_1_24a0131_1287754657153_496456_1113 _16_5_1_24a0131_1287754657152_122908_1112" navigableOwnedEnd="_16_5_1_24a0131_1287754657152_122908_1112 _16_5_1_24a0131_1287754657153_496456_1113">
+            <ownedEnd xmi:id="_16_5_1_24a0131_1287754657152_122908_1112" name="" visibility="private" type="_16_5_1_24a0131_1287753678376_700621_902" association="_16_5_1_24a0131_1287754657152_536279_1111"/>
+            <ownedEnd xmi:id="_16_5_1_24a0131_1287754657153_496456_1113" name="" visibility="private" type="_16_5_1_24a0131_1287242728231_715649_23875" association="_16_5_1_24a0131_1287754657152_536279_1111"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Component" xmi:id="_16_5_1_24a0131_1287753613457_998310_870" name="generic Service subsystem" useCase="_16_5_1_24a0131_1287753678376_700621_902">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287753998756_632165_952" annotatedElement="_16_5_1_24a0131_1287753613457_998310_870">
+            <body>The subsystem contains and diagrams the storyboard usecases, with their associations to community roles.&#xD;
+The subsystem also contains other behavioral diagrams describing activities, interactions, sequencing.</body>
+          </ownedComment>
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="EC15D0AF-F9D6-44c7-9ADC-1B6B8E05EEF5" name="Compose Query" partition="_16_5_1_24a0131_1287173615530_955574_17132 _16_5_1_24a0131_1287173615532_300062_17136">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287838553880_942535_1669" annotatedElement="EC15D0AF-F9D6-44c7-9ADC-1B6B8E05EEF5">
+              <body>The following diagram illustrates the workflow for a query to the molecular annotation service. The user (who may be a Researcher, Bioinformatics Developer, or another service) starts by choosing a service operation and setting its parameters to compose a query. Upon sending this query to the molecular annotation service, it will be executed against a data source and results will be returned to the user. The user may process the results after receiving them. </body>
+            </ownedComment>
+            <node xmi:type="uml:InitialNode" xmi:id="B58B9148-2637-4c9e-B8AF-FD4B3FC473FB" name="Start" visibility="public" outgoing="_16_5_1_24a0131_1287174282913_34733_17334" inPartition="_16_5_1_24a0131_1287173615530_955574_17132"/>
+            <node xmi:type="uml:ActivityFinalNode" xmi:id="E392E515-F271-4075-9401-3979EEA2D0E7" name="End" visibility="public" incoming="_16_5_1_24a0131_1287174378057_709285_17363" inPartition="_16_5_1_24a0131_1287173615530_955574_17132"/>
+            <node xmi:type="uml:CallBehaviorAction" xmi:id="_16_5_1_24a0131_1287173950026_816201_17216" name="Identify Gen of Interest" visibility="public" outgoing="_S6k1sAnGEeCbn7Q95lYsCg" incoming="_16_5_1_24a0131_1287174282913_34733_17334" inPartition="_16_5_1_24a0131_1287173615530_955574_17132" behavior="_fKPCIAoWEeCaV6Yi48C1ZA"/>
+            <node xmi:type="uml:SendSignalAction" xmi:id="_16_5_1_24a0131_1287174172586_445709_17269" name="SendQuery" visibility="public" outgoing="_16_5_1_24a0131_1287174345273_329967_17358" incoming="_S6k1sAnGEeCbn7Q95lYsCg" inPartition="_16_5_1_24a0131_1287173615530_955574_17132" signal="_TGUc8AoZEeCaV6Yi48C1ZA">
+              <target xmi:type="uml:ValuePin" xmi:id="_YJDlwAoTEeC0BN-5fKSvFA">
+                <upperBound xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-TfZIAoWEeCaV6Yi48C1ZA" value="1"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B4jQwAoWEeCaV6Yi48C1ZA" value="1"/>
+                <value xmi:type="uml:LiteralInteger" xmi:id="_9T-SUAoVEeCaV6Yi48C1ZA"/>
+              </target>
+            </node>
+            <node xmi:type="uml:AcceptEventAction" xmi:id="_16_5_1_24a0131_1287174187690_473877_17281" name="Receive Query" visibility="public" outgoing="_16_5_1_24a0131_1287174403345_844914_17386" incoming="_16_5_1_24a0131_1287174345273_329967_17358" inPartition="_16_5_1_24a0131_1287173615532_300062_17136">
+              <trigger xmi:id="_C6ogMAoTEeC0BN-5fKSvFA" event="_t4NnkAoYEeCaV6Yi48C1ZA"/>
+            </node>
+            <node xmi:type="uml:CallBehaviorAction" xmi:id="_16_5_1_24a0131_1287174202169_858105_17293" name="Execute Query" visibility="public" outgoing="_16_5_1_24a0131_1287174407217_218026_17391" incoming="_16_5_1_24a0131_1287174403345_844914_17386" inPartition="_16_5_1_24a0131_1287173615532_300062_17136" behavior="_XMJxQAoWEeCaV6Yi48C1ZA"/>
+            <node xmi:type="uml:SendSignalAction" xmi:id="_16_5_1_24a0131_1287174217490_307130_17305" name="Return List of Variations" visibility="public" outgoing="_16_5_1_24a0131_1287174410457_517029_17396" incoming="_16_5_1_24a0131_1287174407217_218026_17391" inPartition="_16_5_1_24a0131_1287173615532_300062_17136" signal="_XjSXgAoZEeCaV6Yi48C1ZA">
+              <target xmi:type="uml:ValuePin" xmi:id="_blsEsAoTEeC0BN-5fKSvFA">
+                <upperBound xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__q8wwAoVEeCaV6Yi48C1ZA"/>
+                <value xmi:type="uml:LiteralInteger" xmi:id="_7Z5LQAoVEeCaV6Yi48C1ZA"/>
+              </target>
+            </node>
+            <node xmi:type="uml:AcceptEventAction" xmi:id="_16_5_1_24a0131_1287174229722_295264_17317" name="Receive List of Variations for Gen of Interest" visibility="public" outgoing="_16_5_1_24a0131_1287174378057_709285_17363" incoming="_16_5_1_24a0131_1287174410457_517029_17396" inPartition="_16_5_1_24a0131_1287173615530_955574_17132">
+              <trigger xmi:id="__Y9wQAoSEeC0BN-5fKSvFA" event="_9DJgsAoYEeCaV6Yi48C1ZA"/>
+            </node>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_16_5_1_24a0131_1287174282913_34733_17334" name="" visibility="public" source="B58B9148-2637-4c9e-B8AF-FD4B3FC473FB" target="_16_5_1_24a0131_1287173950026_816201_17216" inPartition="_16_5_1_24a0131_1287173615530_955574_17132">
+              <guard xmi:type="uml:Expression" xmi:id="_ihM6wAoSEeC0BN-5fKSvFA"/>
+              <weight xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5_1_24a0131_1287174282914_97119_17335" name="" value="1"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_16_5_1_24a0131_1287174345273_329967_17358" name="" visibility="public" source="_16_5_1_24a0131_1287174172586_445709_17269" target="_16_5_1_24a0131_1287174187690_473877_17281">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_nxgWwAoSEeC0BN-5fKSvFA"/>
+              <weight xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5_1_24a0131_1287174345273_632212_17359" name="" value="1"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_16_5_1_24a0131_1287174378057_709285_17363" name="" visibility="public" source="_16_5_1_24a0131_1287174229722_295264_17317" target="E392E515-F271-4075-9401-3979EEA2D0E7" inPartition="_16_5_1_24a0131_1287173615530_955574_17132">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_qN_AQAoSEeC0BN-5fKSvFA"/>
+              <weight xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5_1_24a0131_1287174378057_879059_17364" name="" value="1"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_16_5_1_24a0131_1287174403345_844914_17386" name="" visibility="public" source="_16_5_1_24a0131_1287174187690_473877_17281" target="_16_5_1_24a0131_1287174202169_858105_17293" inPartition="_16_5_1_24a0131_1287173615532_300062_17136">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_rddrIAoSEeC0BN-5fKSvFA"/>
+              <weight xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5_1_24a0131_1287174403346_741245_17387" name="" value="1"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_16_5_1_24a0131_1287174407217_218026_17391" name="" visibility="public" source="_16_5_1_24a0131_1287174202169_858105_17293" target="_16_5_1_24a0131_1287174217490_307130_17305" inPartition="_16_5_1_24a0131_1287173615532_300062_17136">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_s1NhMAoSEeC0BN-5fKSvFA"/>
+              <weight xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5_1_24a0131_1287174407218_388368_17392" name="" value="1"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_16_5_1_24a0131_1287174410457_517029_17396" name="" visibility="public" source="_16_5_1_24a0131_1287174217490_307130_17305" target="_16_5_1_24a0131_1287174229722_295264_17317" inPartition="_16_5_1_24a0131_1287173615532_300062_17136">
+              <guard xmi:type="uml:LiteralBoolean" xmi:id="_t91WIAoSEeC0BN-5fKSvFA"/>
+              <weight xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5_1_24a0131_1287174410458_146138_17397" name="" value="1"/>
+            </edge>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_S6k1sAnGEeCbn7Q95lYsCg" name="ControlFlow1" source="_16_5_1_24a0131_1287173950026_816201_17216" target="_16_5_1_24a0131_1287174172586_445709_17269">
+              <guard xmi:type="uml:OpaqueExpression" xmi:id="_S6puMAnGEeCbn7Q95lYsCg">
+                <language>OCL</language>
+                <body>true</body>
+              </guard>
+              <weight xmi:type="uml:LiteralInteger" xmi:id="_5LiksAoSEeC0BN-5fKSvFA"/>
+            </edge>
+            <group xmi:type="uml:ActivityPartition" xmi:id="_16_5_1_24a0131_1287173615530_955574_17132" name="generic Researcher (Jane Doe)" visibility="public" node="B58B9148-2637-4c9e-B8AF-FD4B3FC473FB _16_5_1_24a0131_1287173950026_816201_17216 _16_5_1_24a0131_1287174172586_445709_17269 _16_5_1_24a0131_1287174229722_295264_17317 E392E515-F271-4075-9401-3979EEA2D0E7" edge="_16_5_1_24a0131_1287174282913_34733_17334 _16_5_1_24a0131_1287174378057_709285_17363"/>
+            <group xmi:type="uml:ActivityPartition" xmi:id="_16_5_1_24a0131_1287173615532_300062_17136" name="generic Query Service" visibility="public" node="_16_5_1_24a0131_1287174187690_473877_17281 _16_5_1_24a0131_1287174202169_858105_17293 _16_5_1_24a0131_1287174217490_307130_17305" edge="_16_5_1_24a0131_1287174403345_844914_17386 _16_5_1_24a0131_1287174407217_218026_17391 _16_5_1_24a0131_1287174410457_517029_17396"/>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_XMJxQAoWEeCaV6Yi48C1ZA" name="executeQuery"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_fKPCIAoWEeCaV6Yi48C1ZA" name="identifyGenOfInterest"/>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_16_5_1_24a0131_1287753678376_700621_902" name="generic Researcher initiated query storyboard usecase" subject="_16_5_1_24a0131_1287753613457_998310_870">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287753867666_62038_948" annotatedElement="_16_5_1_24a0131_1287753678376_700621_902">
+              <body>generic Researcher wants to obtain a list of associations to a generic artifact&#xD;
+</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:ReceiveSignalEvent" xmi:id="_t4NnkAoYEeCaV6Yi48C1ZA" name="receive Query Event" signal="_TGUc8AoZEeCaV6Yi48C1ZA"/>
+          <packagedElement xmi:type="uml:ReceiveSignalEvent" xmi:id="_9DJgsAoYEeCaV6Yi48C1ZA" name="receiveGenOfInterestEvent" signal="_XjSXgAoZEeCaV6Yi48C1ZA"/>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_TGUc8AoZEeCaV6Yi48C1ZA" name="QuerySignal"/>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_XjSXgAoZEeCaV6Yi48C1ZA" name="genOfInterestSignal"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="36AB44ED-685A-473e-A85F-3E6C4AF6E118" name="CIM Community Policies">
+        <packagedElement xmi:type="uml:Package" xmi:id="35A1D34E-7967-421b-89D8-1D33326FD42C" name="EnvironmentContract">
+          <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287826383736_593926_1338" name="Environment Policy">
+            <ownedRule xmi:id="_16_5_1_24a0131_1287826427837_166303_1343" name="Multiple Jurisdictions" constrainedElement="_16_5_1_24a0131_1287826383736_593926_1338">
+              <ownedComment xmi:id="_16_5_1_24a0131_1287826451487_875190_1345" annotatedElement="_16_5_1_24a0131_1287826427837_166303_1343">
+                <body>The generic service will span jurisdictional boundaries and will need to support a federated data model.  </body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287826427837_125792_1344" name="">
+                <language>English</language>
+                <body>The generic service will span jurisdictional boundaries and will need to support a federated data model.  </body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1287826510720_734062_1349" name="Additional Functionality" constrainedElement="_16_5_1_24a0131_1287826383736_593926_1338">
+              <ownedComment xmi:id="_16_5_1_24a0131_1287826530798_889189_1351" annotatedElement="_16_5_1_24a0131_1287826510720_734062_1349">
+                <body>The generic service can provide additional functionality other than specified in these specifications</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287826510720_706001_1350" name="">
+                <language>English</language>
+                <body>The generic service can provide additional functionality other than specified in these specifications</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1287832966696_994167_1529" name="Implementation Considerations" constrainedElement="_16_5_1_24a0131_1287826383736_593926_1338">
+              <ownedComment xmi:id="_16_5_1_24a0131_1287833095084_62122_1534" annotatedElement="_16_5_1_24a0131_1287832966696_994167_1529">
+                <body>This specification does not specify the domain objects' behavior, that is, what the user may do with the objects they receive back from the queries they make.  There are some options for object behavior:&lt;br/>&#xD;
+&lt;ul>&#xD;
+&lt;li>Lazy-loading: provide object methods to retrieve associated domain objects &lt;/li>&#xD;
+&lt;li>Eager loading: preload all relevant information into a DTO-style object&lt;/li>&#xD;
+&lt;li>No behavior at the object level: provide all operations at the service-level&lt;/li>&#xD;
+&lt;/ul></body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287832966696_207315_1530" name=""/>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1287833134194_277437_1537" name="Deployment Considerations" constrainedElement="_16_5_1_24a0131_1287826383736_593926_1338">
+              <ownedComment xmi:id="_16_5_1_24a0131_1287833163646_947809_1539" annotatedElement="_16_5_1_24a0131_1287833134194_277437_1537">
+                <body>Although it may be too early to discuss the details of the deployment of generic service, there is an existing related API and database which may be fully utilized during the implementation. Depending on the conformance statements (such as performance criteria), the generic service could be deployed within the same application server as the existing API or remotely.</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287833134194_796682_1538" name=""/>
+            </ownedRule>
+          </packagedElement>
+          <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287844575689_632212_1771" name="Relevant Standards" precondition="_16_5_1_24a0131_1287844575704_225394_1773 _16_5_1_24a0131_1287844575704_625034_1774 _16_5_1_24a0131_1287844575704_407101_1775 _16_5_1_24a0131_1287844575704_367951_1776 _16_5_1_24a0131_1287852441720_881567_2038 _16_5_1_24a0131_1287852448744_374954_2046">
+            <ownedRule xmi:id="_16_5_1_24a0131_1287845223917_767064_1908" name="MGI Gene Symbols" constrainedElement="_16_5_1_24a0131_1287844575689_632212_1771">
+              <ownedComment xmi:id="_16_5_1_24a0131_1287845257363_337330_1913" annotatedElement="_16_5_1_24a0131_1287845223917_767064_1908">
+                <body>International Committee on Standardized Genetic Nomenclature for Mice</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287845223917_876278_1909" name="">
+                <language>English</language>
+                <body>International Committee on Standardized Genetic Nomenclature for Mice</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1287844575704_225394_1773" name="HUGO Gene Symbols" constrainedElement="_16_5_1_24a0131_1287844575689_632212_1771">
+              <ownedComment xmi:id="_16_5_1_24a0131_1287844575704_600584_1778" annotatedElement="_16_5_1_24a0131_1287844575704_225394_1773">
+                <body>HUGO Gene
+Nomenclature Committee</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287844575704_219480_1779" name="">
+                <language>English</language>
+                <body>HUGO Gene&#xD;&#xA;Nomenclature Committee</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1287844575704_625034_1774" name="LS DAM v1.1" constrainedElement="_16_5_1_24a0131_1287844575689_632212_1771">
+              <ownedComment xmi:id="_16_5_1_24a0131_1287844575704_891372_1781" annotatedElement="_16_5_1_24a0131_1287844575704_625034_1774">
+                <body>Life Science Domain Analysis Model
+</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287844575704_835746_1782" name="">
+                <language>English</language>
+                <body>Life Science Domain Analysis Model</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1287844575704_407101_1775" name="LS BAM v1.0" constrainedElement="_16_5_1_24a0131_1287844575689_632212_1771">
+              <ownedComment xmi:id="_16_5_1_24a0131_1287844575704_634187_1784" annotatedElement="_16_5_1_24a0131_1287844575704_407101_1775">
+                <body>Life Science Business Architecture Model</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287844575704_196158_1785" name="">
+                <language>English</language>
+                <body>Life Science Business Architecture Model</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1287844575704_367951_1776" name="BRIDG v3.0.1" constrainedElement="_16_5_1_24a0131_1287844575689_632212_1771">
+              <ownedComment xmi:id="_16_5_1_24a0131_1287844575704_105836_1787" annotatedElement="_16_5_1_24a0131_1287844575704_367951_1776">
+                <body>Biomedical Research Integrated Domain Group
+</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287844575704_221027_1788" name="">
+                <language>English</language>
+                <body>Biomedical Research Integrated Domain Group&#xA;</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1287852441720_881567_2038" name="LSPIM v1.0" constrainedElement="_16_5_1_24a0131_1287844575689_632212_1771">
+              <ownedComment xmi:id="_16_5_1_24a0131_1287852441722_737872_2040" annotatedElement="_16_5_1_24a0131_1287852441720_881567_2038">
+                <body>Service conforms to NCI's version of the Life Sciences PIM</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287852441722_293779_2041" name="">
+                <language>English</language>
+                <body>Service conforms to NCI�s version of the Life Sciences PIM</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1287852448744_374954_2046" name="ISO 21090" constrainedElement="_16_5_1_24a0131_1287844575689_632212_1771">
+              <ownedComment xmi:id="_16_5_1_24a0131_1287852448745_603569_2048" annotatedElement="_16_5_1_24a0131_1287852448744_374954_2046">
+                <body>The service conforms to NCI�s version of ISO 21090 data types</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287852448745_349830_2049" name="">
+                <language>English</language>
+                <body>The service conforms to NCI�s version of ISO 21090 data types</body>
+              </specification>
+            </ownedRule>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="D733CF38-318B-44dc-8285-A7C7CC84CC3A" name="ExternalPolicies">
+          <packagedElement xmi:type="uml:Package" xmi:id="F9D75355-A2C1-48a1-9EA5-28CB95D2B796" name="Compliance&amp;Regulations">
+            <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287224021007_288962_20426" name="Compliance Policy"/>
+            <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287224024294_421550_20428" name="Regulation Policy"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="A0AE1F5C-DCFB-45c3-840E-D423DAAA0882" name="Non-Functional Requirements">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287176271617_539569_18309" annotatedElement="A0AE1F5C-DCFB-45c3-840E-D423DAAA0882">
+            <body>These packages contain non-functional requirements specified for the new system. These typically describe performance criteria, reliability, security and other operational parameters.
+The Non-Functional Requirements package specifies the various operational parameters that define the environment in which the system will exist. These are criteria which define performance levels, scalability, security requirements, backup, disaster recovery and other operational requirements.</body>
+          </ownedComment>
+          <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287222738513_797622_20225" name="CIM Performance Policy">
+            <ownedRule xmi:id="_16_5_1_24a0131_1287222994670_56546_20318" name="The turnaround time for applications should be less than one week " constrainedElement="_16_5_1_24a0131_1287222738513_797622_20225">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287222994670_18116_20319" name="">
+                <language>English</language>
+                <body>The turnaround time for applications should be less than one week </body>
+              </specification>
+            </ownedRule>
+          </packagedElement>
+          <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287223218489_140941_20322" name="Persistence Policy"/>
+          <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287223300708_146096_20339" name="Scalability Policy"/>
+          <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287223301060_648690_20344" name="Security Policy"/>
+          <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287223301447_705311_20349" name="Transport Policy"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="C59EDB97-70E4-4149-B5C3-85A2C679D77E" name="CIM Functional Requirements">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287176226100_403516_18307" annotatedElement="C59EDB97-70E4-4149-B5C3-85A2C679D77E">
+            <body>Functional Requirements describe the features, behavior, business rules and general functionality that the proposed system must support.  
+
+The Functional Requirements package details behavioral requirements that specify how a proposed system will process and handle information. It details the features and rules that must be present to fully implement the functionality desired.</body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287224262792_869762_20445" name="Assumptions">
+          <ownedRule xmi:id="_16_5_1_24a0131_1287175251281_576855_17673" name="Audit &amp; Logging is assumed to be handled by supporting infrastructure" constrainedElement="_16_5_1_24a0131_1287224262792_869762_20445">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287175251281_699203_17674" name="">
+              <language>English</language>
+              <body>It is assumed that any requirements for logging or auditing of operation calls will be handled by supporting infrastructure, so this has not been explicitly referenced in the individual operations. &#xA;</body>
+            </specification>
+          </ownedRule>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287734849790_909855_820" name="Scope">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="AE456F56-7879-424a-8957-1E8FC839EE47" name="Community Scope" representation="_16_5_1_24a0131_1287736014636_590174_1023">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287176925621_748870_18332" annotatedElement="AE456F56-7879-424a-8957-1E8FC839EE47">
+            <body>&lt;b>What is the service?&lt;/b>&lt;br/> </body>
+          </ownedComment>
+          <collaborationUse xmi:id="_16_5_1_24a0131_1287736014636_590174_1023" name="" visibility="public" type="_16_5_1_24a0131_1287735577973_505703_992"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287739460885_370590_1250" name="" visibility="private" type="_16_5_1_24a0131_1287739379481_964426_1243" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287739464502_753649_1263" name="" visibility="private" type="_16_5_1_24a0131_1287739378952_725513_1236" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287739468477_827834_1276" name="" visibility="private" type="_16_5_1_24a0131_1287739317661_651026_1212" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_16_5_1_24a0131_1287735577973_505703_992" name="Scope Contract">
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287736029557_978973_1032" name="" visibility="private" type="_16_5_1_24a0131_1287695491174_724500_990" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287736034270_380272_1045" name="" visibility="private" type="_16_5_1_24a0131_1287735785818_735796_1003" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287750937266_190453_1008" name="" visibility="private" type="_16_5_1_24a0131_1287750763881_457579_988" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287735785818_735796_1003" name="Scope Policy" precondition="_16_5_1_24a0131_1287737374379_546185_1098">
+          <ownedRule xmi:id="_16_5_1_24a0131_1287736430277_543858_1064" name="no security" constrainedElement="_16_5_1_24a0131_1287735785818_735796_1003">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287736446630_500924_1066" annotatedElement="_16_5_1_24a0131_1287736430277_543858_1064">
+              <body>The generic Service provides no provisions for security as generic artifacts provided by this service are available to anyone without security constraints.</body>
+            </ownedComment>
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287736430277_295413_1065" name="">
+              <language>English</language>
+              <body>The generic Service provides no provisions for security as generic artifacts provided by this service are available to anyone without security constraints.</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_16_5_1_24a0131_1287737374379_546185_1098" name="retrieve functional associations" constrainedElement="_16_5_1_24a0131_1287735785818_735796_1003">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287737374380_456071_1100" annotatedElement="_16_5_1_24a0131_1287737374379_546185_1098">
+              <body>Provide the ability to retrieve functional associations for a generic artifact </body>
+            </ownedComment>
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287737374380_725313_1101" name="">
+              <language>English</language>
+              <body>Provide the ability to retrieve functional associations for a generic artifact </body>
+            </specification>
+          </ownedRule>
+        </packagedElement>
+        <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287695491174_724500_990" name="Scope Assumptions">
+          <ownedRule xmi:id="_16_5_1_24a0131_1287695535174_879192_992" name="standard symbols" constrainedElement="_16_5_1_24a0131_1287695491174_724500_990">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287695604781_138694_994" annotatedElement="_16_5_1_24a0131_1287695535174_879192_992">
+              <body>The generic artifacts may be retrieved using the standard symbols for identifying generic entities.</body>
+            </ownedComment>
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287695535174_946770_993" name=""/>
+          </ownedRule>
+          <ownedRule xmi:id="_16_5_1_24a0131_1287695668869_385529_1000" name="noSecurityConstraints" constrainedElement="_16_5_1_24a0131_1287695491174_724500_990">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287695708194_893559_1002" annotatedElement="_16_5_1_24a0131_1287695668869_385529_1000">
+              <body>Users (human and system) must be able to retrieve the generic artifacts without security constraints</body>
+            </ownedComment>
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287695668869_213382_1001" name=""/>
+          </ownedRule>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Actor" xmi:id="_16_5_1_24a0131_1287739317661_651026_1212" name="generic Research Tools">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287739369808_974364_1235" annotatedElement="_16_5_1_24a0131_1287739317661_651026_1212">
+            <body></body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Actor" xmi:id="_16_5_1_24a0131_1287739378952_725513_1236" name="generic Knowledge Discovery Tools">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287739378953_962212_1238" annotatedElement="_16_5_1_24a0131_1287739378952_725513_1236">
+            <body></body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Actor" xmi:id="_16_5_1_24a0131_1287739379481_964426_1243" name="generic Analysis Tools">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287739379483_63127_1245" annotatedElement="_16_5_1_24a0131_1287739379481_964426_1243">
+            <body></body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_5_1_24a0131_1287750763881_457579_988" name="generic Query  Service Concept">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287750898327_746486_1007" annotatedElement="_16_5_1_24a0131_1287750763881_457579_988">
+            <body>The generic service will provide functionality to allow a user to query and retrieve generic artifactss in a structured fashion. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="1132EAF6-F7C4-4797-96FF-F5D5FEDD40DD" name="Business Area">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287175435002_8967_17677" annotatedElement="1132EAF6-F7C4-4797-96FF-F5D5FEDD40DD">
+            <body>This package contains high level (service scope level) use cases</body>
+          </ownedComment>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="AE5C1611-A129-4124-A4D2-22704FC6F092" name="Summarize Results"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287847459517_376017_2010" name="Glossary">
+          <packagedElement xmi:type="uml:Artifact" xmi:id="_16_5_1_24a0131_1287847543711_942924_2011" name="caBIO" fileName="">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287847587453_809284_2013" annotatedElement="_16_5_1_24a0131_1287847543711_942924_2011">
+              <body>cancer Bioinformatics Infrastructure Objects</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Artifact" xmi:id="_16_5_1_24a0131_1287847598124_611635_2014" name="Entrez Gene" fileName="">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287847598124_500349_2016" annotatedElement="_16_5_1_24a0131_1287847598124_611635_2014">
+              <body> Entrez Gene is a searchable database of genes, from RefSeq genomes, and defined by sequence and/or located in the NCBI Map Viewer</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Artifact" xmi:id="_16_5_1_24a0131_1287847598545_6469_2017" name="SwissProt" fileName="">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287847598545_416939_2019" annotatedElement="_16_5_1_24a0131_1287847598545_6469_2017">
+              <body>Swiss-Prot is a manually curated biological database of protein sequences</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Artifact" xmi:id="_16_5_1_24a0131_1287847598904_103526_2020" name="Cancer Gene Index (CGI)" fileName="">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287847598904_694611_2022" annotatedElement="_16_5_1_24a0131_1287847598904_103526_2020">
+              <body>The Cancer Gene Index is a collection of records on 6,955 human genes identified from the literature as having an association with cancer based on Medline searches using cancer-related disease or drug/compound terms from the NCI Thesaurus.</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Artifact" xmi:id="_16_5_1_24a0131_1287847599247_325096_2023" name="Canada Drug Bank" fileName="">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287847599247_901380_2025" annotatedElement="_16_5_1_24a0131_1287847599247_325096_2023">
+              <body>The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.
+</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Artifact" xmi:id="_16_5_1_24a0131_1287847599574_174810_2026" name="APIs" fileName="">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287847599574_544070_2028" annotatedElement="_16_5_1_24a0131_1287847599574_174810_2026">
+              <body>Application programming interface</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Artifact" xmi:id="_16_5_1_24a0131_1287847599886_958724_2029" name="caIntegrator2" fileName="">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287847599886_934392_2031" annotatedElement="_16_5_1_24a0131_1287847599886_958724_2029">
+              <body>The goal of the caIntegrator2 project is to provide an application that will allow users with a somewhat moderate technical background to create a caIntegrator-like application that they can deploy at their local center.
+</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Artifact" xmi:id="_16_5_1_24a0131_1287847600230_39010_2032" name="geWorkBench" fileName="">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287847600245_550154_2034" annotatedElement="_16_5_1_24a0131_1287847600230_39010_2032">
+              <body>geWorkbench provides an innovative, open-source software platform for genomic data integration, bringing together analysis and visualization tools for gene expression, sequences, protein structures, pathways, and other biomedical data.</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Artifact" xmi:id="_16_5_1_24a0131_1287847600666_398375_2035" name="SNP" fileName="">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287847600666_206612_2037" annotatedElement="_16_5_1_24a0131_1287847600666_398375_2035">
+              <body> A single-nucleotide polymorphism (SNP, pronounced snip) is a DNA sequence variation occurring when a single nucleotide � A, T, C, or G � in the genome (or other shared sequence) differs between members of a species (or between paired chromosomes in an individual).
+</body>
+            </ownedComment>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287246050537_830225_24425" name="CIM Computational Viewpoint">
+      <packageImport xmi:id="LSLR_Common_CIM_CIMCV">
+        <importedPackage href="pathmap://LSLR_LIBRARIES/LSLR_Common_CIM.uml#CIMCV"/>
+      </packageImport>
+      <packagedElement xmi:type="uml:Package" xmi:id="2172D18C-AC8B-468a-9A62-DB8CF1E3251D" name="ComputationalService">
+        <packagedElement xmi:type="uml:Class" xmi:id="D6CBDCA5-A32A-429f-AF3B-A60BB5FAB8A1" name="generic Query Participant" isAbstract="true">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287170376211_974511_16764" annotatedElement="D6CBDCA5-A32A-429f-AF3B-A60BB5FAB8A1">
+            <body>This conformance profile defines the functionality for the generic Service&#xD;
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_wIClwAkTEeC1-OXxDVnVWA" name="generic query port" clientDependency="_p9E0IAkaEeC1-OXxDVnVWA" type="_tDaMkAkSEeC1-OXxDVnVWA" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="25BF66B1-1B83-4116-ABDA-E12D216A43CC" name="generic service semantic profile" isAbstract="true">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287170425983_800224_16766" annotatedElement="25BF66B1-1B83-4116-ABDA-E12D216A43CC">
+            <body>The generic service will use semantics from the Life Science DAM. </body>
+          </ownedComment>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="F157947E-FA05-4e20-ABDB-51C1F00A0D3F" name="generic Query Functional Profile" isAbstract="true">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287170400792_618067_16765" annotatedElement="F157947E-FA05-4e20-ABDB-51C1F00A0D3F">
+            <body></body>
+          </ownedComment>
+          <ownedRule xmi:id="_16_5_1_24a0131_1287169888290_435737_16751" name="Query Performance">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287824936662_563397_978" annotatedElement="_16_5_1_24a0131_1287169888290_435737_16751">
+              <body>The generic service should provide a response within 0.5 seconds to support a synchronous UI based client&#xD;
+</body>
+            </ownedComment>
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1287169888290_504852_16752" name="">
+              <language>English</language>
+              <body>The generic service should provide a response within 0.5 seconds to support a synchronous UI based client&#xD;&#xA;. &#xD;&#xA;</body>
+            </specification>
+          </ownedRule>
+          <ownedOperation xmi:id="2A2748A6-B297-4595-8949-92CF73C0F222" name="getFunctionalAssociations" visibility="public" clientDependency="_16_5_1_24a0131_1287829611189_709481_1524" raisedException="_16_5_1_24a0131_1287770831494_957195_1057">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287763217358_342543_1019" annotatedElement="2A2748A6-B297-4595-8949-92CF73C0F222">
+              <body>Returns annotations describing a generic artifact's function</body>
+            </ownedComment>
+            <ownedParameter xmi:id="A0534C69-4AC4-4820-8619-53B6AC2B1D1A" name="genericSearchCriteria" visibility="public" type="9567E597-6765-4cae-9A79-FAED69150171" effect="create"/>
+            <ownedParameter xmi:id="_16_5_1_24a0131_1287770128097_907557_1032" name="unnamed1" visibility="public" type="_16_5_1_24a0131_1287770198453_324915_1036" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_16_5_1_24a0131_1287770153292_687366_1035" name="" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_16_5_1_24a0131_1287770153292_756064_1034" name=""/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_16_5_1_24a0131_1287829611189_709481_1524" name="" supplier="_16_5_1_24a0131_1287753678376_700621_902" client="2A2748A6-B297-4595-8949-92CF73C0F222"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_tDaMkAkSEeC1-OXxDVnVWA" name="generic Query Provider Service Interface" clientDependency="_3GZnsAoTEeC0BN-5fKSvFA _E8FRABitEeCR5taAfTYHjg">
+          <interfaceRealization xmi:id="_3GZnsAoTEeC0BN-5fKSvFA" name="realizes semantic profile" supplier="25BF66B1-1B83-4116-ABDA-E12D216A43CC" client="_tDaMkAkSEeC1-OXxDVnVWA" contract="25BF66B1-1B83-4116-ABDA-E12D216A43CC"/>
+          <interfaceRealization xmi:id="_E8FRABitEeCR5taAfTYHjg" name="realizes functional profile" supplier="F157947E-FA05-4e20-ABDB-51C1F00A0D3F" client="_tDaMkAkSEeC1-OXxDVnVWA" contract="F157947E-FA05-4e20-ABDB-51C1F00A0D3F"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_2DKV0AkSEeC1-OXxDVnVWA" name="generic Query Consumer Service Interface" clientDependency="_C42O0AkTEeC1-OXxDVnVWA"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_C42O0AkTEeC1-OXxDVnVWA" name="uses functional profile" supplier="F157947E-FA05-4e20-ABDB-51C1F00A0D3F" client="_2DKV0AkSEeC1-OXxDVnVWA"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_p9E0IAkaEeC1-OXxDVnVWA" name="typed by" supplier="_tDaMkAkSEeC1-OXxDVnVWA" client="_wIClwAkTEeC1-OXxDVnVWA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287246435329_39996_24623" name="CIM Information Viewpoint">
+      <packageImport xmi:id="LSLR_Common_CIM_CIMIV">
+        <importedPackage href="pathmap://LSLR_LIBRARIES/LSLR_Common_CIM.uml#CIMIV"/>
+      </packageImport>
+      <packageImport xmi:id="_hYWeMPf8Ed-pM52zCbioVg">
+        <importedPackage href="pathmap://ECCF_LIBRARIES/LSDAM_2_0.uml#EAPK_75F73EC0_DF88_46cc_BB16_E16EE694F921"/>
+      </packageImport>
+      <packagedElement xmi:type="uml:Package" xmi:id="BE5302CE-1080-4a03-98E6-0AA9F806D1B9" name="generic DAM">
+        <packagedElement xmi:type="uml:Class" xmi:id="9567E597-6765-4cae-9A79-FAED69150171" name="SearchCriteria"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_5_1_24a0131_1287770198453_324915_1036" name="FunctionalAssociation"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287770810493_91113_1056" name="CIM exceptions">
+        <packagedElement xmi:type="uml:Class" xmi:id="_16_5_1_24a0131_1287770831494_957195_1057" name="genericArtifactDoesNotExist">
+          <generalization xmi:id="_16_5_1_24a0131_1288202294393_947783_2972" general="A46AA297-D4EA-46cf-B9C4-952F176EAAEA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="A46AA297-D4EA-46cf-B9C4-952F176EAAEA" name="genericException">
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1288203690696_2077_1211" name="code" visibility="private">
+            <ownedComment xmi:id="_16_5_1_24a0131_1288204036634_12480_1219" annotatedElement="_16_5_1_24a0131_1288203690696_2077_1211">
+              <body>The actual error code which the exception class represents 
+</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="pathmap://ECCF_LIBRARIES/IsoDataTypesClassModel.uml#041252FE-257B-4fd4-BDC1-C761161A9D1C"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1288203706316_188621_1213" name="message" visibility="private">
+            <ownedComment xmi:id="_16_5_1_24a0131_1288204056926_520197_1220" annotatedElement="_16_5_1_24a0131_1288203706316_188621_1213">
+              <body>The detailed error message</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="pathmap://ECCF_LIBRARIES/IsoDataTypesClassModel.uml#041252FE-257B-4fd4-BDC1-C761161A9D1C"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1288203719563_364857_1215" name="severity" visibility="private">
+            <ownedComment xmi:id="_16_5_1_24a0131_1288204111662_664786_1221" annotatedElement="_16_5_1_24a0131_1288203719563_364857_1215">
+              <body>The severity of this error. It can be &quot;FATAL&quot;, &quot;ERROR&quot;, &quot;INFO&quot; or &quot;WARNING&quot;</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="pathmap://ECCF_LIBRARIES/IsoDataTypesClassModel.uml#041252FE-257B-4fd4-BDC1-C761161A9D1C"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1288203732097_730748_1217" name="type" visibility="private">
+            <ownedComment xmi:id="_16_5_1_24a0131_1288204131400_51841_1222" annotatedElement="_16_5_1_24a0131_1288203732097_730748_1217">
+              <body>Indicates what type of error has occurred. E.g. Business, System etc.</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="pathmap://ECCF_LIBRARIES/IsoDataTypesClassModel.uml#041252FE-257B-4fd4-BDC1-C761161A9D1C"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_AnsJsAkBEeC1-OXxDVnVWA" name="CIM Engineering Viewpoint">
+      <packageImport xmi:id="LSLR_Common_CIM_CIMEV">
+        <importedPackage href="pathmap://LSLR_LIBRARIES/LSLR_Common_CIM.uml#CIMEV"/>
+      </packageImport>
+    </packagedElement>
+    <profileApplication xmi:id="166D93C2-9F09-4c22-B443-A8DAC6F37EB1profileApplicationEA_Model">
+      <eAnnotations xmi:id="_uviecOX4Ed-pf5Jv_cJ2sQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ECCF_PROFILES/eccf.profile.uml#_urLkAuX4Ed-pf5Jv_cJ2sQ"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ECCF_PROFILES/eccf.profile.uml#166D93C2-9F09-4c22-B443-A8DAC6F37EB1"/>
+    </profileApplication>
+    <profileApplication xmi:id="52F53F4C-5908-4195-83D9-241D55BFBE10profileApplicationEA_Model">
+      <eAnnotations xmi:id="_urQbYOX4Ed-pf5Jv_cJ2sQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ECCF_PROFILES/SoaML.profile.uml#_urJGu-X4Ed-pf5Jv_cJ2sQ"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ECCF_PROFILES/SoaML.profile.uml#52F53F4C-5908-4195-83D9-241D55BFBE10"/>
+    </profileApplication>
+    <profileApplication xmi:id="_0profileApplicationEA_Model">
+      <eAnnotations xmi:id="_u49gMeX4Ed-pf5Jv_cJ2sQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Standard:Subsystem xmi:id="_u524EOX4Ed-pf5Jv_cJ2sQ" base_Component="_16_5_1_24a0131_1287753613457_998310_870"/>
+  <Standard:Trace xmi:id="_u58-sOX4Ed-pf5Jv_cJ2sQ"/>
+  <Standard:Trace xmi:id="_u6B3MOX4Ed-pf5Jv_cJ2sQ" base_Abstraction="_16_5_1_24a0131_1287829611189_709481_1524"/>
+  <Standard:Trace xmi:id="_u6P5oOX4Ed-pf5Jv_cJ2sQ"/>
+  <Standard:Trace xmi:id="_u6ULEOX4Ed-pf5Jv_cJ2sQ"/>
+  <Standard:Trace xmi:id="_u6X1cOX4Ed-pf5Jv_cJ2sQ"/>
+  <Standard:Trace xmi:id="_u6ct8OX4Ed-pf5Jv_cJ2sQ"/>
+  <eccfprofile:BFFunctionalProfile xmi:id="_u6d8EOX4Ed-pf5Jv_cJ2sQ" base_Element="F157947E-FA05-4e20-ABDB-51C1F00A0D3F" base_Interface="F157947E-FA05-4e20-ABDB-51C1F00A0D3F"/>
+  <eccfprofile:BFSemanticProfile xmi:id="_u6ejIeX4Ed-pf5Jv_cJ2sQ" base_Element="25BF66B1-1B83-4116-ABDA-E12D216A43CC" base_Interface="25BF66B1-1B83-4116-ABDA-E12D216A43CC" informationModel="BE5302CE-1080-4a03-98E6-0AA9F806D1B9"/>
+  <eccfprofile:CFSSAssumption xmi:id="_u6l34OX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287175251281_576855_17673" base_Constraint="_16_5_1_24a0131_1287175251281_576855_17673" source="" affects="It is assumed that any requirements for logging or auditing of operation calls will be handled by supporting infrastructure, so this has not been explicitly referenced in the individual operations. "/>
+  <eccfprofile:CFSSAssumption xmi:id="_u6me8OX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287695535174_879192_992" base_Constraint="_16_5_1_24a0131_1287695535174_879192_992" source="" affects="The external data sources must contain standard genomic identifiers"/>
+  <eccfprofile:CFSSAssumption xmi:id="_u6me8uX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287695668869_385529_1000" base_Constraint="_16_5_1_24a0131_1287695668869_385529_1000" source="" affects="APIs need to be provided for open access to genomic annotations"/>
+  <eccfprofile:CFSSPeopleActor xmi:id="_u6o7MOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287242728231_715649_23875" artifactID="" base_Classifier="_16_5_1_24a0131_1287242728231_715649_23875" base_Actor="_16_5_1_24a0131_1287242728231_715649_23875">
+    <individuals>Jane Doe</individuals>
+  </eccfprofile:CFSSPeopleActor>
+  <eccfprofile:ECCFCapability xmi:id="_u6qwYOX4Ed-pf5Jv_cJ2sQ" base_Element="2A2748A6-B297-4595-8949-92CF73C0F222" base_Operation="2A2748A6-B297-4595-8949-92CF73C0F222"/>
+  <eccfprofile:ECCFCommunity xmi:id="_u6tzsOX4Ed-pf5Jv_cJ2sQ" base_Collaboration="_16_5_1_24a0131_1287226158239_774498_20664"/>
+  <eccfprofile:ECCFCommunityContract xmi:id="_u6uaweX4Ed-pf5Jv_cJ2sQ" base_Collaboration="_16_5_1_24a0131_1287230545072_636146_21305"/>
+  <eccfprofile:ECCFCommunityContract xmi:id="_u6vB0eX4Ed-pf5Jv_cJ2sQ" base_Collaboration="_16_5_1_24a0131_1287735577973_505703_992"/>
+  <eccfprofile:ECCFConformanceStatement xmi:id="_u7l9ceX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287169888290_435737_16751" artifactID="" base_Constraint="_16_5_1_24a0131_1287169888290_435737_16751" testMethod="Test cases to include performance testing."/>
+  <eccfprofile:ECCFDomainAnalysisModel xmi:id="_u7nyoOX4Ed-pf5Jv_cJ2sQ" base_Element="BE5302CE-1080-4a03-98E6-0AA9F806D1B9" base_Package="BE5302CE-1080-4a03-98E6-0AA9F806D1B9"/>
+  <eccfprofile:ECCFObligation xmi:id="_u711EuX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287826427837_166303_1343" base_Constraint="_16_5_1_24a0131_1287826427837_166303_1343" testMethod="Test cases include multiple domain scenarios."/>
+  <eccfprofile:ECCFObligation xmi:id="_u72cIeX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287222994670_56546_20318" base_Constraint="_16_5_1_24a0131_1287222994670_56546_20318"/>
+  <eccfprofile:ECCFObligation xmi:id="_u74RUuX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287737374379_546185_1098" base_Constraint="_16_5_1_24a0131_1287737374379_546185_1098"/>
+  <eccfprofile:ECCFPermission xmi:id="_u744YOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287826510720_734062_1349" base_Constraint="_16_5_1_24a0131_1287826510720_734062_1349" testMethod="Design Review"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u75fcuX4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287224021007_288962_20426"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u75fc-X4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287735785818_735796_1003"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u75fdOX4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287695491174_724500_990"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u76GguX4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287224262792_869762_20445"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u76tk-X4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287844575689_632212_1771"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u77Uo-X4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287826383736_593926_1338"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u77UpOX4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287222738513_797622_20225"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u777seX4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287223300708_146096_20339"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u777suX4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287223301060_648690_20344"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u777s-X4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287224024294_421550_20428"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u78iw-X4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287223301447_705311_20349"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u78ixeX4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287223218489_140941_20322"/>
+  <eccfprofile:ECCFProhibition xmi:id="_u79J0uX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287736430277_543858_1064" base_Constraint="_16_5_1_24a0131_1287736430277_543858_1064"/>
+  <eccfprofile:ECCFStoryboard xmi:id="_u7-_AuX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287753678376_700621_902" artifactID="generic ID" base_UseCase="_16_5_1_24a0131_1287753678376_700621_902" detail="detailed explanation of use case,  beyond any descriptive comment"/>
+  <eccfprofile:ECCFSystemRole xmi:id="_u8ANIOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287739378952_725513_1236" artifactID="" base_Classifier="_16_5_1_24a0131_1287739378952_725513_1236"/>
+  <eccfprofile:ECCFSystemRole xmi:id="_u8ANIuX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287242455784_880064_23756" artifactID="" base_Classifier="_16_5_1_24a0131_1287242455784_880064_23756"/>
+  <eccfprofile:ECCFSystemRole xmi:id="_u8BbQOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287739379481_964426_1243" artifactID="" base_Classifier="_16_5_1_24a0131_1287739379481_964426_1243"/>
+  <eccfprofile:ECCFSystemRole xmi:id="_u8BbQeX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287739317661_651026_1212" artifactID="" base_Classifier="_16_5_1_24a0131_1287739317661_651026_1212"/>
+  <eccfprofile:ECCFUseCase xmi:id="_u8D3guX4Ed-pf5Jv_cJ2sQ" base_UseCase="AE5C1611-A129-4124-A4D2-22704FC6F092"/>
+  <eccfprofile:SSDStakeHolder xmi:id="_u8G60OX4Ed-pf5Jv_cJ2sQ" base_Element="5CEF801A-FEAF-4e33-9D18-E3EF80BBFA53" artifactID="" base_Classifier="5CEF801A-FEAF-4e33-9D18-E3EF80BBFA53" responsibility="review generic artifacts" base_Actor="5CEF801A-FEAF-4e33-9D18-E3EF80BBFA53">
+    <individuals>generic</individuals>
+  </eccfprofile:SSDStakeHolder>
+  <eccfprofile:SSDStakeHolder xmi:id="_u8Hh4OX4Ed-pf5Jv_cJ2sQ" base_Element="4CC1FAF8-C0B8-40d1-B131-C21F5F6AA266" artifactID="" base_Classifier="4CC1FAF8-C0B8-40d1-B131-C21F5F6AA266" responsibility="Develop all ECCF artifacts and implement generic services" base_Actor="4CC1FAF8-C0B8-40d1-B131-C21F5F6AA266">
+    <individuals>generic</individuals>
+  </eccfprofile:SSDStakeHolder>
+  <eccfprofile:SSDStakeHolder xmi:id="_u8Hh4eX4Ed-pf5Jv_cJ2sQ" base_Element="C4BC4217-10ED-4730-B3F7-9B202A9C00C1" artifactID="" base_Classifier="C4BC4217-10ED-4730-B3F7-9B202A9C00C1" responsibility="Provide mentoring on ECCF processes and artifact creation." base_Actor="C4BC4217-10ED-4730-B3F7-9B202A9C00C1">
+    <individuals>generic</individuals>
+  </eccfprofile:SSDStakeHolder>
+  <eccfprofile:SSDBusinessAreaModel xmi:id="_u8II8OX4Ed-pf5Jv_cJ2sQ" base_Package="1132EAF6-F7C4-4797-96FF-F5D5FEDD40DD"/>
+  <eccfprofile:ECCFStandard xmi:id="_u8J-IuX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287852441720_881567_2038" base_Constraint="_16_5_1_24a0131_1287852441720_881567_2038" source="http://www.genenames.org/ " testMethod="Test cases include multiple domain scenarios."/>
+  <eccfprofile:ECCFStandard xmi:id="_u8KlMeX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287852448744_374954_2046" base_Constraint="_16_5_1_24a0131_1287852448744_374954_2046" source="http://www.genenames.org/ " testMethod="Test cases include multiple domain scenarios."/>
+  <eccfprofile:ECCFStandard xmi:id="_u8LzUOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287844575704_367951_1776" base_Constraint="_16_5_1_24a0131_1287844575704_367951_1776" source="http://gforge.nci.nih.gov/frs/?group_id=342"/>
+  <eccfprofile:ECCFStandard xmi:id="_u8LzUeX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287844575704_225394_1773" base_Constraint="_16_5_1_24a0131_1287844575704_225394_1773" source="http://www.genenames.org/ " testMethod="Test cases include multiple domain scenarios."/>
+  <eccfprofile:ECCFStandard xmi:id="_u8MaYeX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287845223917_767064_1908" base_Constraint="_16_5_1_24a0131_1287845223917_767064_1908" source="http://www.informatics.jax.org/mgihome/nomen/ &#xA;"/>
+  <eccfprofile:ECCFStandard xmi:id="_u8NBcOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287844575704_625034_1774" base_Constraint="_16_5_1_24a0131_1287844575704_625034_1774" source="https://gforge.nci.nih.gov/plugins/scmsvn/viewcvs.php/requirements/LSDAM%20R1_1.EAP?root=lsdam&#xA;"/>
+  <eccfprofile:ECCFStandard xmi:id="_u8NBceX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287844575704_407101_1775" base_Constraint="_16_5_1_24a0131_1287844575704_407101_1775" source="https://gforge.nci.nih.gov/svnroot/icrsme/WorkingDocuments/Contract_Yr_09_10/2009-2010_Final/20100209_BRDM_LSBAM_2009-2010_Version1.0.EAP"/>
+  <eccfprofile:ECCFGlossary xmi:id="_u8NogeX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287847598124_611635_2014"/>
+  <eccfprofile:ECCFGlossary xmi:id="_u8NoguX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287847600230_39010_2032"/>
+  <eccfprofile:ECCFGlossary xmi:id="_u8Nog-X4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287847598545_6469_2017"/>
+  <eccfprofile:ECCFGlossary xmi:id="_u8NohOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287847543711_942924_2011"/>
+  <eccfprofile:ECCFGlossary xmi:id="_u8OPkOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287847598904_103526_2020"/>
+  <eccfprofile:ECCFGlossary xmi:id="_u8OPkeX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287847599886_958724_2029"/>
+  <eccfprofile:ECCFGlossary xmi:id="_u8OPkuX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287847599247_325096_2023"/>
+  <eccfprofile:ECCFGlossary xmi:id="_u8OPk-X4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287847600666_398375_2035"/>
+  <eccfprofile:ECCFGlossary xmi:id="_u8OPlOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287847599574_174810_2026"/>
+  <eccfprofile:CFSSImplementationConsideration xmi:id="_u8O2oOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287832966696_994167_1529" base_Constraint="_16_5_1_24a0131_1287832966696_994167_1529" affects="The objects' available behavior will determine how the domain model is localized at the PIM and PSM levels and how it is implemented. "/>
+  <eccfprofile:CFSSDeploymentConsideration xmi:id="_u8QEwOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287833134194_277437_1537" base_Constraint="_16_5_1_24a0131_1287833134194_277437_1537" affects="This deployment decision will affect on how the service will be implemented and distributed."/>
+  <eccfprofile:ECCFScope xmi:id="_PbuMIOg7Ed-AeKNlNSj0Dg" base_Collaboration="AE456F56-7879-424a-8957-1E8FC839EE47" version="0.0.2">
+    <authors>generic</authors>
+  </eccfprofile:ECCFScope>
+  <eccfprofile:BFConformanceProfile xmi:id="_Z1KSYAk7EeC1-OXxDVnVWA" base_Element="_tDaMkAkSEeC1-OXxDVnVWA" base_Class="_tDaMkAkSEeC1-OXxDVnVWA"/>
+  <eccfprofile:ECCFSystemRole xmi:id="_hltdkAk7EeC1-OXxDVnVWA" base_Element="D6CBDCA5-A32A-429f-AF3B-A60BB5FAB8A1" base_Classifier="D6CBDCA5-A32A-429f-AF3B-A60BB5FAB8A1" base_Class="D6CBDCA5-A32A-429f-AF3B-A60BB5FAB8A1"/>
+  <eccfprofile:BFSemanticProfile xmi:id="_Fxu8EBisEeCR5taAfTYHjg"/>
+  <eccfprofile:BFConformanceProfile xmi:id="_D4UcABivEeCR5taAfTYHjg" base_Element="_2DKV0AkSEeC1-OXxDVnVWA" base_Class="_2DKV0AkSEeC1-OXxDVnVWA"/>
+</xmi:XMI>
