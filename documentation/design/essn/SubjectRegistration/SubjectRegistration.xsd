@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://enterpriseservices.nci.nih.gov/SubjectRegistration"
+	xmlns:ISO="uri:iso.org:21090" xmlns:tns="http://enterpriseservices.nci.nih.gov/SubjectRegistration"
+	xmlns:common="http://enterpriseservices.nci.nih.gov/Common"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="2.1"
+	xmlns:sch="http://www.ascc.net/xml/schematron" elementFormDefault="qualified">
+	
+	<annotation>
+		<appinfo>
+			<jaxb:schemaBindings>
+      			<jaxb:package name="edu.duke.cabig.c3pr.webservice.subjectregistration"/>
+    		</jaxb:schemaBindings>
+		</appinfo>
+		<documentation>XML Schema defining types for NCI Enterprise
+			Services
+			implementation.
+        </documentation>
+	</annotation>
+
+	<import schemaLocation="ISO_datatypes_Narrative.xsd" namespace="uri:iso.org:21090" />
+	<import schemaLocation="Common.xsd" namespace="http://enterpriseservices.nci.nih.gov/Common" />
+
+	<complexType name="DefinedSubjectActivityGroup">
+		<complexContent>
+			<extension base="common:DefinedActivity"/>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="DefinedObservation">
+		<complexContent>
+			<extension base="common:DefinedActivity"/>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="DefinedEligibilityCriterion">
+		<complexContent>
+			<extension base="tns:DefinedObservation">
+				<sequence>
+					<element name="requiredResponse" type="ISO:BL"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="DefinedInclusionCriterion">
+		<complexContent>
+			<extension base="tns:DefinedEligibilityCriterion"/>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="DefinedExclusionCriterion">
+		<complexContent>
+			<extension base="tns:DefinedEligibilityCriterion"/>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="DefinedObservationResult">
+		<sequence>
+			<element name="result" type="ISO:ANY"/>
+			<element name="typeCode" type="ISO:CD" minOccurs="0"/>
+			<element name="definedObservation" type="tns:DefinedObservation" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	
+	<complexType name="DefinedStratificationCriterionPermissibleResult">
+		<complexContent>
+			<extension base="tns:DefinedObservationResult"></extension>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="PerformedObservationResult">
+		<sequence>
+			<element name="result" type="ISO:ANY" minOccurs="0"/>
+			<element name="targetAnatomicSiteCode" type="ISO:CD" minOccurs="0"/>
+			<element name="targetAnatomicSiteLateralityCode" type="ISO:CD" minOccurs="0"/>
+			<element name="typeCode" type="ISO:CD" minOccurs="0"/>
+			<element name="startificationCriterion" type="tns:DefinedStratificationCriterion" minOccurs="0"/>
+			<element name="startificationCriterionPermissibleResult" type="tns:DefinedStratificationCriterionPermissibleResult" minOccurs="0"/>
+			<element name="eligibilityCriterion" type="tns:DefinedEligibilityCriterion" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	
+	<complexType name="DefinedStratificationCriterion">
+		<complexContent>
+			<extension base="tns:DefinedObservation"/>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="Epoch">
+		<sequence>
+			<element name="description" type="ISO:ST"/>
+			<element name="name" type="ISO:ST"/>
+			<element name="sequenceNumber" type="ISO:INT.Positive"/>
+			<element name="typeCode" type="ISO:CD"/>
+		</sequence>
+	</complexType>
+	
+	<complexType name="ScheduledEpoch">
+		<sequence>
+			<element name="epoch" type="tns:Epoch"/>
+			<element name="offEpochDate" type="ISO:TS.DateTime" minOccurs="0"/>
+			<element name="status" type="ISO:CD"/>
+			<element name="startDate" type="ISO:TS.DateTime"/>
+			<element name="stratumGroupNumber" type="ISO:INT.Positive" minOccurs="0"/>
+			<element name="subjectEligibilityAnswer" type="tns:PerformedObservationResult" maxOccurs="unbounded" minOccurs="0"/>
+			<element name="subjectStartificationAnswer" type="tns:PerformedObservationResult" maxOccurs="unbounded" minOccurs="0"/>
+			<element name="scheduledArm" type="common:PerformedActivity" minOccurs="0"/>
+			<element name="offEpochReason" type="ISO:DSET_CD" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	
+	<complexType name="StudySubjectProtocolVersionRelationship">
+		<complexContent>
+			<extension base="common:StudySubjectProtocolVersionRelationship">
+				<sequence>
+					<element name="scheduledEpoch" type="tns:ScheduledEpoch" maxOccurs="unbounded" minOccurs="1"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="StudyCondition">
+		<sequence>
+			<element name="conditionCode" type="ISO:CD"/>
+			<element name="leadIndicator" type="ISO:BL" minOccurs="0"/>
+		</sequence>
+	</complexType>
+	
+	<complexType name="PerformedDiagnosis">
+		<complexContent>
+			<extension base="tns:PerformedObservationResult">
+				<sequence>
+					<element name="disease" type="tns:StudyCondition"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	
+	<complexType name="ResearchStaff">
+		<sequence>
+			<sequence>
+				<element name="person" type="common:Person" minOccurs="0"/>
+				<element name="identifier" type="ISO:II"/>
+			</sequence>
+		</sequence>
+	</complexType>
+	
+	<complexType name="HealthcareProvider">
+		<sequence>
+			<sequence>
+				<element name="person" type="common:Person" minOccurs="0"/>
+				<element name="identifier" type="ISO:II"/>
+			</sequence>
+		</sequence>
+	</complexType>
+	
+	<complexType name="StudyInvestigator">
+		<sequence>
+			<element name="healthcareProvider" type="tns:HealthcareProvider"/>
+		</sequence>	
+	</complexType>
+	
+	<complexType name="StudySubject">
+		<annotation>
+			<documentation>A physical entity which is the primary unit of operational and/or administrative interest in a study. 
+				
+				For example, a person who is registered in a study as a recipient of an investigational product or as a control.  May also include individuals who are being screened for studies, or individuals participating in observational or other studies.  Other examples may include a pacemaker, a fuse that can be used in medical devices, a cow, a farm, a pen of pigs, a tissue sample from a tissue bank, etc.
+				
+				NOTE: StudySubjects within a study are all of the same type.  An entity registered in a study is not part of another entity registered in the same study.</documentation>
+		</annotation>
+		<complexContent>
+			<extension base="common:StudySubjectBase">
+				<sequence>
+					<element name="treatingPhysician" type="tns:StudyInvestigator" minOccurs="0"/>
+					<element name="diseaseHistory" type="tns:PerformedDiagnosis" minOccurs="0"/>
+					<element name="childStudySubject" type="tns:StudySubject" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="parentStudySubject" type="tns:StudySubject" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+
+	<complexType name="Summary3Report">
+		<sequence>
+			<element name="reportingSource" type="ISO:ST"/>
+			<element name="startDate" type="ISO:TS.DateTime"/>
+			<element name="endDate" type="ISO:TS.DateTime"/>
+			<element name="grantNumber" type="ISO:ST" minOccurs="0"/>
+			<element name="diseaseSite" type="tns:PerformedDiagnosis" minOccurs="1" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+
+	<complexType name="DSET_StudySubject">
+		<annotation>
+			<appinfo>
+				<sch:pattern name="null or not empty">
+					<sch:rule abstract="true" id="DSET_StudySubject-0">
+						<sch:assert test="(@nullFlavor or item) and not(@nullFlavor and item)" />
+					</sch:rule>
+				</sch:pattern>
+				<sch:pattern name="no null members">
+					<sch:rule abstract="true" id="DSET_StudySubject-1">
+						<sch:assert test="@nullFlavor or not(item\@nullFlavor)" />
+					</sch:rule>
+				</sch:pattern>
+			</appinfo>
+		</annotation>
+		<complexContent>
+			<extension base="tns:COLL_StudySubject">
+				<sequence>
+					<element name="item" type="tns:StudySubject" minOccurs="0"
+						maxOccurs="unbounded" />
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType abstract="true" name="COLL_StudySubject">
+		<complexContent>
+			<extension base="ISO:ANY" />
+		</complexContent>
+	</complexType>
+	
+	<complexType name="DSET_PerformedObservationResult">
+		<annotation>
+			<appinfo>
+				<sch:pattern name="null or not empty">
+					<sch:rule abstract="true" id="DSET_PerformedObservationResult-0">
+						<sch:assert test="(@nullFlavor or item) and not(@nullFlavor and item)" />
+					</sch:rule>
+				</sch:pattern>
+				<sch:pattern name="no null members">
+					<sch:rule abstract="true" id="DSET_PerformedObservationResult-1">
+						<sch:assert test="@nullFlavor or not(item\@nullFlavor)" />
+					</sch:rule>
+				</sch:pattern>
+			</appinfo>
+		</annotation>
+		<complexContent>
+			<extension base="tns:COLL_PerformedObservationResult">
+				<sequence>
+					<element name="item" type="tns:PerformedObservationResult" minOccurs="0"
+						maxOccurs="unbounded" />
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType abstract="true" name="COLL_PerformedObservationResult">
+		<complexContent>
+			<extension base="ISO:ANY" />
+		</complexContent>
+	</complexType>
+</schema>
