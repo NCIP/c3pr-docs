@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:eccfprofile="http:///schemas/eccfprofile/_uGorYOX4Ed-pf5Jv_cJ2sQ/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/eccfprofile/_uGorYOX4Ed-pf5Jv_cJ2sQ/0 pathmap://ECCF_PROFILES/eccf.profile.uml#_urLkAuX4Ed-pf5Jv_cJ2sQ">
+  <uml:Model xmi:id="FD833746-EFE8-42bd-AFFE-7A03FD8153CC" name="Service Specification Model" viewpoint="">
+    <ownedComment xmi:id="_16_5_1_24a0131_1287165056777_886679_327" annotatedElement="FD833746-EFE8-42bd-AFFE-7A03FD8153CC">
+      <body>Author:Tom.
+Created:10/15/10 1:50 PM.
+Title:.
+Comment:.
+</body>
+    </ownedComment>
+    <packageImport xmi:id="_0primitiveTypesEA_Model">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_0javaPrimitiveTypesEA_Model">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="8150F7AA-381F-4880-B18D-BA983FD09798" name="ECCF">
+      <packagedElement xmi:type="uml:Package" xmi:id="3B8A907B-4106-4122-ADEC-EE182A15928C" name="ECCF Service Specification Stack">
+        <ownedComment xmi:id="_9ZW2wNh_Ed-KXoATCvZvCg" annotatedElement="3B8A907B-4106-4122-ADEC-EE182A15928C">
+          <body>&lt;p>The structure of this model is shaped by the following specifications, initiatives, and processes:&lt;/p> &lt;p>&lt;ul>&lt;/p> &lt;p>&lt;li>&lt;a href=&quot;$inet://https://wiki.nci.nih.gov/display/EAWiki/Enterprise+Conformance+and+Compliance+Framework+%28ECCF%29&quot;>&lt;font color=&quot;#fd0000&quot;>&lt;u>ECCF&lt;/u>&lt;/font>&lt;/a>. The &lt;font color=&quot;#fd0000&quot;>&lt;u>arc&lt;/u>&lt;/font>hite&lt;font color=&quot;#fd0000&quot;>&lt;u>ctura&lt;/u>&lt;/font>l backbone for this model. Specific &lt;font color=&quot;#fd0000&quot;>&lt;u>ECCF&lt;/u>&lt;/font> concepts and terminology are reflected in model packages beginning with &quot;&lt;font color=&quot;#fd0000&quot;>&lt;u>ECCF&lt;/u>&lt;/font>*&quot; and/or applied &lt;font color=&quot;#fd0000&quot;>&lt;u>stere&lt;/u>&lt;/font>o&lt;font color=&quot;#fd0000&quot;>&lt;u>types&lt;/u>&lt;/font> &amp;lt;&amp;lt;&lt;font color=&quot;#fd0000&quot;>&lt;u>ECCF&lt;/u>&lt;/font>*&amp;gt;&amp;gt;.&lt;/li>&lt;/p> &lt;p>&lt;li>&lt;font color=&quot;#0000ff&quot;>.&lt;/font>&lt;/li>&lt;/p> &lt;p>&lt;li>Semantic Infrastructure. This project is subject to Semantic Initiative guidelines related to architectural development. The architecture structurally aligns with &lt;font color=&quot;#fd0000&quot;>&lt;u>ECCF&lt;/u>&lt;/font>, but there are some terminology differences and some domain-specific refinements. Within this model, elements corresponding to Semantic Initiative concepts have been stereotyped as &amp;lt;&amp;lt;&lt;font color=&quot;#fd0000&quot;>&lt;u>SI&lt;/u>&lt;/font>-*&amp;gt;&amp;gt;. In those cases, additional notes appear with respect to &lt;font color=&quot;#fd0000&quot;>&lt;u>SI&lt;/u>&lt;/font> terminology and domain elaboration.&lt;/li>&lt;/p> &lt;p>&lt;li>&lt;font color=&quot;#fd0000&quot;>&lt;u>NES&lt;/u>&lt;/font>&lt;u> Specification Process. &lt;/u> The process defines a series of documents required to conform with the Enterprise Service Specification Process, which is required for all NCI &lt;font color=&quot;#fd0000&quot;>&lt;u>CBIIT&lt;/u>&lt;/font> projects. The process covers a larger scope then the &lt;font color=&quot;#fd0000&quot;>&lt;u>ECCF&lt;/u>&lt;/font>, but does have some intersection points (albeit with somewhat different terminology, levels of abstraction, and viewpoints). Where some form of alignment is perceived between &lt;font color=&quot;#fd0000&quot;>&lt;u>ES&lt;/u>&lt;/font>SP and &lt;font color=&quot;#fd0000&quot;>&lt;u>ECCF&lt;/u>&lt;/font>, this model is additionally annotated with those &lt;font color=&quot;#fd0000&quot;>&lt;u>ESSP&lt;/u>&lt;/font> terms and concepts.&lt;/li>&lt;/p> &lt;p>&lt;/ul>&lt;/p> &lt;p>&lt;u>&lt;/p> &lt;p>&lt;/u>&lt;u>&lt;/p> &lt;p>&lt;/u>&lt;i>&lt;u>An &lt;/u>&lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>ECCF&lt;/u>&lt;/i>&lt;/font>&lt;i> Specification Stack (&lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>SS&lt;/u>&lt;/i>&lt;/font>&lt;i>). Rows are O&lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>MG&lt;/u>&lt;/i>&lt;/font>&lt;i> &lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>MDA&lt;/u>&lt;/i>&lt;/font>&lt;i> level-of-abstraction and correspond to Conceptual, Logical/Design, and Implementa&lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>ble&lt;/u>&lt;/i>&lt;/font>&lt;i> levels-of-abstraction in a software development context. Columns are the first four of the five &lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>RM-ODP&lt;/u>&lt;/i>&lt;/font>&lt;i> Viewpoints. The cells contain descriptions of the content of artifacts which specify Conformance Statements about the Topic around which the &lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>SS&lt;/u>&lt;/i>&lt;/font>&lt;i> is organized/focused.&lt;/i>&lt;/p> &lt;p>&lt;/p> &lt;p>In the context of an &lt;font color=&quot;#fd0000&quot;>&lt;u>ECCF&lt;/u>&lt;/font> &lt;font color=&quot;#fd0000&quot;>&lt;u>SS&lt;/u>&lt;/font>, the concepts of Conformance and Compliance can be viewed as defining navigational paths within the &lt;font color=&quot;#fd0000&quot;>&lt;u>SS&lt;/u>&lt;/font> matrix:&lt;/p> &lt;p>&amp;nbsp;&lt;/p> &lt;p>&lt;ul>&lt;/p> &lt;p>&lt;li>&lt;i>Conformance&lt;/i> is only used in the context of a Technology Binding to a given &lt;font color=&quot;#fd0000&quot;>&lt;u>SS&lt;/u>&lt;/font>&lt;i>.&lt;/i>&lt;/li>&lt;/p> &lt;p>&lt;li>&lt;i>Compliance&lt;/i> navigates between rows of the &lt;font color=&quot;#fd0000&quot;>&lt;u>SS&lt;/u>&lt;/font>, always one-row-at-a-time and always in the direction of Conceptual --&amp;gt; Platform-Independent --&amp;gt; Platform-Specific. Thus, the navigation between the three levels-of-abstraction of a &lt;font color=&quot;#fd0000&quot;>&lt;u>SS&lt;/u>&lt;/font>, i.e. the path which links Conformance Statements in one row to their increasingly more specific row below is accomplished through &lt;i>transformations &lt;/i>which introduce a variety of logical and (ultimately platform-specific) constraints to the original Conformance Statements in the Conceptual row. Compliance transformations may also be applied on an intra-cellular basis when one transforms a given Source artifact &amp;ndash; which, by definition, resides in a particular cell of an &lt;font color=&quot;#fd0000&quot;>&lt;u>SS&lt;/u>&lt;/font> instance &amp;ndash; into a Target artifact which, also by definition, will be resident in the same &lt;font color=&quot;#fd0000&quot;>&lt;u>SS&lt;/u>&lt;/font> cell. &lt;/li>&lt;/p> &lt;p>&lt;/ul>&lt;/p> &lt;p>&lt;/p> &lt;p>By formalizing the notions of Conformance, Compliance, and Certification (of Conformance), the &lt;font color=&quot;#fd0000&quot;>&lt;u>ECCF&lt;/u>&lt;/font> provides a multi-dimensional framework and vocabulary for documenting &lt;i>explicit &lt;/i>assumptions on three levels-of-abstraction:&lt;/p> &lt;p>&amp;nbsp;&lt;/p> &lt;p>&lt;ul>&lt;/p> &lt;p>&lt;li>enabling formal Conformance Testing&lt;/li>&lt;/p> &lt;p>&lt;li>facilitating the integration of specifications or standards developed outside of the &lt;font color=&quot;#fd0000&quot;>&lt;u>SS&lt;/u>&lt;/font> &lt;i>per se&lt;/i>&lt;/li>&lt;/p> &lt;p>&lt;li>enabling formal Compliance certification in special cases where it may be warranted prior to technology binding and conformance certification&lt;/li>&lt;/p> &lt;p>&lt;/ul>&lt;/p> &lt;p>&lt;/p> &lt;p>Consistency is a characterization of the &amp;ldquo;logical coherence&amp;rdquo; of the artifacts collected in a particular instance of a Specification Stack. In particular, it is normally assessed on a row-by-row basis and answers the question &amp;ldquo;Do the artifacts in a given row of an &lt;font color=&quot;#fd0000&quot;>&lt;u>SS&lt;/u>&lt;/font> instance &amp;ndash; artifacts which are, by definition, sorted by &lt;font color=&quot;#fd0000&quot;>&lt;u>RM-ODP&lt;/u>&lt;/font> Viewpoints &amp;ndash; have logical consistency in terms of their cross references, contextual dependencies and reuse, etc.?&amp;rdquo;&lt;/p> &lt;p>&lt;/p> &lt;p>&lt;font color=&quot;#fd0000&quot;>&lt;u>Tr&lt;/u>&lt;/font>aceabili&lt;font color=&quot;#fd0000&quot;>&lt;u>ty&lt;/u>&lt;/font>: &lt;i>System capabilities explicit in a software component that can be traced back &amp;ldquo;up&amp;rdquo; a given column of an &lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>SS&lt;/u>&lt;/i>&lt;/font>&lt;i> instance to explicit Conformance Statements made at &amp;ldquo;higher&amp;rdquo; levels-of-abstraction in the same column.&lt;/i>&lt;/p> &lt;p>&lt;i>======================================================================================================&lt;/i>&lt;/p> &lt;p>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>SI&lt;/u>&lt;/i>&lt;/font>&lt;/p> &lt;p>The Architectural Infrastructure Views Supporting the NCI Semantics Development uses different terminology then &lt;font color=&quot;#fd0000&quot;>&lt;u>ECCF&lt;/u>&lt;/font>, but otherwise overlap or elaborate &lt;font color=&quot;#fd0000&quot;>&lt;u>ECCF&lt;/u>&lt;/font> concepts. For clarity, terms from the &lt;font color=&quot;#fd0000&quot;>&lt;u>SI&lt;/u>&lt;/font> architecture views are Stereotyped as &amp;lt;&amp;lt;&lt;font color=&quot;#fd0000&quot;>&lt;u>SI&lt;/u>&lt;/font>*&amp;gt;&amp;gt;.&lt;/p> &lt;p>&lt;i>&lt;/p> &lt;p>&lt;/i>&lt;/p></body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:Package" xmi:id="6A93717D-6C4B-42b2-A39E-96C253CEE68F" name="ECCF-CIM">
+          <ownedComment xmi:id="_16_5_1_24a0131_1287177318259_245546_18517" annotatedElement="6A93717D-6C4B-42b2-A39E-96C253CEE68F">
+            <body>&lt;i>Conceptual Specifications&lt;/i> are intended to provide the business context and motivation for the component's development and use.  Conformance Statements are presented in the Conceptual Service or Application Specifications and include the Functional and Quality Requirements pertaining to the enterprise and the traceability between those and the informational and computational components.  Conceptual Specifications include some or all of the following:
+&amp;lt;br/&amp;gt;
+&lt;ul>
+	&lt;li>Vision&lt;/li>
+	&lt;li>Scope&lt;/li>
+	&lt;li>Business Context and justification&lt;/li>
+	&lt;li>Storyboards&lt;/li>
+	&lt;li>Use Case Specifications (Activity Diagrams)&lt;/li>
+	&lt;li>Use Case Realizations&lt;/li>
+	&lt;li>Business Operations, including traceability&lt;/li>
+	&lt;li>Business Interfaces&lt;/li>
+	&lt;li>Information Model Bindings&lt;/li>
+	&lt;li>Architectural Proof-Of-Concept/Mockup&lt;/li>
+	&lt;li>Wire Frame Diagrams&lt;/li>
+	&lt;li>Dependencies&lt;/li>
+	&lt;li>Glossary&lt;/li>
+&lt;/ul>
+
+&amp;lt;br/&amp;gt;
+&amp;lt;hr/&amp;gt;
+&amp;lt;br/&amp;gt;
+
+ESSP 
+&lt;font color=&quot;#ff0000&quot;>&lt;i>
+&lt;/i>&lt;/font>&lt;font color=&quot;#ff0000&quot;>&lt;i>The CBIIT Development Framework Methodology is the methodology followed to define specifications for services and applications for the National Cancer Institute (NCI) under the auspices of the Center for Biomedical Informatics and Information Technology (CBIIT). The methodology sets out an overall process, and also defines the responsibilities of the Conceptual Functional Service Specification (CFSS).   The CFSS is the formal specification of the Conceptual Functional Model for CBIIT.&lt;/i>&lt;/font>
+</body>
+          </ownedComment>
+          <packagedElement xmi:type="uml:Package" xmi:id="771D8E6B-882F-4969-B52F-D968528CDB23" name="ECCF-CIM Computational Viewpoint">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287169500125_576328_16705" annotatedElement="771D8E6B-882F-4969-B52F-D968528CDB23">
+              <body>&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &lt;b>Computational View&lt;/b>: concerned with the functional decomposition 
+    into a set of objects that interact at interfaces - enabling distribution. &lt;font color=&quot;#400080&quot;>How?&lt;/font> 
+    ==================================================================================================&amp;lt;br&amp;gt;SI 
+    Computation and Engineering &lt;a href=&quot;javascript:top.guidLink('{-note-0}')&quot;>&lt;font color=&quot;#0000ff&quot;>&lt;u>[1]&lt;/u>&lt;/font>&lt;/a> 
+    Semantics support the Computation viewpoint and provide guidance for the 
+    Engineering viewpoint. It is comprised of interface specifications, 
+    collaboration specifications, and engineering specifications including 
+    computational objects and bindings and &lt;font color=&quot;#fd0000&quot;>&lt;u>QoS&lt;/u>&lt;/font> 
+    (Quality of Service constraints) that can be used to create or enable 
+    designs and solutions. Interfaces represent abstractions of operations 
+    that systems may deliver. Collaborations represent patterns of behavior 
+    between and among interfaces designed to fulfill some business need. 
+    Engineering specifications describe the mechanisms and services to provide 
+    platform independent specification (PIM) including engineering objects, 
+    clusters, capsules, nodes, channels and functions required to realize 
+    interface and collaboration specifications and the &lt;font color=&quot;#fd0000&quot;>&lt;u>QoS&lt;/u>&lt;/font> 
+    constraints required by the system.&amp;lt;br&amp;gt;==================================================================================================&amp;lt;br&amp;gt;&lt;font color=&quot;#fd0000&quot;>&lt;u>ESSP&lt;/u>&lt;/font> 
+    &lt;font color=&quot;#fd0000&quot;>&lt;u>ESSP&lt;/u>&lt;/font> &lt;font color=&quot;#ff6600&quot;>&lt;i>A &lt;/i>&lt;/font>
+&lt;font color=&quot;#ff6600&quot;>&lt;i>    profile is a &lt;/i>&lt;/font>&lt;font color=&quot;#ff0000&quot;>&lt;i>named set of cohesive &lt;/i>&lt;/font>
+&lt;font color=&quot;#ff0000&quot;>&lt;i>    capabilities. A profile enables a service to be used at different levels &lt;/i>&lt;/font>
+&lt;font color=&quot;#ff0000&quot;>&lt;i>    and allows implementers to provide different levels of capabilities in a &lt;/i>&lt;/font>
+&lt;font color=&quot;#ff0000&quot;>&lt;i>    variety of contexts. Service-to-service interoperability will be judged at &lt;/i>&lt;/font>
+&lt;font color=&quot;#ff0000&quot;>&lt;i>    the profile level and not at the service level. Note that through the use &lt;/i>&lt;/font>
+&lt;font color=&quot;#ff0000&quot;>&lt;i>    of profiles, there are no &amp;ldquo;optional&amp;rdquo; operations. Conditions that might &lt;/i>&lt;/font>
+&lt;font color=&quot;#ff0000&quot;>&lt;i>    otherwise merit this as optional should be addressed via a dedicated &lt;/i>&lt;/font>
+&lt;font color=&quot;#ff0000&quot;>&lt;i>    profile.&lt;/i>&lt;/font>
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+</body>
+            </ownedComment>
+            <packageImport xmi:id="_16_5_1_24a0131_1287246133496_581364_24458">
+              <importedPackage href="ServiceTemplateCIM.uml#2172D18C-AC8B-468a-9A62-DB8CF1E3251D"/>
+            </packageImport>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="0028C42A-EC21-418d-96F9-35A90DE9CCB6" name="ECCF-CIM Engineering Viewpoint">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287169608145_802567_16750" annotatedElement="0028C42A-EC21-418d-96F9-35A90DE9CCB6">
+              <body>&lt;b>Engineering View:&lt;/b>  concerned with the infrastructure required to, and distribution of, the computing resources defined in the Computational view.
+&lt;font color=&quot;#400080&quot;>Where?&lt;/font>
+==================================================================================================
+SI
+Computation and Engineering &lt;a href=&quot;javascript:top.guidLink('{-note-0}')&quot;>&lt;font color=&quot;#0000ff&quot;>&lt;u>[1]&lt;/u>&lt;/font>&lt;/a> Semantics support the Computation viewpoint and provide guidance for the Engineering viewpoint. It is comprised of interface specifications, collaboration specifications, and engineering specifications including computational objects and bindings and &lt;font color=&quot;#fd0000&quot;>&lt;u>QoS&lt;/u>&lt;/font> (Quality of Service constraints) that can be used to create or enable designs and solutions. Interfaces represent abstractions of operations that systems may deliver. Collaborations represent patterns of behavior between and among interfaces designed to fulfill some business need. Engineering specifications describe the mechanisms and services to provide platform independent specification (PIM) including engineering objects, clusters, capsules, nodes, channels and functions required to realize interface and collaboration specifications and the &lt;font color=&quot;#fd0000&quot;>&lt;u>QoS&lt;/u>&lt;/font> constraints required by the system. 
+</body>
+            </ownedComment>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="8FFE38BF-4074-4f03-BB89-A705125BF129" name="ECCF-CIM Enterprise/Business Viewpoint">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287176986704_548190_18333" annotatedElement="8FFE38BF-4074-4f03-BB89-A705125BF129">
+              <body>&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &lt;b>Business/Enterprise view: &lt;/b>concerned with purpose, scope, and 
+    policies governing the activities of the specified system within the 
+    organization of which it is a part. &lt;font color=&quot;#400080&quot;>Why?&lt;/font>&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;=========================================================================================&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;SI 
+    Enterprise and Business Semantics support the Enterprise RM-ODP viewpoint 
+    and include a rules and policy repository, role specifications and 
+    processes that will meet the objectives of the enterprise. Rules and 
+    policies may or may not be expressed in formalism, such as one that can be 
+    articulated in UML using the Enterprise Metamodel (&lt;i>ITU-T Rec. X. 906 | &lt;/i>
+&lt;i>    ISO/IEC 19793 Use of UML for ODP system specifications&lt;/i>), but this 
+    repository houses the regulations and compliant procedures required to 
+    support the mission of CBIIT. It includes permissions, obligations, and 
+    prohibitions associated with certain objects in the domain, as well as 
+    establishing which objects can play which roles. It is intended to provide 
+    the necessary specification which form the basis and objectives driving 
+    the rules associated with information and computational semantics, 
+    although it is a matter of management how and to what degree these would 
+    overlap. Role specifications include analysis supporting the capacities, 
+    competencies, and capabilities associated with coherent patterns of 
+    behavior that a system might play.
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+</body>
+            </ownedComment>
+            <packageImport xmi:id="_16_5_1_24a0131_1287246410511_995583_24619">
+              <importedPackage href="ServiceTemplateCIM.uml#_16_5_1_24a0131_1287243409304_642769_24008"/>
+            </packageImport>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="1C104018-6E91-4cc9-BEBF-94F1915513EE" name="ECCF-CIM Information Viewpoint">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287177240959_471827_18340" annotatedElement="1C104018-6E91-4cc9-BEBF-94F1915513EE">
+              <body>&lt;b>Information View:&lt;/b> concerned with the kinds of information handled by the system and constraints on the use and interpretation of that information.
+&lt;font color=&quot;#8000ff&quot;>what?&lt;/font>
+=================================================================================================
+SI
+Information Semantics support the Information RM-&lt;font color=&quot;#fd0000&quot;>&lt;u>ODP&lt;/u>&lt;/font> viewpoint and comprise the metadata (or information objects), static models that can be used to create and enable designs and solutions, including invariant schema on the information objects for what must always be true, and dynamic schema that define the allowable state changes of the information objects (&lt;i>ITU-T Rec. X. 906 | ISO/IEC 19793 Use of UML for ODP system specifications&lt;/i>). These are housed in metadata repositories including a static model repository. Models are not necessarily wire-format representations &amp;ndash; domain analysis models, that describe the dynamic schema for example, may be kept here as well. 
+</body>
+            </ownedComment>
+            <packageImport xmi:id="_16_5_1_24a0131_1287246496879_872140_24656">
+              <importedPackage href="ServiceTemplateCIM.uml#_16_5_1_24a0131_1287246435329_39996_24623"/>
+            </packageImport>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="A18F50B3-865F-48d2-9B28-F554E8E0F4FA" name="ECCF-PIM" clientDependency="50793ED0-08F6-4ee8-B380-E8BCA44C1C72">
+          <ownedComment xmi:id="_94wIgdh_Ed-KXoATCvZvCg" annotatedElement="A18F50B3-865F-48d2-9B28-F554E8E0F4FA">
+            <body>&lt;i>Platform-Independent (Logical) specifications&lt;/i> focus heavily on refining the computational and informational specifications. The information models are transformed from analysis models to an implementation model, while the computational elements focus on detailed designs of the interfaces involved in the appropriate semantic exchanges.  To the degree possible, the conformance assertions are presented in a Platform-Independent Model (PIM) and focus on the granularity and composition of the interface specifications for services or on the workflow components for applications without applying the details of a particular technology.  Logical specifications include some or all of the following:&#xD;
+&amp;nbsp;&#xD;
+&lt;ul>&#xD;
+	&lt;li>Design Guidelines&lt;/li>&#xD;
+	&lt;li>Business Focus &lt;/li>&#xD;
+	&lt;li>Interfaces&lt;/li>&#xD;
+	&lt;li>User Interfaces&lt;/li>&#xD;
+	&lt;li>User Workflows&lt;/li>&#xD;
+	&lt;li>Operations &lt;/li>&#xD;
+	&lt;li>Implementable Models&lt;/li>&#xD;
+	&lt;li>Choreography and Dynamic Model&lt;/li>&#xD;
+&lt;/ul>&#xD;
+=======================================================================================================================================&#xD;
+ESSP&#xD;
+&lt;font color=&quot;#ff0000&quot;>&lt;i>Discuss the overall structure of the service.  Provide details on any architectural considerations that are significant for service implementers.  Include details of service interface(s).  Provide high level details of significant service interactions with external systems and how the service satisfies the business needs in the clinical trials space.  These interactions can be depicted using a UML diagram.&lt;/i>&lt;/font>&#xD;
+</body>
+          </ownedComment>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="50793ED0-08F6-4ee8-B380-E8BCA44C1C72" name="" supplier="6A93717D-6C4B-42b2-A39E-96C253CEE68F" client="A18F50B3-865F-48d2-9B28-F554E8E0F4FA"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="01732B22-43C2-438e-BEA8-53E52711D6E1" name="ECCF-PIM Computation Viewpoint" clientDependency="41903A81-523A-478f-9CD6-E468E814A7F7">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287177403869_185914_18518" annotatedElement="01732B22-43C2-438e-BEA8-53E52711D6E1">
+              <body>&lt;b>Computational View&lt;/b>:  concerned with the functional decomposition into a set of objects that interact at interfaces - enabling distribution.
+&lt;font color=&quot;#400080&quot;>How?&lt;/font>
+</body>
+            </ownedComment>
+            <packageImport xmi:id="_16_5_1_24a0131_1287246801192_737439_24748">
+              <importedPackage href="ServiceTemplatePIM.uml#_16_5_1_24a0131_1287246616540_784931_24660"/>
+            </packageImport>
+            <packagedElement xmi:type="uml:Dependency" xmi:id="41903A81-523A-478f-9CD6-E468E814A7F7" name="trace to CIM" supplier="771D8E6B-882F-4969-B52F-D968528CDB23" client="01732B22-43C2-438e-BEA8-53E52711D6E1"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="30E38DB1-3D66-4235-B3D1-E5A368096764" name="ECCF-PIM Engineering Viewpoint" clientDependency="8E5F0B6C-D5A3-4874-934F-37DAB38FA273">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287179285441_486440_18587" annotatedElement="30E38DB1-3D66-4235-B3D1-E5A368096764">
+              <body>&lt;b>Engineering View:&lt;/b>  concerned with the infrastructure required to, and distribution of, the computing resources defined in the Computational view.
+&lt;font color=&quot;#400080&quot;>Where?&lt;/font>
+
+</body>
+            </ownedComment>
+            <packagedElement xmi:type="uml:Dependency" xmi:id="8E5F0B6C-D5A3-4874-934F-37DAB38FA273" name="" supplier="0028C42A-EC21-418d-96F9-35A90DE9CCB6" client="30E38DB1-3D66-4235-B3D1-E5A368096764"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="A4B17B8E-8F55-4f51-A249-7E5CAB81663E" name="ECCF-PIM Enterprise/Business Viewpoint" clientDependency="0D9BDE6C-EEF1-42b5-B8DD-0BCA7B0302F4">
+            <ownedComment xmi:id="_16_5_1_24a0131_1287224870544_378652_20489" annotatedElement="A4B17B8E-8F55-4f51-A249-7E5CAB81663E">
+              <body>&lt;b>Business/Enterprise view: &lt;/b>concerned with purpose, scope, and policies governing the activities of the specified system within the organization of which it is a part.
+&lt;font color=&quot;#400080&quot;>Why?&lt;/font>
+</body>
+            </ownedComment>
+            <packageImport xmi:id="_16_5_1_24a0131_1287246939608_256041_24843">
+              <importedPackage href="ServiceTemplatePIM.uml#_16_5_1_24a0131_1287246840457_221901_24752"/>
+            </packageImport>
+            <packagedElement xmi:type="uml:Dependency" xmi:id="0D9BDE6C-EEF1-42b5-B8DD-0BCA7B0302F4" name="" supplier="8FFE38BF-4074-4f03-BB89-A705125BF129" client="A4B17B8E-8F55-4f51-A249-7E5CAB81663E"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="F14E2572-EF5F-4061-AE88-3A9D5C279FEB" name="ECCF-PIM Information Viewpoint" clientDependency="E5D71164-9B40-49d6-96E2-C10BF13122DD">
+            <ownedComment xmi:id="_-CwZEdh_Ed-KXoATCvZvCg" annotatedElement="F14E2572-EF5F-4061-AE88-3A9D5C279FEB">
+              <body>&lt;b>Information View:&lt;/b> concerned with the kinds of information handled by the system and constraints on the use and interpretation of that information.&#xD;
+&lt;font color=&quot;#8000ff&quot;>what?&lt;/font>&#xD;
+==============================================================================================================&#xD;
+SI&#xD;
+Information components are represented by the invariant, static and dynamic models and characteristics of those models that facilitate the behaviors as constrained by the permissions, obligations, and prohibitions (policies) established by the rules associated with the roles. &#xD;
+==============================================================================================================&#xD;
+ESSP&#xD;
+&lt;font color=&quot;#ff0000&quot;>&lt;i>details of the service information/domain model. These details should be included for each primary information object of the service&lt;/i>&lt;/font>&#xD;
+&lt;ul>&#xD;
+	&lt;li>&lt;font color=&quot;#ff0000&quot;>&lt;i>A UML diagram of the primary information object.  &lt;/i>&lt;/font>&lt;/li>&#xD;
+	&lt;li>&lt;font color=&quot;#ff0000&quot;>&lt;i>A state transition diagram/model for the target primary information object of this service should also be included. &lt;/i>&lt;/font>&lt;/li>&#xD;
+	&lt;li>&lt;font color=&quot;#ff0000&quot;>&lt;i>Additional details of the domain model such as use of any standard data types should be specified.  &lt;/i>&lt;/font>&lt;/li>&#xD;
+	&lt;li>&lt;font color=&quot;#ff0000&quot;>&lt;i>Any other significant views of the domain model should be included.&lt;/i>&lt;/font>&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;font color=&quot;#ff0000&quot;>&lt;i>Include the UML model describing the primary information object of the service.&lt;/i>&lt;/font>&#xD;
+</body>
+            </ownedComment>
+            <packageImport xmi:id="_16_5_1_24a0131_1287249780801_768088_26058">
+              <importedPackage href="ServiceTemplatePIM.uml#98DC9455-2712-468a-9E71-86FC1D4BF22F"/>
+            </packageImport>
+            <packagedElement xmi:type="uml:Dependency" xmi:id="E5D71164-9B40-49d6-96E2-C10BF13122DD" name="trace to CIM" supplier="1C104018-6E91-4cc9-BEBF-94F1915513EE" client="F14E2572-EF5F-4061-AE88-3A9D5C279FEB"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="EF21A65B-63E2-4c67-8894-8502B27B3228" name="ECCF-PSM" clientDependency="EFC114B3-C92E-4ff0-8CAD-2879DF0C7BF5">
+          <ownedComment xmi:id="_-D5okdh_Ed-KXoATCvZvCg" annotatedElement="EF21A65B-63E2-4c67-8894-8502B27B3228">
+            <body>&lt;i>Platform-specific (Implementable) specifications&lt;/i> bind the logical specification to a platform specification creating a Platform-Specific Model (PSM), thus surfacing the engineering and technology viewpoints.  The PSM is intended to &lt;i>primarily&lt;/i> provide a set of testable integration points that provide direct traceability through the models&amp;rsquo; structure from the business requirements and enterprise viewpoint specifications.  Thus, a particular application is contextualized within a validated enterprise need and policy; or a particular service realization embodies reusable informational and computational specifications, that in their turn, directly trace to business requirements.  Platform-bound specifications include some or all of the following:&#xD;
+&amp;nbsp;&#xD;
+&lt;ul>&#xD;
+	&lt;li>Platform Guidelines &lt;/li>&#xD;
+	&lt;li>PSM&lt;/li>&#xD;
+	&lt;li>Business Focus &lt;/li>&#xD;
+	&lt;li>Interface Realizations&lt;/li>&#xD;
+	&lt;li>User Interfaces&lt;/li>&#xD;
+	&lt;li>Presentation Logic, Session Logic&lt;/li>&#xD;
+	&lt;li>Workflow Realizations&lt;/li>&#xD;
+	&lt;li>Operations &lt;/li>&#xD;
+	&lt;li>Message Schema&lt;/li>&#xD;
+	&lt;li>Choreography&lt;/li>&#xD;
+&lt;/ul>&#xD;
+=================================================================================================================&#xD;
+SI&#xD;
+The Deployment and Run Time View (see &lt;a href=&quot;/Vocab/uploaded_files/8/86/ArchitecturalInfrastructure.JPG&quot;>&lt;font color=&quot;#0000ff&quot;>&lt;u>Figure 1&lt;/u>&lt;/font>&lt;/a>) comprises &lt;font color=&quot;#fd0000&quot;>&lt;u>implementable&lt;/u>&lt;/font> specifications (which represent the key semantics), a configuration of enabling systems and contracts, and a run time view of systems interacting with each other to fulfill their contracts. Artifacts from this view are used in the &lt;font color=&quot;#fd0000&quot;>&lt;u>EC&lt;/u>&lt;/font>CF to assess compliance. Each implementation of a service is expected to state it&amp;rsquo;&lt;font color=&quot;#fd0000&quot;>&lt;u>s&lt;/u>&lt;/font> level of conformance with the implementation independent specification of that service as expressed as &lt;font color=&quot;#fd0000&quot;>&lt;u>RM&lt;/u>&lt;/font>/&lt;font color=&quot;#fd0000&quot;>&lt;u>ODP&lt;/u>&lt;/font> enterprise/information/computation artifacts, such as &lt;i>Enterprise &lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>Metamodel&lt;/u>&lt;/i>&lt;/font>&lt;i> - &lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>ITU-T&lt;/u>&lt;/i>&lt;/font>&lt;i> Rec. X. 906 | ISO/&lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>IEC&lt;/u>&lt;/i>&lt;/font>&lt;i> 19793 Use of UML for &lt;/i>&lt;font color=&quot;#fd0000&quot;>&lt;i>&lt;u>ODP&lt;/u>&lt;/i>&lt;/font>&lt;i> system specifications&lt;/i>. The closer the asserted level of conformance the higher the degree of semantic interoperability should be. Implementation viewpoint artifacts and &lt;font color=&quot;#fd0000&quot;>&lt;u>fu&lt;/u>&lt;/font>nctio&lt;font color=&quot;#fd0000&quot;>&lt;u>n&lt;/u>&lt;/font>al&lt;font color=&quot;#fd0000&quot;>&lt;u>ities&lt;/u>&lt;/font> are critical to empirically verifying that the expected level of interoperability has been achieved.&#xD;
+</body>
+          </ownedComment>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="EFC114B3-C92E-4ff0-8CAD-2879DF0C7BF5" name="" supplier="A18F50B3-865F-48d2-9B28-F554E8E0F4FA" client="EF21A65B-63E2-4c67-8894-8502B27B3228"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="8EF71C6C-4BAD-490a-BA15-DFB43D05A4C4" name="ECCF-PSM Computational Viewpoint" clientDependency="2302E9D6-1746-466a-AD45-0B9BCEA064D3">
+            <ownedComment xmi:id="_-ExLQth_Ed-KXoATCvZvCg" annotatedElement="8EF71C6C-4BAD-490a-BA15-DFB43D05A4C4">
+              <body>&lt;b>Computational View&lt;/b>:  concerned with the functional decomposition into a set of objects that interact at interfaces - enabling distribution.&#xD;
+&lt;font color=&quot;#400080&quot;>How?&lt;/font>&#xD;
+</body>
+            </ownedComment>
+            <packageImport xmi:id="_16_5_1_24a0131_1288083884829_553159_13895">
+              <importedPackage href="ServiceTemplatePSM.uml#_16_5_1_24a0131_1288082378654_456685_1991"/>
+            </packageImport>
+            <packagedElement xmi:type="uml:Dependency" xmi:id="2302E9D6-1746-466a-AD45-0B9BCEA064D3" name="" supplier="01732B22-43C2-438e-BEA8-53E52711D6E1" client="8EF71C6C-4BAD-490a-BA15-DFB43D05A4C4"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="44BBB79C-61B1-4c40-8377-BE108D01D44E" name="ECCF-PSM Engineering Viewpoint" clientDependency="B06AD6F6-E4F7-4eca-AF94-55F42A452E65">
+            <ownedComment xmi:id="_-GRnIth_Ed-KXoATCvZvCg" annotatedElement="44BBB79C-61B1-4c40-8377-BE108D01D44E">
+              <body>&lt;b>Engineering View: &lt;/b> concerned with the infrastructure required to, and distribution of, the computing resources defined in the Computational View.&#xD;
+&lt;font color=&quot;#ff8000&quot;>&lt;b>Where?&lt;/b>&lt;/font>&#xD;
+================================================================================================&#xD;
+SI&#xD;
+The Implementation is the instantiation of the configuration of systems with a particular objective(s) whose validity is subject to verification. &#xD;
+</body>
+            </ownedComment>
+            <packageImport xmi:id="_16_5_1_24a0131_1287247850159_932279_25077">
+              <importedPackage href="ServiceTemplatePSM.uml#_16_5_1_24a0131_1287247766122_953093_25005"/>
+            </packageImport>
+            <packagedElement xmi:type="uml:Dependency" xmi:id="B06AD6F6-E4F7-4eca-AF94-55F42A452E65" name="" supplier="30E38DB1-3D66-4235-B3D1-E5A368096764" client="44BBB79C-61B1-4c40-8377-BE108D01D44E"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="182CBCD7-90E2-4375-9E59-373C7289F161" name="ECCF-PSM Enterprise/Business Viewpoint" clientDependency="84312384-9EA8-4d59-8A59-3BF73EB1F35C">
+            <packageImport xmi:id="_16_5_1_24a0131_1287248016239_63646_25176">
+              <importedPackage href="ServiceTemplatePSM.uml#_16_5_1_24a0131_1287247917113_571407_25081"/>
+            </packageImport>
+            <packagedElement xmi:type="uml:Dependency" xmi:id="84312384-9EA8-4d59-8A59-3BF73EB1F35C" name="" supplier="A4B17B8E-8F55-4f51-A249-7E5CAB81663E" client="182CBCD7-90E2-4375-9E59-373C7289F161"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="8CCD46EA-E424-4f65-A0B6-149D281B4B08" name="ECCF-PSM Information Viewpoint" clientDependency="D1D3EDA5-F095-4ea9-9083-CA9D9C438772">
+            <ownedComment xmi:id="_-Ixhgdh_Ed-KXoATCvZvCg" annotatedElement="8CCD46EA-E424-4f65-A0B6-149D281B4B08">
+              <body>&lt;b>Information View:&lt;/b> concerned with the kinds of information handled by the system and constraints on the use and interpretation of that information.&#xD;
+&lt;font color=&quot;#8000ff&quot;>what?&lt;/font>&#xD;
+
+This model describes the data which must be stored and retrieved as part of the overall system design.
+
+Typically this will mean relational database models which describe the tables and data in detail and allow generation of DDL scripts to create and setup databases. 
+</body>
+            </ownedComment>
+            <packageImport xmi:id="_16_5_1_24a0131_1287248732519_601029_26028">
+              <importedPackage href="ServiceTemplatePSM.uml#_16_5_1_24a0131_1287248067424_843121_25180"/>
+            </packageImport>
+            <packagedElement xmi:type="uml:Dependency" xmi:id="D1D3EDA5-F095-4ea9-9083-CA9D9C438772" name="trace to PIM" supplier="F14E2572-EF5F-4061-AE88-3A9D5C279FEB" client="8CCD46EA-E424-4f65-A0B6-149D281B4B08"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="581D995D-BA90-495f-81D4-FE817B6B0729" name="ECCF-Schema">
+              <ownedComment xmi:id="_-LTREdh_Ed-KXoATCvZvCg" annotatedElement="581D995D-BA90-495f-81D4-FE817B6B0729">
+                <body>A schema package contains a logical grouping of tables</body>
+              </ownedComment>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="92AB3F81-5ED1-4391-BFAD-7E444509C30A" name="ECCF-Transforms"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="166D93C2-9F09-4c22-B443-A8DAC6F37EB1profileApplicationEA_Model">
+      <eAnnotations xmi:id="_uviecOX4Ed-pf5Jv_cJ2sQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ECCF_PROFILES/eccf.profile.uml#_urLkAuX4Ed-pf5Jv_cJ2sQ"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ECCF_PROFILES/eccf.profile.uml#166D93C2-9F09-4c22-B443-A8DAC6F37EB1"/>
+    </profileApplication>
+    <profileApplication xmi:id="_0profileApplicationEA_Model">
+      <eAnnotations xmi:id="_u49gMeX4Ed-pf5Jv_cJ2sQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <eccfprofile:ECCFBV xmi:id="_u6piQeX4Ed-pf5Jv_cJ2sQ" base_Package="A4B17B8E-8F55-4f51-A249-7E5CAB81663E"/>
+  <eccfprofile:ECCFBV xmi:id="_u6qJUeX4Ed-pf5Jv_cJ2sQ" base_Package="8FFE38BF-4074-4f03-BB89-A705125BF129"/>
+  <eccfprofile:ECCFBV xmi:id="_u6qJUuX4Ed-pf5Jv_cJ2sQ" base_Package="182CBCD7-90E2-4375-9E59-373C7289F161"/>
+  <eccfprofile:ECCFCIM xmi:id="_u6tMouX4Ed-pf5Jv_cJ2sQ" base_Package="6A93717D-6C4B-42b2-A39E-96C253CEE68F" version="0.0.6" projectLead="generic" editor="generic">
+    <authors>generic</authors>
+  </eccfprofile:ECCFCIM>
+  <eccfprofile:ECCFCV xmi:id="_u7mkg-X4Ed-pf5Jv_cJ2sQ" base_Package="771D8E6B-882F-4969-B52F-D968528CDB23"/>
+  <eccfprofile:ECCFCV xmi:id="_u7nLkuX4Ed-pf5Jv_cJ2sQ" base_Package="01732B22-43C2-438e-BEA8-53E52711D6E1"/>
+  <eccfprofile:ECCFCV xmi:id="_u7nLk-X4Ed-pf5Jv_cJ2sQ" base_Package="8EF71C6C-4BAD-490a-BA15-DFB43D05A4C4"/>
+  <eccfprofile:ECCFEV xmi:id="_u7oZsOX4Ed-pf5Jv_cJ2sQ" base_Package="30E38DB1-3D66-4235-B3D1-E5A368096764"/>
+  <eccfprofile:ECCFEV xmi:id="_u7pAwOX4Ed-pf5Jv_cJ2sQ" base_Package="44BBB79C-61B1-4c40-8377-BE108D01D44E"/>
+  <eccfprofile:ECCFEV xmi:id="_u7pAweX4Ed-pf5Jv_cJ2sQ" base_Package="0028C42A-EC21-418d-96F9-35A90DE9CCB6"/>
+  <eccfprofile:ECCFIV xmi:id="_u7pn0eX4Ed-pf5Jv_cJ2sQ" base_Package="8CCD46EA-E424-4f65-A0B6-149D281B4B08"/>
+  <eccfprofile:ECCFIV xmi:id="_u7qO4eX4Ed-pf5Jv_cJ2sQ" base_Package="1C104018-6E91-4cc9-BEBF-94F1915513EE"/>
+  <eccfprofile:ECCFIV xmi:id="_u7qO4uX4Ed-pf5Jv_cJ2sQ" base_Package="F14E2572-EF5F-4061-AE88-3A9D5C279FEB"/>
+  <eccfprofile:ECCFPIM xmi:id="_u744YeX4Ed-pf5Jv_cJ2sQ" base_Package="A18F50B3-865F-48d2-9B28-F554E8E0F4FA" version="0.1.2" projectLead="generic" editor="generic">
+    <authors>generic</authors>
+  </eccfprofile:ECCFPIM>
+  <eccfprofile:ECCFPSM xmi:id="_u79w4eX4Ed-pf5Jv_cJ2sQ" base_Package="EF21A65B-63E2-4c67-8894-8502B27B3228" version="0.1.2" projectLead="generic" editor="generic">
+    <authors>generic</authors>
+  </eccfprofile:ECCFPSM>
+  <eccfprofile:ECCFSS xmi:id="_u7-_AOX4Ed-pf5Jv_cJ2sQ" base_Package="3B8A907B-4106-4122-ADEC-EE182A15928C"/>
+  <eccfprofile:ECCFTraceability xmi:id="_u8CCUOX4Ed-pf5Jv_cJ2sQ" base_Element="2302E9D6-1746-466a-AD45-0B9BCEA064D3" base_Dependency="2302E9D6-1746-466a-AD45-0B9BCEA064D3"/>
+  <eccfprofile:ECCFTraceability xmi:id="_u8CCUeX4Ed-pf5Jv_cJ2sQ" base_Element="0D9BDE6C-EEF1-42b5-B8DD-0BCA7B0302F4" base_Dependency="0D9BDE6C-EEF1-42b5-B8DD-0BCA7B0302F4"/>
+  <eccfprofile:ECCFTraceability xmi:id="_u8CCUuX4Ed-pf5Jv_cJ2sQ" base_Element="84312384-9EA8-4d59-8A59-3BF73EB1F35C" base_Dependency="84312384-9EA8-4d59-8A59-3BF73EB1F35C"/>
+  <eccfprofile:ECCFTraceability xmi:id="_u8CCVeX4Ed-pf5Jv_cJ2sQ" base_Element="D1D3EDA5-F095-4ea9-9083-CA9D9C438772" base_Dependency="D1D3EDA5-F095-4ea9-9083-CA9D9C438772"/>
+  <eccfprofile:ECCFTraceability xmi:id="_u8CpYeX4Ed-pf5Jv_cJ2sQ" base_Element="E5D71164-9B40-49d6-96E2-C10BF13122DD" base_Dependency="E5D71164-9B40-49d6-96E2-C10BF13122DD"/>
+  <eccfprofile:ECCFTraceability xmi:id="_u8CpY-X4Ed-pf5Jv_cJ2sQ" base_Element="B06AD6F6-E4F7-4eca-AF94-55F42A452E65" base_Dependency="B06AD6F6-E4F7-4eca-AF94-55F42A452E65"/>
+  <eccfprofile:ECCFTraceability xmi:id="_u8CpZOX4Ed-pf5Jv_cJ2sQ" base_Element="41903A81-523A-478f-9CD6-E468E814A7F7" base_Dependency="41903A81-523A-478f-9CD6-E468E814A7F7"/>
+  <eccfprofile:ECCFTraceability xmi:id="_u8DQcuX4Ed-pf5Jv_cJ2sQ" base_Element="8E5F0B6C-D5A3-4874-934F-37DAB38FA273" base_Dependency="8E5F0B6C-D5A3-4874-934F-37DAB38FA273"/>
+</xmi:XMI>

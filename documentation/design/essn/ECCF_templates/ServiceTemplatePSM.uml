@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:eccfprofile="http:///schemas/eccfprofile/_uGorYOX4Ed-pf5Jv_cJ2sQ/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/eccfprofile/_uGorYOX4Ed-pf5Jv_cJ2sQ/0 pathmap://ECCF_PROFILES/eccf.profile.uml#_urLkAuX4Ed-pf5Jv_cJ2sQ">
+  <uml:Model xmi:id="9E11A205-E736-44f5-AF71-8CC3F6E56B04" name="PSM">
+    <packageImport xmi:id="_U6R2UAlHEeC7qNlmQHwePQ">
+      <importedPackage href="ServiceTemplatePIM.uml#FB88B197-6EE5-4adf-AF73-55449F11747C"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287247766122_953093_25005" name="PSM Engineering">
+      <packageImport xmi:id="LSLR_Common_PSM_PSMEV">
+        <importedPackage href="pathmap://LSLR_LIBRARIES/LSLR_Common_PSM.uml#PSMEV"/>
+      </packageImport>
+      <packagedElement xmi:type="uml:ExecutionEnvironment" xmi:id="_16_5_1_24a0131_1288120993719_225342_2585" name="generic Service Environment" clientDependency="_16_5_1_24a0131_1288125871563_521248_3094">
+        <ownedAttribute xmi:id="_16_5_1_24a0131_1288127633228_986238_3136" name="" visibility="private" type="_16_5_1_24a0131_1288127536461_953270_3111" association="_16_5_1_24a0131_1288127633228_840355_3135"/>
+        <deployment xmi:id="_16_5_1_24a0131_1288125871563_521248_3094" name="" supplier="_16_5_1_24a0131_1288125871493_67015_3092" client="_16_5_1_24a0131_1288120993719_225342_2585" deployedArtifact="_16_5_1_24a0131_1288125871493_67015_3092"/>
+        <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="5A015094-565A-400e-90DE-3BCC49F04DE8" name="Globus Toolkit 4.0.3">
+          <ownedComment xmi:id="_-HQekdh_Ed-KXoATCvZvCg" annotatedElement="5A015094-565A-400e-90DE-3BCC49F04DE8">
+            <body>The Globus Toolkit is used to provide client libraries to access this WSRF complaint grid service&#xD;
+</body>
+          </ownedComment>
+        </nestedNode>
+        <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="82B140D4-EBC9-45d2-A876-9905C6784242" name="ISO 21090 Common Library">
+          <ownedComment xmi:id="_-HZBcdh_Ed-KXoATCvZvCg" annotatedElement="82B140D4-EBC9-45d2-A876-9905C6784242">
+            <body>The service will rely on &lt;font color=&quot;#fd0000&quot;>&lt;u>CBIIT&lt;/u>&lt;/font>&amp;rsquo;&lt;font color=&quot;#fd0000&quot;>&lt;u>s&lt;/u>&lt;/font> ISO 21090 Common Library for data type mapping.&#xD;
+</body>
+          </ownedComment>
+        </nestedNode>
+        <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="B42C4D0B-7A82-4f0a-939B-0CBA190AF210" name="caCORE SDK 4.3">
+          <ownedComment xmi:id="_-HHUodh_Ed-KXoATCvZvCg" annotatedElement="B42C4D0B-7A82-4f0a-939B-0CBA190AF210">
+            <body>The service will be generated from its information model by the caCORE SDK&#xD;
+</body>
+          </ownedComment>
+        </nestedNode>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Artifact" xmi:id="_16_5_1_24a0131_1288125871493_67015_3092" name="generic configuration" fileName=""/>
+      <packagedElement xmi:type="uml:Device" xmi:id="_16_5_1_24a0131_1288127536461_953270_3111" name="caGrid Index Service Server">
+        <ownedComment xmi:id="_16_5_1_24a0131_1288127585712_234960_3130" annotatedElement="_16_5_1_24a0131_1288127536461_953270_3111">
+          <body>The Grid Service relies on caGrid Index Service for the service registration and discovery</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_16_5_1_24a0131_1288127633228_273974_3137" name="" visibility="private" type="_16_5_1_24a0131_1288120993719_225342_2585" association="_16_5_1_24a0131_1288127633228_840355_3135"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_16_5_1_24a0131_1288127633228_840355_3135" name="" memberEnd="_16_5_1_24a0131_1288127633228_986238_3136 _16_5_1_24a0131_1288127633228_273974_3137"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287247917113_571407_25081" name="PSM Business Viewpoint">
+      <packageImport xmi:id="LSLR_Common_PSM_PSMBV">
+        <importedPackage href="pathmap://LSLR_LIBRARIES/LSLR_Common_PSM.uml#PSMBV"/>
+      </packageImport>
+      <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287232134930_712928_21499" name="PSM Community Behaviour">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_16_5_1_24a0131_1287230366943_762501_21290" name="PSM Community" representation="_16_5_1_24a0131_1288270691060_763030_2942">
+          <generalization xmi:id="_16_5_1_24a0131_1287234534254_962935_21774">
+            <general xmi:type="uml:Collaboration" href="ServiceTemplatePIM.uml#61EE89E9-84CD-4140-AAF4-20E096098ABC"/>
+          </generalization>
+          <collaborationUse xmi:id="_16_5_1_24a0131_1288270691060_763030_2942" name="" visibility="public" type="_16_5_1_24a0131_1288270635324_666982_2915">
+            <roleBinding xmi:id="_16_5_1_24a0131_1288271611116_417144_3039" name="" supplier="_16_5_1_24a0131_1288270392116_363476_2863" client="_16_5_1_24a0131_1288271530716_194729_2999"/>
+            <roleBinding xmi:id="_16_5_1_24a0131_1288271645348_667163_3045" name="" supplier="_16_5_1_24a0131_1288270422109_487580_2876" client="_16_5_1_24a0131_1288271537941_930577_3012"/>
+          </collaborationUse>
+          <collaborationUse xmi:id="_16_5_1_24a0131_1287235379207_654046_22587" name="" visibility="public" type="_16_5_1_24a0131_1287235248160_952452_22556"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1288270379620_320430_2837" name="" visibility="private" type="_16_5_1_24a0131_1288269967725_145298_2750" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1288270392116_363476_2863" name="" visibility="private" type="_16_5_1_24a0131_1288270117044_277706_2800" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1288270422109_487580_2876" name="" visibility="private" type="_16_5_1_24a0131_1288119208487_933822_2487" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_16_5_1_24a0131_1287235248160_952452_22556" name="PSM Community Contract">
+          <generalization xmi:id="_16_5_1_24a0131_1287235336351_833565_22578">
+            <general xmi:type="uml:Collaboration" href="ServiceTemplatePIM.uml#_16_5_1_24a0131_1287231142039_379883_21381"/>
+          </generalization>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287237925207_838031_23000" name="" visibility="private" type="_16_5_1_24a0131_1287235564826_721892_22595" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287237933824_131967_23042" name="" visibility="private" type="_16_5_1_24a0131_1287235750402_678311_22619" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1287237937328_727975_23056" name="" visibility="private" type="_16_5_1_24a0131_1287236668904_808431_22630" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1288271323773_642876_2951" name="" visibility="private" type="_16_5_1_24a0131_1288258981945_596138_2095" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_16_5_1_24a0131_1288270635324_666982_2915" name="generic analysis tools workbench contract">
+          <generalization xmi:id="_Kei6cAlLEeC7qNlmQHwePQ">
+            <general xmi:type="uml:Collaboration" href="ServiceTemplatePIM.uml#C88D1DC7-6D3C-4475-8744-5D489E47D2CB"/>
+          </generalization>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1288271530716_194729_2999" name="" visibility="private" clientDependency="_16_5_1_24a0131_1288271611116_417144_3039" type="_16_5_1_24a0131_1288082901494_897997_2090" aggregation="composite"/>
+          <ownedAttribute xmi:id="_16_5_1_24a0131_1288271537941_930577_3012" name="" visibility="private" clientDependency="_16_5_1_24a0131_1288271645348_667163_3045" type="_16_5_1_24a0131_1288082617732_444323_2014" aggregation="composite"/>
+          <ownedConnector xmi:id="_16_5_1_24a0131_1288271550596_231088_3029" name="" visibility="public" kind="assembly">
+            <end xmi:id="_16_5_1_24a0131_1288271550596_746569_3030" role="_16_5_1_24a0131_1288271530716_194729_2999"/>
+            <end xmi:id="_16_5_1_24a0131_1288271550596_980803_3031" role="_16_5_1_24a0131_1288271537941_930577_3012"/>
+          </ownedConnector>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287232148412_365478_21503" name="PSM Community Policies">
+        <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287232239722_344154_21507" name="PSM Functional Requirements">
+          <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287235564826_721892_22595" name="PSM Data Types">
+            <ownedRule xmi:id="_-LBkQNh_Ed-KXoATCvZvCg" name="ISO 21090" constrainedElement="_16_5_1_24a0131_1287235564826_721892_22595">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_-LBkQth_Ed-KXoATCvZvCg" name="unspecified">
+                <language>Invariant</language>
+                <body>The XSD leverages data types that adhere to the NCI ISO 21090 data type and uses ISO XSDs developed by the caCORE SDK.&#xA;</body>
+              </specification>
+            </ownedRule>
+            <generalization xmi:id="_16_5_1_24a0131_1287237837271_109632_22922">
+              <general xmi:type="uml:OpaqueBehavior" href="ServiceTemplatePIM.uml#_16_5_1_24a0131_1287229068017_911896_21074"/>
+            </generalization>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287232293026_64714_21508" name="PSM Non-Functional Requirements">
+          <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287235750402_678311_22619" name="PSM Query Performance">
+            <ownedRule xmi:id="_-HBOANh_Ed-KXoATCvZvCg" name="Response time" constrainedElement="_16_5_1_24a0131_1287235750402_678311_22619">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_-HBOAth_Ed-KXoATCvZvCg" name="unspecified">
+                <language>Invariant</language>
+                <body>The MA service should provide timely responses to queries under low system load, and disregarding any network latency between client and service. &#xA;-----&#xA;The getGenesBySymbol operation should provide a response containing 0 or 1 result objects within 0.5 seconds, given an input of a single gene symbol (i.e. no wildcards) and a specified organism. &#xA;-----&#xA;The getGenesByMicroarrayReporter operation should provide a response containing 0 or 1 result objects within 0.5 seconds, given an input of a single reporter name (i.e. no wildcards) and a specified microarray. &#xA;-----&#xA;The getHomologousGenes operation should provide a response containing 0 or 1 result objects within 1.5 seconds, given an input of a single reporter name (i.e. no wildcards) and a specified microarray. &#xA;-----&#xA;The other operations in the Gene Annotation Query Profile (getAgentAssociations, getBiologicalProcesses, getCellularLocations, getDiseaseAssociations, getFunctionalAssociations, getFunctionalAssociations provide a response containing 0 or 1 result objects within 0.5 seconds, given an input of a single reporter name (i.e. no wildcards) and a specified microarray. &#xA;-----&#xA;The getHomologousGenes operation should provide a response containing 0 or 1 result objects within 1.5 seconds, given an input of a single reporter name (i.e. no wildcards) and a specified microarray. &#xA;-----&#xA;The other operations in the Gene Annotation Query Profile (getAgentAssociations, getBiologicalProcesses, getCellularLocations, getDiseaseAssociations, getFunctionalAssociations, getFunctionalAssociations, getStructuralVariations) should each provide a response containing up to 500 objects result objects within 2 seconds, given an input of a single gene symbol (i.e. no wildcards) and a specified organism. &#xA;</body>
+              </specification>
+            </ownedRule>
+            <generalization xmi:id="_16_5_1_24a0131_1287237658343_388450_22847">
+              <general xmi:type="uml:OpaqueBehavior" href="ServiceTemplatePIM.uml#_16_5_1_24a0131_1287224466267_288942_20449"/>
+            </generalization>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1287236668904_808431_22630" name="PSM Assumptions">
+          <ownedRule xmi:id="_-IgbwNh_Ed-KXoATCvZvCg" name="caBIO 4.3.1" constrainedElement="_16_5_1_24a0131_1287236668904_808431_22630">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_-Igbwth_Ed-KXoATCvZvCg" name="unspecified">
+              <language>Invariant</language>
+              <body>The service will depend on the production caBIO database for its data.  caBIO data management services facilitate data updates on a semi-monthly basis.&#xA;</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_-InJcNh_Ed-KXoATCvZvCg" name="caGrid" constrainedElement="_16_5_1_24a0131_1287236668904_808431_22630">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_-InJcth_Ed-KXoATCvZvCg" name="unspecified">
+              <language>Invariant</language>
+              <body>This service is deployed in the caGrid 1.3 environment.&#xA;</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_-IvFQNh_Ed-KXoATCvZvCg" name="Java API" constrainedElement="_16_5_1_24a0131_1287236668904_808431_22630">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_-IvFQth_Ed-KXoATCvZvCg" name="unspecified">
+              <language>Invariant</language>
+              <body>The generic Service Java API must be implemented prior to the implementation of the grid services.&#xA;</body>
+            </specification>
+          </ownedRule>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1288259048537_521678_2102" name="PSM Environment Contract">
+          <packagedElement xmi:type="uml:OpaqueBehavior" xmi:id="_16_5_1_24a0131_1288258981945_596138_2095" name="PSM Technical Standards" precondition="_16_5_1_24a0131_1288258981948_276768_2098 _16_5_1_24a0131_1288259258737_232054_2106 _16_5_1_24a0131_1288259260218_998950_2112 _16_5_1_24a0131_1288259260746_765079_2118 _16_5_1_24a0131_1288259261486_287301_2124 _16_5_1_24a0131_1288259262052_660563_2130">
+            <ownedRule xmi:id="_16_5_1_24a0131_1288258981948_276768_2098" name="WSDL 1.1" constrainedElement="_16_5_1_24a0131_1288258981945_596138_2095">
+              <ownedComment xmi:id="_16_5_1_24a0131_1288259179173_100523_2103" annotatedElement="_16_5_1_24a0131_1288258981948_276768_2098">
+                <body>Web Services Description Language (WSDL), version 1.1
+http://www.w3.org/TR/wsdl</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1288258981951_327636_2101" name="unspecified">
+                <language>Invariant</language>
+                <body>Web Services Description Language (WSDL), version 1.1&#xA;http://www.w3.org/TR/wsdl&#xA;</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1288259258737_232054_2106" name="WSRF-RP 1.2" constrainedElement="_16_5_1_24a0131_1288258981945_596138_2095">
+              <ownedComment xmi:id="_16_5_1_24a0131_1288259258739_585983_2108" annotatedElement="_16_5_1_24a0131_1288259258737_232054_2106">
+                <body>Web Service Resource Properties, version 1.2 draft 04
+http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-ResourceProperties-1.2-draft-04.pdf
+</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1288259258740_262131_2109" name="unspecified">
+                <language>Invariant</language>
+                <body>Web Service Resource Properties, version 1.2 draft 04&#xA;http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-ResourceProperties-1.2-draft-04.pdf&#xA;&#xA;</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1288259260218_998950_2112" name="WS-SG 1.2" constrainedElement="_16_5_1_24a0131_1288258981945_596138_2095">
+              <ownedComment xmi:id="_16_5_1_24a0131_1288259260220_565370_2114" annotatedElement="_16_5_1_24a0131_1288259260218_998950_2112">
+                <body>Web Services Service Groups, version 1.2 draft 02
+http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-ServiceGroup-1.2-draft-02.pdf</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1288259260220_292023_2115" name="unspecified">
+                <language>Invariant</language>
+                <body>Web Services Service Groups, version 1.2 draft 02&#xA;http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-ServiceGroup-1.2-draft-02.pdf&#xA;</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1288259260746_765079_2118" name="SRF-BF 1.2" constrainedElement="_16_5_1_24a0131_1288258981945_596138_2095">
+              <ownedComment xmi:id="_16_5_1_24a0131_1288259260748_609684_2120" annotatedElement="_16_5_1_24a0131_1288259260746_765079_2118">
+                <body>Web Service Base Faults, version 1.2 draft 02
+http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-BaseFaults-1.2-draft-02.pdf</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1288259260748_601210_2121" name="unspecified">
+                <language>Invariant</language>
+                <body>Web Service Base Faults, version 1.2 draft 02&#xA;http://docs.oasis-open.org/wsrf/2004/06/wsrf-WS-BaseFaults-1.2-draft-02.pdf&#xA;</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1288259261486_287301_2124" name="WS-Addressing 03/2004" constrainedElement="_16_5_1_24a0131_1288258981945_596138_2095">
+              <ownedComment xmi:id="_16_5_1_24a0131_1288259261488_179981_2126" annotatedElement="_16_5_1_24a0131_1288259261486_287301_2124">
+                <body>Web Services Address, version draft 03/2004
+http://www.w3.org/Submission/ws-addressing/</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1288259261488_928423_2127" name="unspecified">
+                <language>Invariant</language>
+                <body>Web Services Address, version draft 03/2004&#xA;http://www.w3.org/Submission/ws-addressing/&#xA;</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_16_5_1_24a0131_1288259262052_660563_2130" name="XML 1.0" constrainedElement="_16_5_1_24a0131_1288258981945_596138_2095">
+              <ownedComment xmi:id="_16_5_1_24a0131_1288259262054_534130_2132" annotatedElement="_16_5_1_24a0131_1288259262052_660563_2130">
+                <body>eXtensible Markup Language, version 1.0
+http://www.w3.org/TR/REC-xml/
+</body>
+              </ownedComment>
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_16_5_1_24a0131_1288259262055_177374_2133" name="unspecified">
+                <language>Invariant</language>
+                <body>eXtensible Markup Language, version 1.0&#xA;http://www.w3.org/TR/REC-xml/&#xA;&#xA;</body>
+              </specification>
+            </ownedRule>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1287248067424_843121_25180" name="PSM Information Viewpoint">
+      <packageImport xmi:id="LSLR_Common_PSM_PSMIV">
+        <importedPackage href="pathmap://LSLR_LIBRARIES/LSLR_Common_PSM.uml#PSMIV"/>
+      </packageImport>
+      <packagedElement xmi:type="uml:Package" xmi:id="_sUD2wAokEeCVQPP4s9BB1A" name="PSM IV domain">
+        <packagedElement xmi:type="uml:Class" xmi:id="_xkJQUAokEeCVQPP4s9BB1A" name="PSM IV root message type"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_16_5_1_24a0131_1288082378654_456685_1991" name="PSM Computation Viewpoint">
+      <packageImport xmi:id="LSLR_Common_PSM_PSMCV">
+        <importedPackage href="pathmap://LSLR_LIBRARIES/LSLR_Common_PSM.uml#PSMCV"/>
+      </packageImport>
+      <packagedElement xmi:type="uml:Class" xmi:id="_16_5_1_24a0131_1288082617732_444323_2014" name="genericQueryProviderServiceInterface" clientDependency="_scDHMAn6EeC-T7yhlgEdnQ">
+        <generalization xmi:id="_16_5_1_24a0131_1288082744397_294636_2058">
+          <general xmi:type="uml:Class" href="ServiceTemplatePIM.uml#31D31644-4EDF-420d-A967-C855332254C8"/>
+        </generalization>
+        <interfaceRealization xmi:id="_scDHMAn6EeC-T7yhlgEdnQ" supplier="_L94YgAlGEeC7qNlmQHwePQ" client="_16_5_1_24a0131_1288082617732_444323_2014" contract="_L94YgAlGEeC7qNlmQHwePQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_16_5_1_24a0131_1288082901494_897997_2090" name="genericQueryConsumerServiceInterface" clientDependency="_X58h4AlGEeC7qNlmQHwePQ">
+        <generalization xmi:id="_16_5_1_24a0131_1288082932572_685672_2128">
+          <general xmi:type="uml:Class" href="ServiceTemplatePIM.uml#7EF94222-E828-4b30-A05E-A479DF50AB90"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_16_5_1_24a0131_1288119208487_933822_2487" name="genericQueryParticipant">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_16_5_1_24a0131_1288118161063_227554_2456" name="queryPort" visibility="public" clientDependency="_Ami3YAlHEeC7qNlmQHwePQ" type="_16_5_1_24a0131_1288082617732_444323_2014" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_16_5_1_24a0131_1288118070664_76827_2408" name="genericQueryComponent" clientDependency="_16_5_1_24a0131_1288125871569_90135_3095 _pGzPcAlGEeC7qNlmQHwePQ">
+        <realization xmi:id="_16_5_1_24a0131_1288125871569_90135_3095" name="" supplier="_16_5_1_24a0131_1288125871493_67015_3092" client="_16_5_1_24a0131_1288118070664_76827_2408" realizingClassifier="_16_5_1_24a0131_1288125871493_67015_3092"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_16_5_1_24a0131_1288269967725_145298_2750" name="generic data source">
+        <ownedComment xmi:id="_16_5_1_24a0131_1288270069197_611215_2772" annotatedElement="_16_5_1_24a0131_1288269967725_145298_2750">
+          <body>Source for generic data.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_16_5_1_24a0131_1288270117044_277706_2800" name="generic Analysis Tools Workbench">
+        <ownedComment xmi:id="_16_5_1_24a0131_1288270141045_782826_2818" annotatedElement="_16_5_1_24a0131_1288270117044_277706_2800">
+          <body>generic Analysis Tools depend on generic serivce for data retrieval</body>
+        </ownedComment>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_16_5_1_24a0131_1288270290892_963569_2832" name="genericQueryConsumerPort" visibility="public" clientDependency="_DOi0YAlHEeC7qNlmQHwePQ" type="_16_5_1_24a0131_1288082901494_897997_2090" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_L94YgAlGEeC7qNlmQHwePQ" name="genericQueryInterfacePSM">
+        <generalization xmi:id="_mF1jYAlHEeC7qNlmQHwePQ">
+          <general xmi:type="uml:Interface" href="ServiceTemplatePIM.uml#5A4753ED-4519-4f45-A26A-9FEBC7E883CC"/>
+        </generalization>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_X58h4AlGEeC7qNlmQHwePQ" name="Usage0" supplier="_L94YgAlGEeC7qNlmQHwePQ" client="_16_5_1_24a0131_1288082901494_897997_2090"/>
+      <packagedElement xmi:type="uml:Realization" xmi:id="_pGzPcAlGEeC7qNlmQHwePQ" name="Realization1" supplier="_16_5_1_24a0131_1288119208487_933822_2487" client="_16_5_1_24a0131_1288118070664_76827_2408"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Ami3YAlHEeC7qNlmQHwePQ" name="typed by query consumer service interface" supplier="_16_5_1_24a0131_1288082617732_444323_2014" client="_16_5_1_24a0131_1288118161063_227554_2456"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_DOi0YAlHEeC7qNlmQHwePQ" name="typed by query provider service interface" supplier="_16_5_1_24a0131_1288082901494_897997_2090" client="_16_5_1_24a0131_1288270290892_963569_2832"/>
+    </packagedElement>
+    <profileApplication xmi:id="166D93C2-9F09-4c22-B443-A8DAC6F37EB1profileApplicationEA_Model">
+      <eAnnotations xmi:id="_uviecOX4Ed-pf5Jv_cJ2sQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ECCF_PROFILES/eccf.profile.uml#_urLkAuX4Ed-pf5Jv_cJ2sQ"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ECCF_PROFILES/eccf.profile.uml#166D93C2-9F09-4c22-B443-A8DAC6F37EB1"/>
+    </profileApplication>
+    <profileApplication xmi:id="52F53F4C-5908-4195-83D9-241D55BFBE10profileApplicationEA_Model">
+      <eAnnotations xmi:id="_urQbYOX4Ed-pf5Jv_cJ2sQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ECCF_PROFILES/SoaML.profile.uml#_urJGu-X4Ed-pf5Jv_cJ2sQ"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ECCF_PROFILES/SoaML.profile.uml#52F53F4C-5908-4195-83D9-241D55BFBE10"/>
+    </profileApplication>
+    <profileApplication xmi:id="_0profileApplicationEA_Model">
+      <eAnnotations xmi:id="_u49gMeX4Ed-pf5Jv_cJ2sQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <eccfprofile:CFSSAssumption xmi:id="_u6lQ0OX4Ed-pf5Jv_cJ2sQ" base_Element="_-IvFQNh_Ed-KXoATCvZvCg" base_Constraint="_-IvFQNh_Ed-KXoATCvZvCg" source=""/>
+  <eccfprofile:CFSSAssumption xmi:id="_u6lQ0eX4Ed-pf5Jv_cJ2sQ" base_Element="_-InJcNh_Ed-KXoATCvZvCg" base_Constraint="_-InJcNh_Ed-KXoATCvZvCg" source=""/>
+  <eccfprofile:CFSSAssumption xmi:id="_u6nGAOX4Ed-pf5Jv_cJ2sQ" base_Element="_-IgbwNh_Ed-KXoATCvZvCg" base_Constraint="_-IgbwNh_Ed-KXoATCvZvCg" source=""/>
+  <eccfprofile:ECCFCommunity xmi:id="_u6uawOX4Ed-pf5Jv_cJ2sQ" base_Collaboration="_16_5_1_24a0131_1287230366943_762501_21290"/>
+  <eccfprofile:ECCFCommunityContract xmi:id="_u6uawuX4Ed-pf5Jv_cJ2sQ" base_Collaboration="_16_5_1_24a0131_1287235248160_952452_22556"/>
+  <eccfprofile:ECCFConformance xmi:id="_u7kIQOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287234534254_962935_21774" base_Generalization="_16_5_1_24a0131_1287234534254_962935_21774"/>
+  <eccfprofile:ECCFConformance xmi:id="_u7kIQeX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287237837271_109632_22922" base_Generalization="_16_5_1_24a0131_1287237837271_109632_22922"/>
+  <eccfprofile:ECCFConformance xmi:id="_u7kIQ-X4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287235336351_833565_22578" base_Generalization="_16_5_1_24a0131_1287235336351_833565_22578"/>
+  <eccfprofile:ECCFConformance xmi:id="_u7kvUeX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1287237658343_388450_22847" base_Generalization="_16_5_1_24a0131_1287237658343_388450_22847"/>
+  <eccfprofile:ECCFObligation xmi:id="_u73DMeX4Ed-pf5Jv_cJ2sQ" base_Element="_-LBkQNh_Ed-KXoATCvZvCg" base_Constraint="_-LBkQNh_Ed-KXoATCvZvCg"/>
+  <eccfprofile:ECCFObligation xmi:id="_u73qQuX4Ed-pf5Jv_cJ2sQ" base_Element="_-HBOANh_Ed-KXoATCvZvCg" base_Constraint="_-HBOANh_Ed-KXoATCvZvCg"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u75fdeX4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287235564826_721892_22595"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u76Gg-X4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287235750402_678311_22619"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u76tleX4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1288258981945_596138_2095"/>
+  <eccfprofile:ECCFPolicy xmi:id="_u77UoOX4Ed-pf5Jv_cJ2sQ" base_Behavior="_16_5_1_24a0131_1287236668904_808431_22630"/>
+  <eccfprofile:ECCFStandard xmi:id="_u8KlMOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1288258981948_276768_2098" base_Constraint="_16_5_1_24a0131_1288258981948_276768_2098"/>
+  <eccfprofile:ECCFStandard xmi:id="_u8LMQOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1288259258737_232054_2106" base_Constraint="_16_5_1_24a0131_1288259258737_232054_2106"/>
+  <eccfprofile:ECCFStandard xmi:id="_u8LMQeX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1288259260746_765079_2118" base_Constraint="_16_5_1_24a0131_1288259260746_765079_2118"/>
+  <eccfprofile:ECCFStandard xmi:id="_u8LMQuX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1288259260218_998950_2112" base_Constraint="_16_5_1_24a0131_1288259260218_998950_2112"/>
+  <eccfprofile:ECCFStandard xmi:id="_u8MaYOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1288259261486_287301_2124" base_Constraint="_16_5_1_24a0131_1288259261486_287301_2124"/>
+  <eccfprofile:ECCFStandard xmi:id="_u8NogOX4Ed-pf5Jv_cJ2sQ" base_Element="_16_5_1_24a0131_1288259262052_660563_2130" base_Constraint="_16_5_1_24a0131_1288259262052_660563_2130"/>
+  <eccfprofile:BFTechnicalInterface xmi:id="_VaOXIAlGEeC7qNlmQHwePQ" base_Interface="_L94YgAlGEeC7qNlmQHwePQ"/>
+  <eccfprofile:BFAutomationUnit xmi:id="_atzJkAlGEeC7qNlmQHwePQ" base_Class="_16_5_1_24a0131_1288082901494_897997_2090"/>
+  <eccfprofile:BFAutomationUnit xmi:id="_c3ZTUAlGEeC7qNlmQHwePQ" base_Class="_16_5_1_24a0131_1288082617732_444323_2014"/>
+  <eccfprofile:ECCFSystemRole xmi:id="_rvfwAAlGEeC7qNlmQHwePQ" base_Element="_16_5_1_24a0131_1288119208487_933822_2487" base_Classifier="_16_5_1_24a0131_1288119208487_933822_2487" base_Class="_16_5_1_24a0131_1288119208487_933822_2487"/>
+  <eccfprofile:ECCFSystemRole xmi:id="_wBwPYAlGEeC7qNlmQHwePQ" base_Element="_16_5_1_24a0131_1288269967725_145298_2750" base_Classifier="_16_5_1_24a0131_1288269967725_145298_2750" base_Class="_16_5_1_24a0131_1288269967725_145298_2750"/>
+  <eccfprofile:ECCFSystemRole xmi:id="_x31nQAlGEeC7qNlmQHwePQ" base_Element="_16_5_1_24a0131_1288270117044_277706_2800" base_Classifier="_16_5_1_24a0131_1288270117044_277706_2800" base_Class="_16_5_1_24a0131_1288270117044_277706_2800"/>
+  <eccfprofile:ECCFCommunityContract xmi:id="_Pd5wYAlLEeC7qNlmQHwePQ" base_Collaboration="_16_5_1_24a0131_1288270635324_666982_2915"/>
+  <eccfprofile:BFInformationType xmi:id="_12pnUAokEeCVQPP4s9BB1A" base_Class="_xkJQUAokEeCVQPP4s9BB1A"/>
+</xmi:XMI>

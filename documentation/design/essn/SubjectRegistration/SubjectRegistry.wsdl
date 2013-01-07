@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:jaxws="http://java.sun.com/xml/ns/jaxws"
+	xmlns:tns="http://enterpriseservices.nci.nih.gov/SubjectRegistryService"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sr="http://enterpriseservices.nci.nih.gov/SubjectRegistry"
+	xmlns:ISO="uri:iso.org:21090" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:common="http://enterpriseservices.nci.nih.gov/Common"
+	xmlns:a="http://www.w3.org/2005/08/addressing"
+	xmlns:t="http://docs.oasis-open.org/ws-sx/ws-trust/200512"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SubjectRegistryService"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/jaxws http://java.sun.com/xml/ns/jaxws/wsdl_customizationschema_2_0.xsd uri:iso.org:21090 ISO_datatypes_Narrative.xsd http://enterpriseservices.nci.nih.gov/SubjectRegistry SubjectRegistry.xsd http://schemas.xmlsoap.org/ws/2005/07/securitypolicy http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/ws-securitypolicy.xsd"
+	targetNamespace="http://enterpriseservices.nci.nih.gov/SubjectRegistryService">
+	<jaxws:bindings>
+		<jaxws:package name="edu.duke.cabig.c3pr.webservice.subjectregistry"/>
+	</jaxws:bindings>
+	<wsdl:types>
+		<xsd:schema xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+			jaxb:version="2.1"
+			targetNamespace="http://enterpriseservices.nci.nih.gov/SubjectRegistryService">
+			<xsd:annotation>
+				<xsd:appinfo>
+					<jaxb:schemaBindings>
+						<jaxb:package name="edu.duke.cabig.c3pr.webservice.subjectregistry" />
+					</jaxb:schemaBindings>
+				</xsd:appinfo>
+			</xsd:annotation>
+			<xsd:import namespace="http://enterpriseservices.nci.nih.gov/SubjectRegistry"
+				schemaLocation="SubjectRegistry.xsd" />
+			<xsd:import namespace="uri:iso.org:21090" schemaLocation="ISO_datatypes_Narrative.xsd" />
+			<xsd:import namespace="http://enterpriseservices.nci.nih.gov/Common" schemaLocation="Common.xsd"/>
+			<xsd:element name="InitiateStudySubjectRegistryRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studyIdentifier" type="common:DocumentIdentifier"/>
+						<xsd:element name="siteIdentifier" type="common:OrganizationIdentifier"/>
+						<xsd:element name="subjectIdentifier" type="common:BiologicEntityIdentifier"/>
+						<xsd:element name="studySubject" type="sr:StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="InitiateStudySubjectRegistryResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubject" type="sr:StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateStudySubjectRegistryStatusRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjectIdentifier" type="common:SubjectIdentifier"/>
+						<xsd:element name="studySubjectStatus" type="common:PerformedStudySubjectMilestone"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateStudySubjectRegistryStatusResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubject" type="sr:StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateStudySubjectRegistryStatusHistoryRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjectIdentifier" type="common:SubjectIdentifier"/>
+						<xsd:element name="studySubjectRegistryStatusHistory" type="common:DSET_PerformedStudySubjectMilestone"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateStudySubjectRegistryStatusHistoryResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubject" type="sr:StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateStudySubjectRegistryRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjectIdentifier" type="common:SubjectIdentifier"/>
+						<xsd:element name="studySubject" type="sr:StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateStudySubjectRegistryResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubject" type="sr:StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateStudySubjectRegistryDemographyRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjectIdentifier" type="common:SubjectIdentifier"/>
+						<xsd:element name="person" type="common:Person"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateStudySubjectRegistryDemographyResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubject" type="sr:StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateStudySubjectConsentRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjectIdentifier" type="common:SubjectIdentifier"/>
+						<xsd:element name="studySubjectConsentVersions" type="common:DSET_StudySubjectConsentVersion"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="UpdateStudySubjectConsentResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubject" type="sr:StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ImportStudySubjectRegistryRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjects" type="sr:DSET_StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ImportStudySubjectRegistryResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjects" type="sr:DSET_StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="RetrieveStudySubjectDemographyHistoryRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="patientIdentifier" type="common:BiologicEntityIdentifier"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="RetrieveStudySubjectDemographyHistoryResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="patients" type="common:DSET_Person"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="QueryStudySubjectRegistryRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="searchParameter" type="common:DSET_AdvanceSearchCriterionParameter"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="QueryStudySubjectRegistryResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjects" type="sr:DSET_StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="QueryStudySubjectRegistryStatusHistoryRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjectIdentifier" type="common:SubjectIdentifier"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="QueryStudySubjectRegistryStatusHistoryResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjectRegistryStatusHistory" type="common:DSET_PerformedStudySubjectMilestone"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="QueryStudySubjectRegistryByStatusRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studyIdentifier" type="common:DocumentIdentifier"/>
+						<xsd:element name="registryStatus" type="common:PerformedStudySubjectMilestone"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="QueryStudySubjectRegistryByStatusResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjects" type="sr:DSET_StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="QueryStudySubjectRegistryByConsentRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studyIdentifier" type="common:DocumentIdentifier"/>
+						<xsd:element name="consent" type="common:Consent"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="QueryStudySubjectRegistryByConsentResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjects" type="sr:DSET_StudySubject"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="QueryConsentsByStudySubjectRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjectIdentifier" type="common:SubjectIdentifier"/>
+						<xsd:element name="consent" type="common:Consent" minOccurs="0"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="QueryConsentsByStudySubjectResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="studySubjectConsents" type="common:DSET_StudySubjectConsentVersion"/>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+	
+	<wsdl:message name="InitiateStudySubjectRegistryRequestMessage">
+		<wsdl:part name="parameters" element="tns:InitiateStudySubjectRegistryRequest" />
+	</wsdl:message>
+	<wsdl:message name="InitiateStudySubjectRegistryResponseMessage">
+		<wsdl:part name="parameters" element="tns:InitiateStudySubjectRegistryResponse" />
+	</wsdl:message>
+	<wsdl:message name="UpdateStudySubjectRegistryStatusRequestMessage">
+		<wsdl:part name="parameters" element="tns:UpdateStudySubjectRegistryStatusRequest" />
+	</wsdl:message>
+	<wsdl:message name="UpdateStudySubjectRegistryStatusResponseMessage">
+		<wsdl:part name="parameters" element="tns:UpdateStudySubjectRegistryStatusResponse" />
+	</wsdl:message>
+	<wsdl:message name="UpdateStudySubjectRegistryStatusHistoryRequestMessage">
+		<wsdl:part name="parameters" element="tns:UpdateStudySubjectRegistryStatusHistoryRequest" />
+	</wsdl:message>
+	<wsdl:message name="UpdateStudySubjectRegistryStatusHistoryResponseMessage">
+		<wsdl:part name="parameters" element="tns:UpdateStudySubjectRegistryStatusHistoryResponse" />
+	</wsdl:message>
+	<wsdl:message name="UpdateStudySubjectRegistryRequestMessage">
+		<wsdl:part name="parameters" element="tns:UpdateStudySubjectRegistryRequest" />
+	</wsdl:message>
+	<wsdl:message name="UpdateStudySubjectRegistryResponseMessage">
+		<wsdl:part name="parameters" element="tns:UpdateStudySubjectRegistryResponse" />
+	</wsdl:message>
+	<wsdl:message name="UpdateStudySubjectRegistryDemographyRequestMessage">
+		<wsdl:part name="parameters" element="tns:UpdateStudySubjectRegistryDemographyRequest" />
+	</wsdl:message>
+	<wsdl:message name="UpdateStudySubjectRegistryDemographyResponseMessage">
+		<wsdl:part name="parameters" element="tns:UpdateStudySubjectRegistryDemographyResponse" />
+	</wsdl:message>
+	<wsdl:message name="UpdateStudySubjectConsentRequestMessage">
+		<wsdl:part name="parameters" element="tns:UpdateStudySubjectConsentRequest" />
+	</wsdl:message>
+	<wsdl:message name="UpdateStudySubjectConsentResponseMessage">
+		<wsdl:part name="parameters" element="tns:UpdateStudySubjectConsentResponse" />
+	</wsdl:message>
+	<wsdl:message name="ImportStudySubjectRegistryRequestMessage">
+		<wsdl:part name="parameters" element="tns:ImportStudySubjectRegistryRequest" />
+	</wsdl:message>
+	<wsdl:message name="ImportStudySubjectRegistryResponseMessage">
+		<wsdl:part name="parameters" element="tns:ImportStudySubjectRegistryResponse" />
+	</wsdl:message>
+	<wsdl:message name="RetrieveStudySubjectDemographyHistoryRequestMessage">
+		<wsdl:part name="parameters" element="tns:RetrieveStudySubjectDemographyHistoryRequest" />
+	</wsdl:message>
+	<wsdl:message name="RetrieveStudySubjectDemographyHistoryResponseMessage">
+		<wsdl:part name="parameters" element="tns:RetrieveStudySubjectDemographyHistoryResponse" />
+	</wsdl:message>
+	<wsdl:message name="QueryStudySubjectRegistryRequestMessage">
+		<wsdl:part name="parameters" element="tns:QueryStudySubjectRegistryRequest" />
+	</wsdl:message>
+	<wsdl:message name="QueryStudySubjectRegistryResponseMessage">
+		<wsdl:part name="parameters" element="tns:QueryStudySubjectRegistryResponse" />
+	</wsdl:message>
+	<wsdl:message name="QueryStudySubjectRegistryStatusHistoryRequestMessage">
+		<wsdl:part name="parameters" element="tns:QueryStudySubjectRegistryStatusHistoryRequest" />
+	</wsdl:message>
+	<wsdl:message name="QueryStudySubjectRegistryStatusHistoryResponseMessage">
+		<wsdl:part name="parameters" element="tns:QueryStudySubjectRegistryStatusHistoryResponse" />
+	</wsdl:message>
+	<wsdl:message name="QueryStudySubjectRegistryByStatusRequestMessage">
+		<wsdl:part name="parameters" element="tns:QueryStudySubjectRegistryByStatusRequest" />
+	</wsdl:message>
+	<wsdl:message name="QueryStudySubjectRegistryByStatusResponseMessage">
+		<wsdl:part name="parameters" element="tns:QueryStudySubjectRegistryByStatusResponse" />
+	</wsdl:message>
+	<wsdl:message name="QueryStudySubjectRegistryByConsentRequestMessage">
+		<wsdl:part name="parameters" element="tns:QueryStudySubjectRegistryByConsentRequest" />
+	</wsdl:message>
+	<wsdl:message name="QueryStudySubjectRegistryByConsentResponseMessage">
+		<wsdl:part name="parameters" element="tns:QueryStudySubjectRegistryByConsentResponse" />
+	</wsdl:message>
+	<wsdl:message name="QueryConsentsByStudySubjectRequestMessage">
+		<wsdl:part name="parameters" element="tns:QueryConsentsByStudySubjectRequest" />
+	</wsdl:message>
+	<wsdl:message name="QueryConsentsByStudySubjectResponseMessage">
+		<wsdl:part name="parameters" element="tns:QueryConsentsByStudySubjectResponse" />
+	</wsdl:message>
+
+	<!-- Fault Messages -->
+	<wsdl:message name="InvalidStudySubjectDataExceptionFaultMessage">
+		<wsdl:part name="fault" element="common:InvalidStudySubjectDataExceptionFault"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InvalidStudyProtocolExceptionFaultMessage">
+		<wsdl:part name="fault" element="common:InvalidStudyProtocolExceptionFault"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="NoSuchStudySubjectExceptionFaultMessage">
+		<wsdl:part name="fault" element="common:NoSuchStudySubjectExceptionFault"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="NoSuchPatientExceptionFaultMessage">
+		<wsdl:part name="fault" element="common:NoSuchPatientExceptionFault"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DuplicateStudySubjectExceptionFaultMessage">
+		<wsdl:part name="fault" element="common:DuplicateStudySubjectExceptionFault"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InvalidSiteExceptionFaultMessage">
+		<wsdl:part name="fault" element="common:InvalidSiteExceptionFault"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="InvalidQueryExceptionFaultMessage">
+		<wsdl:part name="fault" element="common:InvalidQueryExceptionFault"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="SecurityExceptionFaultMessage">
+		<wsdl:part name="fault" element="common:SecurityExceptionFault"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="SubjectRegistry">
+		<wsdl:operation name="initiateStudySubject">
+			<wsdl:input message="tns:InitiateStudySubjectRegistryRequestMessage" />
+			<wsdl:output message="tns:InitiateStudySubjectRegistryResponseMessage" />
+			<wsdl:fault message="tns:InvalidStudySubjectDataExceptionFaultMessage" name="InvalidStudySubjectDataException" />
+			<wsdl:fault message="tns:InvalidStudyProtocolExceptionFaultMessage" name="InvalidStudyProtocolException" />
+			<wsdl:fault message="tns:DuplicateStudySubjectExceptionFaultMessage" name="DuplicateStudySubjectException" />
+			<wsdl:fault message="tns:InvalidSiteExceptionFaultMessage" name="InvalidSiteException" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+		</wsdl:operation>
+		<wsdl:operation name="updateStudySubject">
+			<wsdl:input message="tns:UpdateStudySubjectRegistryRequestMessage" />
+			<wsdl:output message="tns:UpdateStudySubjectRegistryResponseMessage" />
+			<wsdl:fault message="tns:NoSuchStudySubjectExceptionFaultMessage" name="NoSuchStudySubjectException" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:InvalidStudySubjectDataExceptionFaultMessage" name="InvalidStudySubjectDataException" />
+		</wsdl:operation>
+		<wsdl:operation name="updateStudySubjectDemography">
+			<wsdl:input message="tns:UpdateStudySubjectRegistryDemographyRequestMessage" />
+			<wsdl:output message="tns:UpdateStudySubjectRegistryDemographyResponseMessage" />
+			<wsdl:fault message="tns:InvalidStudySubjectDataExceptionFaultMessage" name="InvalidStudySubjectDataException" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:NoSuchStudySubjectExceptionFaultMessage" name="NoSuchStudySubjectException" />
+		</wsdl:operation>
+		<wsdl:operation name="querySubjectRegistry">
+			<wsdl:input message="tns:QueryStudySubjectRegistryRequestMessage" />
+			<wsdl:output message="tns:QueryStudySubjectRegistryResponseMessage" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:InvalidQueryExceptionFaultMessage" name="InvalidQueryException" />
+		</wsdl:operation>
+		<wsdl:operation name="updateStudySubjectConsent">
+			<wsdl:input message="tns:UpdateStudySubjectConsentRequestMessage" />
+			<wsdl:output message="tns:UpdateStudySubjectConsentResponseMessage" />
+			<wsdl:fault message="tns:InvalidStudySubjectDataExceptionFaultMessage" name="InvalidStudySubjectDataException" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:NoSuchStudySubjectExceptionFaultMessage" name="NoSuchStudySubjectException" />
+		</wsdl:operation>
+		<wsdl:operation name="updateStudySubjectRegistryStatus">
+			<wsdl:input message="tns:UpdateStudySubjectRegistryStatusRequestMessage" />
+			<wsdl:output message="tns:UpdateStudySubjectRegistryStatusResponseMessage" />
+			<wsdl:fault message="tns:InvalidStudySubjectDataExceptionFaultMessage" name="InvalidStudySubjectDataException" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:NoSuchStudySubjectExceptionFaultMessage" name="NoSuchStudySubjectException" />
+		</wsdl:operation>
+		<wsdl:operation name="updateStudySubjectRegistryStatusHistory">
+			<wsdl:input message="tns:UpdateStudySubjectRegistryStatusHistoryRequestMessage" />
+			<wsdl:output message="tns:UpdateStudySubjectRegistryStatusHistoryResponseMessage" />
+			<wsdl:fault message="tns:InvalidStudySubjectDataExceptionFaultMessage" name="InvalidStudySubjectDataException" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:NoSuchStudySubjectExceptionFaultMessage" name="NoSuchStudySubjectException" />
+		</wsdl:operation>
+		<wsdl:operation name="queryStudySubjectRegistryStatusHistory">
+			<wsdl:input message="tns:QueryStudySubjectRegistryStatusHistoryRequestMessage" />
+			<wsdl:output message="tns:QueryStudySubjectRegistryStatusHistoryResponseMessage" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:InvalidQueryExceptionFaultMessage" name="InvalidQueryException" />
+			<wsdl:fault message="tns:NoSuchStudySubjectExceptionFaultMessage" name="NoSuchStudySubjectException" />
+		</wsdl:operation>
+		<wsdl:operation name="querySubjectRegistryByRegistryStatus">
+			<wsdl:input message="tns:QueryStudySubjectRegistryByStatusRequestMessage" />
+			<wsdl:output message="tns:QueryStudySubjectRegistryByStatusResponseMessage" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:InvalidQueryExceptionFaultMessage" name="InvalidQueryException" />
+		</wsdl:operation>
+		<wsdl:operation name="querySubjectRegistryByConsent">
+			<wsdl:input message="tns:QueryStudySubjectRegistryByConsentRequestMessage" />
+			<wsdl:output message="tns:QueryStudySubjectRegistryByConsentResponseMessage" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:InvalidQueryExceptionFaultMessage" name="InvalidQueryException" />
+		</wsdl:operation>
+		<wsdl:operation name="queryConsentsByStudySubject">
+			<wsdl:input message="tns:QueryConsentsByStudySubjectRequestMessage" />
+			<wsdl:output message="tns:QueryConsentsByStudySubjectResponseMessage" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:NoSuchStudySubjectExceptionFaultMessage" name="NoSuchStudySubjectException" />
+			<wsdl:fault message="tns:InvalidQueryExceptionFaultMessage" name="InvalidQueryException" />
+		</wsdl:operation>
+		<wsdl:operation name="retrieveStudySubjectDemographyHistory">
+			<wsdl:input message="tns:RetrieveStudySubjectDemographyHistoryRequestMessage" />
+			<wsdl:output message="tns:RetrieveStudySubjectDemographyHistoryResponseMessage" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:NoSuchPatientExceptionFaultMessage" name="NoSuchPatientException" />
+		</wsdl:operation>
+		<wsdl:operation name="importSubjectRegistry">
+			<wsdl:input message="tns:ImportStudySubjectRegistryRequestMessage" />
+			<wsdl:output message="tns:ImportStudySubjectRegistryResponseMessage" />
+			<wsdl:fault message="tns:SecurityExceptionFaultMessage" name="SecurityException" />
+			<wsdl:fault message="tns:InvalidStudySubjectDataExceptionFaultMessage" name="InvalidStudySubjectDataException" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="SubjectRegistrySOAP" type="tns:SubjectRegistry">
+		<wsp:Policy xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702"
+			xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+			<wsp:ExactlyOne>
+				<wsp:All>
+					<sp:TransportBinding>
+						<wsp:Policy>
+							<sp:TransportToken>
+								<wsp:Policy>
+									<sp:HttpsToken RequireClientCertificate="false" />
+								</wsp:Policy>
+							</sp:TransportToken>
+							<sp:AlgorithmSuite>
+								<wsp:Policy>
+									<sp:Basic256Rsa15 />
+								</wsp:Policy>
+							</sp:AlgorithmSuite>
+						</wsp:Policy>
+					</sp:TransportBinding>
+					
+					<sp:SupportingTokens>
+						<wsp:Policy>
+							<sp:IssuedToken sp:IncludeToken="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702/IncludeToken/AlwaysToRecipient">
+								<sp:RequestSecurityTokenTemplate>
+									<t:TokenType>urn:oasis:names:tc:SAML:1.0:assertion</t:TokenType>
+									<t:KeyType>http://docs.oasis-open.org/ws-sx/ws-trust/200512/Bearer</t:KeyType>								
+								</sp:RequestSecurityTokenTemplate>								
+							</sp:IssuedToken>
+						</wsp:Policy>
+					</sp:SupportingTokens>
+					
+					<sp:Trust13>
+						<wsp:Policy>
+							<wsp:ExactlyOne>
+								<wsp:All>
+									<sp:MustSupportIssuedTokens />
+								</wsp:All>
+							</wsp:ExactlyOne>
+						</wsp:Policy>
+					</sp:Trust13>
+				</wsp:All>
+			</wsp:ExactlyOne>
+		</wsp:Policy>
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="initiateStudySubject">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidStudySubjectDataException">
+				<soap:fault name="InvalidStudySubjectDataException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidStudyProtocolException">
+				<soap:fault name="InvalidStudyProtocolException" />
+			</wsdl:fault>
+			<wsdl:fault name="DuplicateStudySubjectException">
+				<soap:fault name="DuplicateStudySubjectException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidSiteException">
+				<soap:fault name="InvalidSiteException" />
+			</wsdl:fault>
+		</wsdl:operation>
+
+		<wsdl:operation name="updateStudySubject">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidStudySubjectDataException">
+				<soap:fault name="InvalidStudySubjectDataException" />
+			</wsdl:fault>
+			<wsdl:fault name="NoSuchStudySubjectException">
+				<soap:fault name="NoSuchStudySubjectException" />
+			</wsdl:fault>
+		</wsdl:operation>
+		
+		<wsdl:operation name="updateStudySubjectDemography">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidStudySubjectDataException">
+				<soap:fault name="InvalidStudySubjectDataException" />
+			</wsdl:fault>
+			<wsdl:fault name="NoSuchStudySubjectException">
+				<soap:fault name="NoSuchStudySubjectException" />
+			</wsdl:fault>
+		</wsdl:operation>
+
+		<wsdl:operation name="querySubjectRegistry">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidQueryException">
+				<soap:fault name="InvalidQueryException" />
+			</wsdl:fault>
+		</wsdl:operation>
+
+		<wsdl:operation name="updateStudySubjectConsent">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidStudySubjectDataException">
+				<soap:fault name="InvalidStudySubjectDataException" />
+			</wsdl:fault>
+			<wsdl:fault name="NoSuchStudySubjectException">
+				<soap:fault name="NoSuchStudySubjectException" />
+			</wsdl:fault>
+		</wsdl:operation>
+		
+		<wsdl:operation name="updateStudySubjectRegistryStatus">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidStudySubjectDataException">
+				<soap:fault name="InvalidStudySubjectDataException" />
+			</wsdl:fault>
+			<wsdl:fault name="NoSuchStudySubjectException">
+				<soap:fault name="NoSuchStudySubjectException" />
+			</wsdl:fault>
+		</wsdl:operation>
+		
+		<wsdl:operation name="updateStudySubjectRegistryStatusHistory">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidStudySubjectDataException">
+				<soap:fault name="InvalidStudySubjectDataException" />
+			</wsdl:fault>
+			<wsdl:fault name="NoSuchStudySubjectException">
+				<soap:fault name="NoSuchStudySubjectException" />
+			</wsdl:fault>
+		</wsdl:operation>
+		
+		<wsdl:operation name="queryStudySubjectRegistryStatusHistory">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidQueryException">
+				<soap:fault name="InvalidQueryException" />
+			</wsdl:fault>
+			<wsdl:fault name="NoSuchStudySubjectException">
+				<soap:fault name="NoSuchStudySubjectException" />
+			</wsdl:fault>
+		</wsdl:operation>
+		
+		<wsdl:operation name="querySubjectRegistryByRegistryStatus">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidQueryException">
+				<soap:fault name="InvalidQueryException" />
+			</wsdl:fault>
+		</wsdl:operation>
+		
+		<wsdl:operation name="querySubjectRegistryByConsent">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidQueryException">
+				<soap:fault name="InvalidQueryException" />
+			</wsdl:fault>
+		</wsdl:operation>
+		
+		<wsdl:operation name="queryConsentsByStudySubject">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidQueryException">
+				<soap:fault name="InvalidQueryException" />
+			</wsdl:fault>
+			<wsdl:fault name="NoSuchStudySubjectException">
+				<soap:fault name="NoSuchStudySubjectException" />
+			</wsdl:fault>
+		</wsdl:operation>
+		
+		<wsdl:operation name="importSubjectRegistry">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="InvalidStudySubjectDataException">
+				<soap:fault name="InvalidStudySubjectDataException" />
+			</wsdl:fault>
+		</wsdl:operation>
+		
+		<wsdl:operation name="retrieveStudySubjectDemographyHistory">
+			<soap:operation style="document" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+			<wsdl:fault name="SecurityException">
+				<soap:fault name="SecurityException" />
+			</wsdl:fault>
+			<wsdl:fault name="NoSuchPatientException">
+				<soap:fault name="NoSuchPatientException" />
+			</wsdl:fault>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="SubjectRegistryService">
+		<wsdl:port name="SubjectRegistry" binding="tns:SubjectRegistrySOAP">
+			<soap:address location="REPLACE_WITH_ACTUAL_URL" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
