@@ -1,5 +1,6 @@
-C3PR Documents
+c3pr Documents
 =======================
 
-This repository holds documents for the C3PR project.
-See https://github.com/NCIP/c3pr for further information.
+This repository holds documents for the c3pr project.
+
+See [GitHub repository](https://github.com/NCIP/c3pr) for further information.
